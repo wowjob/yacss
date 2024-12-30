@@ -7,7 +7,6 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "noEmit": false,
     "strict": true,
@@ -18,7 +17,6 @@
     "noPropertyAccessFromIndexSignature": false,
     "outDir": "./dist",
     "declaration": true,
-    "declarationDir": "./dist/types",
     "emitDeclarationOnly": false
   },
   "include": ["src/index.ts"],

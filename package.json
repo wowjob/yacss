@@ -44,7 +44,6 @@
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "types": "dist/types/index.d.ts",
   "files": [
     "dist/**/*"
   ],
