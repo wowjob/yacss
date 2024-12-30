@@ -2,12 +2,12 @@
   "version": "0.0.2",
   "name": "@wowjob/yacss",
   "author": "Marian Zburlea",
-  "license":"MIT",
+  "license": "MIT",
   "scripts": {
-     "tree": "tree -I \"node_modules\"",
-     "build-css": "bun build-css.js",
-     "build-js": "tsc --outDir dist",
-     "build": "bun run build-css.js && bun run build-js"
+    "tree": "tree -I \"node_modules\"",
+    "build-css": "bun build-css.js",
+    "build-js": "tsc --outDir dist",
+    "build": "bun run build-css.js && bun run build-js"
   },
   "description": "Yet Another CSS UI library, which provides zero build time, best debugging DX, very flexible, reposniveness for RWD at core, and works with React, NextJS, Astro and more",
   "keywords": [
@@ -60,7 +60,7 @@
   },
   "type": "module",
   "devDependencies": {
-    "@types/bun": "latest",
+    "@types/bun": "^1.1.14",
     "nano-css": "^5.6.2",
     "typescript": "^5.7.2"
   }
