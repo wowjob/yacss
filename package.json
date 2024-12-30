@@ -1,5 +1,5 @@
 {
-  "version": "0.0.4",
+  "version": "0.0.5",
   "name": "@wowjob/yacss",
   "author": "Marian Zburlea",
   "license": "MIT",
@@ -44,8 +44,9 @@
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
+  "types": "dist/types/index.d.ts",
   "files": [
-    "dist"
+    "dist/**/*"
   ],
   "exports": {
     ".": {
