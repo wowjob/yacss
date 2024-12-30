@@ -1,0 +1,9 @@
+.padding {
+  --padding: 0;
+  padding: var(--padding)
+}
+
+.margin {
+  --margin: 0;
+  margin: var(--margin)
+}
