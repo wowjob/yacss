@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "name": "@wowjob/yacss",
   "author": "Marian Zburlea",
   "license":"MIT",
@@ -38,7 +38,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/wowjob/yacss.git",
+    "url": "https://github.com/wowjob/yacss.git"
   },
   "module": "index.ts",
   "peerDependencies": {
@@ -53,7 +53,7 @@
       "require": "./dist/index.js"
     },
     "./all.css": "./dist/css/all.css",
-    "./reset.css": "./dist/css/reset.css",
+    "./reset.css": "./dist/css/reset.css"
   },
   "publishConfig": {
     "access": "public"
