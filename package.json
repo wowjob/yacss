@@ -1,0 +1,62 @@
+{
+  "version": "0.0.1",
+  "name": "@wowjob/yacss",
+  "author": "Marian Zburlea",
+  "license":"MIT",
+  "scripts": {},
+  "description": "Yet Another CSS UI library, which provides zero build time, best debugging DX, very flexible, reposniveness for RWD at core, and works with React, NextJS, Astro and more",
+  "keywords": [
+    "yacss",
+    "yacss-ui",
+    "css",
+    "ui",
+    "ui library",
+    "css library",
+    "css-in-js",
+    "rwd",
+    "responsive design",
+    "zero build time",
+    "developer experience",
+    "dx",
+    "css debugging",
+    "react",
+    "nextjs",
+    "astro",
+    "responsive css",
+    "flexible css",
+    "modern css",
+    "design system",
+    "component library",
+    "utility-first css",
+    "framework-agnostic",
+    "css utilities"
+  ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wowjob/yacss.git",
+  },
+  "module": "index.ts",
+  "type": "module",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./all.css": "./dist/css/all.css",
+    "publishConfig": {
+      "access": "public"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+    "nano-css": "^5.6.2",
+    "typescript": "^5.7.2"
+  }
+}
