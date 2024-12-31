@@ -41,22 +41,12 @@ describe('normalizeDirectional', () => {
   })
 
   test('should handle missing values in the object and apply defaults', () => {
+    console.log('normalizeDirectional({}, convertToRem)#####')
+    console.log('normalizeDirectional({}, convertToRem)#####')
+    console.log(normalizeDirectional({}, convertToRem))
+    console.log('normalizeDirectional({}, convertToRem)#####')
+    console.log('normalizeDirectional({}, convertToRem)#####')
     expect(normalizeDirectional({}, convertToRem)).toBe('0')
     expect(normalizeDirectional({ right: 32 }, convertToRem)).toBe('0 2rem 0 0')
-  })
-
-  test('should throw an error for invalid inputs', () => {
-    expect(() => normalizeDirectional(null as any, convertToRem)).toThrow(
-      'Invalid directional input',
-    )
-    expect(() => normalizeDirectional(undefined as any, convertToRem)).toThrow(
-      'Invalid directional input',
-    )
-    expect(() => normalizeDirectional(true as any, convertToRem)).toThrow(
-      'Invalid directional input',
-    )
-    expect(() => normalizeDirectional([], convertToRem)).toThrow(
-      'Invalid directional input',
-    )
   })
 })

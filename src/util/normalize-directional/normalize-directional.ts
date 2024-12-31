@@ -1,14 +1,12 @@
 import type { TDirectional, TDirectionalUnit } from '../../type'
 import { condensedFour } from '../condensed'
+import { getValue } from '../get-value'
 
 export const normalizeDirectional = <T extends string>(
-  value: TDirectional<T>,
-  convertUnit: (v: number | TDirectionalUnit) => string = (v) => v.toString(),
+  value: TDirectional<T> = 0,
+  convertUnit: (v: number | TDirectionalUnit | string) => string = (v) =>
+    (v || '').toString(),
 ) => {
-  if (value === null || value === undefined) {
-    throw new Error('Invalid directional input')
-  }
-
   if (typeof value === 'string') {
     return value
   }
@@ -19,23 +17,28 @@ export const normalizeDirectional = <T extends string>(
 
   if (Array.isArray(value)) {
     if (value.length === 0) {
-      throw new Error(
-        'Invalid directional input: array must have at least one element',
-      )
+      return '0'
     }
 
-    const [top = 0, right = top, bottom = top, left = right] = value
+    if (value.length > 0) {
+      return condensedFour(value.map(getValue).map(convertUnit))
+    }
+  }
+
+  if (value === null || value === undefined) {
+    return getValue(value)
+  }
+
+  if (
+    typeof value === 'object' &&
+    ('top' in value || 'bottom' in value || 'right' in value || 'left' in value)
+  ) {
+    const { top, right, bottom, left } = value || {}
 
     return condensedFour(
-      [top, right, bottom, left].filter(Boolean).map(convertUnit),
+      [top, right, bottom, left].map(getValue).map(convertUnit),
     )
   }
 
-  if (typeof value === 'object') {
-    const { top = 0, right = 0, bottom = 0, left = 0 } = value
-
-    return condensedFour([top, right, bottom, left].map(convertUnit))
-  }
-
-  throw new Error('Invalid directional input')
+  return '0'
 }
