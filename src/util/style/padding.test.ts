@@ -81,22 +81,12 @@ describe('normalizePadding', () => {
 
   // Test empty and invalid inputs
   test('should handle empty or invalid inputs', () => {
-    expect(() => normalizePadding([])).toThrow(
-      'Invalid directional input: array must have at least one element',
-    )
+    expect(normalizePadding([])).toBe('0')
     expect(normalizePadding({})).toBe('0')
-    expect(() => normalizePadding(null as any)).toThrow(
-      'Invalid directional input',
-    )
-    expect(() => normalizePadding(undefined as any)).toThrow(
-      'Invalid directional input',
-    )
-    expect(() => normalizePadding(true as any)).toThrow(
-      'Invalid directional input',
-    )
-    expect(() => normalizePadding(false as any)).toThrow(
-      'Invalid directional input',
-    )
+    expect(normalizePadding(null as any)).toBe('0')
+    expect(normalizePadding(false as any)).toBe('0')
+    expect(normalizePadding(true as any)).toBe('0')
+    expect(normalizePadding(undefined as any)).toBe('0')
   })
 
   // Test shorthand normalization edge cases

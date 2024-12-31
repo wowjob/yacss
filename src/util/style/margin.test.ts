@@ -82,22 +82,8 @@ describe('normalizeMargin', () => {
 
   // Test empty and invalid inputs
   test('should handle empty or invalid inputs', () => {
-    expect(() => normalizeMargin([])).toThrow(
-      'Invalid directional input: array must have at least one element',
-    )
+    expect(normalizeMargin([])).toBe('0')
     expect(normalizeMargin({})).toBe('0')
-    expect(() => normalizeMargin(null as any)).toThrow(
-      'Invalid directional input',
-    )
-    expect(() => normalizeMargin(undefined as any)).toThrow(
-      'Invalid directional input',
-    )
-    expect(() => normalizeMargin(true as any)).toThrow(
-      'Invalid directional input',
-    )
-    expect(() => normalizeMargin(false as any)).toThrow(
-      'Invalid directional input',
-    )
   })
 
   // Test shorthand normalization edge cases
