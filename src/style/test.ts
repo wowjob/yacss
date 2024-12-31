@@ -28,6 +28,11 @@ console.log(
     mobile: {
       margin: ['revert', 8, 'auto', 'revert'],
       padding: ['8px', undefined, '16px'],
+      // border: {
+      //   width: 8,
+      //   style: 'dashed',
+      // },
+      border: '1px solid blue',
     },
     className: 'once-upon a-time padding',
   }),

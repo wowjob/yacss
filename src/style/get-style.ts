@@ -1,9 +1,11 @@
-import type { TMargin, TPadding } from '../type'
+import type { TBorder, TMargin, TPadding } from '../type'
 import { normalizeMargin, normalizePadding } from '../util'
+import { normalizeBorder } from '../util/style'
 
 type TCSSPropValue = Partial<{
   margin: TMargin
   padding: TPadding
+  border: TBorder
 }>
 
 type TResponsive = {
@@ -34,6 +36,11 @@ export const getStyle = ({
   if (mobile?.padding) {
     classSet.add('padding')
     rowMap.set('--padding', normalizePadding(mobile.padding))
+  }
+
+  if (mobile?.border) {
+    classSet.add('border')
+    rowMap.set('--border', normalizeBorder(mobile.border))
   }
 
   return {
