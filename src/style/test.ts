@@ -33,6 +33,7 @@ console.log(
       //   style: 'dashed',
       // },
       border: '1px solid blue',
+      borderWidth: [20, 3, 10, 2],
     },
     className: 'once-upon a-time padding',
   }),

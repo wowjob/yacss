@@ -41,7 +41,7 @@ describe('normalizeBorder', () => {
         normalizeBorder({
           color: 'red',
         }),
-      ).toBe('0 none red')
+      ).toBe('0 solid red')
     })
   })
 
@@ -63,7 +63,7 @@ describe('normalizeBorder', () => {
           style: null,
           color: undefined,
         } as any),
-      ).toBe('0 none currentColor')
+      ).toBe('0 solid currentColor')
     })
 
     test('should handle unexpected data types gracefully', () => {

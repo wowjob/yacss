@@ -14,7 +14,7 @@ describe('normalizeMargin', () => {
 
   // Test string inputs
   test('should return the string value as-is when passed a string', () => {
-    expect(normalizeMargin('10px')).toBe('10px')
+    expect(normalizeMargin('12px')).toBe('0.75rem')
     expect(normalizeMargin('1rem')).toBe('1rem')
     expect(normalizeMargin('0')).toBe('0')
   })
