@@ -13,7 +13,7 @@ describe('normalizePadding', () => {
 
   // Test string inputs
   test('should return the string value as-is when passed a string', () => {
-    expect(normalizePadding('10px')).toBe('10px')
+    expect(normalizePadding('12px')).toBe('0.75rem')
     expect(normalizePadding('1rem')).toBe('1rem')
     expect(normalizePadding('0')).toBe('0')
   })

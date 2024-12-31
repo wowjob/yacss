@@ -4,7 +4,7 @@ import { describe, expect, test } from 'bun:test'
 
 describe('normalizeDirectional', () => {
   test('should return the string value as-is', () => {
-    expect(normalizeDirectional('10px', convertToRem)).toBe('10px')
+    expect(normalizeDirectional('32px', convertToRem)).toBe('2rem')
     expect(normalizeDirectional('1rem', convertToRem)).toBe('1rem')
   })
 
@@ -41,11 +41,6 @@ describe('normalizeDirectional', () => {
   })
 
   test('should handle missing values in the object and apply defaults', () => {
-    console.log('normalizeDirectional({}, convertToRem)#####')
-    console.log('normalizeDirectional({}, convertToRem)#####')
-    console.log(normalizeDirectional({}, convertToRem))
-    console.log('normalizeDirectional({}, convertToRem)#####')
-    console.log('normalizeDirectional({}, convertToRem)#####')
     expect(normalizeDirectional({}, convertToRem)).toBe('0')
     expect(normalizeDirectional({ right: 32 }, convertToRem)).toBe('0 2rem 0 0')
   })

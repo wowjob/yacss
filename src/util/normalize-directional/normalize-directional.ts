@@ -1,6 +1,8 @@
 import type { TDirectional, TDirectionalUnit } from '../../type'
 import { condensedFour } from '../condensed'
+import { convertToRem } from '../convert-to-rem'
 import { getValue } from '../get-value'
+import { isPx } from '../is-px'
 
 export const normalizeDirectional = <T extends string>(
   value: TDirectional<T> = 0,
@@ -8,7 +10,7 @@ export const normalizeDirectional = <T extends string>(
     (v || '').toString(),
 ) => {
   if (typeof value === 'string') {
-    return value
+    return isPx(value) ? convertToRem(value) : value
   }
 
   if (typeof value === 'number') {
