@@ -1,18 +1,30 @@
-import type { TMargin } from '../type'
-import { normalizeMargin } from '../util'
+import type { TMargin, TPadding } from '../type'
+import { normalizeMargin, normalizePadding } from '../util'
 
 type TCSSPropValue = Partial<{
   margin: TMargin
+  padding: TPadding
 }>
 
 type TResponsive = {
   mobile?: TCSSPropValue
   tablet?: TCSSPropValue
   desktop?: TCSSPropValue
+  className?: string
 }
 
-export const getStyle = ({ desktop, mobile, tablet }: TResponsive) => {
-  const classSet = new Set()
+type TStyle = {
+  className?: string
+} & TResponsive
+
+export const getStyle = ({
+  desktop,
+  mobile,
+  tablet,
+  className = '',
+}: TStyle) => {
+  const classSet = new Set(className.split(' '))
+
   const rowMap = new Map()
   if (mobile?.margin) {
     classSet.add('margin')
@@ -21,10 +33,8 @@ export const getStyle = ({ desktop, mobile, tablet }: TResponsive) => {
 
   if (mobile?.padding) {
     classSet.add('padding')
+    rowMap.set('--padding', normalizePadding(mobile.padding))
   }
-
-  console.log(Object.fromEntries(rowMap))
-  console.log('Object.fromEntries(rowMap)')
 
   return {
     className: Array.from(classSet).join(' '),
