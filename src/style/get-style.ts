@@ -29,24 +29,27 @@ export const getStyle = ({
   const classSet = new Set(className.split(' '))
 
   const rowMap = new Map()
-  if (mobile?.margin) {
-    classSet.add('margin')
-    rowMap.set('--margin', normalizeMargin(mobile.margin))
+
+  // Define a mapping of keys to their respective normalizer functions
+  const propertyMap: Record<
+    keyof TCSSPropValue,
+    { className: string; normalize: (value: any) => string }
+  > = {
+    margin: { className: 'margin', normalize: normalizeMargin },
+    padding: { className: 'padding', normalize: normalizePadding },
+    border: { className: 'border', normalize: normalizeBorder },
+    borderWidth: { className: 'border-width', normalize: normalizeBorderWidth },
   }
 
-  if (mobile?.padding) {
-    classSet.add('padding')
-    rowMap.set('--padding', normalizePadding(mobile.padding))
-  }
-
-  if (mobile?.border) {
-    classSet.add('border')
-    rowMap.set('--border', normalizeBorder(mobile.border))
-  }
-
-  if (mobile?.borderWidth) {
-    classSet.add('border-width')
-    rowMap.set('--border-width', normalizeBorderWidth(mobile.borderWidth))
+  // Iterate over the propertyMap and handle properties dynamically
+  for (const [key, { className: propClassName, normalize }] of Object.entries(
+    propertyMap,
+  )) {
+    const mobileValue = mobile?.[key as keyof TCSSPropValue]
+    if (mobileValue) {
+      classSet.add(propClassName)
+      rowMap.set(`--${propClassName}`, normalize(mobileValue))
+    }
   }
 
   return {
