@@ -22,6 +22,10 @@
   --display: inline;
   display: var(--display);
 }
+.flex {
+  --flex: 0 1 auto;
+  flex: var(--flex);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -48,6 +52,10 @@
 .display {
   --t-display: inline;
   display: var(--t-display);
+}
+.flex {
+  --t-flex: 0 1 auto;
+  flex: var(--t-flex);
 }
 
 }
@@ -76,6 +84,10 @@
 .display {
   --d-display: inline;
   display: var(--d-display);
+}
+.flex {
+  --d-flex: 0 1 auto;
+  flex: var(--d-flex);
 }
 
 }

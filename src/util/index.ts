@@ -4,6 +4,7 @@ export {
   normalizeBorder,
   normalizeBorderWidth,
   normalizeDisplay,
+  normalizeFlex,
   normalizeMargin,
   normalizePadding,
 } from './style'
