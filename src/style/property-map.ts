@@ -6,6 +6,7 @@ import {
   normalizeFlex,
   normalizeFlexBasis,
   normalizeFlexDirection,
+  normalizeFlexGrow,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -20,6 +21,7 @@ import type {
   TPadding,
   TBorderStyle,
   TFlexBasis,
+  TFlexGrow,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -31,6 +33,7 @@ export type TCSSPropValue = Partial<{
   flex: TFlex
   flexBasis: TFlexBasis
   flexDirection: TFlexDirection
+  flexGrow: TFlexGrow
   margin: TMargin
   padding: TPadding
 }>
@@ -90,5 +93,9 @@ export const propertyMap: Record<
   flexDirection: {
     className: { dev: 'flex-direction', prod: 'fd' },
     normalize: normalizeFlexDirection,
+  },
+  flexGrow: {
+    className: { dev: 'flex-grow', prod: 'fg' },
+    normalize: normalizeFlexGrow,
   },
 } as const

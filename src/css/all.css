@@ -34,6 +34,10 @@
   --flex-direction: row;
   flex-direction: var(--flex-direction);
 }
+.flex-grow {
+  --flex-grow: 0;
+  flex-grow: var(--flex-grow);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -72,6 +76,10 @@
 .flex-direction {
   --t-flex-direction: row;
   flex-direction: var(--t-flex-direction);
+}
+.flex-grow {
+  --t-flex-grow: 0;
+  flex-grow: var(--t-flex-grow);
 }
 
 }
@@ -112,6 +120,10 @@
 .flex-direction {
   --d-flex-direction: row;
   flex-direction: var(--d-flex-direction);
+}
+.flex-grow {
+  --d-flex-grow: 0;
+  flex-grow: var(--d-flex-grow);
 }
 
 }

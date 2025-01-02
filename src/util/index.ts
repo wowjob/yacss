@@ -9,6 +9,7 @@ export {
   normalizeFlex,
   normalizeFlexBasis,
   normalizeFlexDirection,
+  normalizeFlexGrow,
   normalizeMargin,
   normalizePadding,
 } from './style'
