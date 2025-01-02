@@ -16,44 +16,69 @@ type TResponsive = {
   className?: string
 }
 
+type TEnv = 'dev' | 'prod'
+
 type TStyle = {
   className?: string
+  env?: TEnv
 } & TResponsive
+
+// Define a mapping of keys to their respective normalizer functions
+const propertyMap: Record<
+  keyof TCSSPropValue,
+  { className: Record<TEnv, string>; normalize: (value: any) => string }
+> = {
+  margin: {
+    className: { dev: 'margin', prod: 'm' },
+    normalize: normalizeMargin,
+  },
+  padding: {
+    className: { dev: 'padding', prod: 'p' },
+    normalize: normalizePadding,
+  },
+  border: {
+    className: { dev: 'border', prod: 'b' },
+    normalize: normalizeBorder,
+  },
+  borderWidth: {
+    className: { dev: 'border-width', prod: 'bw' },
+    normalize: normalizeBorderWidth,
+  },
+} as const
 
 export const getStyle = ({
   desktop,
   mobile,
   tablet,
   className = '',
+  env = 'dev',
 }: TStyle) => {
   const classSet = new Set(className.split(' '))
 
   const rowMap = new Map()
+  const styleMap = new Map(Object.entries({ mobile, tablet, desktop }))
 
-  // Define a mapping of keys to their respective normalizer functions
-  const propertyMap: Record<
-    keyof TCSSPropValue,
-    { className: string; normalize: (value: any) => string }
-  > = {
-    margin: { className: 'margin', normalize: normalizeMargin },
-    padding: { className: 'padding', normalize: normalizePadding },
-    border: { className: 'border', normalize: normalizeBorder },
-    borderWidth: { className: 'border-width', normalize: normalizeBorderWidth },
-  }
+  for (const [key, styleData] of styleMap) {
+    const responsivePrefix = key === 'mobile' ? '' : `${key[0]}-`
 
-  // Iterate over the propertyMap and handle properties dynamically
-  for (const [key, { className: propClassName, normalize }] of Object.entries(
-    propertyMap,
-  )) {
-    const mobileValue = mobile?.[key as keyof TCSSPropValue]
-    if (mobileValue) {
-      classSet.add(propClassName)
-      rowMap.set(`--${propClassName}`, normalize(mobileValue))
+    if (!styleData) {
+      continue
+    }
+
+    for (const cssProperty in styleData) {
+      if (cssProperty in propertyMap) {
+        const cssKey = cssProperty as keyof TCSSPropValue
+        const className = propertyMap[cssKey].className[env]
+        const propertyValue = propertyMap[cssKey].normalize(styleData[cssKey])
+
+        classSet.add(className)
+        rowMap.set(`--${responsivePrefix}${className}`, propertyValue)
+      }
     }
   }
 
   return {
-    className: Array.from(classSet).join(' '),
+    className: Array.from(classSet).join(' ').trim(),
     style: Object.fromEntries(rowMap),
   }
 }
