@@ -19,6 +19,8 @@ export type TBorderStyle =
   | 'outset'
   | 'hidden'
   | 'none'
+  | null
+  | undefined
 
 export type TBorder =
   | {

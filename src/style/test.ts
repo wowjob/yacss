@@ -48,9 +48,11 @@ console.log(
       padding: ['8px', undefined, '16px'],
       border: '1px solid blue',
       borderWidth: [20, 3, 10, 2],
+      borderStyle: 'solid',
     },
     tablet: {
       padding: 24,
+      borderStyle: ['solid', 'dotted'],
     },
     desktop: {
       padding: 32,

@@ -1,10 +1,12 @@
 import type { TBorder, TBorderWidth, TMargin, TPadding } from '../type';
+import type { TBorderStyle } from '../type/border';
 export type TEnv = 'dev' | 'prod';
 export type TCSSPropValue = Partial<{
     margin: TMargin;
     padding: TPadding;
     border: TBorder;
     borderWidth: TBorderWidth;
+    borderStyle: TBorderStyle | TBorderStyle[];
 }>;
 type TResponsive = {
     mobile?: TCSSPropValue;
