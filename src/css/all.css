@@ -26,6 +26,10 @@
   --flex: 0 1 auto;
   flex: var(--flex);
 }
+.flex-basis {
+  --flex-basis: auto;
+  flex-basis: var(--flex-basis);
+}
 .flex-direction {
   --flex-direction: row;
   flex-direction: var(--flex-direction);
@@ -60,6 +64,10 @@
 .flex {
   --t-flex: 0 1 auto;
   flex: var(--t-flex);
+}
+.flex-basis {
+  --t-flex-basis: auto;
+  flex-basis: var(--t-flex-basis);
 }
 .flex-direction {
   --t-flex-direction: row;
@@ -96,6 +104,10 @@
 .flex {
   --d-flex: 0 1 auto;
   flex: var(--d-flex);
+}
+.flex-basis {
+  --d-flex-basis: auto;
+  flex-basis: var(--d-flex-basis);
 }
 .flex-direction {
   --d-flex-direction: row;
