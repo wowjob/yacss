@@ -1,4 +1,5 @@
 export { normalizeAnimation } from './animation'
+export { normalizeBackground } from './background'
 export { normalizeBorder } from './border'
 export { normalizeBorderWidth } from './border-width'
 export { normalizeBorderStyle } from './border-style'

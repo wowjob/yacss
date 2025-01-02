@@ -7,6 +7,7 @@ export type { TDirectionalUnit } from './directional-unit'
 export type { TGlobalKeyword } from './global-keyword'
 
 export type { TAnimation } from './animation'
+export type { TBackground } from './background'
 export type { TBorder, TBorderStyle } from './border'
 export type { TBorderWidth } from './border-width'
 export type { TDisplay } from './display'

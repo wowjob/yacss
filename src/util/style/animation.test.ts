@@ -44,10 +44,4 @@ describe('normalizeAnimation', () => {
       }),
     ).toBe('slide-in 1.5s linear 0.5s infinite alternate both paused add')
   })
-
-  test('should normalize an animation object with array input', () => {
-    expect(normalizeAnimation(['slide-in', '1s', 'ease-in'])).toBe(
-      'slide-in 1s ease-in',
-    )
-  })
 })

@@ -2,6 +2,10 @@
   --animation: none;
   animation: var(--animation);
 }
+.background {
+  --background: transparent;
+  background: var(--background);
+}
 .margin {
   --margin: 0;
   margin: var(--margin);
@@ -56,6 +60,10 @@
 .animation {
   --t-animation: none;
   animation: var(--t-animation);
+}
+.background {
+  --t-background: transparent;
+  background: var(--t-background);
 }
 .margin {
   --t-margin: 0;
@@ -112,6 +120,10 @@
 .animation {
   --d-animation: none;
   animation: var(--d-animation);
+}
+.background {
+  --d-background: transparent;
+  background: var(--d-background);
 }
 .margin {
   --d-margin: 0;
