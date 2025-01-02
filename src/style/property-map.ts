@@ -1,4 +1,5 @@
 import {
+  normalizeAnimation,
   normalizeBorder,
   normalizeBorderStyle,
   normalizeBorderWidth,
@@ -26,10 +27,12 @@ import type {
   TFlexGrow,
   TFlexShrink,
   TFlexWrap,
+  TAnimation,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
 export type TCSSPropValue = Partial<{
+  animation: TAnimation
   border: TBorder
   borderWidth: TBorderWidth
   borderStyle: TBorderStyle | TBorderStyle[]
@@ -64,6 +67,10 @@ export const propertyMap: Record<
     normalize: (value: any) => string | number
   }
 > = {
+  animation: {
+    className: { dev: 'animation', prod: 'a' },
+    normalize: normalizeAnimation,
+  },
   margin: {
     className: { dev: 'margin', prod: 'm' },
     normalize: normalizeMargin,

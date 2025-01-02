@@ -1,3 +1,7 @@
+.animation {
+  --animation: none;
+  animation: var(--animation);
+}
 .margin {
   --margin: 0;
   margin: var(--margin);
@@ -49,6 +53,10 @@
 
 
 @media screen and (min-width: 48rem) {
+.animation {
+  --t-animation: none;
+  animation: var(--t-animation);
+}
 .margin {
   --t-margin: 0;
   margin: var(--t-margin);
@@ -101,6 +109,10 @@
 }
 
 @media screen and (min-width: 80rem) {
+.animation {
+  --d-animation: none;
+  animation: var(--d-animation);
+}
 .margin {
   --d-margin: 0;
   margin: var(--d-margin);
