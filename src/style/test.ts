@@ -53,6 +53,11 @@ console.log(
         timingFunction: 'easeInEaseOut',
         delay: 1000,
       },
+      borderBlockStart: {
+        startColor: 'red',
+        startStyle: 'dashed',
+        startWidth: 2,
+      },
     },
     className: 'once-upon a-time padding',
   }),
