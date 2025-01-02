@@ -12,11 +12,11 @@
 }
 .border-width {
   --border-width: 0;
-  borderWidth: var(--border-width);
+  border-width: var(--border-width);
 }
 .border-style {
   --border-style: none;
-  borderStyle: var(--border-style);
+  border-style: var(--border-style);
 }
 .display {
   --display: inline;
@@ -25,6 +25,10 @@
 .flex {
   --flex: 0 1 auto;
   flex: var(--flex);
+}
+.flex-direction {
+  --flex-direction: row;
+  flex-direction: var(--flex-direction);
 }
 
 
@@ -43,11 +47,11 @@
 }
 .border-width {
   --t-border-width: 0;
-  borderWidth: var(--t-border-width);
+  border-width: var(--t-border-width);
 }
 .border-style {
   --t-border-style: none;
-  borderStyle: var(--t-border-style);
+  border-style: var(--t-border-style);
 }
 .display {
   --t-display: inline;
@@ -56,6 +60,10 @@
 .flex {
   --t-flex: 0 1 auto;
   flex: var(--t-flex);
+}
+.flex-direction {
+  --t-flex-direction: row;
+  flex-direction: var(--t-flex-direction);
 }
 
 }
@@ -75,11 +83,11 @@
 }
 .border-width {
   --d-border-width: 0;
-  borderWidth: var(--d-border-width);
+  border-width: var(--d-border-width);
 }
 .border-style {
   --d-border-style: none;
-  borderStyle: var(--d-border-style);
+  border-style: var(--d-border-style);
 }
 .display {
   --d-display: inline;
@@ -88,6 +96,10 @@
 .flex {
   --d-flex: 0 1 auto;
   flex: var(--d-flex);
+}
+.flex-direction {
+  --d-flex-direction: row;
+  flex-direction: var(--d-flex-direction);
 }
 
 }

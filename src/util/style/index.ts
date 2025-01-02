@@ -1,6 +1,8 @@
 export { normalizeBorder } from './border'
 export { normalizeBorderWidth } from './border-width'
+export { normalizeBorderStyle } from './border-style'
 export { normalizeDisplay } from './display'
 export { normalizeFlex } from './flex'
+export { normalizeFlexDirection } from './flex-direction'
 export { normalizeMargin } from './margin'
 export { normalizePadding } from './padding'
