@@ -5,6 +5,7 @@ export {
   normalizeAnimation,
   normalizeBackground,
   normalizeBorder,
+  normalizeBorderImage,
   normalizeBorderWidth,
   normalizeBorderStyle,
   normalizeDisplay,
