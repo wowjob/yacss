@@ -18,6 +18,10 @@
   --border-style: none;
   borderStyle: var(--border-style);
 }
+.display {
+  --display: inline;
+  display: var(--display);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -41,11 +45,15 @@
   --t-border-style: none;
   borderStyle: var(--t-border-style);
 }
+.display {
+  --t-display: inline;
+  display: var(--t-display);
+}
 
 }
 
 @media screen and (min-width: 80rem) {
- .margin {
+.margin {
   --d-margin: 0;
   margin: var(--d-margin);
 }
@@ -64,6 +72,10 @@
 .border-style {
   --d-border-style: none;
   borderStyle: var(--d-border-style);
+}
+.display {
+  --d-display: inline;
+  display: var(--d-display);
 }
 
 }
