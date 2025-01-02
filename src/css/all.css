@@ -18,6 +18,10 @@
   --border: medium none currentcolor;
   border: var(--border);
 }
+.border-block-start {
+  --border-block-start: none;
+  border-block-start: var(--border-block-start);
+}
 .border-image {
   --border-image: undefined;
   border-image: var(--border-image);
@@ -80,6 +84,10 @@
 .border {
   --t-border: medium none currentcolor;
   border: var(--t-border);
+}
+.border-block-start {
+  --t-border-block-start: none;
+  border-block-start: var(--t-border-block-start);
 }
 .border-image {
   --t-border-image: undefined;
@@ -144,6 +152,10 @@
 .border {
   --d-border: medium none currentcolor;
   border: var(--d-border);
+}
+.border-block-start {
+  --d-border-block-start: none;
+  border-block-start: var(--d-border-block-start);
 }
 .border-image {
   --d-border-image: undefined;
