@@ -22,6 +22,10 @@
   --border-block-start: none;
   border-block-start: var(--border-block-start);
 }
+.border-block-end {
+  --border-block-end: none;
+  border-block-end: var(--border-block-end);
+}
 .border-image {
   --border-image: undefined;
   border-image: var(--border-image);
@@ -88,6 +92,10 @@
 .border-block-start {
   --t-border-block-start: none;
   border-block-start: var(--t-border-block-start);
+}
+.border-block-end {
+  --t-border-block-end: none;
+  border-block-end: var(--t-border-block-end);
 }
 .border-image {
   --t-border-image: undefined;
@@ -156,6 +164,10 @@
 .border-block-start {
   --d-border-block-start: none;
   border-block-start: var(--d-border-block-start);
+}
+.border-block-end {
+  --d-border-block-end: none;
+  border-block-end: var(--d-border-block-end);
 }
 .border-image {
   --d-border-image: undefined;

@@ -1,11 +1,11 @@
 import type { TBorderStyle } from './border'
 import type { TGlobalKeyword } from './global-keyword'
 
-export type TBorderBlockStart =
+export type TBorderBlockEnd =
   | string
   | {
-      startWidth?: string | number
-      startStyle?: TBorderStyle
-      startColor?: string
+      endWidth?: string | number
+      endStyle?: TBorderStyle
+      endColor?: string
     }
   | TGlobalKeyword
