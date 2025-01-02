@@ -1,5 +1,5 @@
 {
-  "version": "0.4.2",
+  "version": "0.4.3",
   "name": "@wowjob/yacss",
   "author": "Marian Zburlea",
   "license": "MIT",
@@ -53,6 +53,7 @@
       "require": "./dist/index.js"
     },
     "./all.css": "./dist/css/all.css",
+    "./all.min.css": "./dist/css/all.min.css",
     "./reset.css": "./dist/css/reset.css"
   },
   "publishConfig": {

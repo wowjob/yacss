@@ -1,14 +1,57 @@
-.padding {
-  --padding: 0;
-  padding: var(--padding);
-}
-
 .margin {
-  --margin: 0;
+  --margin: initial;
   margin: var(--margin);
 }
-
+.padding {
+  --padding: initial;
+  padding: var(--padding);
+}
 .border {
-  --border: none;
+  --border: initial;
   border: var(--border);
+}
+.border-width {
+  --border-width: initial;
+  borderWidth: var(--border-width);
+}
+
+
+@media screen and (min-width: 48rem) {
+.margin {
+  --t-margin: initial;
+  margin: var(--t-margin);
+}
+.padding {
+  --t-padding: initial;
+  padding: var(--t-padding);
+}
+.border {
+  --t-border: initial;
+  border: var(--t-border);
+}
+.border-width {
+  --t-border-width: initial;
+  borderWidth: var(--t-border-width);
+}
+
+}
+
+@media screen and (min-width: 80rem) {
+ .margin {
+  --d-margin: initial;
+  margin: var(--d-margin);
+}
+.padding {
+  --d-padding: initial;
+  padding: var(--d-padding);
+}
+.border {
+  --d-border: initial;
+  border: var(--d-border);
+}
+.border-width {
+  --d-border-width: initial;
+  borderWidth: var(--d-border-width);
+}
+
 }

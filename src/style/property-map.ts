@@ -29,7 +29,10 @@ export type TStyle = {
 // Define a mapping of keys to their respective normalizer functions
 export const propertyMap: Record<
   keyof TCSSPropValue,
-  { className: Record<TEnv, string>; normalize: (value: any) => string }
+  {
+    className: Record<TEnv, string>
+    normalize: (value: any) => string | number
+  }
 > = {
   margin: {
     className: { dev: 'margin', prod: 'm' },
