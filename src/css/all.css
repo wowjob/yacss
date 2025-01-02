@@ -42,6 +42,10 @@
   --flex-shrink: 1;
   flex-shrink: var(--flex-shrink);
 }
+.flex-wrap {
+  --flex-wrap: nowrap;
+  flex-wrap: var(--flex-wrap);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -88,6 +92,10 @@
 .flex-shrink {
   --t-flex-shrink: 1;
   flex-shrink: var(--t-flex-shrink);
+}
+.flex-wrap {
+  --t-flex-wrap: nowrap;
+  flex-wrap: var(--t-flex-wrap);
 }
 
 }
@@ -136,6 +144,10 @@
 .flex-shrink {
   --d-flex-shrink: 1;
   flex-shrink: var(--d-flex-shrink);
+}
+.flex-wrap {
+  --d-flex-wrap: nowrap;
+  flex-wrap: var(--d-flex-wrap);
 }
 
 }
