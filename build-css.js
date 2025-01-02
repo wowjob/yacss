@@ -35,7 +35,7 @@ const buildCss = () => {
   }
 
   for (const env of ['dev', 'prod']) {
-    for (const property in propertyMap) {
+    for (const property of propertyList) {
       finalCSSMap[env].push({
         cssPropertyName: property,
         className: propertyMap[property].className[env],

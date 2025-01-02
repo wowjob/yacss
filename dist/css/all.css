@@ -14,6 +14,10 @@
   --border-width: initial;
   borderWidth: var(--border-width);
 }
+.border-style {
+  --border-style: initial;
+  borderStyle: var(--border-style);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -32,6 +36,10 @@
 .border-width {
   --t-border-width: initial;
   borderWidth: var(--t-border-width);
+}
+.border-style {
+  --t-border-style: initial;
+  borderStyle: var(--t-border-style);
 }
 
 }
@@ -52,6 +60,10 @@
 .border-width {
   --d-border-width: initial;
   borderWidth: var(--d-border-width);
+}
+.border-style {
+  --d-border-style: initial;
+  borderStyle: var(--d-border-style);
 }
 
 }
