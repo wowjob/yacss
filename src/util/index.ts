@@ -7,6 +7,7 @@ export {
   normalizeBorderStyle,
   normalizeDisplay,
   normalizeFlex,
+  normalizeFlexBasis,
   normalizeFlexDirection,
   normalizeMargin,
   normalizePadding,

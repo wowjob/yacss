@@ -4,6 +4,7 @@ import {
   normalizeBorderWidth,
   normalizeDisplay,
   normalizeFlex,
+  normalizeFlexBasis,
   normalizeFlexDirection,
   normalizeMargin,
   normalizePadding,
@@ -18,6 +19,7 @@ import type {
   TMargin,
   TPadding,
   TBorderStyle,
+  TFlexBasis,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -27,6 +29,7 @@ export type TCSSPropValue = Partial<{
   borderStyle: TBorderStyle | TBorderStyle[]
   display: TDisplay
   flex: TFlex
+  flexBasis: TFlexBasis
   flexDirection: TFlexDirection
   margin: TMargin
   padding: TPadding
@@ -79,6 +82,10 @@ export const propertyMap: Record<
   flex: {
     className: { dev: 'flex', prod: 'fx' },
     normalize: normalizeFlex,
+  },
+  flexBasis: {
+    className: { dev: 'flex-basis', prod: 'fb' },
+    normalize: normalizeFlexBasis,
   },
   flexDirection: {
     className: { dev: 'flex-direction', prod: 'fd' },
