@@ -1,2 +1,2 @@
 export { getStyle } from './style';
-export { isPx } from './util';
+export { convertToRem, isPx } from './util';

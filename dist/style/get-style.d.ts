@@ -1,6 +1,5 @@
-export declare const getStyle: () => {
+import type { TStyle } from './property-map';
+export declare const getStyle: ({ desktop, mobile, tablet, className, env, }: TStyle) => {
     className: string;
-    style: {
-        '--padding': string;
-    };
+    style: any;
 };
