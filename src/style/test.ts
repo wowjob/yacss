@@ -28,14 +28,35 @@ console.log(
     mobile: {
       margin: ['revert', 8, 'auto', 'revert'],
       padding: ['8px', undefined, '16px'],
-      // border: {
-      //   width: 8,
-      //   style: 'dashed',
-      // },
       border: '1px solid blue',
       borderWidth: [20, 3, 10, 2],
     },
+    tablet: {
+      padding: 24,
+    },
+    desktop: {
+      padding: 32,
+    },
     className: 'once-upon a-time padding',
+  }),
+)
+
+console.log(
+  getStyle({
+    mobile: {
+      margin: ['revert', 8, 'auto', 'revert'],
+      padding: ['8px', undefined, '16px'],
+      border: '1px solid blue',
+      borderWidth: [20, 3, 10, 2],
+    },
+    tablet: {
+      padding: 24,
+    },
+    desktop: {
+      padding: 32,
+    },
+    className: 'once-upon a-time',
+    env: 'prod',
   }),
 )
 
