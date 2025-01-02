@@ -11,6 +11,7 @@ export {
   normalizeFlexDirection,
   normalizeFlexGrow,
   normalizeFlexShrink,
+  normalizeFlexWrap,
   normalizeMargin,
   normalizePadding,
 } from './style'
