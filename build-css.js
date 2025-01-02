@@ -1,6 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { propertyMap } from './src/style/property-map'
+import { cssDefaultPropertyValueMap } from './src/style/default-value-map'
 
 const styleFileList = [
   'src/css/reset.css',
@@ -52,15 +53,18 @@ const buildCss = () => {
     for (const screenType of ['mobile', 'tablet', 'desktop']) {
       for (const property of finalCSSMap[env]) {
         const varName = `--${property.responsive[screenType]}`
-        // console.log(screenType, env, property, varName)
+        const defaultValue =
+          cssDefaultPropertyValueMap[property.cssPropertyName]
+
+        console.log(property)
         finalCSS[env][screenType] +=
           env === 'dev'
             ? `.${property.className} {
-  ${varName}: initial;
+  ${varName}: ${defaultValue};
   ${property.cssPropertyName}: var(${varName});
 }
 `
-            : `.${property.className}{${varName}:initial;${property.cssPropertyName}:var(${varName});}`
+            : `.${property.className}{${varName}:${defaultValue};${property.cssPropertyName}:var(${varName});}`
       }
     }
 
