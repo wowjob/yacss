@@ -1,44 +1,44 @@
 .margin {
-  --margin: initial;
+  --margin: 0;
   margin: var(--margin);
 }
 .padding {
-  --padding: initial;
+  --padding: 0;
   padding: var(--padding);
 }
 .border {
-  --border: initial;
+  --border: medium none currentcolor;
   border: var(--border);
 }
 .border-width {
-  --border-width: initial;
+  --border-width: 0;
   borderWidth: var(--border-width);
 }
 .border-style {
-  --border-style: initial;
+  --border-style: none;
   borderStyle: var(--border-style);
 }
 
 
 @media screen and (min-width: 48rem) {
 .margin {
-  --t-margin: initial;
+  --t-margin: 0;
   margin: var(--t-margin);
 }
 .padding {
-  --t-padding: initial;
+  --t-padding: 0;
   padding: var(--t-padding);
 }
 .border {
-  --t-border: initial;
+  --t-border: medium none currentcolor;
   border: var(--t-border);
 }
 .border-width {
-  --t-border-width: initial;
+  --t-border-width: 0;
   borderWidth: var(--t-border-width);
 }
 .border-style {
-  --t-border-style: initial;
+  --t-border-style: none;
   borderStyle: var(--t-border-style);
 }
 
@@ -46,23 +46,23 @@
 
 @media screen and (min-width: 80rem) {
  .margin {
-  --d-margin: initial;
+  --d-margin: 0;
   margin: var(--d-margin);
 }
 .padding {
-  --d-padding: initial;
+  --d-padding: 0;
   padding: var(--d-padding);
 }
 .border {
-  --d-border: initial;
+  --d-border: medium none currentcolor;
   border: var(--d-border);
 }
 .border-width {
-  --d-border-width: initial;
+  --d-border-width: 0;
   borderWidth: var(--d-border-width);
 }
 .border-style {
-  --d-border-style: initial;
+  --d-border-style: none;
   borderStyle: var(--d-border-style);
 }
 
