@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { propertyMap } from './src/style/property-map'
 import { cssDefaultPropertyValueMap } from './src/style/default-value-map'
+import { camelToKebabCase } from './src/util'
 
 const styleFileList = [
   'src/css/reset.css',
@@ -60,10 +61,10 @@ const buildCss = () => {
           env === 'dev'
             ? `.${property.className} {
   ${varName}: ${defaultValue};
-  ${property.cssPropertyName}: var(${varName});
+  ${camelToKebabCase(property.cssPropertyName)}: var(${varName});
 }
 `
-            : `.${property.className}{${varName}:${defaultValue};${property.cssPropertyName}:var(${varName});}`
+            : `.${property.className}{${varName}:${defaultValue};${camelToKebabCase(property.cssPropertyName)}:var(${varName});}`
       }
     }
 

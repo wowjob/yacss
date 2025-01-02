@@ -39,6 +39,9 @@ console.log(
     desktop: {
       padding: 32,
       display: 'grid',
+      borderStyle: 'dashed',
+      flex: 'none',
+      flexDirection: 'column',
     },
     className: 'once-upon a-time padding',
   }),
