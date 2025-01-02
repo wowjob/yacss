@@ -56,7 +56,6 @@ const buildCss = () => {
         const defaultValue =
           cssDefaultPropertyValueMap[property.cssPropertyName]
 
-        console.log(property)
         finalCSS[env][screenType] +=
           env === 'dev'
             ? `.${property.className} {
@@ -79,14 +78,12 @@ ${finalCSS[env].tablet}
 }
 
 @media screen and (min-width: 80rem) {
- ${finalCSS[env].desktop}
+${finalCSS[env].desktop}
 }`
         : `${finalCSS[env].mobile}@media screen and (min-width: 48rem) {${finalCSS[env].tablet}}@media screen and (min-width: 80rem) {${finalCSS[env].desktop}}`
 
     fs.writeFileSync(filePath, fileContent, 'utf8')
   }
-
-  // console.log(JSON.stringify(finalCSS, null, 2))
 
   // copy css files
   for (const styleFile of styleFileList) {

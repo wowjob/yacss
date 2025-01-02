@@ -1,10 +1,17 @@
 import {
-  normalizeMargin,
-  normalizePadding,
   normalizeBorder,
   normalizeBorderWidth,
+  normalizeDisplay,
+  normalizeMargin,
+  normalizePadding,
 } from '../util'
-import type { TBorder, TBorderWidth, TMargin, TPadding } from '../type'
+import type {
+  TBorder,
+  TBorderWidth,
+  TDisplay,
+  TMargin,
+  TPadding,
+} from '../type'
 import { normalizeBorderStyle } from '../util/style/border-style'
 import type { TBorderStyle } from '../type/border'
 
@@ -15,6 +22,7 @@ export type TCSSPropValue = Partial<{
   border: TBorder
   borderWidth: TBorderWidth
   borderStyle: TBorderStyle | TBorderStyle[]
+  display: TDisplay
 }>
 
 type TResponsive = {
@@ -56,5 +64,9 @@ export const propertyMap: Record<
   borderStyle: {
     className: { dev: 'border-style', prod: 'bs' },
     normalize: normalizeBorderStyle,
+  },
+  display: {
+    className: { dev: 'display', prod: 'd' },
+    normalize: normalizeDisplay,
   },
 } as const

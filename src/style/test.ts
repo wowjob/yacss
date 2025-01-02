@@ -30,36 +30,16 @@ console.log(
       padding: ['8px', undefined, '16px'],
       border: '1px solid blue',
       borderWidth: [20, 3, 10, 2],
+      display: 'flex',
     },
     tablet: {
       padding: 24,
+      display: 'inline-flex',
     },
     desktop: {
       padding: 32,
+      display: 'grid',
     },
     className: 'once-upon a-time padding',
   }),
 )
-
-console.log(
-  getStyle({
-    mobile: {
-      margin: ['revert', 8, 'auto', 'revert'],
-      padding: ['8px', undefined, '16px'],
-      border: '1px solid blue',
-      borderWidth: [20, 3, 10, 2],
-      borderStyle: 'solid',
-    },
-    tablet: {
-      padding: 24,
-      borderStyle: ['solid', 'dotted'],
-    },
-    desktop: {
-      padding: 32,
-    },
-    className: 'once-upon a-time',
-    env: 'prod',
-  }),
-)
-
-console.log(normalizePadding(undefined as any))
