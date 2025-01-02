@@ -1,6 +1,7 @@
 export { normalizeAnimation } from './animation'
 export { normalizeBackground } from './background'
 export { normalizeBorder } from './border'
+export { normalizeBorderImage } from './border-image'
 export { normalizeBorderWidth } from './border-width'
 export { normalizeBorderStyle } from './border-style'
 export { normalizeDisplay } from './display'
