@@ -54,17 +54,27 @@ const buildCss = () => {
     for (const screenType of ['mobile', 'tablet', 'desktop']) {
       for (const property of finalCSSMap[env]) {
         const varName = `--${property.responsive[screenType]}`
+        const varNameM = `--${property.responsive.mobile}`
+        const varNameT = `--${property.responsive.tablet}`
         const defaultValue =
-          cssDefaultPropertyValueMap[property.cssPropertyName]
+          screenType === 'mobile'
+            ? cssDefaultPropertyValueMap[property.cssPropertyName]
+            : `var(${screenType === 'tablet' ? varNameM : varNameT})`
 
         finalCSS[env][screenType] +=
           env === 'dev'
-            ? `${screenType === 'mobile' ? '' : `.${screenType}`}.${property.className} {
+            ? `${screenType === 'mobile' ? '' : `.${screenType}`}.${
+                property.className
+              } {
   ${varName}: ${defaultValue};
   ${camelToKebabCase(property.cssPropertyName)}: var(${varName});
 }
 `
-            : `.${property.className}{${varName}:${defaultValue};${camelToKebabCase(property.cssPropertyName)}:var(${varName});}`
+            : `.${
+                property.className
+              }{${varName}:${defaultValue};${camelToKebabCase(
+                property.cssPropertyName
+              )}:var(${varName});}`
       }
     }
 
