@@ -6,6 +6,10 @@
   --background: transparent;
   background: var(--background);
 }
+.block-size {
+  --block-size: auto;
+  block-size: var(--block-size);
+}
 .margin {
   --margin: 0;
   margin: var(--margin);
@@ -94,6 +98,10 @@
   --border-start-end-radius: 0;
   border-start-end-radius: var(--border-start-end-radius);
 }
+.border-start-start-radius {
+  --border-start-start-radius: 0;
+  border-start-start-radius: var(--border-start-start-radius);
+}
 .border-top {
   --border-top: undefined;
   border-top: var(--border-top);
@@ -144,6 +152,10 @@
 .tablet.background {
   --t-background: transparent;
   background: var(--t-background);
+}
+.tablet.block-size {
+  --t-block-size: auto;
+  block-size: var(--t-block-size);
 }
 .tablet.margin {
   --t-margin: 0;
@@ -233,6 +245,10 @@
   --t-border-start-end-radius: 0;
   border-start-end-radius: var(--t-border-start-end-radius);
 }
+.tablet.border-start-start-radius {
+  --t-border-start-start-radius: 0;
+  border-start-start-radius: var(--t-border-start-start-radius);
+}
 .tablet.border-top {
   --t-border-top: undefined;
   border-top: var(--t-border-top);
@@ -284,6 +300,10 @@
 .desktop.background {
   --d-background: transparent;
   background: var(--d-background);
+}
+.desktop.block-size {
+  --d-block-size: auto;
+  block-size: var(--d-block-size);
 }
 .desktop.margin {
   --d-margin: 0;
@@ -372,6 +392,10 @@
 .desktop.border-start-end-radius {
   --d-border-start-end-radius: 0;
   border-start-end-radius: var(--d-border-start-end-radius);
+}
+.desktop.border-start-start-radius {
+  --d-border-start-start-radius: 0;
+  border-start-start-radius: var(--d-border-start-start-radius);
 }
 .desktop.border-top {
   --d-border-top: undefined;

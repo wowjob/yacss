@@ -1,6 +1,7 @@
 import {
   normalizeAnimation,
   normalizeBackground,
+  normalizeBlockSize,
   normalizeBorder,
   normalizeBorderBlock,
   normalizeBorderBlockEnd,
@@ -69,12 +70,16 @@ import type {
   TBorderLeft,
   TBorderRight,
   TBorderStartEndRadius,
+  TBorderStartStartRadius,
+  TBlockSize,
 } from '../type'
+import { normalizeBorderStartStartRadius } from '../util/style'
 
 export type TEnv = 'dev' | 'prod'
 export type TCSSPropValue = Partial<{
   animation: TAnimation
   background: TBackground
+  blockSize: TBlockSize
   border: TBorder
   borderBlock: TBorderBlock
   borderBlockStart: TBorderBlockStart
@@ -95,6 +100,7 @@ export type TCSSPropValue = Partial<{
   borderWidth: TBorderWidth
   borderStyle: TBorderStyle | TBorderStyle[]
   borderStartEndRadius: TBorderStartEndRadius
+  borderStartStartRadius: TBorderStartStartRadius
   borderTop: TBorderTop
   borderTopLeftRadius: TBorderTopLeftRadius
   borderTopRightRadius: TBorderTopRightRadius
@@ -136,6 +142,10 @@ export const propertyMap: Record<
   background: {
     className: { dev: 'background', prod: 'bg' },
     normalize: normalizeBackground,
+  },
+  blockSize: {
+    className: { dev: 'block-size', prod: 'bz' },
+    normalize: normalizeBlockSize,
   },
   margin: {
     className: { dev: 'margin', prod: 'm' },
@@ -225,7 +235,10 @@ export const propertyMap: Record<
     className: { dev: 'border-start-end-radius', prod: 'bser' },
     normalize: normalizeBorderStartEndRadius,
   },
-
+  borderStartStartRadius: {
+    className: { dev: 'border-start-start-radius', prod: 'bssr' },
+    normalize: normalizeBorderStartStartRadius,
+  },
   borderTop: {
     className: { dev: 'border-top', prod: 'bt' },
     normalize: normalizeBorderTop,

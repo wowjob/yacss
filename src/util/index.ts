@@ -4,6 +4,7 @@ export { isPx } from './is-px'
 export {
   normalizeAnimation,
   normalizeBackground,
+  normalizeBlockSize,
   normalizeBorder,
   normalizeBorderBlock,
   normalizeBorderBlockStart,
