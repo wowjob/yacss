@@ -34,6 +34,10 @@
   --border-image: undefined;
   border-image: var(--border-image);
 }
+.border-inline-start {
+  --border-inline-start: undefined;
+  border-inline-start: var(--border-inline-start);
+}
 .border-width {
   --border-width: 0;
   border-width: var(--border-width);
@@ -108,6 +112,10 @@
 .border-image {
   --t-border-image: undefined;
   border-image: var(--t-border-image);
+}
+.border-inline-start {
+  --t-border-inline-start: undefined;
+  border-inline-start: var(--t-border-inline-start);
 }
 .border-width {
   --t-border-width: 0;
@@ -184,6 +192,10 @@
 .border-image {
   --d-border-image: undefined;
   border-image: var(--d-border-image);
+}
+.border-inline-start {
+  --d-border-inline-start: undefined;
+  border-inline-start: var(--d-border-inline-start);
 }
 .border-width {
   --d-border-width: 0;

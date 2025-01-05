@@ -6,6 +6,7 @@ import {
   normalizeBorderBlockEnd,
   normalizeBorderBlockStart,
   normalizeBorderImage,
+  normalizeBorderInlineStart,
   normalizeBorderStyle,
   normalizeBorderWidth,
   normalizeDisplay,
@@ -38,6 +39,7 @@ import type {
   TBorderBlockStart,
   TBorderBlockEnd,
   TBorderBlock,
+  TBorderInlineStart,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -49,6 +51,7 @@ export type TCSSPropValue = Partial<{
   borderBlockStart: TBorderBlockStart
   borderBlockEnd: TBorderBlockEnd
   borderImage: TBorderImage
+  borderInlineStart: TBorderInlineStart
   borderWidth: TBorderWidth
   borderStyle: TBorderStyle | TBorderStyle[]
   display: TDisplay
@@ -118,6 +121,11 @@ export const propertyMap: Record<
     className: { dev: 'border-image', prod: 'bi' },
     normalize: normalizeBorderImage,
   },
+  borderInlineStart: {
+    className: { dev: 'border-inline-start', prod: 'bis' },
+    normalize: normalizeBorderInlineStart,
+  },
+
   borderWidth: {
     className: { dev: 'border-width', prod: 'bw' },
     normalize: normalizeBorderWidth,

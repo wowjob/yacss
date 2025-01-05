@@ -9,6 +9,7 @@ export {
   normalizeBorderBlockStart,
   normalizeBorderBlockEnd,
   normalizeBorderImage,
+  normalizeBorderInlineStart,
   normalizeBorderWidth,
   normalizeBorderStyle,
   normalizeDisplay,
