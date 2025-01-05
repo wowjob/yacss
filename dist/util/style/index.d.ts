@@ -61,6 +61,7 @@ export { normalizeContainIntrinsicHeight } from './contain-intrinsic-height';
 export { normalizeContainIntrinsicInlineSize } from './contain-intrinsic-inline-size';
 export { normalizeContainIntrinsicSize } from './contain-intrinsic-size';
 export { normalizeContainIntrinsicWidth } from './contain-intrinsic-width';
+export { normalizeContainer } from './container';
 export { normalizeDisplay } from './display';
 export { normalizeFlex } from './flex';
 export { normalizeFlexBasis } from './flex-basis';
