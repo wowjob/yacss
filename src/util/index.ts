@@ -12,6 +12,7 @@ export {
   normalizeBackdropFilter,
   normalizeBackfaceVisibility,
   normalizeBackground,
+  normalizeBackgroundBlendMode,
   normalizeBlockSize,
   normalizeBorder,
   normalizeBorderBlock,
