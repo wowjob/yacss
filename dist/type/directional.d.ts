@@ -1,9 +1,9 @@
 import type { TDirectionalUnit } from './directional-unit';
 export type TDirectionalBase<T> = T | number | TDirectionalUnit | [
-    (T | number | string | TDirectionalUnit)?,
-    (T | number | string | TDirectionalUnit)?,
-    (T | number | string | TDirectionalUnit)?,
-    (T | number | string | TDirectionalUnit)?
+    (T | number | TDirectionalUnit | (string & {}))?,
+    (T | number | TDirectionalUnit | (string & {}))?,
+    (T | number | TDirectionalUnit | (string & {}))?,
+    (T | number | TDirectionalUnit | (string & {}))?
 ];
 export type TDirectionalSimple<T> = TDirectionalBase<T> | (string & {});
 export type TDirectional<T> = TDirectionalBase<T> | {
