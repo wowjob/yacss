@@ -186,6 +186,10 @@
   --caret-color: auto;
   caret-color: var(--caret-color);
 }
+.clear {
+  --clear: none;
+  clear: var(--clear);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -404,6 +408,10 @@
 .tablet.caret-color {
   --t-caret-color: auto;
   caret-color: var(--t-caret-color);
+}
+.tablet.clear {
+  --t-clear: none;
+  clear: var(--t-clear);
 }
 .tablet.display {
   --t-display: inline;
@@ -624,6 +632,10 @@
 .desktop.caret-color {
   --d-caret-color: auto;
   caret-color: var(--d-caret-color);
+}
+.desktop.clear {
+  --d-clear: none;
+  clear: var(--d-clear);
 }
 .desktop.display {
   --d-display: inline;
