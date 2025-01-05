@@ -62,6 +62,10 @@
   --border-inline: undefined;
   border-inline: var(--border-inline);
 }
+.border-left {
+  --border-left: undefined;
+  border-left: var(--border-left);
+}
 .border-inline-start {
   --border-inline-start: undefined;
   border-inline-start: var(--border-inline-start);
@@ -73,6 +77,10 @@
 .border-radius {
   --border-radius: undefined;
   border-radius: var(--border-radius);
+}
+.border-right {
+  --border-right: undefined;
+  border-right: var(--border-right);
 }
 .border-width {
   --border-width: 0;
@@ -189,6 +197,10 @@
   --t-border-inline: undefined;
   border-inline: var(--t-border-inline);
 }
+.tablet.border-left {
+  --t-border-left: undefined;
+  border-left: var(--t-border-left);
+}
 .tablet.border-inline-start {
   --t-border-inline-start: undefined;
   border-inline-start: var(--t-border-inline-start);
@@ -200,6 +212,10 @@
 .tablet.border-radius {
   --t-border-radius: undefined;
   border-radius: var(--t-border-radius);
+}
+.tablet.border-right {
+  --t-border-right: undefined;
+  border-right: var(--t-border-right);
 }
 .tablet.border-width {
   --t-border-width: 0;
@@ -317,6 +333,10 @@
   --d-border-inline: undefined;
   border-inline: var(--d-border-inline);
 }
+.desktop.border-left {
+  --d-border-left: undefined;
+  border-left: var(--d-border-left);
+}
 .desktop.border-inline-start {
   --d-border-inline-start: undefined;
   border-inline-start: var(--d-border-inline-start);
@@ -328,6 +348,10 @@
 .desktop.border-radius {
   --d-border-radius: undefined;
   border-radius: var(--d-border-radius);
+}
+.desktop.border-right {
+  --d-border-right: undefined;
+  border-right: var(--d-border-right);
 }
 .desktop.border-width {
   --d-border-width: 0;

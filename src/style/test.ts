@@ -54,6 +54,11 @@ console.log(
         style: 'double',
         width: 18,
       },
+      borderRight: {
+        color: 'brown',
+        style: 'double',
+        width: 2,
+      },
     },
     className: 'once-upon a-time padding',
     env: 'prod',
