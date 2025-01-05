@@ -170,6 +170,10 @@
   --break-after: auto;
   break-after: var(--break-after);
 }
+.break-before {
+  --break-before: auto;
+  break-before: var(--break-before);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -372,6 +376,10 @@
 .tablet.break-after {
   --t-break-after: auto;
   break-after: var(--t-break-after);
+}
+.tablet.break-before {
+  --t-break-before: auto;
+  break-before: var(--t-break-before);
 }
 .tablet.display {
   --t-display: inline;
@@ -576,6 +584,10 @@
 .desktop.break-after {
   --d-break-after: auto;
   break-after: var(--d-break-after);
+}
+.desktop.break-before {
+  --d-break-before: auto;
+  break-before: var(--d-break-before);
 }
 .desktop.display {
   --d-display: inline;
