@@ -206,6 +206,10 @@
   --color-interpolation: srgb;
   color-interpolation: var(--color-interpolation);
 }
+.color-interpolation-filters {
+  --color-interpolation-filters: linearrgb;
+  color-interpolation-filters: var(--color-interpolation-filters);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -444,6 +448,10 @@
 .tablet.color-interpolation {
   --t-color-interpolation: srgb;
   color-interpolation: var(--t-color-interpolation);
+}
+.tablet.color-interpolation-filters {
+  --t-color-interpolation-filters: linearrgb;
+  color-interpolation-filters: var(--t-color-interpolation-filters);
 }
 .tablet.display {
   --t-display: inline;
@@ -684,6 +692,10 @@
 .desktop.color-interpolation {
   --d-color-interpolation: srgb;
   color-interpolation: var(--d-color-interpolation);
+}
+.desktop.color-interpolation-filters {
+  --d-color-interpolation-filters: linearrgb;
+  color-interpolation-filters: var(--d-color-interpolation-filters);
 }
 .desktop.display {
   --d-display: inline;
