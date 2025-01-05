@@ -46,6 +46,7 @@ export type { TBreakInside } from './break-inside';
 export type { TCaptionSide } from './caption-side';
 export type { TCaretColor } from './caret-color';
 export type { TClear } from './clear';
+export type { TClip } from './clip';
 export type { TDisplay } from './display';
 export type { TFlex } from './flex';
 export type { TFlexBasis } from './flex-basis';

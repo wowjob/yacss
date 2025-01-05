@@ -190,6 +190,10 @@
   --clear: none;
   clear: var(--clear);
 }
+.clip {
+  --clip: auto;
+  clip: var(--clip);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -412,6 +416,10 @@
 .tablet.clear {
   --t-clear: none;
   clear: var(--t-clear);
+}
+.tablet.clip {
+  --t-clip: auto;
+  clip: var(--t-clip);
 }
 .tablet.display {
   --t-display: inline;
@@ -636,6 +644,10 @@
 .desktop.clear {
   --d-clear: none;
   clear: var(--d-clear);
+}
+.desktop.clip {
+  --d-clip: auto;
+  clip: var(--d-clip);
 }
 .desktop.display {
   --d-display: inline;

@@ -44,6 +44,7 @@ import {
   normalizeCaptionSide,
   normalizeCaretColor,
   normalizeClear,
+  normalizeClip,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -111,6 +112,7 @@ import type {
   TCaptionSide,
   TCaretColor,
   TClear,
+  TClip,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -162,6 +164,7 @@ export type TCSSPropValue = Partial<{
   captionSide: TCaptionSide
   caretColor: TCaretColor
   clear: TClear
+  clip: TClip
   flex: TFlex
   flexBasis: TFlexBasis
   flexDirection: TFlexDirection
@@ -383,6 +386,10 @@ export const propertyMap: Record<
   clear: {
     className: { dev: 'clear', prod: 'clr' },
     normalize: normalizeClear,
+  },
+  clip: {
+    className: { dev: 'clip', prod: 'clp' },
+    normalize: normalizeClip,
   },
   display: {
     className: { dev: 'display', prod: 'd' },
