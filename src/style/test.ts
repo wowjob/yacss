@@ -82,6 +82,7 @@ console.log(
       caretColor: 'transparent',
       clear: 'both',
       clip: 'rect(1px, 2px, 3px, 4px)',
+      clipPath: 'border-box',
     },
     className: 'once-upon a-time padding',
     env: 'prod',

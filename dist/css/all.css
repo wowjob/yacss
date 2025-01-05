@@ -194,6 +194,10 @@
   --clip: auto;
   clip: var(--clip);
 }
+.clip-path {
+  --clip-path: none;
+  clip-path: var(--clip-path);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -420,6 +424,10 @@
 .tablet.clip {
   --t-clip: auto;
   clip: var(--t-clip);
+}
+.tablet.clip-path {
+  --t-clip-path: none;
+  clip-path: var(--t-clip-path);
 }
 .tablet.display {
   --t-display: inline;
@@ -648,6 +656,10 @@
 .desktop.clip {
   --d-clip: auto;
   clip: var(--d-clip);
+}
+.desktop.clip-path {
+  --d-clip-path: none;
+  clip-path: var(--d-clip-path);
 }
 .desktop.display {
   --d-display: inline;
