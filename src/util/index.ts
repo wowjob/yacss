@@ -62,6 +62,7 @@ export {
   normalizeContain,
   normalizeContainIntrinsicBlockSize,
   normalizeContainIntrinsicHeight,
+  normalizeContainIntrinsicInlineSize,
   //
   normalizeDisplay,
   normalizeFlex,
