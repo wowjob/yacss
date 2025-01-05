@@ -49,6 +49,7 @@ export {
   normalizeClear,
   normalizeClip,
   normalizeClipPath,
+  normalizeColor,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
