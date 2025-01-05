@@ -1,5 +1,6 @@
 import {
   normalizeAnimation,
+  normalizeAspectRatio,
   normalizeBackground,
   normalizeBlockSize,
   normalizeBorder,
@@ -19,6 +20,7 @@ import {
   normalizeBorderRadius,
   normalizeBorderRight,
   normalizeBorderStartEndRadius,
+  normalizeBorderStartStartRadius,
   normalizeBorderStyle,
   normalizeBorderTop,
   normalizeBorderTopLeftRadius,
@@ -72,12 +74,13 @@ import type {
   TBorderStartEndRadius,
   TBorderStartStartRadius,
   TBlockSize,
+  TAspectRatio,
 } from '../type'
-import { normalizeBorderStartStartRadius } from '../util/style'
 
 export type TEnv = 'dev' | 'prod'
 export type TCSSPropValue = Partial<{
   animation: TAnimation
+  aspectRatio: TAspectRatio
   background: TBackground
   blockSize: TBlockSize
   border: TBorder
@@ -138,6 +141,10 @@ export const propertyMap: Record<
   animation: {
     className: { dev: 'animation', prod: 'a' },
     normalize: normalizeAnimation,
+  },
+  aspectRatio: {
+    className: { dev: 'aspect-ratio', prod: 'ar' },
+    normalize: normalizeAspectRatio,
   },
   background: {
     className: { dev: 'background', prod: 'bg' },

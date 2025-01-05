@@ -3,6 +3,7 @@ export { camelToKebabCase } from './camel-to-kebab'
 export { isPx } from './is-px'
 export {
   normalizeAnimation,
+  normalizeAspectRatio,
   normalizeBackground,
   normalizeBlockSize,
   normalizeBorder,
@@ -24,6 +25,7 @@ export {
   normalizeBorderWidth,
   normalizeBorderStyle,
   normalizeBorderStartEndRadius,
+  normalizeBorderStartStartRadius,
   normalizeBorderTop,
   normalizeBorderTopLeftRadius,
   normalizeBorderTopRightRadius,
