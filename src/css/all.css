@@ -34,6 +34,10 @@
   --border-bottom-left-radius: 0;
   border-bottom-left-radius: var(--border-bottom-left-radius);
 }
+.border-bottom-right-radius {
+  --border-bottom-right-radius: 0;
+  border-bottom-right-radius: var(--border-bottom-right-radius);
+}
 .border-block-end {
   --border-block-end: none;
   border-block-end: var(--border-block-end);
@@ -132,6 +136,10 @@
 .tablet.border-bottom-left-radius {
   --t-border-bottom-left-radius: 0;
   border-bottom-left-radius: var(--t-border-bottom-left-radius);
+}
+.tablet.border-bottom-right-radius {
+  --t-border-bottom-right-radius: 0;
+  border-bottom-right-radius: var(--t-border-bottom-right-radius);
 }
 .tablet.border-block-end {
   --t-border-block-end: none;
@@ -232,6 +240,10 @@
 .desktop.border-bottom-left-radius {
   --d-border-bottom-left-radius: 0;
   border-bottom-left-radius: var(--d-border-bottom-left-radius);
+}
+.desktop.border-bottom-right-radius {
+  --d-border-bottom-right-radius: 0;
+  border-bottom-right-radius: var(--d-border-bottom-right-radius);
 }
 .desktop.border-block-end {
   --d-border-block-end: none;
