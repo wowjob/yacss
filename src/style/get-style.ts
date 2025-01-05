@@ -20,6 +20,10 @@ export const getStyle = ({
       continue
     }
 
+    if (key !== 'mobile') {
+      classSet.add(key)
+    }
+
     for (const cssProperty in styleData) {
       if (cssProperty in propertyMap) {
         const cssKey = cssProperty as keyof TCSSPropValue

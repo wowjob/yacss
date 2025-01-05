@@ -59,7 +59,7 @@ const buildCss = () => {
 
         finalCSS[env][screenType] +=
           env === 'dev'
-            ? `.${property.className} {
+            ? `${screenType === 'mobile' ? '' : `.${screenType}`}.${property.className} {
   ${varName}: ${defaultValue};
   ${camelToKebabCase(property.cssPropertyName)}: var(${varName});
 }
