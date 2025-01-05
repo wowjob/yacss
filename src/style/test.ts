@@ -81,6 +81,7 @@ console.log(
       captionSide: 'bottom',
       caretColor: 'transparent',
       clear: 'both',
+      clip: 'rect(1px, 2px, 3px, 4px)',
     },
     className: 'once-upon a-time padding',
     env: 'prod',

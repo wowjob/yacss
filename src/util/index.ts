@@ -47,6 +47,7 @@ export {
   normalizeCaptionSide,
   normalizeCaretColor,
   normalizeClear,
+  normalizeClip,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
