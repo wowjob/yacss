@@ -30,6 +30,10 @@
   --backdrop-filter: none;
   backdrop-filter: var(--backdrop-filter);
 }
+.backface-visibility {
+  --backface-visibility: visible;
+  backface-visibility: var(--backface-visibility);
+}
 .background {
   --background: transparent;
   background: var(--background);
@@ -204,6 +208,10 @@
 .tablet.backdrop-filter {
   --t-backdrop-filter: none;
   backdrop-filter: var(--t-backdrop-filter);
+}
+.tablet.backface-visibility {
+  --t-backface-visibility: visible;
+  backface-visibility: var(--t-backface-visibility);
 }
 .tablet.background {
   --t-background: transparent;
@@ -380,6 +388,10 @@
 .desktop.backdrop-filter {
   --d-backdrop-filter: none;
   backdrop-filter: var(--d-backdrop-filter);
+}
+.desktop.backface-visibility {
+  --d-backface-visibility: visible;
+  backface-visibility: var(--d-backface-visibility);
 }
 .desktop.background {
   --d-background: transparent;

@@ -69,6 +69,7 @@ console.log(
       alignItems: 'flex-end',
       alignSelf: 'center',
       backdropFilter: 'blur(2px)',
+      backfaceVisibility: 'hidden',
     },
     className: 'once-upon a-time padding',
     env: 'prod',
