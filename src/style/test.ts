@@ -63,6 +63,7 @@ console.log(
       borderStartStartRadius: 16,
       blockSize: 'fit-content',
       aspectRatio: 'auto',
+      appearance: 'auto',
     },
     className: 'once-upon a-time padding',
     env: 'prod',

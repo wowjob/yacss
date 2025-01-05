@@ -2,6 +2,10 @@
   --animation: none;
   animation: var(--animation);
 }
+.appearance {
+  --appearance: none;
+  appearance: var(--appearance);
+}
 .aspect-ratio {
   --aspect-ratio: auto;
   aspect-ratio: var(--aspect-ratio);
@@ -152,6 +156,10 @@
 .tablet.animation {
   --t-animation: none;
   animation: var(--t-animation);
+}
+.tablet.appearance {
+  --t-appearance: none;
+  appearance: var(--t-appearance);
 }
 .tablet.aspect-ratio {
   --t-aspect-ratio: auto;
@@ -304,6 +312,10 @@
 .desktop.animation {
   --d-animation: none;
   animation: var(--d-animation);
+}
+.desktop.appearance {
+  --d-appearance: none;
+  appearance: var(--d-appearance);
 }
 .desktop.aspect-ratio {
   --d-aspect-ratio: auto;
