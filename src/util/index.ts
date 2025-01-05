@@ -58,6 +58,7 @@ export {
   normalizeColumnGap,
   normalizeColumnRule,
   normalizeColumnSpan,
+  normalizeColumnWidth,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,

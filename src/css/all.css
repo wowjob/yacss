@@ -234,6 +234,10 @@
   --column-span: none;
   column-span: var(--column-span);
 }
+.column-width {
+  --column-width: auto;
+  column-width: var(--column-width);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -500,6 +504,10 @@
 .tablet.column-span {
   --t-column-span: var(--column-span);
   column-span: var(--t-column-span);
+}
+.tablet.column-width {
+  --t-column-width: var(--column-width);
+  column-width: var(--t-column-width);
 }
 .tablet.display {
   --t-display: var(--display);
@@ -768,6 +776,10 @@
 .desktop.column-span {
   --d-column-span: var(--t-column-span);
   column-span: var(--d-column-span);
+}
+.desktop.column-width {
+  --d-column-width: var(--t-column-width);
+  column-width: var(--d-column-width);
 }
 .desktop.display {
   --d-display: var(--t-display);
