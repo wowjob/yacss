@@ -74,6 +74,7 @@ console.log(
       backgroundClip: 'border-area',
       backgroundOrigin: 'content-box',
       boxShadow: ['2px', '2px', '2px', 'black'],
+      boxSizing: 'border-box',
     },
     className: 'once-upon a-time padding',
     env: 'prod',
