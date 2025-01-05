@@ -250,6 +250,10 @@
   --contain-intrinsic-height: auto;
   contain-intrinsic-height: var(--contain-intrinsic-height);
 }
+.contain-intrinsic-inline-size {
+  --contain-intrinsic-inline-size: auto;
+  contain-intrinsic-inline-size: var(--contain-intrinsic-inline-size);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -532,6 +536,10 @@
 .tablet.contain-intrinsic-height {
   --t-contain-intrinsic-height: var(--contain-intrinsic-height);
   contain-intrinsic-height: var(--t-contain-intrinsic-height);
+}
+.tablet.contain-intrinsic-inline-size {
+  --t-contain-intrinsic-inline-size: var(--contain-intrinsic-inline-size);
+  contain-intrinsic-inline-size: var(--t-contain-intrinsic-inline-size);
 }
 .tablet.display {
   --t-display: var(--display);
@@ -816,6 +824,10 @@
 .desktop.contain-intrinsic-height {
   --d-contain-intrinsic-height: var(--t-contain-intrinsic-height);
   contain-intrinsic-height: var(--d-contain-intrinsic-height);
+}
+.desktop.contain-intrinsic-inline-size {
+  --d-contain-intrinsic-inline-size: var(--t-contain-intrinsic-inline-size);
+  contain-intrinsic-inline-size: var(--d-contain-intrinsic-inline-size);
 }
 .desktop.display {
   --d-display: var(--t-display);
