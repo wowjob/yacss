@@ -70,6 +70,7 @@ console.log(
         style: 'dashed',
         width: 24,
       },
+      columnSpan: 'all',
     },
     className: 'once-upon a-time padding',
     env: 'prod',
