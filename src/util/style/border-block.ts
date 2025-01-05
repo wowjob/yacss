@@ -1,24 +1,22 @@
-import type { TBorderBlockStart } from '../../type'
+import type { TBorderBlock } from '../../type'
 import { convertToRem } from '../convert-to-rem'
 import { isPx } from '../is-px'
 
-export const normalizeBorderBlockStart = (
-  borderBlockStart: TBorderBlockStart
-): string => {
-  if (typeof borderBlockStart === 'string') {
-    return borderBlockStart
+export const normalizeBorderBlock = (borderBlock: TBorderBlock): string => {
+  if (typeof borderBlock === 'string') {
+    return borderBlock
   }
 
-  if (borderBlockStart === null || borderBlockStart === undefined) {
+  if (borderBlock === null || borderBlock === undefined) {
     return 'none'
   }
 
-  if (typeof borderBlockStart === 'object') {
+  if (typeof borderBlock === 'object') {
     const {
       width = 'medium',
       style = 'none',
       color = 'currentcolor',
-    } = borderBlockStart
+    } = borderBlock
 
     const widthValue =
       isPx(String(width)) || typeof width === 'number'

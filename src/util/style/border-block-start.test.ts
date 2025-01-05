@@ -9,8 +9,8 @@ describe('normalizeBorderBlockStart', () => {
   test('should normalize a border-block-start object with defaults', () => {
     expect(
       normalizeBorderBlockStart({
-        startStyle: 'dashed',
-      }),
+        style: 'dashed',
+      })
     ).toBe('medium dashed currentcolor')
   })
 
@@ -22,10 +22,10 @@ describe('normalizeBorderBlockStart', () => {
   test('should normalize all properties in a border-block-start object', () => {
     expect(
       normalizeBorderBlockStart({
-        startWidth: '8px',
-        startStyle: 'solid',
-        startColor: 'blue',
-      }),
+        width: '8px',
+        style: 'solid',
+        color: 'blue',
+      })
     ).toBe('0.5rem solid blue')
   })
 })
