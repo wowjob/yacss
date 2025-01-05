@@ -73,6 +73,7 @@ console.log(
       columnSpan: 'all',
       columnWidth: 20,
       contain: 'content',
+      containIntrinsicBlockSize: 160,
     },
     className: 'once-upon a-time padding',
   })

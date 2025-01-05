@@ -60,6 +60,8 @@ export {
   normalizeColumnSpan,
   normalizeColumnWidth,
   normalizeContain,
+  normalizeContainIntrinsicBlockSize,
+  //
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
