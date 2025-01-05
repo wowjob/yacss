@@ -48,6 +48,7 @@ export { normalizeClipPath } from './clip-path';
 export { normalizeColor } from './color';
 export { normalizeColorInterpolation } from './color-interpolation';
 export { normalizeColorInterpolationFilters } from './color-interpolation-filters';
+export { normalizeColorScheme } from './color-scheme';
 export { normalizeDisplay } from './display';
 export { normalizeFlex } from './flex';
 export { normalizeFlexBasis } from './flex-basis';

@@ -47,6 +47,9 @@ import {
   normalizeClip,
   normalizeClipPath,
   normalizeColor,
+  normalizeColorInterpolation,
+  normalizeColorInterpolationFilters,
+  normalizeColorScheme,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -119,11 +122,8 @@ import type {
   TColor,
   TColorInterpolation,
   TColorInterpolationFilters,
+  TColorScheme,
 } from '../type'
-import {
-  normalizeColorInterpolation,
-  normalizeColorInterpolationFilters,
-} from '../util/style'
 
 export type TEnv = 'dev' | 'prod'
 export type TCSSPropValue = Partial<{
@@ -179,6 +179,7 @@ export type TCSSPropValue = Partial<{
   color: TColor
   colorInterpolation: TColorInterpolation
   colorInterpolationFilters: TColorInterpolationFilters
+  colorScheme: TColorScheme
   flex: TFlex
   flexBasis: TFlexBasis
   flexDirection: TFlexDirection
@@ -390,7 +391,7 @@ export const propertyMap: Record<
     normalize: normalizeBreakInside,
   },
   captionSide: {
-    className: { dev: 'caption-side', prod: 'cs' },
+    className: { dev: 'caption-side', prod: 'cps' },
     normalize: normalizeCaptionSide,
   },
   caretColor: {
@@ -420,6 +421,10 @@ export const propertyMap: Record<
   colorInterpolationFilters: {
     className: { dev: 'color-interpolation-filters', prod: 'cif' },
     normalize: normalizeColorInterpolationFilters,
+  },
+  colorScheme: {
+    className: { dev: 'color-scheme', prod: 'cs' },
+    normalize: normalizeColorScheme,
   },
   display: {
     className: { dev: 'display', prod: 'd' },
