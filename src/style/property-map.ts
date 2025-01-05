@@ -11,6 +11,7 @@ import {
   normalizeBackground,
   normalizeBackgroundBlendMode,
   normalizeBackgroundClip,
+  normalizeBackgroundOrigin,
   normalizeBlockSize,
   normalizeBorder,
   normalizeBorderBlock,
@@ -93,6 +94,7 @@ import type {
   TBackfaceVisibility,
   TBackgroundBlendMode,
   TBackgroundClip,
+  TBackgroundOrigin,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -109,6 +111,7 @@ export type TCSSPropValue = Partial<{
   background: TBackground
   backgroundBlendMode: TBackgroundBlendMode
   backgroundClip: TBackgroundClip
+  backgroundOrigin: TBackgroundOrigin
   blockSize: TBlockSize
   border: TBorder
   borderBlock: TBorderBlock
@@ -212,6 +215,10 @@ export const propertyMap: Record<
   backgroundClip: {
     className: { dev: 'background-clip', prod: 'bc' },
     normalize: normalizeBackgroundClip,
+  },
+  backgroundOrigin: {
+    className: { dev: 'background-origin', prod: 'bo' },
+    normalize: normalizeBackgroundOrigin,
   },
   blockSize: {
     className: { dev: 'block-size', prod: 'bz' },
