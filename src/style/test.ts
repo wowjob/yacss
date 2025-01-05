@@ -67,6 +67,7 @@ console.log(
       accentColor: 'auto',
       alignContent: 'end',
       alignItems: 'flex-end',
+      alignSelf: 'center',
     },
     className: 'once-upon a-time padding',
     env: 'prod',

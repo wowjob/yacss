@@ -10,6 +10,10 @@
   --align-items: normal;
   align-items: var(--align-items);
 }
+.align-self {
+  --align-self: auto;
+  align-self: var(--align-self);
+}
 .animation {
   --animation: none;
   animation: var(--animation);
@@ -176,6 +180,10 @@
 .tablet.align-items {
   --t-align-items: normal;
   align-items: var(--t-align-items);
+}
+.tablet.align-self {
+  --t-align-self: auto;
+  align-self: var(--t-align-self);
 }
 .tablet.animation {
   --t-animation: none;
@@ -344,6 +352,10 @@
 .desktop.align-items {
   --d-align-items: normal;
   align-items: var(--d-align-items);
+}
+.desktop.align-self {
+  --d-align-self: auto;
+  align-self: var(--d-align-self);
 }
 .desktop.animation {
   --d-animation: none;
