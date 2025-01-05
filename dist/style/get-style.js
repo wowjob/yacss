@@ -8,6 +8,9 @@ export const getStyle = ({ desktop, mobile, tablet, className = '', env = 'dev',
         if (!styleData) {
             continue;
         }
+        if (key !== 'mobile') {
+            classSet.add(key);
+        }
         for (const cssProperty in styleData) {
             if (cssProperty in propertyMap) {
                 const cssKey = cssProperty;
