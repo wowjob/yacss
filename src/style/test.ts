@@ -41,6 +41,7 @@ console.log(
       borderBottomRightRadius: 8,
       borderCollapse: 'collapse',
       borderEndEndRadius: 20,
+      borderEndStartRadius: 24,
     },
     className: 'once-upon a-time padding',
     env: 'prod',

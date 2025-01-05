@@ -10,6 +10,7 @@ import {
   normalizeBorderBottomRightRadius,
   normalizeBorderCollapse,
   normalizeBorderEndEndRadius,
+  normalizeBorderEndStartRadius,
   normalizeBorderImage,
   normalizeBorderInlineEnd,
   normalizeBorderInlineStart,
@@ -55,6 +56,7 @@ import type {
   TBorderBottomRightRadius,
   TBorderCollapse,
   TBorderEndEndRadius,
+  TBorderEndStartRadius,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -70,6 +72,7 @@ export type TCSSPropValue = Partial<{
   borderBottomRightRadius: TBorderBottomRightRadius
   borderCollapse: TBorderCollapse
   borderEndEndRadius: TBorderEndEndRadius
+  borderEndStartRadius: TBorderEndStartRadius
   borderImage: TBorderImage
   borderInline: TBorderInline
   borderInlineStart: TBorderInlineStart
@@ -160,7 +163,10 @@ export const propertyMap: Record<
     className: { dev: 'border-end-end-radius', prod: 'beer' },
     normalize: normalizeBorderEndEndRadius,
   },
-
+  borderEndStartRadius: {
+    className: { dev: 'border-end-start-radius', prod: 'besr' },
+    normalize: normalizeBorderEndStartRadius,
+  },
   borderImage: {
     className: { dev: 'border-image', prod: 'bim' },
     normalize: normalizeBorderImage,
