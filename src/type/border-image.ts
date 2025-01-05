@@ -1,7 +1,6 @@
 import type { TGlobalKeyword } from './global-keyword'
 
 export type TBorderImage =
-  | string
   | {
       source?: string
       slice?: string | number
@@ -10,3 +9,4 @@ export type TBorderImage =
       repeat?: 'stretch' | 'repeat' | 'round' | 'space'
     }
   | TGlobalKeyword
+  | (string & {})

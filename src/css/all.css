@@ -1,3 +1,7 @@
+.accent-color {
+  --accent-color: auto;
+  accent-color: var(--accent-color);
+}
 .animation {
   --animation: none;
   animation: var(--animation);
@@ -153,6 +157,10 @@
 
 
 @media screen and (min-width: 48rem) {
+.tablet.accent-color {
+  --t-accent-color: auto;
+  accent-color: var(--t-accent-color);
+}
 .tablet.animation {
   --t-animation: none;
   animation: var(--t-animation);
@@ -309,6 +317,10 @@
 }
 
 @media screen and (min-width: 80rem) {
+.desktop.accent-color {
+  --d-accent-color: auto;
+  accent-color: var(--d-accent-color);
+}
 .desktop.animation {
   --d-animation: none;
   animation: var(--d-animation);

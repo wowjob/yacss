@@ -1,7 +1,6 @@
 import type { TGlobalKeyword } from './global-keyword'
 
 export type TAnimation =
-  | string
   | {
       name?: string
       duration?: string | number
@@ -14,3 +13,4 @@ export type TAnimation =
       composition?: 'replace' | 'add' | 'accumulate'
     }
   | TGlobalKeyword
+  | (string & {})

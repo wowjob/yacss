@@ -6,6 +6,7 @@ export type {
 export type { TDirectionalUnit } from './directional-unit'
 export type { TGlobalKeyword } from './global-keyword'
 
+export type { TAccentColor } from './accent-color'
 export type { TAnimation } from './animation'
 export type { TAppearance } from './appearance'
 export type { TAspectRatio } from './aspect-ratio'

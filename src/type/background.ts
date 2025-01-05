@@ -1,7 +1,6 @@
 import type { TGlobalKeyword } from './global-keyword'
 
 export type TBackground =
-  | string
   | {
       color?: string
       image?: string
@@ -15,3 +14,4 @@ export type TBackground =
       blendMode?: string
     }
   | TGlobalKeyword
+  | (string & {})

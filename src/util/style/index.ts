@@ -1,3 +1,4 @@
+export { normalizeAccentColor } from './accent-color'
 export { normalizeAnimation } from './animation'
 export { normalizeAppearance } from './appearance'
 export { normalizeAspectRatio } from './aspect-ratio'

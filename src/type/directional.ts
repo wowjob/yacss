@@ -5,10 +5,10 @@ export type TDirectionalBase<T> =
   | number
   | TDirectionalUnit
   | [
-      (T | number | string | TDirectionalUnit)?,
-      (T | number | string | TDirectionalUnit)?,
-      (T | number | string | TDirectionalUnit)?,
-      (T | number | string | TDirectionalUnit)?,
+      (T | number | TDirectionalUnit | (string & {}))?,
+      (T | number | TDirectionalUnit | (string & {}))?,
+      (T | number | TDirectionalUnit | (string & {}))?,
+      (T | number | TDirectionalUnit | (string & {}))?
     ]
 
 export type TDirectionalSimple<T> = TDirectionalBase<T> | (string & {})
