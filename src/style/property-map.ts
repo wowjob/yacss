@@ -41,6 +41,7 @@ import {
   normalizeBreakAfter,
   normalizeBreakBefore,
   normalizeBreakInside,
+  normalizeCaptionSide,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -105,6 +106,7 @@ import type {
   TBreakAfter,
   TBreakBefore,
   TBreakInside,
+  TCaptionSide,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -153,6 +155,7 @@ export type TCSSPropValue = Partial<{
   breakAfter: TBreakAfter
   breakBefore: TBreakBefore
   breakInside: TBreakInside
+  captionSide: TCaptionSide
   flex: TFlex
   flexBasis: TFlexBasis
   flexDirection: TFlexDirection
@@ -363,6 +366,11 @@ export const propertyMap: Record<
     className: { dev: 'break-inside', prod: 'bbi' },
     normalize: normalizeBreakInside,
   },
+  captionSide: {
+    className: { dev: 'caption-side', prod: 'cs' },
+    normalize: normalizeCaptionSide,
+  },
+
   display: {
     className: { dev: 'display', prod: 'd' },
     normalize: normalizeDisplay,
