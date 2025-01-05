@@ -65,6 +65,7 @@ console.log(
       aspectRatio: 'auto',
       appearance: 'auto',
       accentColor: 'auto',
+      alignContent: 'end',
     },
     className: 'once-upon a-time padding',
     env: 'prod',

@@ -1,5 +1,6 @@
 import {
   normalizeAccentColor,
+  normalizeAlignContent,
   normalizeAnimation,
   normalizeAppearance,
   normalizeAspectRatio,
@@ -79,11 +80,13 @@ import type {
   TAspectRatio,
   TAppearance,
   TAccentColor,
+  TAlignContent,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
 export type TCSSPropValue = Partial<{
   accentColor: TAccentColor
+  alignContent: TAlignContent
   animation: TAnimation
   appearance: TAppearance
   aspectRatio: TAspectRatio
@@ -145,8 +148,12 @@ export const propertyMap: Record<
   }
 > = {
   accentColor: {
-    className: { dev: 'accent-color', prod: 'ac' },
+    className: { dev: 'accent-color', prod: 'acc' },
     normalize: normalizeAccentColor,
+  },
+  alignContent: {
+    className: { dev: 'align-content', prod: 'ac' },
+    normalize: normalizeAlignContent,
   },
   animation: {
     className: { dev: 'animation', prod: 'a' },
