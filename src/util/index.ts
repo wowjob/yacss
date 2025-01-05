@@ -14,6 +14,7 @@ export {
   normalizeBackground,
   normalizeBackgroundBlendMode,
   normalizeBackgroundClip,
+  normalizeBackgroundOrigin,
   normalizeBlockSize,
   normalizeBorder,
   normalizeBorderBlock,

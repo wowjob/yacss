@@ -72,6 +72,7 @@ console.log(
       backfaceVisibility: 'hidden',
       backgroundBlendMode: 'color-burn',
       backgroundClip: 'border-area',
+      backgroundOrigin: 'content-box',
     },
     className: 'once-upon a-time padding',
     env: 'prod',

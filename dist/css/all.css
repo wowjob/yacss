@@ -46,6 +46,10 @@
   --background-clip: border-box;
   background-clip: var(--background-clip);
 }
+.background-origin {
+  --background-origin: padding-box;
+  background-origin: var(--background-origin);
+}
 .block-size {
   --block-size: auto;
   block-size: var(--block-size);
@@ -232,6 +236,10 @@
 .tablet.background-clip {
   --t-background-clip: border-box;
   background-clip: var(--t-background-clip);
+}
+.tablet.background-origin {
+  --t-background-origin: padding-box;
+  background-origin: var(--t-background-origin);
 }
 .tablet.block-size {
   --t-block-size: auto;
@@ -420,6 +428,10 @@
 .desktop.background-clip {
   --d-background-clip: border-box;
   background-clip: var(--d-background-clip);
+}
+.desktop.background-origin {
+  --d-background-origin: padding-box;
+  background-origin: var(--d-background-origin);
 }
 .desktop.block-size {
   --d-block-size: auto;
