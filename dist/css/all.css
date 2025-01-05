@@ -222,6 +222,10 @@
   --column-fill: balance;
   column-fill: var(--column-fill);
 }
+.column-gap {
+  --column-gap: normal;
+  column-gap: var(--column-gap);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -476,6 +480,10 @@
 .tablet.column-fill {
   --t-column-fill: balance;
   column-fill: var(--t-column-fill);
+}
+.tablet.column-gap {
+  --t-column-gap: normal;
+  column-gap: var(--t-column-gap);
 }
 .tablet.display {
   --t-display: inline;
@@ -732,6 +740,10 @@
 .desktop.column-fill {
   --d-column-fill: balance;
   column-fill: var(--d-column-fill);
+}
+.desktop.column-gap {
+  --d-column-gap: normal;
+  column-gap: var(--d-column-gap);
 }
 .desktop.display {
   --d-display: inline;
