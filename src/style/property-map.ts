@@ -37,6 +37,7 @@ import {
   normalizeBorderTopRightRadius,
   normalizeBorderWidth,
   normalizeBoxShadow,
+  normalizeBoxSizing,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -97,6 +98,7 @@ import type {
   TBackgroundClip,
   TBackgroundOrigin,
   TBoxShadow,
+  TBoxSizing,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -141,6 +143,7 @@ export type TCSSPropValue = Partial<{
   borderTopRightRadius: TBorderTopRightRadius
   display: TDisplay
   boxShadow: TBoxShadow
+  boxSizing: TBoxSizing
   flex: TFlex
   flexBasis: TFlexBasis
   flexDirection: TFlexDirection
@@ -331,15 +334,18 @@ export const propertyMap: Record<
     className: { dev: 'border-top-right-radius', prod: 'btrr' },
     normalize: normalizeBorderTopRightRadius,
   },
-  display: {
-    className: { dev: 'display', prod: 'd' },
-    normalize: normalizeDisplay,
-  },
   boxShadow: {
     className: { dev: 'box-shadow', prod: 'bs' },
     normalize: normalizeBoxShadow,
   },
-
+  boxSizing: {
+    className: { dev: 'box-sizing', prod: 'bsz' },
+    normalize: normalizeBoxSizing,
+  },
+  display: {
+    className: { dev: 'display', prod: 'd' },
+    normalize: normalizeDisplay,
+  },
   flex: {
     className: { dev: 'flex', prod: 'fx' },
     normalize: normalizeFlex,

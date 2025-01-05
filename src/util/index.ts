@@ -40,6 +40,7 @@ export {
   normalizeBorderTopLeftRadius,
   normalizeBorderTopRightRadius,
   normalizeBoxShadow,
+  normalizeBoxSizing,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
