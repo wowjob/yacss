@@ -46,6 +46,10 @@
   --border-inline-end: undefined;
   border-inline-end: var(--border-inline-end);
 }
+.border-radius {
+  --border-radius: undefined;
+  border-radius: var(--border-radius);
+}
 .border-width {
   --border-width: 0;
   border-width: var(--border-width);
@@ -132,6 +136,10 @@
 .tablet.border-inline-end {
   --t-border-inline-end: undefined;
   border-inline-end: var(--t-border-inline-end);
+}
+.tablet.border-radius {
+  --t-border-radius: undefined;
+  border-radius: var(--t-border-radius);
 }
 .tablet.border-width {
   --t-border-width: 0;
@@ -220,6 +228,10 @@
 .desktop.border-inline-end {
   --d-border-inline-end: undefined;
   border-inline-end: var(--d-border-inline-end);
+}
+.desktop.border-radius {
+  --d-border-radius: undefined;
+  border-radius: var(--d-border-radius);
 }
 .desktop.border-width {
   --d-border-width: 0;
