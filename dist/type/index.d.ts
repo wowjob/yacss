@@ -56,6 +56,7 @@ export type { TColumnCount } from './column-count';
 export type { TColumnFill } from './column-fill';
 export type { TColumnGap } from './column-gap';
 export type { TColumnRule } from './column-rule';
+export type { TColumnSpan } from './column-span';
 export type { TDisplay } from './display';
 export type { TFlex } from './flex';
 export type { TFlexBasis } from './flex-basis';
