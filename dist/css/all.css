@@ -2,6 +2,10 @@
   --accent-color: auto;
   accent-color: var(--accent-color);
 }
+.align-content {
+  --align-content: normal;
+  align-content: var(--align-content);
+}
 .animation {
   --animation: none;
   animation: var(--animation);
@@ -160,6 +164,10 @@
 .tablet.accent-color {
   --t-accent-color: auto;
   accent-color: var(--t-accent-color);
+}
+.tablet.align-content {
+  --t-align-content: normal;
+  align-content: var(--t-align-content);
 }
 .tablet.animation {
   --t-animation: none;
@@ -320,6 +328,10 @@
 .desktop.accent-color {
   --d-accent-color: auto;
   accent-color: var(--d-accent-color);
+}
+.desktop.align-content {
+  --d-align-content: normal;
+  align-content: var(--d-align-content);
 }
 .desktop.animation {
   --d-animation: none;
