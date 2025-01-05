@@ -38,6 +38,10 @@
   --border-inline-start: undefined;
   border-inline-start: var(--border-inline-start);
 }
+.border-inline-end {
+  --border-inline-end: undefined;
+  border-inline-end: var(--border-inline-end);
+}
 .border-width {
   --border-width: 0;
   border-width: var(--border-width);
@@ -116,6 +120,10 @@
 .border-inline-start {
   --t-border-inline-start: undefined;
   border-inline-start: var(--t-border-inline-start);
+}
+.border-inline-end {
+  --t-border-inline-end: undefined;
+  border-inline-end: var(--t-border-inline-end);
 }
 .border-width {
   --t-border-width: 0;
@@ -196,6 +204,10 @@
 .border-inline-start {
   --d-border-inline-start: undefined;
   border-inline-start: var(--d-border-inline-start);
+}
+.border-inline-end {
+  --d-border-inline-end: undefined;
+  border-inline-end: var(--d-border-inline-end);
 }
 .border-width {
   --d-border-width: 0;
