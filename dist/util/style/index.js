@@ -57,6 +57,7 @@ export { normalizeColumnSpan } from './column-span';
 export { normalizeColumnWidth } from './column-width';
 export { normalizeContain } from './contain';
 export { normalizeContainIntrinsicBlockSize } from './contain-intrinsic-block-size';
+export { normalizeContainIntrinsicHeight } from './contain-intrinsic-height';
 export { normalizeDisplay } from './display';
 export { normalizeFlex } from './flex';
 export { normalizeFlexBasis } from './flex-basis';
