@@ -1,5 +1,6 @@
 import {
   normalizeAnimation,
+  normalizeAppearance,
   normalizeAspectRatio,
   normalizeBackground,
   normalizeBlockSize,
@@ -75,11 +76,13 @@ import type {
   TBorderStartStartRadius,
   TBlockSize,
   TAspectRatio,
+  TAppearance,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
 export type TCSSPropValue = Partial<{
   animation: TAnimation
+  appearance: TAppearance
   aspectRatio: TAspectRatio
   background: TBackground
   blockSize: TBlockSize
@@ -141,6 +144,10 @@ export const propertyMap: Record<
   animation: {
     className: { dev: 'animation', prod: 'a' },
     normalize: normalizeAnimation,
+  },
+  appearance: {
+    className: { dev: 'appearance', prod: 'ap' },
+    normalize: normalizeAppearance,
   },
   aspectRatio: {
     className: { dev: 'aspect-ratio', prod: 'ar' },

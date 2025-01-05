@@ -1,4 +1,5 @@
 export { normalizeAnimation } from './animation'
+export { normalizeAppearance } from './appearance'
 export { normalizeAspectRatio } from './aspect-ratio'
 export { normalizeBackground } from './background'
 export { normalizeBlockSize } from './block-size'

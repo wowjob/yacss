@@ -7,6 +7,7 @@ export type { TDirectionalUnit } from './directional-unit'
 export type { TGlobalKeyword } from './global-keyword'
 
 export type { TAnimation } from './animation'
+export type { TAppearance } from './appearance'
 export type { TAspectRatio } from './aspect-ratio'
 export type { TBackground } from './background'
 export type { TBlockSize } from './block-size'
