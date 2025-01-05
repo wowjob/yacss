@@ -4,6 +4,7 @@ export { isPx } from './is-px'
 export {
   normalizeAccentColor,
   normalizeAlignContent,
+  normalizeAlignItems,
   normalizeAnimation,
   normalizeAppearance,
   normalizeAspectRatio,
