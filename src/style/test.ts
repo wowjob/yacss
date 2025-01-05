@@ -77,6 +77,7 @@ console.log(
       boxSizing: 'border-box',
       breakAfter: 'avoid-column',
       breakBefore: 'avoid',
+      breakInside: 'avoid-region',
     },
     className: 'once-upon a-time padding',
     env: 'prod',
