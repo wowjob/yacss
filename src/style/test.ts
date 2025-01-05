@@ -49,6 +49,11 @@ console.log(
       },
       borderTopLeftRadius: 80,
       borderTopRightRadius: 40,
+      borderLeft: {
+        color: 'brown',
+        style: 'double',
+        width: 18,
+      },
     },
     className: 'once-upon a-time padding',
     env: 'prod',
