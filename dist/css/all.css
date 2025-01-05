@@ -86,6 +86,10 @@
   --border-top: undefined;
   border-top: var(--border-top);
 }
+.border-top-left-radius {
+  --border-top-left-radius: 0;
+  border-top-left-radius: var(--border-top-left-radius);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -204,6 +208,10 @@
 .tablet.border-top {
   --t-border-top: undefined;
   border-top: var(--t-border-top);
+}
+.tablet.border-top-left-radius {
+  --t-border-top-left-radius: 0;
+  border-top-left-radius: var(--t-border-top-left-radius);
 }
 .tablet.display {
   --t-display: inline;
@@ -324,6 +332,10 @@
 .desktop.border-top {
   --d-border-top: undefined;
   border-top: var(--d-border-top);
+}
+.desktop.border-top-left-radius {
+  --d-border-top-left-radius: 0;
+  border-top-left-radius: var(--d-border-top-left-radius);
 }
 .desktop.display {
   --d-display: inline;

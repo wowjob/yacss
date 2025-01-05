@@ -21,6 +21,7 @@ export {
   normalizeBorderWidth,
   normalizeBorderStyle,
   normalizeBorderTop,
+  normalizeBorderTopLeftRadius,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
