@@ -63,6 +63,7 @@ console.log(
       colorInterpolationFilters: 'linearRGB',
       colorScheme: 'dark',
       columnCount: 2,
+      columnFill: 'balance',
     },
     className: 'once-upon a-time padding',
     env: 'prod',

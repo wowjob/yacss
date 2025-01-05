@@ -218,6 +218,10 @@
   --column-count: auto;
   column-count: var(--column-count);
 }
+.column-fill {
+  --column-fill: balance;
+  column-fill: var(--column-fill);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -468,6 +472,10 @@
 .tablet.column-count {
   --t-column-count: auto;
   column-count: var(--t-column-count);
+}
+.tablet.column-fill {
+  --t-column-fill: balance;
+  column-fill: var(--t-column-fill);
 }
 .tablet.display {
   --t-display: inline;
@@ -720,6 +728,10 @@
 .desktop.column-count {
   --d-column-count: auto;
   column-count: var(--d-column-count);
+}
+.desktop.column-fill {
+  --d-column-fill: balance;
+  column-fill: var(--d-column-fill);
 }
 .desktop.display {
   --d-display: inline;
