@@ -48,6 +48,7 @@ console.log(
         width: 22,
       },
       borderTopLeftRadius: 80,
+      borderTopRightRadius: 40,
     },
     className: 'once-upon a-time padding',
     env: 'prod',
