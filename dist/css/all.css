@@ -226,6 +226,10 @@
   --column-gap: normal;
   column-gap: var(--column-gap);
 }
+.column-rule {
+  --column-rule: undefined;
+  column-rule: var(--column-rule);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -484,6 +488,10 @@
 .tablet.column-gap {
   --t-column-gap: normal;
   column-gap: var(--t-column-gap);
+}
+.tablet.column-rule {
+  --t-column-rule: undefined;
+  column-rule: var(--t-column-rule);
 }
 .tablet.display {
   --t-display: inline;
@@ -744,6 +752,10 @@
 .desktop.column-gap {
   --d-column-gap: normal;
   column-gap: var(--d-column-gap);
+}
+.desktop.column-rule {
+  --d-column-rule: undefined;
+  column-rule: var(--d-column-rule);
 }
 .desktop.display {
   --d-display: inline;

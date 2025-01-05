@@ -53,6 +53,7 @@ import {
   normalizeColumnCount,
   normalizeColumnFill,
   normalizeColumnGap,
+  normalizeColumnRule,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -129,6 +130,7 @@ import type {
   TColumnCount,
   TColumnFill,
   TColumnGap,
+  TColumnRule,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -189,6 +191,7 @@ export type TCSSPropValue = Partial<{
   columnCount: TColumnCount
   columnFill: TColumnFill
   columnGap: TColumnGap
+  columnRule: TColumnRule
 
   flex: TFlex
   flexBasis: TFlexBasis
@@ -447,6 +450,10 @@ export const propertyMap: Record<
   columnGap: {
     className: { dev: 'column-gap', prod: 'cg' },
     normalize: normalizeColumnGap,
+  },
+  columnRule: {
+    className: { dev: 'column-rule', prod: 'cr' },
+    normalize: normalizeColumnRule,
   },
 
   display: {

@@ -1,4 +1,4 @@
-import type { TBorder, TBorderWidth, TDisplay, TFlex, TFlexDirection, TMargin, TPadding, TBorderStyle, TFlexBasis, TFlexGrow, TFlexShrink, TFlexWrap, TAnimation, TBackground, TBorderImage, TBorderBlockStart, TBorderBlockEnd, TBorderBlock, TBorderInlineStart, TBorderInlineEnd, TBorderInline, TBorderRadius, TBorderBottom, TBorderBottomLeftRadius, TBorderBottomRightRadius, TBorderCollapse, TBorderEndEndRadius, TBorderEndStartRadius, TBorderTop, TBorderTopLeftRadius, TBorderTopRightRadius, TBorderLeft, TBorderRight, TBorderStartEndRadius, TBorderStartStartRadius, TBlockSize, TAspectRatio, TAppearance, TAccentColor, TAlignContent, TAlignItems, TAlignSelf, TBackdropFilter, TBackfaceVisibility, TBackgroundBlendMode, TBackgroundClip, TBackgroundOrigin, TBoxShadow, TBoxSizing, TBreakAfter, TBreakBefore, TBreakInside, TCaptionSide, TCaretColor, TClear, TClip, TClipPath, TColor, TColorInterpolation, TColorInterpolationFilters, TColorScheme, TColumnCount, TColumnFill, TColumnGap } from '../type';
+import type { TBorder, TBorderWidth, TDisplay, TFlex, TFlexDirection, TMargin, TPadding, TBorderStyle, TFlexBasis, TFlexGrow, TFlexShrink, TFlexWrap, TAnimation, TBackground, TBorderImage, TBorderBlockStart, TBorderBlockEnd, TBorderBlock, TBorderInlineStart, TBorderInlineEnd, TBorderInline, TBorderRadius, TBorderBottom, TBorderBottomLeftRadius, TBorderBottomRightRadius, TBorderCollapse, TBorderEndEndRadius, TBorderEndStartRadius, TBorderTop, TBorderTopLeftRadius, TBorderTopRightRadius, TBorderLeft, TBorderRight, TBorderStartEndRadius, TBorderStartStartRadius, TBlockSize, TAspectRatio, TAppearance, TAccentColor, TAlignContent, TAlignItems, TAlignSelf, TBackdropFilter, TBackfaceVisibility, TBackgroundBlendMode, TBackgroundClip, TBackgroundOrigin, TBoxShadow, TBoxSizing, TBreakAfter, TBreakBefore, TBreakInside, TCaptionSide, TCaretColor, TClear, TClip, TClipPath, TColor, TColorInterpolation, TColorInterpolationFilters, TColorScheme, TColumnCount, TColumnFill, TColumnGap, TColumnRule } from '../type';
 export type TEnv = 'dev' | 'prod';
 export type TCSSPropValue = Partial<{
     accentColor: TAccentColor;
@@ -57,6 +57,7 @@ export type TCSSPropValue = Partial<{
     columnCount: TColumnCount;
     columnFill: TColumnFill;
     columnGap: TColumnGap;
+    columnRule: TColumnRule;
     flex: TFlex;
     flexBasis: TFlexBasis;
     flexDirection: TFlexDirection;
