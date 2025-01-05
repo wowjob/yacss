@@ -7,6 +7,7 @@ import {
   normalizeAppearance,
   normalizeAspectRatio,
   normalizeBackdropFilter,
+  normalizeBackfaceVisibility,
   normalizeBackground,
   normalizeBlockSize,
   normalizeBorder,
@@ -87,6 +88,7 @@ import type {
   TAlignItems,
   TAlignSelf,
   TBackdropFilter,
+  TBackfaceVisibility,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -99,6 +101,7 @@ export type TCSSPropValue = Partial<{
   appearance: TAppearance
   aspectRatio: TAspectRatio
   backdropFilter: TBackdropFilter
+  backfaceVisibility: TBackfaceVisibility
   background: TBackground
   blockSize: TBlockSize
   border: TBorder
@@ -187,6 +190,10 @@ export const propertyMap: Record<
   backdropFilter: {
     className: { dev: 'backdrop-filter', prod: 'bf' },
     normalize: normalizeBackdropFilter,
+  },
+  backfaceVisibility: {
+    className: { dev: 'backface-visibility', prod: 'bv' },
+    normalize: normalizeBackfaceVisibility,
   },
   background: {
     className: { dev: 'background', prod: 'bg' },
