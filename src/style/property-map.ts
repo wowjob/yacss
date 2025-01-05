@@ -17,6 +17,7 @@ import {
   normalizeBorderLeft,
   normalizeBorderRadius,
   normalizeBorderRight,
+  normalizeBorderStartEndRadius,
   normalizeBorderStyle,
   normalizeBorderTop,
   normalizeBorderTopLeftRadius,
@@ -67,6 +68,7 @@ import type {
   TBorderTopRightRadius,
   TBorderLeft,
   TBorderRight,
+  TBorderStartEndRadius,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -92,6 +94,7 @@ export type TCSSPropValue = Partial<{
   borderRight: TBorderRight
   borderWidth: TBorderWidth
   borderStyle: TBorderStyle | TBorderStyle[]
+  borderStartEndRadius: TBorderStartEndRadius
   borderTop: TBorderTop
   borderTopLeftRadius: TBorderTopLeftRadius
   borderTopRightRadius: TBorderTopRightRadius
@@ -218,6 +221,11 @@ export const propertyMap: Record<
     className: { dev: 'border-style', prod: 'bs' },
     normalize: normalizeBorderStyle,
   },
+  borderStartEndRadius: {
+    className: { dev: 'border-start-end-radius', prod: 'bser' },
+    normalize: normalizeBorderStartEndRadius,
+  },
+
   borderTop: {
     className: { dev: 'border-top', prod: 'bt' },
     normalize: normalizeBorderTop,

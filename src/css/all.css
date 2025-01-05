@@ -90,6 +90,10 @@
   --border-style: none;
   border-style: var(--border-style);
 }
+.border-start-end-radius {
+  --border-start-end-radius: 0;
+  border-start-end-radius: var(--border-start-end-radius);
+}
 .border-top {
   --border-top: undefined;
   border-top: var(--border-top);
@@ -224,6 +228,10 @@
 .tablet.border-style {
   --t-border-style: none;
   border-style: var(--t-border-style);
+}
+.tablet.border-start-end-radius {
+  --t-border-start-end-radius: 0;
+  border-start-end-radius: var(--t-border-start-end-radius);
 }
 .tablet.border-top {
   --t-border-top: undefined;
@@ -360,6 +368,10 @@
 .desktop.border-style {
   --d-border-style: none;
   border-style: var(--d-border-style);
+}
+.desktop.border-start-end-radius {
+  --d-border-start-end-radius: 0;
+  border-start-end-radius: var(--d-border-start-end-radius);
 }
 .desktop.border-top {
   --d-border-top: undefined;
