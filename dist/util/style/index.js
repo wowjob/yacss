@@ -54,6 +54,7 @@ export { normalizeColumnFill } from './column-fill';
 export { normalizeColumnGap } from './column-gap';
 export { normalizeColumnRule } from './column-rule';
 export { normalizeColumnSpan } from './column-span';
+export { normalizeColumnWidth } from './column-width';
 export { normalizeDisplay } from './display';
 export { normalizeFlex } from './flex';
 export { normalizeFlexBasis } from './flex-basis';
