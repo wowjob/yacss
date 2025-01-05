@@ -6,6 +6,10 @@
   --background: transparent;
   background: var(--background);
 }
+.block-size {
+  --block-size: auto;
+  block-size: var(--block-size);
+}
 .margin {
   --margin: 0;
   margin: var(--margin);
@@ -148,6 +152,10 @@
 .tablet.background {
   --t-background: transparent;
   background: var(--t-background);
+}
+.tablet.block-size {
+  --t-block-size: auto;
+  block-size: var(--t-block-size);
 }
 .tablet.margin {
   --t-margin: 0;
@@ -292,6 +300,10 @@
 .desktop.background {
   --d-background: transparent;
   background: var(--d-background);
+}
+.desktop.block-size {
+  --d-block-size: auto;
+  block-size: var(--d-block-size);
 }
 .desktop.margin {
   --d-margin: 0;

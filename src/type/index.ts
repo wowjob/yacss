@@ -8,6 +8,7 @@ export type { TGlobalKeyword } from './global-keyword'
 
 export type { TAnimation } from './animation'
 export type { TBackground } from './background'
+export type { TBlockSize } from './block-size'
 export type { TBorder, TBorderStyle } from './border'
 export type { TBorderBlock } from './border-block'
 export type { TBorderBlockStart } from './border-block-start'

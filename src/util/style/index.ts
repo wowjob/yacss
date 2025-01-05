@@ -1,5 +1,6 @@
 export { normalizeAnimation } from './animation'
 export { normalizeBackground } from './background'
+export { normalizeBlockSize } from './block-size'
 export { normalizeBorder } from './border'
 export { normalizeBorderBlock } from './border-block'
 export { normalizeBorderBlockStart } from './border-block-start'
