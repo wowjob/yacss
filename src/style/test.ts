@@ -73,6 +73,7 @@ console.log(
       backgroundBlendMode: 'color-burn',
       backgroundClip: 'border-area',
       backgroundOrigin: 'content-box',
+      boxShadow: ['2px', '2px', '2px', 'black'],
     },
     className: 'once-upon a-time padding',
     env: 'prod',
