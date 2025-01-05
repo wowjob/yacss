@@ -51,6 +51,7 @@ export type { TClipPath } from './clip-path';
 export type { TColor } from './color';
 export type { TColorInterpolation } from './color-interpolation';
 export type { TColorInterpolationFilters } from './color-interpolation-filters';
+export type { TColorScheme } from './color-scheme';
 export type { TDisplay } from './display';
 export type { TFlex } from './flex';
 export type { TFlexBasis } from './flex-basis';

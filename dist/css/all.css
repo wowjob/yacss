@@ -210,6 +210,10 @@
   --color-interpolation-filters: linearrgb;
   color-interpolation-filters: var(--color-interpolation-filters);
 }
+.color-scheme {
+  --color-scheme: normal;
+  color-scheme: var(--color-scheme);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -452,6 +456,10 @@
 .tablet.color-interpolation-filters {
   --t-color-interpolation-filters: linearrgb;
   color-interpolation-filters: var(--t-color-interpolation-filters);
+}
+.tablet.color-scheme {
+  --t-color-scheme: normal;
+  color-scheme: var(--t-color-scheme);
 }
 .tablet.display {
   --t-display: inline;
@@ -696,6 +704,10 @@
 .desktop.color-interpolation-filters {
   --d-color-interpolation-filters: linearrgb;
   color-interpolation-filters: var(--d-color-interpolation-filters);
+}
+.desktop.color-scheme {
+  --d-color-scheme: normal;
+  color-scheme: var(--d-color-scheme);
 }
 .desktop.display {
   --d-display: inline;
