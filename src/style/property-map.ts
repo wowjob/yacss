@@ -144,6 +144,7 @@ import type {
   TContainIntrinsicBlockSize,
   TContainIntrinsicHeight,
   TContainIntrinsicInlineSize,
+  TContainIntrinsicSize,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
