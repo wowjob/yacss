@@ -48,6 +48,7 @@ export {
   normalizeCaretColor,
   normalizeClear,
   normalizeClip,
+  normalizeClipPath,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,

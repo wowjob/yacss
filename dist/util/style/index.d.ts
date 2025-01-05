@@ -44,6 +44,7 @@ export { normalizeCaptionSide } from './caption-side';
 export { normalizeCaretColor } from './caret-color';
 export { normalizeClear } from './clear';
 export { normalizeClip } from './clip';
+export { normalizeClipPath } from './clip-path';
 export { normalizeDisplay } from './display';
 export { normalizeFlex } from './flex';
 export { normalizeFlexBasis } from './flex-basis';
