@@ -9,8 +9,8 @@ describe('normalizeBorderBlockEnd', () => {
   test('should normalize a border-block-end object with defaults', () => {
     expect(
       normalizeBorderBlockEnd({
-        endStyle: 'dashed',
-      }),
+        style: 'dashed',
+      })
     ).toBe('medium dashed currentcolor')
   })
 
@@ -22,10 +22,10 @@ describe('normalizeBorderBlockEnd', () => {
   test('should normalize all properties in a border-block-end object', () => {
     expect(
       normalizeBorderBlockEnd({
-        endWidth: '8px',
-        endStyle: 'solid',
-        endColor: 'blue',
-      }),
+        width: '8px',
+        style: 'solid',
+        color: 'blue',
+      })
     ).toBe('0.5rem solid blue')
   })
 })

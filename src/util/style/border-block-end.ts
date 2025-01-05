@@ -3,7 +3,7 @@ import { convertToRem } from '../convert-to-rem'
 import { isPx } from '../is-px'
 
 export const normalizeBorderBlockEnd = (
-  borderBlockEnd: TBorderBlockEnd,
+  borderBlockEnd: TBorderBlockEnd
 ): string => {
   if (typeof borderBlockEnd === 'string') {
     return borderBlockEnd
@@ -15,17 +15,17 @@ export const normalizeBorderBlockEnd = (
 
   if (typeof borderBlockEnd === 'object') {
     const {
-      endWidth = 'medium',
-      endStyle = 'none',
-      endColor = 'currentcolor',
+      width = 'medium',
+      style = 'none',
+      color = 'currentcolor',
     } = borderBlockEnd
 
-    const width =
-      isPx(String(endWidth)) || typeof endWidth === 'number'
-        ? convertToRem(endWidth)
-        : endWidth
+    const widthValue =
+      isPx(String(width)) || typeof width === 'number'
+        ? convertToRem(width)
+        : width
 
-    return [width, endStyle, endColor].join(' ')
+    return [widthValue, style, color].join(' ')
   }
 
   return 'medium none currentcolor'

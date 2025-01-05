@@ -54,11 +54,21 @@ console.log(
         delay: 1000,
       },
       borderBlockStart: {
-        startColor: 'red',
-        startStyle: 'dashed',
-        startWidth: 2,
+        color: 'red',
+        style: 'dashed',
+        width: 2,
+      },
+      borderBlockEnd: {
+        color: 'red',
+        style: 'dashed',
+        width: 2,
+      },
+      borderBlock: {
+        color: 'red',
+        style: 'dashed',
+        width: 2,
       },
     },
     className: 'once-upon a-time padding',
-  }),
+  })
 )
