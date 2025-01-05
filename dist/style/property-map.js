@@ -1,4 +1,4 @@
-import { normalizeAccentColor, normalizeAlignContent, normalizeAlignItems, normalizeAlignSelf, normalizeAnimation, normalizeAppearance, normalizeAspectRatio, normalizeBackdropFilter, normalizeBackfaceVisibility, normalizeBackground, normalizeBackgroundBlendMode, normalizeBackgroundClip, normalizeBackgroundOrigin, normalizeBlockSize, normalizeBorder, normalizeBorderBlock, normalizeBorderBlockEnd, normalizeBorderBlockStart, normalizeBorderBottom, normalizeBorderBottomLeftRadius, normalizeBorderBottomRightRadius, normalizeBorderCollapse, normalizeBorderEndEndRadius, normalizeBorderEndStartRadius, normalizeBorderImage, normalizeBorderInlineEnd, normalizeBorderInlineStart, normalizeBorderLeft, normalizeBorderRadius, normalizeBorderRight, normalizeBorderStartEndRadius, normalizeBorderStartStartRadius, normalizeBorderStyle, normalizeBorderTop, normalizeBorderTopLeftRadius, normalizeBorderTopRightRadius, normalizeBorderWidth, normalizeBoxShadow, normalizeBoxSizing, normalizeBreakAfter, normalizeBreakBefore, normalizeBreakInside, normalizeCaptionSide, normalizeCaretColor, normalizeClear, normalizeClip, normalizeClipPath, normalizeColor, normalizeColorInterpolation, normalizeColorInterpolationFilters, normalizeColorScheme, normalizeDisplay, normalizeFlex, normalizeFlexBasis, normalizeFlexDirection, normalizeFlexGrow, normalizeFlexShrink, normalizeFlexWrap, normalizeMargin, normalizePadding, } from '../util';
+import { normalizeAccentColor, normalizeAlignContent, normalizeAlignItems, normalizeAlignSelf, normalizeAnimation, normalizeAppearance, normalizeAspectRatio, normalizeBackdropFilter, normalizeBackfaceVisibility, normalizeBackground, normalizeBackgroundBlendMode, normalizeBackgroundClip, normalizeBackgroundOrigin, normalizeBlockSize, normalizeBorder, normalizeBorderBlock, normalizeBorderBlockEnd, normalizeBorderBlockStart, normalizeBorderBottom, normalizeBorderBottomLeftRadius, normalizeBorderBottomRightRadius, normalizeBorderCollapse, normalizeBorderEndEndRadius, normalizeBorderEndStartRadius, normalizeBorderImage, normalizeBorderInlineEnd, normalizeBorderInlineStart, normalizeBorderLeft, normalizeBorderRadius, normalizeBorderRight, normalizeBorderStartEndRadius, normalizeBorderStartStartRadius, normalizeBorderStyle, normalizeBorderTop, normalizeBorderTopLeftRadius, normalizeBorderTopRightRadius, normalizeBorderWidth, normalizeBoxShadow, normalizeBoxSizing, normalizeBreakAfter, normalizeBreakBefore, normalizeBreakInside, normalizeCaptionSide, normalizeCaretColor, normalizeClear, normalizeClip, normalizeClipPath, normalizeColor, normalizeColorInterpolation, normalizeColorInterpolationFilters, normalizeColorScheme, normalizeColumnCount, normalizeDisplay, normalizeFlex, normalizeFlexBasis, normalizeFlexDirection, normalizeFlexGrow, normalizeFlexShrink, normalizeFlexWrap, normalizeMargin, normalizePadding, } from '../util';
 // Define a mapping of keys to their respective normalizer functions
 export const propertyMap = {
     accentColor: {
@@ -186,7 +186,7 @@ export const propertyMap = {
         normalize: normalizeCaptionSide,
     },
     caretColor: {
-        className: { dev: 'caret-color', prod: 'cc' },
+        className: { dev: 'caret-color', prod: 'crc' },
         normalize: normalizeCaretColor,
     },
     clear: {
@@ -216,6 +216,10 @@ export const propertyMap = {
     colorScheme: {
         className: { dev: 'color-scheme', prod: 'cs' },
         normalize: normalizeColorScheme,
+    },
+    columnCount: {
+        className: { dev: 'column-count', prod: 'cc' },
+        normalize: normalizeColumnCount,
     },
     display: {
         className: { dev: 'display', prod: 'd' },

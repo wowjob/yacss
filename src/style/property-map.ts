@@ -50,6 +50,7 @@ import {
   normalizeColorInterpolation,
   normalizeColorInterpolationFilters,
   normalizeColorScheme,
+  normalizeColumnCount,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -123,6 +124,7 @@ import type {
   TColorInterpolation,
   TColorInterpolationFilters,
   TColorScheme,
+  TColumnCount,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -180,6 +182,7 @@ export type TCSSPropValue = Partial<{
   colorInterpolation: TColorInterpolation
   colorInterpolationFilters: TColorInterpolationFilters
   colorScheme: TColorScheme
+  columnCount: TColumnCount
   flex: TFlex
   flexBasis: TFlexBasis
   flexDirection: TFlexDirection
@@ -395,7 +398,7 @@ export const propertyMap: Record<
     normalize: normalizeCaptionSide,
   },
   caretColor: {
-    className: { dev: 'caret-color', prod: 'cc' },
+    className: { dev: 'caret-color', prod: 'crc' },
     normalize: normalizeCaretColor,
   },
   clear: {
@@ -425,6 +428,10 @@ export const propertyMap: Record<
   colorScheme: {
     className: { dev: 'color-scheme', prod: 'cs' },
     normalize: normalizeColorScheme,
+  },
+  columnCount: {
+    className: { dev: 'column-count', prod: 'cc' },
+    normalize: normalizeColumnCount,
   },
   display: {
     className: { dev: 'display', prod: 'd' },
