@@ -9,6 +9,7 @@ export {
   normalizeAnimation,
   normalizeAppearance,
   normalizeAspectRatio,
+  normalizeBackdropFilter,
   normalizeBackground,
   normalizeBlockSize,
   normalizeBorder,

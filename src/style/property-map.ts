@@ -6,6 +6,7 @@ import {
   normalizeAnimation,
   normalizeAppearance,
   normalizeAspectRatio,
+  normalizeBackdropFilter,
   normalizeBackground,
   normalizeBlockSize,
   normalizeBorder,
@@ -85,6 +86,7 @@ import type {
   TAlignContent,
   TAlignItems,
   TAlignSelf,
+  TBackdropFilter,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -96,6 +98,7 @@ export type TCSSPropValue = Partial<{
   animation: TAnimation
   appearance: TAppearance
   aspectRatio: TAspectRatio
+  backdropFilter: TBackdropFilter
   background: TBackground
   blockSize: TBlockSize
   border: TBorder
@@ -180,6 +183,10 @@ export const propertyMap: Record<
   aspectRatio: {
     className: { dev: 'aspect-ratio', prod: 'ar' },
     normalize: normalizeAspectRatio,
+  },
+  backdropFilter: {
+    className: { dev: 'backdrop-filter', prod: 'bf' },
+    normalize: normalizeBackdropFilter,
   },
   background: {
     className: { dev: 'background', prod: 'bg' },
