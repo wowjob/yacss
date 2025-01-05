@@ -47,6 +47,7 @@ console.log(
         style: 'dotted',
         width: 22,
       },
+      borderTopLeftRadius: 80,
     },
     className: 'once-upon a-time padding',
     env: 'prod',
