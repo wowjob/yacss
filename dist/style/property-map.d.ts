@@ -64,6 +64,7 @@ export type TCSSPropValue = Partial<{
     containIntrinsicBlockSize: TContainIntrinsicBlockSize;
     containIntrinsicHeight: TContainIntrinsicHeight;
     containIntrinsicInlineSize: TContainIntrinsicInlineSize;
+    containIntrinsicSize: TContainIntrinsicSize;
     flex: TFlex;
     flexBasis: TFlexBasis;
     flexDirection: TFlexDirection;

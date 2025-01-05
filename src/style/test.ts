@@ -76,6 +76,7 @@ console.log(
       containIntrinsicBlockSize: 160,
       containIntrinsicHeight: 200,
       containIntrinsicInlineSize: 400,
+      containIntrinsicSize: 600,
     },
     className: 'once-upon a-time padding',
   })

@@ -60,6 +60,7 @@ import {
   normalizeContainIntrinsicBlockSize,
   normalizeContainIntrinsicHeight,
   normalizeContainIntrinsicInlineSize,
+  normalizeContainIntrinsicSize,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -210,6 +211,7 @@ export type TCSSPropValue = Partial<{
   containIntrinsicBlockSize: TContainIntrinsicBlockSize
   containIntrinsicHeight: TContainIntrinsicHeight
   containIntrinsicInlineSize: TContainIntrinsicInlineSize
+  containIntrinsicSize: TContainIntrinsicSize
 
   flex: TFlex
   flexBasis: TFlexBasis
@@ -496,6 +498,10 @@ export const propertyMap: Record<
   containIntrinsicInlineSize: {
     className: { dev: 'contain-intrinsic-inline-size', prod: 'ciis' },
     normalize: normalizeContainIntrinsicInlineSize,
+  },
+  containIntrinsicSize: {
+    className: { dev: 'contain-intrinsic-size', prod: 'cis' },
+    normalize: normalizeContainIntrinsicSize,
   },
 
   //
