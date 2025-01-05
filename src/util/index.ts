@@ -53,6 +53,7 @@ export {
   normalizeColorInterpolation,
   normalizeColorInterpolationFilters,
   normalizeColorScheme,
+  normalizeColumnCount,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,

@@ -214,6 +214,10 @@
   --color-scheme: normal;
   color-scheme: var(--color-scheme);
 }
+.column-count {
+  --column-count: auto;
+  column-count: var(--column-count);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -460,6 +464,10 @@
 .tablet.color-scheme {
   --t-color-scheme: normal;
   color-scheme: var(--t-color-scheme);
+}
+.tablet.column-count {
+  --t-column-count: auto;
+  column-count: var(--t-column-count);
 }
 .tablet.display {
   --t-display: inline;
@@ -708,6 +716,10 @@
 .desktop.color-scheme {
   --d-color-scheme: normal;
   color-scheme: var(--d-color-scheme);
+}
+.desktop.column-count {
+  --d-column-count: auto;
+  column-count: var(--d-column-count);
 }
 .desktop.display {
   --d-display: inline;
