@@ -26,6 +26,10 @@
   --aspect-ratio: auto;
   aspect-ratio: var(--aspect-ratio);
 }
+.backdrop-filter {
+  --backdrop-filter: none;
+  backdrop-filter: var(--backdrop-filter);
+}
 .background {
   --background: transparent;
   background: var(--background);
@@ -196,6 +200,10 @@
 .tablet.aspect-ratio {
   --t-aspect-ratio: auto;
   aspect-ratio: var(--t-aspect-ratio);
+}
+.tablet.backdrop-filter {
+  --t-backdrop-filter: none;
+  backdrop-filter: var(--t-backdrop-filter);
 }
 .tablet.background {
   --t-background: transparent;
@@ -368,6 +376,10 @@
 .desktop.aspect-ratio {
   --d-aspect-ratio: auto;
   aspect-ratio: var(--d-aspect-ratio);
+}
+.desktop.backdrop-filter {
+  --d-backdrop-filter: none;
+  backdrop-filter: var(--d-backdrop-filter);
 }
 .desktop.background {
   --d-background: transparent;
