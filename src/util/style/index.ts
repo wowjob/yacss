@@ -1,5 +1,6 @@
 export { normalizeAccentColor } from './accent-color'
 export { normalizeAlignContent } from './align-content'
+export { normalizeAlignItems } from './align-items'
 export { normalizeAnimation } from './animation'
 export { normalizeAppearance } from './appearance'
 export { normalizeAspectRatio } from './aspect-ratio'
