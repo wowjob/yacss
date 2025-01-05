@@ -65,6 +65,11 @@ console.log(
       columnCount: 2,
       columnFill: 'balance',
       columnGap: 20,
+      columnRule: {
+        color: 'blue',
+        style: 'dashed',
+        width: 24,
+      },
     },
     className: 'once-upon a-time padding',
     env: 'prod',
