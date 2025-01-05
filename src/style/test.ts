@@ -78,6 +78,11 @@ console.log(
         style: 'dashed',
         width: 2,
       },
+      borderInline: {
+        color: 'red',
+        style: 'dashed',
+        width: 2,
+      },
     },
     className: 'once-upon a-time padding',
     env: 'prod',
