@@ -1,4 +1,5 @@
 import {
+  normalizeAccentColor,
   normalizeAnimation,
   normalizeAppearance,
   normalizeAspectRatio,
@@ -77,10 +78,12 @@ import type {
   TBlockSize,
   TAspectRatio,
   TAppearance,
+  TAccentColor,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
 export type TCSSPropValue = Partial<{
+  accentColor: TAccentColor
   animation: TAnimation
   appearance: TAppearance
   aspectRatio: TAspectRatio
@@ -141,6 +144,10 @@ export const propertyMap: Record<
     normalize: (value: any) => string | number
   }
 > = {
+  accentColor: {
+    className: { dev: 'accent-color', prod: 'ac' },
+    normalize: normalizeAccentColor,
+  },
   animation: {
     className: { dev: 'animation', prod: 'a' },
     normalize: normalizeAnimation,
