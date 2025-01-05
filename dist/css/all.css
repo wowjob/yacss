@@ -46,6 +46,10 @@
   --border-collapse: separate;
   border-collapse: var(--border-collapse);
 }
+.border-end-end-radius {
+  --border-end-end-radius: 0;
+  border-end-end-radius: var(--border-end-end-radius);
+}
 .border-image {
   --border-image: undefined;
   border-image: var(--border-image);
@@ -152,6 +156,10 @@
 .tablet.border-collapse {
   --t-border-collapse: separate;
   border-collapse: var(--t-border-collapse);
+}
+.tablet.border-end-end-radius {
+  --t-border-end-end-radius: 0;
+  border-end-end-radius: var(--t-border-end-end-radius);
 }
 .tablet.border-image {
   --t-border-image: undefined;
@@ -260,6 +268,10 @@
 .desktop.border-collapse {
   --d-border-collapse: separate;
   border-collapse: var(--d-border-collapse);
+}
+.desktop.border-end-end-radius {
+  --d-border-end-end-radius: 0;
+  border-end-end-radius: var(--d-border-end-end-radius);
 }
 .desktop.border-image {
   --d-border-image: undefined;
