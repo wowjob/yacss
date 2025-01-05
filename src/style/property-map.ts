@@ -16,6 +16,7 @@ import {
   normalizeBorderInlineStart,
   normalizeBorderRadius,
   normalizeBorderStyle,
+  normalizeBorderTop,
   normalizeBorderWidth,
   normalizeDisplay,
   normalizeFlex,
@@ -57,6 +58,7 @@ import type {
   TBorderCollapse,
   TBorderEndEndRadius,
   TBorderEndStartRadius,
+  TBorderTop,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -80,6 +82,7 @@ export type TCSSPropValue = Partial<{
   borderRadius: TBorderRadius
   borderWidth: TBorderWidth
   borderStyle: TBorderStyle | TBorderStyle[]
+  borderTop: TBorderTop
   display: TDisplay
   flex: TFlex
   flexBasis: TFlexBasis
@@ -195,6 +198,11 @@ export const propertyMap: Record<
     className: { dev: 'border-style', prod: 'bs' },
     normalize: normalizeBorderStyle,
   },
+  borderTop: {
+    className: { dev: 'border-top', prod: 'bt' },
+    normalize: normalizeBorderTop,
+  },
+
   display: {
     className: { dev: 'display', prod: 'd' },
     normalize: normalizeDisplay,

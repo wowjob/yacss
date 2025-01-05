@@ -42,6 +42,11 @@ console.log(
       borderCollapse: 'collapse',
       borderEndEndRadius: 20,
       borderEndStartRadius: 24,
+      borderTop: {
+        color: 'blue',
+        style: 'dotted',
+        width: 22,
+      },
     },
     className: 'once-upon a-time padding',
     env: 'prod',

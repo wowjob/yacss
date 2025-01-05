@@ -82,6 +82,10 @@
   --border-style: none;
   border-style: var(--border-style);
 }
+.border-top {
+  --border-top: undefined;
+  border-top: var(--border-top);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -196,6 +200,10 @@
 .tablet.border-style {
   --t-border-style: none;
   border-style: var(--t-border-style);
+}
+.tablet.border-top {
+  --t-border-top: undefined;
+  border-top: var(--t-border-top);
 }
 .tablet.display {
   --t-display: inline;
@@ -312,6 +320,10 @@
 .desktop.border-style {
   --d-border-style: none;
   border-style: var(--d-border-style);
+}
+.desktop.border-top {
+  --d-border-top: undefined;
+  border-top: var(--d-border-top);
 }
 .desktop.display {
   --d-display: inline;
