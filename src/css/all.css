@@ -42,6 +42,10 @@
   --border-block-end: none;
   border-block-end: var(--border-block-end);
 }
+.border-collapse {
+  --border-collapse: separate;
+  border-collapse: var(--border-collapse);
+}
 .border-image {
   --border-image: undefined;
   border-image: var(--border-image);
@@ -144,6 +148,10 @@
 .tablet.border-block-end {
   --t-border-block-end: none;
   border-block-end: var(--t-border-block-end);
+}
+.tablet.border-collapse {
+  --t-border-collapse: separate;
+  border-collapse: var(--t-border-collapse);
 }
 .tablet.border-image {
   --t-border-image: undefined;
@@ -248,6 +256,10 @@
 .desktop.border-block-end {
   --d-border-block-end: none;
   border-block-end: var(--d-border-block-end);
+}
+.desktop.border-collapse {
+  --d-border-collapse: separate;
+  border-collapse: var(--d-border-collapse);
 }
 .desktop.border-image {
   --d-border-image: undefined;
