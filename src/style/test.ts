@@ -70,6 +70,7 @@ console.log(
       alignSelf: 'center',
       backdropFilter: 'blur(2px)',
       backfaceVisibility: 'hidden',
+      backgroundBlendMode: 'color-burn',
     },
     className: 'once-upon a-time padding',
     env: 'prod',

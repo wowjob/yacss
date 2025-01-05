@@ -9,6 +9,7 @@ import {
   normalizeBackdropFilter,
   normalizeBackfaceVisibility,
   normalizeBackground,
+  normalizeBackgroundBlendMode,
   normalizeBlockSize,
   normalizeBorder,
   normalizeBorderBlock,
@@ -89,6 +90,7 @@ import type {
   TAlignSelf,
   TBackdropFilter,
   TBackfaceVisibility,
+  TBackgroundBlendMode,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -103,6 +105,7 @@ export type TCSSPropValue = Partial<{
   backdropFilter: TBackdropFilter
   backfaceVisibility: TBackfaceVisibility
   background: TBackground
+  backgroundBlendMode: TBackgroundBlendMode
   blockSize: TBlockSize
   border: TBorder
   borderBlock: TBorderBlock
@@ -198,6 +201,10 @@ export const propertyMap: Record<
   background: {
     className: { dev: 'background', prod: 'bg' },
     normalize: normalizeBackground,
+  },
+  backgroundBlendMode: {
+    className: { dev: 'background-blend-mode', prod: 'bbm' },
+    normalize: normalizeBackgroundBlendMode,
   },
   blockSize: {
     className: { dev: 'block-size', prod: 'bz' },

@@ -38,6 +38,10 @@
   --background: transparent;
   background: var(--background);
 }
+.background-blend-mode {
+  --background-blend-mode: normal;
+  background-blend-mode: var(--background-blend-mode);
+}
 .block-size {
   --block-size: auto;
   block-size: var(--block-size);
@@ -216,6 +220,10 @@
 .tablet.background {
   --t-background: transparent;
   background: var(--t-background);
+}
+.tablet.background-blend-mode {
+  --t-background-blend-mode: normal;
+  background-blend-mode: var(--t-background-blend-mode);
 }
 .tablet.block-size {
   --t-block-size: auto;
@@ -396,6 +404,10 @@
 .desktop.background {
   --d-background: transparent;
   background: var(--d-background);
+}
+.desktop.background-blend-mode {
+  --d-background-blend-mode: normal;
+  background-blend-mode: var(--d-background-blend-mode);
 }
 .desktop.block-size {
   --d-block-size: auto;
