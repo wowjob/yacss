@@ -5,6 +5,7 @@ export {
   normalizeAccentColor,
   normalizeAlignContent,
   normalizeAlignItems,
+  normalizeAlignSelf,
   normalizeAnimation,
   normalizeAppearance,
   normalizeAspectRatio,
