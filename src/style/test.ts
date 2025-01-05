@@ -37,6 +37,7 @@ console.log(
         style: 'dashed',
         width: 32,
       },
+      borderBottomLeftRadius: 12,
     },
     className: 'once-upon a-time padding',
     env: 'prod',
