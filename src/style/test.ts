@@ -80,6 +80,7 @@ console.log(
       breakInside: 'avoid-region',
       captionSide: 'bottom',
       caretColor: 'transparent',
+      clear: 'both',
     },
     className: 'once-upon a-time padding',
     env: 'prod',

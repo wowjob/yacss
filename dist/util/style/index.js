@@ -42,6 +42,7 @@ export { normalizeBreakBefore } from './break-before';
 export { normalizeBreakInside } from './break-inside';
 export { normalizeCaptionSide } from './caption-side';
 export { normalizeCaretColor } from './caret-color';
+export { normalizeClear } from './clear';
 export { normalizeDisplay } from './display';
 export { normalizeFlex } from './flex';
 export { normalizeFlexBasis } from './flex-basis';
