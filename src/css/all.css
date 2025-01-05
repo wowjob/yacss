@@ -182,6 +182,10 @@
   --caption-side: top;
   caption-side: var(--caption-side);
 }
+.caret-color {
+  --caret-color: auto;
+  caret-color: var(--caret-color);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -396,6 +400,10 @@
 .tablet.caption-side {
   --t-caption-side: top;
   caption-side: var(--t-caption-side);
+}
+.tablet.caret-color {
+  --t-caret-color: auto;
+  caret-color: var(--t-caret-color);
 }
 .tablet.display {
   --t-display: inline;
@@ -612,6 +620,10 @@
 .desktop.caption-side {
   --d-caption-side: top;
   caption-side: var(--d-caption-side);
+}
+.desktop.caret-color {
+  --d-caret-color: auto;
+  caret-color: var(--d-caret-color);
 }
 .desktop.display {
   --d-display: inline;

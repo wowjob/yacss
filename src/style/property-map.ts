@@ -42,6 +42,7 @@ import {
   normalizeBreakBefore,
   normalizeBreakInside,
   normalizeCaptionSide,
+  normalizeCaretColor,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -107,6 +108,7 @@ import type {
   TBreakBefore,
   TBreakInside,
   TCaptionSide,
+  TCaretColor,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -156,6 +158,7 @@ export type TCSSPropValue = Partial<{
   breakBefore: TBreakBefore
   breakInside: TBreakInside
   captionSide: TCaptionSide
+  caretColor: TCaretColor
   flex: TFlex
   flexBasis: TFlexBasis
   flexDirection: TFlexDirection
@@ -370,7 +373,10 @@ export const propertyMap: Record<
     className: { dev: 'caption-side', prod: 'cs' },
     normalize: normalizeCaptionSide,
   },
-
+  caretColor: {
+    className: { dev: 'caret-color', prod: 'cc' },
+    normalize: normalizeCaretColor,
+  },
   display: {
     className: { dev: 'display', prod: 'd' },
     normalize: normalizeDisplay,
