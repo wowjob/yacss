@@ -178,6 +178,10 @@
   --break-inside: auto;
   break-inside: var(--break-inside);
 }
+.caption-side {
+  --caption-side: top;
+  caption-side: var(--caption-side);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -388,6 +392,10 @@
 .tablet.break-inside {
   --t-break-inside: auto;
   break-inside: var(--t-break-inside);
+}
+.tablet.caption-side {
+  --t-caption-side: top;
+  caption-side: var(--t-caption-side);
 }
 .tablet.display {
   --t-display: inline;
@@ -600,6 +608,10 @@
 .desktop.break-inside {
   --d-break-inside: auto;
   break-inside: var(--d-break-inside);
+}
+.desktop.caption-side {
+  --d-caption-side: top;
+  caption-side: var(--d-caption-side);
 }
 .desktop.display {
   --d-display: inline;
