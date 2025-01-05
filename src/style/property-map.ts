@@ -51,6 +51,7 @@ import {
   normalizeColorInterpolationFilters,
   normalizeColorScheme,
   normalizeColumnCount,
+  normalizeColumnFill,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -125,6 +126,7 @@ import type {
   TColorInterpolationFilters,
   TColorScheme,
   TColumnCount,
+  TColumnFill,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -183,6 +185,7 @@ export type TCSSPropValue = Partial<{
   colorInterpolationFilters: TColorInterpolationFilters
   colorScheme: TColorScheme
   columnCount: TColumnCount
+  columnFill: TColumnFill
   flex: TFlex
   flexBasis: TFlexBasis
   flexDirection: TFlexDirection
@@ -432,6 +435,10 @@ export const propertyMap: Record<
   columnCount: {
     className: { dev: 'column-count', prod: 'cc' },
     normalize: normalizeColumnCount,
+  },
+  columnFill: {
+    className: { dev: 'column-fill', prod: 'cf' },
+    normalize: normalizeColumnFill,
   },
   display: {
     className: { dev: 'display', prod: 'd' },

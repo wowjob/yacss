@@ -54,6 +54,7 @@ export {
   normalizeColorInterpolationFilters,
   normalizeColorScheme,
   normalizeColumnCount,
+  normalizeColumnFill,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
