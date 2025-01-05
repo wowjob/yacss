@@ -72,8 +72,8 @@ console.log(
       },
       columnSpan: 'all',
       columnWidth: 20,
+      contain: 'content',
     },
     className: 'once-upon a-time padding',
-    env: 'prod',
   })
 )
