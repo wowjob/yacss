@@ -51,6 +51,7 @@ export { normalizeColorInterpolationFilters } from './color-interpolation-filter
 export { normalizeColorScheme } from './color-scheme'
 export { normalizeColumnCount } from './column-count'
 export { normalizeColumnFill } from './column-fill'
+export { normalizeColumnGap } from './column-gap'
 export { normalizeDisplay } from './display'
 export { normalizeFlex } from './flex'
 export { normalizeFlexBasis } from './flex-basis'

@@ -52,6 +52,7 @@ import {
   normalizeColorScheme,
   normalizeColumnCount,
   normalizeColumnFill,
+  normalizeColumnGap,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -127,6 +128,7 @@ import type {
   TColorScheme,
   TColumnCount,
   TColumnFill,
+  TColumnGap,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -186,6 +188,8 @@ export type TCSSPropValue = Partial<{
   colorScheme: TColorScheme
   columnCount: TColumnCount
   columnFill: TColumnFill
+  columnGap: TColumnGap
+
   flex: TFlex
   flexBasis: TFlexBasis
   flexDirection: TFlexDirection
@@ -440,6 +444,11 @@ export const propertyMap: Record<
     className: { dev: 'column-fill', prod: 'cf' },
     normalize: normalizeColumnFill,
   },
+  columnGap: {
+    className: { dev: 'column-gap', prod: 'cg' },
+    normalize: normalizeColumnGap,
+  },
+
   display: {
     className: { dev: 'display', prod: 'd' },
     normalize: normalizeDisplay,

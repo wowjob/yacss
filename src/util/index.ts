@@ -55,6 +55,7 @@ export {
   normalizeColorScheme,
   normalizeColumnCount,
   normalizeColumnFill,
+  normalizeColumnGap,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
