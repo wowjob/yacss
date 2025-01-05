@@ -38,6 +38,7 @@ import {
   normalizeBorderWidth,
   normalizeBoxShadow,
   normalizeBoxSizing,
+  normalizeBreakAfter,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -99,6 +100,7 @@ import type {
   TBackgroundOrigin,
   TBoxShadow,
   TBoxSizing,
+  TBreakAfter,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -144,6 +146,7 @@ export type TCSSPropValue = Partial<{
   display: TDisplay
   boxShadow: TBoxShadow
   boxSizing: TBoxSizing
+  breakAfter: TBreakAfter
   flex: TFlex
   flexBasis: TFlexBasis
   flexDirection: TFlexDirection
@@ -341,6 +344,10 @@ export const propertyMap: Record<
   boxSizing: {
     className: { dev: 'box-sizing', prod: 'bsz' },
     normalize: normalizeBoxSizing,
+  },
+  breakAfter: {
+    className: { dev: 'break-after', prod: 'ba' },
+    normalize: normalizeBreakAfter,
   },
   display: {
     className: { dev: 'display', prod: 'd' },

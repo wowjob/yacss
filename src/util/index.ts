@@ -41,6 +41,7 @@ export {
   normalizeBorderTopRightRadius,
   normalizeBoxShadow,
   normalizeBoxSizing,
+  normalizeBreakAfter,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,

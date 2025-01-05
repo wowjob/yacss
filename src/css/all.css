@@ -166,6 +166,10 @@
   --box-sizing: content-box;
   box-sizing: var(--box-sizing);
 }
+.break-after {
+  --break-after: auto;
+  break-after: var(--break-after);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -364,6 +368,10 @@
 .tablet.box-sizing {
   --t-box-sizing: content-box;
   box-sizing: var(--t-box-sizing);
+}
+.tablet.break-after {
+  --t-break-after: auto;
+  break-after: var(--t-break-after);
 }
 .tablet.display {
   --t-display: inline;
@@ -564,6 +572,10 @@
 .desktop.box-sizing {
   --d-box-sizing: content-box;
   box-sizing: var(--d-box-sizing);
+}
+.desktop.break-after {
+  --d-break-after: auto;
+  break-after: var(--d-break-after);
 }
 .desktop.display {
   --d-display: inline;
