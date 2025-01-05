@@ -71,6 +71,7 @@ console.log(
       backdropFilter: 'blur(2px)',
       backfaceVisibility: 'hidden',
       backgroundBlendMode: 'color-burn',
+      backgroundClip: 'border-area',
     },
     className: 'once-upon a-time padding',
     env: 'prod',

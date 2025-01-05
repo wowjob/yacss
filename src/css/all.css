@@ -42,6 +42,10 @@
   --background-blend-mode: normal;
   background-blend-mode: var(--background-blend-mode);
 }
+.background-clip {
+  --background-clip: border-box;
+  background-clip: var(--background-clip);
+}
 .block-size {
   --block-size: auto;
   block-size: var(--block-size);
@@ -224,6 +228,10 @@
 .tablet.background-blend-mode {
   --t-background-blend-mode: normal;
   background-blend-mode: var(--t-background-blend-mode);
+}
+.tablet.background-clip {
+  --t-background-clip: border-box;
+  background-clip: var(--t-background-clip);
 }
 .tablet.block-size {
   --t-block-size: auto;
@@ -408,6 +416,10 @@
 .desktop.background-blend-mode {
   --d-background-blend-mode: normal;
   background-blend-mode: var(--d-background-blend-mode);
+}
+.desktop.background-clip {
+  --d-background-clip: border-box;
+  background-clip: var(--d-background-clip);
 }
 .desktop.block-size {
   --d-block-size: auto;

@@ -13,6 +13,7 @@ export {
   normalizeBackfaceVisibility,
   normalizeBackground,
   normalizeBackgroundBlendMode,
+  normalizeBackgroundClip,
   normalizeBlockSize,
   normalizeBorder,
   normalizeBorderBlock,

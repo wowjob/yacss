@@ -10,6 +10,7 @@ import {
   normalizeBackfaceVisibility,
   normalizeBackground,
   normalizeBackgroundBlendMode,
+  normalizeBackgroundClip,
   normalizeBlockSize,
   normalizeBorder,
   normalizeBorderBlock,
@@ -91,6 +92,7 @@ import type {
   TBackdropFilter,
   TBackfaceVisibility,
   TBackgroundBlendMode,
+  TBackgroundClip,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -106,6 +108,7 @@ export type TCSSPropValue = Partial<{
   backfaceVisibility: TBackfaceVisibility
   background: TBackground
   backgroundBlendMode: TBackgroundBlendMode
+  backgroundClip: TBackgroundClip
   blockSize: TBlockSize
   border: TBorder
   borderBlock: TBorderBlock
@@ -206,6 +209,10 @@ export const propertyMap: Record<
     className: { dev: 'background-blend-mode', prod: 'bbm' },
     normalize: normalizeBackgroundBlendMode,
   },
+  backgroundClip: {
+    className: { dev: 'background-clip', prod: 'bc' },
+    normalize: normalizeBackgroundClip,
+  },
   blockSize: {
     className: { dev: 'block-size', prod: 'bz' },
     normalize: normalizeBlockSize,
@@ -247,7 +254,7 @@ export const propertyMap: Record<
     normalize: normalizeBorderBlockEnd,
   },
   borderCollapse: {
-    className: { dev: 'border-collapse', prod: 'bc' },
+    className: { dev: 'border-collapse', prod: 'bdc' },
     normalize: normalizeBorderCollapse,
   },
   borderEndEndRadius: {
