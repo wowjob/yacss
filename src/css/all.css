@@ -202,6 +202,10 @@
   --color: currentcolor;
   color: var(--color);
 }
+.color-interpolation {
+  --color-interpolation: srgb;
+  color-interpolation: var(--color-interpolation);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -436,6 +440,10 @@
 .tablet.color {
   --t-color: currentcolor;
   color: var(--t-color);
+}
+.tablet.color-interpolation {
+  --t-color-interpolation: srgb;
+  color-interpolation: var(--t-color-interpolation);
 }
 .tablet.display {
   --t-display: inline;
@@ -672,6 +680,10 @@
 .desktop.color {
   --d-color: currentcolor;
   color: var(--d-color);
+}
+.desktop.color-interpolation {
+  --d-color-interpolation: srgb;
+  color-interpolation: var(--d-color-interpolation);
 }
 .desktop.display {
   --d-display: inline;
