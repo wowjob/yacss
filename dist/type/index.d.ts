@@ -60,6 +60,7 @@ export type { TColumnSpan } from './column-span';
 export type { TColumnWidth } from './column-width';
 export type { TContain } from './contain';
 export type { TContainIntrinsicBlockSize } from './contain-intrinsic-block-size';
+export type { TContainIntrinsicHeight } from './contain-intrinsic-height';
 export type { TDisplay } from './display';
 export type { TFlex } from './flex';
 export type { TFlexBasis } from './flex-basis';

@@ -74,6 +74,7 @@ console.log(
       columnWidth: 20,
       contain: 'content',
       containIntrinsicBlockSize: 160,
+      containIntrinsicHeight: 200,
     },
     className: 'once-upon a-time padding',
   })

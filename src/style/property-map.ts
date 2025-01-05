@@ -58,6 +58,7 @@ import {
   normalizeColumnWidth,
   normalizeContain,
   normalizeContainIntrinsicBlockSize,
+  normalizeContainIntrinsicHeight,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -139,6 +140,7 @@ import type {
   TColumnWidth,
   TContain,
   TContainIntrinsicBlockSize,
+  TContainIntrinsicHeight,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -204,6 +206,7 @@ export type TCSSPropValue = Partial<{
   columnWidth: TColumnWidth
   contain: TContain
   containIntrinsicBlockSize: TContainIntrinsicBlockSize
+  containIntrinsicHeight: TContainIntrinsicHeight
 
   flex: TFlex
   flexBasis: TFlexBasis
@@ -482,6 +485,10 @@ export const propertyMap: Record<
   containIntrinsicBlockSize: {
     className: { dev: 'contain-intrinsic-block-size', prod: 'cib' },
     normalize: normalizeContainIntrinsicBlockSize,
+  },
+  containIntrinsicHeight: {
+    className: { dev: 'contain-intrinsic-height', prod: 'cih' },
+    normalize: normalizeContainIntrinsicHeight,
   },
 
   //
