@@ -60,6 +60,7 @@ console.log(
         width: 2,
       },
       borderStartEndRadius: 22,
+      borderStartStartRadius: 16,
     },
     className: 'once-upon a-time padding',
     env: 'prod',
