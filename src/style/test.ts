@@ -78,6 +78,7 @@ console.log(
       containIntrinsicInlineSize: 400,
       containIntrinsicSize: 600,
       containIntrinsicWidth: 100,
+      container: 'layout-parent',
     },
     className: 'once-upon a-time padding',
   })
