@@ -1,5 +1,5 @@
 {
-  "version": "0.8.4",
+  "version": "0.8.5",
   "name": "@wowjob/yacss",
   "author": "Marian Zburlea",
   "license": "MIT",
@@ -8,6 +8,7 @@
     "build-css": "bun build-css.js",
     "build-js": "tsc --outDir dist",
     "release": "npm publish && git checkout main && git pull && ./tag.sh && git checkout dev",
+    "tag": "git checkout main && git pull && ./tag.sh && git checkout dev",
     "build": "bun run build-css.js && bun run build-js"
   },
   "description": "Yet Another CSS UI library, which provides zero build time, best debugging DX, very flexible, reposniveness for RWD at core, and works with React, NextJS, Astro and more",
