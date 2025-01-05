@@ -32,6 +32,12 @@ console.log(
       borderWidth: [20, 3, 10, 2],
       display: 'flex',
       borderRadius: 24,
+      borderBottom: {
+        color: 'red',
+        style: 'dashed',
+        width: 32,
+      },
+      borderBottomLeftRadius: 12,
     },
     className: 'once-upon a-time padding',
     env: 'prod',

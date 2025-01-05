@@ -8,6 +8,8 @@ export {
   normalizeBorderBlock,
   normalizeBorderBlockStart,
   normalizeBorderBlockEnd,
+  normalizeBorderBottom,
+  normalizeBorderBottomLeftRadius,
   normalizeBorderImage,
   normalizeBorderInlineStart,
   normalizeBorderInlineEnd,
