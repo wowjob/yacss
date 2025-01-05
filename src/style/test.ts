@@ -84,6 +84,7 @@ console.log(
       clip: 'rect(1px, 2px, 3px, 4px)',
       clipPath: 'border-box',
       color: 'blue',
+      colorInterpolation: 'linearRGB',
     },
     className: 'once-upon a-time padding',
     env: 'prod',

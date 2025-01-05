@@ -117,7 +117,9 @@ import type {
   TClip,
   TClipPath,
   TColor,
+  TColorInterpolation,
 } from '../type'
+import { normalizeColorInterpolation } from '../util/style'
 
 export type TEnv = 'dev' | 'prod'
 export type TCSSPropValue = Partial<{
@@ -171,6 +173,7 @@ export type TCSSPropValue = Partial<{
   clip: TClip
   clipPath: TClipPath
   color: TColor
+  colorInterpolation: TColorInterpolation
   flex: TFlex
   flexBasis: TFlexBasis
   flexDirection: TFlexDirection
@@ -404,6 +407,10 @@ export const propertyMap: Record<
   color: {
     className: { dev: 'color', prod: 'c' },
     normalize: normalizeColor,
+  },
+  colorInterpolation: {
+    className: { dev: 'color-interpolation', prod: 'ci' },
+    normalize: normalizeColorInterpolation,
   },
   display: {
     className: { dev: 'display', prod: 'd' },

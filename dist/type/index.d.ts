@@ -49,6 +49,7 @@ export type { TClear } from './clear';
 export type { TClip } from './clip';
 export type { TClipPath } from './clip-path';
 export type { TColor } from './color';
+export type { TColorInterpolation } from './color-interpolation';
 export type { TDisplay } from './display';
 export type { TFlex } from './flex';
 export type { TFlexBasis } from './flex-basis';
