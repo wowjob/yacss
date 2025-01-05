@@ -12,6 +12,7 @@ export {
   normalizeBorderBottomLeftRadius,
   normalizeBorderBottomRightRadius,
   normalizeBorderCollapse,
+  normalizeBorderEndEndRadius,
   normalizeBorderImage,
   normalizeBorderInlineStart,
   normalizeBorderInlineEnd,
