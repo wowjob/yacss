@@ -76,6 +76,7 @@ console.log(
       boxShadow: ['2px', '2px', '2px', 'black'],
       boxSizing: 'border-box',
       breakAfter: 'avoid-column',
+      breakBefore: 'avoid',
     },
     className: 'once-upon a-time padding',
     env: 'prod',
