@@ -124,5 +124,6 @@ export { normalizeInlineSize } from './inline-size';
 export { normalizeInset } from './inset';
 export { normalizeInsetBlock } from './inset-block';
 export { normalizeInsetInline } from './inset-inline';
+export { normalizeIsolation } from './isolation';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';

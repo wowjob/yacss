@@ -24,6 +24,7 @@ console.log(
       inset: [20, 20, 20, 20],
       insetBlock: { start: '22px', end: 10 },
       insetInline: [10, 20],
+      isolation: 'isolate',
     },
     className: 'yes-no',
   })
