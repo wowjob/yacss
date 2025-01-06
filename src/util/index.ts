@@ -130,6 +130,7 @@ export {
   normalizeInsetInline,
   normalizeIsolation,
   normalizeJustifyContent,
+  normalizeJustifyItems,
   normalizeMargin,
   normalizePadding,
 } from './style'

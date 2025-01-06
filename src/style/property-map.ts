@@ -127,6 +127,7 @@ import {
   normalizeInsetInline,
   normalizeIsolation,
   normalizeJustifyContent,
+  normalizeJustifyItems,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -263,6 +264,7 @@ import type {
   TInsetInline,
   TIsolation,
   TJustifyContent,
+  TJustifyItems,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -396,6 +398,7 @@ export type TCSSPropValue = Partial<{
   insetInline: TInsetInline
   isolation: TIsolation
   justifyContent: TJustifyContent
+  justifyItems: TJustifyItems
 
   margin: TMargin
   padding: TPadding
@@ -944,5 +947,9 @@ export const propertyMap: Record<
   justifyContent: {
     className: { dev: 'justify-content', prod: 'jc' },
     normalize: normalizeJustifyContent,
+  },
+  justifyItems: {
+    className: { dev: 'justify-items', prod: 'ji' },
+    normalize: normalizeJustifyItems,
   },
 } as const

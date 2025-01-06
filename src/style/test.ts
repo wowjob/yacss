@@ -26,6 +26,7 @@ console.log(
       insetInline: [10, 20],
       isolation: 'isolate',
       justifyContent: 'space-around',
+      justifyItems: 'anchor-center',
     },
     className: 'yes-no',
   })
