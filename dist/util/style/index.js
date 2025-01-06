@@ -69,6 +69,7 @@ export { normalizeCounterReset } from './counter-reset';
 export { normalizeCounterSet } from './counter-set';
 export { normalizeCursor } from './cursor';
 export { normalizeCx } from './cx';
+export { normalizeCy } from './cy';
 export { normalizeDisplay } from './display';
 export { normalizeFlex } from './flex';
 export { normalizeFlexBasis } from './flex-basis';

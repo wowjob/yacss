@@ -85,6 +85,7 @@ console.log(
       counterReset: 'test',
       cursor: 'crosshair',
       cx: 20,
+      cy: 40,
     },
     className: 'once-upon a-time padding',
   })

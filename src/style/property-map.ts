@@ -70,6 +70,7 @@ import {
   normalizeCounterSet,
   normalizeCursor,
   normalizeCx,
+  normalizeCy,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -163,6 +164,7 @@ import type {
   TCounterSet,
   TCursor,
   TCx,
+  TCy,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -240,6 +242,7 @@ export type TCSSPropValue = Partial<{
   counterSet: TCounterSet
   cursor: TCursor
   cx: TCx
+  cy: TCy
 
   flex: TFlex
   flexBasis: TFlexBasis
@@ -566,6 +569,10 @@ export const propertyMap: Record<
   cx: {
     className: { dev: 'cx', prod: 'cx' },
     normalize: normalizeCx,
+  },
+  cy: {
+    className: { dev: 'cy', prod: 'cy' },
+    normalize: normalizeCy,
   },
 
   //
