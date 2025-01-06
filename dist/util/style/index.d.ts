@@ -72,6 +72,7 @@ export { normalizeCx } from './cx';
 export { normalizeCy } from './cy';
 export { normalizeD } from './d';
 export { normalizeDisplay } from './display';
+export { normalizeDirection } from './direction';
 export { normalizeFlex } from './flex';
 export { normalizeFlexBasis } from './flex-basis';
 export { normalizeFlexDirection } from './flex-direction';
