@@ -96,5 +96,6 @@ export { normalizeFontLanguageOverride } from './font-language-override';
 export { normalizeFontOpticalSizing } from './font-optical-sizing';
 export { normalizeFontPalette } from './font-palette';
 export { normalizeFontSizeAdjust } from './font-size-adjust';
+export { normalizeFontSynthesisSmallCaps } from './font-synthesis-small-caps';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';
