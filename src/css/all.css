@@ -442,6 +442,10 @@
   --font-variation-settings: normal;
   font-variation-settings: var(--font-variation-settings);
 }
+.forced-color-adjust {
+  --forced-color-adjust: undefined;
+  forced-color-adjust: var(--forced-color-adjust);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -888,6 +892,10 @@
 .tablet.font-variation-settings {
   --t-font-variation-settings: var(--font-variation-settings);
   font-variation-settings: var(--t-font-variation-settings);
+}
+.tablet.forced-color-adjust {
+  --t-forced-color-adjust: var(--forced-color-adjust);
+  forced-color-adjust: var(--t-forced-color-adjust);
 }
 
 }
@@ -1336,6 +1344,10 @@
 .desktop.font-variation-settings {
   --d-font-variation-settings: var(--t-font-variation-settings);
   font-variation-settings: var(--d-font-variation-settings);
+}
+.desktop.forced-color-adjust {
+  --d-forced-color-adjust: var(--t-forced-color-adjust);
+  forced-color-adjust: var(--d-forced-color-adjust);
 }
 
 }
