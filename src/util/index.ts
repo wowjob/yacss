@@ -71,6 +71,7 @@ export {
   normalizeCounterIncrement,
   normalizeCounterReset,
   normalizeCounterSet,
+  normalizeCursor,
   //
   normalizeDisplay,
   normalizeFlex,

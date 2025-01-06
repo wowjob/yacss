@@ -67,6 +67,7 @@ export { normalizeContentVisibility } from './content-visibility';
 export { normalizeCounterIncrement } from './counter-increment';
 export { normalizeCounterReset } from './counter-reset';
 export { normalizeCounterSet } from './counter-set';
+export { normalizeCursor } from './cursor';
 export { normalizeDisplay } from './display';
 export { normalizeFlex } from './flex';
 export { normalizeFlexBasis } from './flex-basis';

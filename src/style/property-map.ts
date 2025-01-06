@@ -68,6 +68,7 @@ import {
   normalizeCounterIncrement,
   normalizeCounterReset,
   normalizeCounterSet,
+  normalizeCursor,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -159,6 +160,7 @@ import type {
   TCounterIncrement,
   TCounterReset,
   TCounterSet,
+  TCursor,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -234,6 +236,7 @@ export type TCSSPropValue = Partial<{
   counterIncrement: TCounterIncrement
   counterReset: TCounterReset
   counterSet: TCounterSet
+  cursor: TCursor
 
   flex: TFlex
   flexBasis: TFlexBasis
@@ -552,6 +555,10 @@ export const propertyMap: Record<
   counterSet: {
     className: { dev: 'counter-set', prod: 'cse' },
     normalize: normalizeCounterSet,
+  },
+  cursor: {
+    className: { dev: 'cursor', prod: 'cur' },
+    normalize: normalizeCursor,
   },
 
   //
