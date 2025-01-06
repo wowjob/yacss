@@ -386,6 +386,10 @@
   --font-kerning: auto;
   font-kerning: var(--font-kerning);
 }
+.font-language-override {
+  --font-language-override: undefined;
+  font-language-override: var(--font-language-override);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -776,6 +780,10 @@
 .tablet.font-kerning {
   --t-font-kerning: var(--font-kerning);
   font-kerning: var(--t-font-kerning);
+}
+.tablet.font-language-override {
+  --t-font-language-override: var(--font-language-override);
+  font-language-override: var(--t-font-language-override);
 }
 
 }
@@ -1168,6 +1176,10 @@
 .desktop.font-kerning {
   --d-font-kerning: var(--t-font-kerning);
   font-kerning: var(--d-font-kerning);
+}
+.desktop.font-language-override {
+  --d-font-language-override: var(--t-font-language-override);
+  font-language-override: var(--d-font-language-override);
 }
 
 }
