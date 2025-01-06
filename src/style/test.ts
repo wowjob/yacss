@@ -25,6 +25,7 @@ console.log(
       fontKerning: 'auto',
       fontLanguageOverride: '"ENG"',
       fontOpticalSizing: 'inherit',
+      fontPalette: 'normal',
     },
     className: 'yes-no',
   })
