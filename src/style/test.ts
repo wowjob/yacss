@@ -12,6 +12,7 @@ console.log(
         start: 1,
         end: -1,
       },
+      gridRow: [1, 4],
     },
     className: 'yes-no',
   })

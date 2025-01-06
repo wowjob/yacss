@@ -116,6 +116,7 @@ export {
   normalizeGridAutoFlow,
   normalizeGridAutoRows,
   normalizeGridColumn,
+  normalizeGridRow,
   normalizeMargin,
   normalizePadding,
 } from './style'
