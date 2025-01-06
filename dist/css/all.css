@@ -446,6 +446,10 @@
   --forced-color-adjust: undefined;
   forced-color-adjust: var(--forced-color-adjust);
 }
+.gap {
+  --gap: normal;
+  gap: var(--gap);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -896,6 +900,10 @@
 .tablet.forced-color-adjust {
   --t-forced-color-adjust: var(--forced-color-adjust);
   forced-color-adjust: var(--t-forced-color-adjust);
+}
+.tablet.gap {
+  --t-gap: var(--gap);
+  gap: var(--t-gap);
 }
 
 }
@@ -1348,6 +1356,10 @@
 .desktop.forced-color-adjust {
   --d-forced-color-adjust: var(--t-forced-color-adjust);
   forced-color-adjust: var(--d-forced-color-adjust);
+}
+.desktop.gap {
+  --d-gap: var(--t-gap);
+  gap: var(--d-gap);
 }
 
 }

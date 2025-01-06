@@ -108,6 +108,7 @@ import {
   normalizeFontVariantPosition,
   normalizeFontVariationSettings,
   normalizeForcedColorAdjust,
+  normalizeGap,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -225,6 +226,7 @@ import type {
   TFontVariantPosition,
   TFontVariationSettings,
   TForcedColorAdjust,
+  TGap,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -339,6 +341,7 @@ export type TCSSPropValue = Partial<{
   fontVariantPosition: TFontVariantPosition
   fontVariationSettings: TFontVariationSettings
   forcedColorAdjust: TForcedColorAdjust
+  gap: TGap
 
   margin: TMargin
   padding: TPadding
@@ -811,5 +814,9 @@ export const propertyMap: Record<
   forcedColorAdjust: {
     className: { dev: 'forced-color-adjust', prod: 'fca' },
     normalize: normalizeForcedColorAdjust,
+  },
+  gap: {
+    className: { dev: 'gap', prod: 'gp' },
+    normalize: normalizeGap,
   },
 } as const
