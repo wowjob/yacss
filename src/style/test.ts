@@ -35,6 +35,7 @@ console.log(
       fontVariantEastAsian: 'full-width',
       fontVariantLigatures: 'common-ligatures',
       fontVariantNumeric: 'diagonal-fractions',
+      fontVariantPosition: 'sub',
     },
     className: 'yes-no',
   })
