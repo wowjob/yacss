@@ -81,6 +81,7 @@ console.log(
       container: 'layout-parent',
       content: 'no-close-quote',
       contentVisibility: 'hidden',
+      counterIncrement: 'test',
     },
     className: 'once-upon a-time padding',
   })
