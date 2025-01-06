@@ -115,5 +115,6 @@ export { normalizeGridColumn } from './grid-column';
 export { normalizeGridRow } from './grid-row';
 export { normalizeGridTemplate } from './grid-template';
 export { normalizeGridTemplateAreas } from './grid-template-areas';
+export { normalizeHeight } from './height';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';
