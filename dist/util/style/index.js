@@ -70,6 +70,7 @@ export { normalizeCounterSet } from './counter-set';
 export { normalizeCursor } from './cursor';
 export { normalizeCx } from './cx';
 export { normalizeCy } from './cy';
+export { normalizeD } from './d';
 export { normalizeDisplay } from './display';
 export { normalizeFlex } from './flex';
 export { normalizeFlexBasis } from './flex-basis';

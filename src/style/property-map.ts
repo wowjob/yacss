@@ -71,6 +71,7 @@ import {
   normalizeCursor,
   normalizeCx,
   normalizeCy,
+  normalizeD,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -165,6 +166,7 @@ import type {
   TCursor,
   TCx,
   TCy,
+  TD,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -243,6 +245,7 @@ export type TCSSPropValue = Partial<{
   cursor: TCursor
   cx: TCx
   cy: TCy
+  d: TD
 
   flex: TFlex
   flexBasis: TFlexBasis
@@ -574,10 +577,14 @@ export const propertyMap: Record<
     className: { dev: 'cy', prod: 'cy' },
     normalize: normalizeCy,
   },
+  d: {
+    className: { dev: 'd', prod: 'd' },
+    normalize: normalizeD,
+  },
 
   //
   display: {
-    className: { dev: 'display', prod: 'd' },
+    className: { dev: 'display', prod: 'ds' },
     normalize: normalizeDisplay,
   },
   flex: {

@@ -86,6 +86,7 @@ console.log(
       cursor: 'crosshair',
       cx: 20,
       cy: 40,
+      d: 'revert',
     },
     className: 'once-upon a-time padding',
   })

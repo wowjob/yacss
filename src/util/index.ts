@@ -74,6 +74,7 @@ export {
   normalizeCursor,
   normalizeCx,
   normalizeCy,
+  normalizeD,
   //
   normalizeDisplay,
   normalizeFlex,
