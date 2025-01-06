@@ -26,6 +26,7 @@ console.log(
       fontLanguageOverride: '"ENG"',
       fontOpticalSizing: 'inherit',
       fontPalette: 'normal',
+      fontSizeAdjust: 'ch-width from-font',
     },
     className: 'yes-no',
   })

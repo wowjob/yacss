@@ -99,6 +99,7 @@ export {
   normalizeFontLanguageOverride,
   normalizeFontOpticalSizing,
   normalizeFontPalette,
+  normalizeFontSizeAdjust,
   normalizeMargin,
   normalizePadding,
 } from './style'
