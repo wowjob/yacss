@@ -63,6 +63,7 @@ export { normalizeContainIntrinsicSize } from './contain-intrinsic-size';
 export { normalizeContainIntrinsicWidth } from './contain-intrinsic-width';
 export { normalizeContainer } from './container';
 export { normalizeContent } from './content';
+export { normalizeContentVisibility } from './content-visibility';
 export { normalizeDisplay } from './display';
 export { normalizeFlex } from './flex';
 export { normalizeFlexBasis } from './flex-basis';
