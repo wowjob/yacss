@@ -23,6 +23,7 @@ console.log(
       },
       fontFeatureSettings: 'revert',
       fontKerning: 'auto',
+      fontLanguageOverride: '"ENG"',
     },
     className: 'yes-no',
   })

@@ -93,6 +93,7 @@ import {
   normalizeFont,
   normalizeFontFeatureSettings,
   normalizeFontKerning,
+  normalizeFontLanguageOverride,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -195,6 +196,7 @@ import type {
   TFont,
   TFontFeatureSettings,
   TFontKerning,
+  TFontLanguageOverride,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -294,6 +296,7 @@ export type TCSSPropValue = Partial<{
   font: TFont
   fontFeatureSettings: TFontFeatureSettings
   fontKerning: TFontKerning
+  fontLanguageOverride: TFontLanguageOverride
 
   margin: TMargin
   padding: TPadding
@@ -706,5 +709,9 @@ export const propertyMap: Record<
   fontKerning: {
     className: { dev: 'font-kerning', prod: 'fk' },
     normalize: normalizeFontKerning,
+  },
+  fontLanguageOverride: {
+    className: { dev: 'font-language-override', prod: 'flov' },
+    normalize: normalizeFontLanguageOverride,
   },
 } as const
