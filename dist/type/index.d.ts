@@ -111,5 +111,6 @@ export type { TFontVariantPosition } from './font-variant-position';
 export type { TFontVariationSettings } from './font-variation-settings';
 export type { TForcedColorAdjust } from './forced-color-adjust';
 export type { TGap } from './gap';
+export type { TGridAutoColumns } from './grid-auto-columns';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';
