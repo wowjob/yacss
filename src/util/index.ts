@@ -120,6 +120,7 @@ export {
   normalizeGridTemplate,
   normalizeGridTemplateAreas,
   normalizeHeight,
+  normalizeHyphenateCharacter,
   normalizeMargin,
   normalizePadding,
 } from './style'

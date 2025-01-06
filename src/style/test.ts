@@ -16,6 +16,7 @@ console.log(
       gridTemplate: { columns: '1fr 2fr', rows: 'auto 1fr auto' },
       gridTemplateAreas: ['a a .', 'b b b'],
       height: 'fit-content',
+      hyphenateCharacter: 'auto',
     },
     className: 'yes-no',
   })

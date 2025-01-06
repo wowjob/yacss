@@ -117,6 +117,7 @@ import {
   normalizeGridTemplate,
   normalizeGridTemplateAreas,
   normalizeHeight,
+  normalizeHyphenateCharacter,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -243,6 +244,7 @@ import type {
   TGridTemplate,
   TGridTemplateAreas,
   THeight,
+  THyphenateCharacter,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -366,6 +368,7 @@ export type TCSSPropValue = Partial<{
   gridTemplate: TGridTemplate
   gridTemplateAreas: TGridTemplateAreas
   height: THeight
+  hyphenateCharacter: THyphenateCharacter
 
   margin: TMargin
   padding: TPadding
@@ -874,5 +877,9 @@ export const propertyMap: Record<
   height: {
     className: { dev: 'height', prod: 'h' },
     normalize: normalizeHeight,
+  },
+  hyphenateCharacter: {
+    className: { dev: 'hyphenate-character', prod: 'hc' },
+    normalize: normalizeHyphenateCharacter,
   },
 } as const
