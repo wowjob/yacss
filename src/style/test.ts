@@ -21,6 +21,7 @@ console.log(
         size: 22,
         stretch: 'condensed',
       },
+      fontFeatureSettings: 'revert',
     },
     className: 'yes-no',
   })

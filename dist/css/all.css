@@ -378,6 +378,10 @@
   --font: 1rem sans-serif;
   font: var(--font);
 }
+.font-feature-settings {
+  --font-feature-settings: normal;
+  font-feature-settings: var(--font-feature-settings);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -760,6 +764,10 @@
 .tablet.font {
   --t-font: var(--font);
   font: var(--t-font);
+}
+.tablet.font-feature-settings {
+  --t-font-feature-settings: var(--font-feature-settings);
+  font-feature-settings: var(--t-font-feature-settings);
 }
 
 }
@@ -1144,6 +1152,10 @@
 .desktop.font {
   --d-font: var(--t-font);
   font: var(--d-font);
+}
+.desktop.font-feature-settings {
+  --d-font-feature-settings: var(--t-font-feature-settings);
+  font-feature-settings: var(--d-font-feature-settings);
 }
 
 }
