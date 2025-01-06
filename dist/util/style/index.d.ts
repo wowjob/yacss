@@ -40,6 +40,7 @@ export { normalizeBoxSizing } from './box-sizing';
 export { normalizeBreakAfter } from './break-after';
 export { normalizeBreakBefore } from './break-before';
 export { normalizeBreakInside } from './break-inside';
+export { normalizeBottom } from './bottom';
 export { normalizeCaptionSide } from './caption-side';
 export { normalizeCaretColor } from './caret-color';
 export { normalizeClear } from './clear';

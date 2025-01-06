@@ -36,6 +36,7 @@ import {
   normalizeBorderTopLeftRadius,
   normalizeBorderTopRightRadius,
   normalizeBorderWidth,
+  normalizeBottom,
   normalizeBoxShadow,
   normalizeBoxSizing,
   normalizeBreakAfter,
@@ -267,6 +268,7 @@ import type {
   TJustifyContent,
   TJustifyItems,
   TJustifySelf,
+  TBottom,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -309,6 +311,7 @@ export type TCSSPropValue = Partial<{
   borderTop: TBorderTop
   borderTopLeftRadius: TBorderTopLeftRadius
   borderTopRightRadius: TBorderTopRightRadius
+  bottom: TBottom
   display: TDisplay
   boxShadow: TBoxShadow
   boxSizing: TBoxSizing
@@ -587,6 +590,10 @@ export const propertyMap: Record<
     className: { dev: 'border-top-right-radius', prod: 'btrr' },
     normalize: normalizeBorderTopRightRadius,
   },
+  bottom: {
+    className: { dev: 'bottom', prod: 'bt' },
+    normalize: normalizeBottom,
+  },
   boxShadow: {
     className: { dev: 'box-shadow', prod: 'bs' },
     normalize: normalizeBoxShadow,
@@ -607,6 +614,7 @@ export const propertyMap: Record<
     className: { dev: 'break-inside', prod: 'bbi' },
     normalize: normalizeBreakInside,
   },
+
   captionSide: {
     className: { dev: 'caption-side', prod: 'cps' },
     normalize: normalizeCaptionSide,

@@ -158,6 +158,10 @@
   --border-top-right-radius: 0;
   border-top-right-radius: var(--border-top-right-radius);
 }
+.bottom {
+  --bottom: auto;
+  bottom: var(--bottom);
+}
 .box-shadow {
   --box-shadow: none;
   box-shadow: var(--box-shadow);
@@ -692,6 +696,10 @@
 .tablet.border-top-right-radius {
   --t-border-top-right-radius: var(--border-top-right-radius);
   border-top-right-radius: var(--t-border-top-right-radius);
+}
+.tablet.bottom {
+  --t-bottom: var(--bottom);
+  bottom: var(--t-bottom);
 }
 .tablet.box-shadow {
   --t-box-shadow: var(--box-shadow);
@@ -1228,6 +1236,10 @@
 .desktop.border-top-right-radius {
   --d-border-top-right-radius: var(--t-border-top-right-radius);
   border-top-right-radius: var(--d-border-top-right-radius);
+}
+.desktop.bottom {
+  --d-bottom: var(--t-bottom);
+  bottom: var(--d-bottom);
 }
 .desktop.box-shadow {
   --d-box-shadow: var(--t-box-shadow);

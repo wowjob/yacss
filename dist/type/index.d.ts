@@ -38,6 +38,7 @@ export type { TBorderTop } from './border-top';
 export type { TBorderTopLeftRadius } from './border-top-left-radius';
 export type { TBorderTopRightRadius } from './border-top-right-radius';
 export type { TBorderWidth } from './border-width';
+export type { TBottom } from './bottom';
 export type { TBoxShadow } from './box-shadow';
 export type { TBoxSizing } from './box-sizing';
 export type { TBreakAfter } from './break-after';
