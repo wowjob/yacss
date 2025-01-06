@@ -28,6 +28,7 @@ console.log(
       justifyContent: 'space-around',
       justifyItems: 'anchor-center',
       justifySelf: 'anchor-center',
+      bottom: 40,
     },
     className: 'yes-no',
   })
