@@ -494,6 +494,10 @@
   --image-orientation: from-image;
   image-orientation: var(--image-orientation);
 }
+.image-rendering {
+  --image-rendering: auto;
+  image-rendering: var(--image-rendering);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -992,6 +996,10 @@
 .tablet.image-orientation {
   --t-image-orientation: var(--image-orientation);
   image-orientation: var(--t-image-orientation);
+}
+.tablet.image-rendering {
+  --t-image-rendering: var(--image-rendering);
+  image-rendering: var(--t-image-rendering);
 }
 
 }
@@ -1492,6 +1500,10 @@
 .desktop.image-orientation {
   --d-image-orientation: var(--t-image-orientation);
   image-orientation: var(--d-image-orientation);
+}
+.desktop.image-rendering {
+  --d-image-rendering: var(--t-image-rendering);
+  image-rendering: var(--d-image-rendering);
 }
 
 }

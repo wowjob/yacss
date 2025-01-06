@@ -19,6 +19,7 @@ console.log(
       hyphenateCharacter: 'auto',
       hyphens: '---',
       imageOrientation: 'from-image',
+      imageRendering: 'crisp-edges',
     },
     className: 'yes-no',
   })

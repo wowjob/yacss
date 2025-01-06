@@ -249,7 +249,9 @@ import type {
   THyphenateCharacter,
   THyphens,
   TImageOrientation,
+  TImageRendering,
 } from '../type'
+import { normalizeImageRendering } from '../util/style'
 
 export type TEnv = 'dev' | 'prod'
 export type TCSSPropValue = Partial<{
@@ -375,6 +377,7 @@ export type TCSSPropValue = Partial<{
   hyphenateCharacter: THyphenateCharacter
   hyphens: THyphens
   imageOrientation: TImageOrientation
+  imageRendering: TImageRendering
 
   margin: TMargin
   padding: TPadding
@@ -895,5 +898,9 @@ export const propertyMap: Record<
   imageOrientation: {
     className: { dev: 'image-orientation', prod: 'io' },
     normalize: normalizeImageOrientation,
+  },
+  imageRendering: {
+    className: { dev: 'image-rendering', prod: 'ir' },
+    normalize: normalizeImageRendering,
   },
 } as const
