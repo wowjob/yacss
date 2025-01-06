@@ -290,6 +290,10 @@
   --cursor: auto;
   cursor: var(--cursor);
 }
+.cx {
+  --cx: undefined;
+  cx: var(--cx);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -612,6 +616,10 @@
 .tablet.cursor {
   --t-cursor: var(--cursor);
   cursor: var(--t-cursor);
+}
+.tablet.cx {
+  --t-cx: var(--cx);
+  cx: var(--t-cx);
 }
 .tablet.display {
   --t-display: var(--display);
@@ -936,6 +944,10 @@
 .desktop.cursor {
   --d-cursor: var(--t-cursor);
   cursor: var(--d-cursor);
+}
+.desktop.cx {
+  --d-cx: var(--t-cx);
+  cx: var(--d-cx);
 }
 .desktop.display {
   --d-display: var(--t-display);
