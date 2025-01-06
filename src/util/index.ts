@@ -112,6 +112,7 @@ export {
   normalizeFontVariationSettings,
   normalizeForcedColorAdjust,
   normalizeGap,
+  normalizeGridAutoColumns,
   normalizeMargin,
   normalizePadding,
 } from './style'

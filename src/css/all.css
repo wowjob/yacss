@@ -450,6 +450,10 @@
   --gap: normal;
   gap: var(--gap);
 }
+.grid-auto-columns {
+  --grid-auto-columns: auto;
+  grid-auto-columns: var(--grid-auto-columns);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -904,6 +908,10 @@
 .tablet.gap {
   --t-gap: var(--gap);
   gap: var(--t-gap);
+}
+.tablet.grid-auto-columns {
+  --t-grid-auto-columns: var(--grid-auto-columns);
+  grid-auto-columns: var(--t-grid-auto-columns);
 }
 
 }
@@ -1360,6 +1368,10 @@
 .desktop.gap {
   --d-gap: var(--t-gap);
   gap: var(--d-gap);
+}
+.desktop.grid-auto-columns {
+  --d-grid-auto-columns: var(--t-grid-auto-columns);
+  grid-auto-columns: var(--d-grid-auto-columns);
 }
 
 }
