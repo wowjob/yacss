@@ -107,6 +107,7 @@ export {
   normalizeFontVariantCaps,
   normalizeFontVariantEastAsian,
   normalizeFontVariantLigatures,
+  normalizeFontVariantNumeric,
   normalizeMargin,
   normalizePadding,
 } from './style'

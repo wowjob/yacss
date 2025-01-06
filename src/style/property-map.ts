@@ -104,6 +104,7 @@ import {
   normalizeFontVariantCaps,
   normalizeFontVariantEastAsian,
   normalizeFontVariantLigatures,
+  normalizeFontVariantNumeric,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -217,6 +218,7 @@ import type {
   TFontVariantCaps,
   TFontVariantEastAsian,
   TFontVariantLigatures,
+  TFontVariantNumeric,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -327,6 +329,7 @@ export type TCSSPropValue = Partial<{
   fontVariantCaps: TFontVariantCaps
   fontVariantEastAsian: TFontVariantEastAsian
   fontVariantLigatures: TFontVariantLigatures
+  fontVariantNumeric: TFontVariantNumeric
 
   margin: TMargin
   padding: TPadding
@@ -783,5 +786,9 @@ export const propertyMap: Record<
   fontVariantLigatures: {
     className: { dev: 'font-variant-ligatures', prod: 'fvl' },
     normalize: normalizeFontVariantLigatures,
+  },
+  fontVariantNumeric: {
+    className: { dev: 'font-variant-numeric', prod: 'fvn' },
+    normalize: normalizeFontVariantNumeric,
   },
 } as const
