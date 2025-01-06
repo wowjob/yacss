@@ -83,5 +83,6 @@ export { normalizeFlexShrink } from './flex-shrink';
 export { normalizeFlexWrap } from './flex-wrap';
 export { normalizeFieldSizing } from './field-sizing';
 export { normalizeFill } from './fill';
+export { normalizeFillOpacity } from './fill-opacity';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';

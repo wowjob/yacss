@@ -78,6 +78,7 @@ import {
   normalizeEmptyCells,
   normalizeFieldSizing,
   normalizeFill,
+  normalizeFillOpacity,
   normalizeFlex,
   normalizeFlexBasis,
   normalizeFlexDirection,
@@ -177,6 +178,7 @@ import type {
   TEmptyCells,
   TFieldSizing,
   TFill,
+  TFillOpacity,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -267,7 +269,8 @@ export type TCSSPropValue = Partial<{
   flexWrap: TFlexWrap
   fieldSizing: TFieldSizing
   fill: TFill
-  // aaaaaaaa: Taaaaaaaa
+  fillOpacity: TFillOpacity
+
   margin: TMargin
   padding: TPadding
 }>
@@ -643,5 +646,9 @@ export const propertyMap: Record<
   fill: {
     className: { dev: 'fill', prod: 'fl' },
     normalize: normalizeFill,
+  },
+  fillOpacity: {
+    className: { dev: 'fill-opacity', prod: 'fo' },
+    normalize: normalizeFillOpacity,
   },
 } as const
