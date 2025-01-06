@@ -77,6 +77,7 @@ import {
   normalizeDominantBaseline,
   normalizeEmptyCells,
   normalizeFieldSizing,
+  normalizeFill,
   normalizeFlex,
   normalizeFlexBasis,
   normalizeFlexDirection,
@@ -175,6 +176,7 @@ import type {
   TDominantBaseline,
   TEmptyCells,
   TFieldSizing,
+  TFill,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -264,6 +266,7 @@ export type TCSSPropValue = Partial<{
   flexShrink: TFlexShrink
   flexWrap: TFlexWrap
   fieldSizing: TFieldSizing
+  fill: TFill
   // aaaaaaaa: Taaaaaaaa
   margin: TMargin
   padding: TPadding
@@ -636,5 +639,9 @@ export const propertyMap: Record<
   fieldSizing: {
     className: { dev: 'field-sizing', prod: 'fz' },
     normalize: normalizeFieldSizing,
+  },
+  fill: {
+    className: { dev: 'fill', prod: 'fl' },
+    normalize: normalizeFill,
   },
 } as const

@@ -86,6 +86,7 @@ export {
   normalizeFlexShrink,
   normalizeFlexWrap,
   normalizeFieldSizing,
+  normalizeFill,
   normalizeMargin,
   normalizePadding,
 } from './style'
