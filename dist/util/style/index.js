@@ -129,5 +129,6 @@ export { normalizeIsolation } from './isolation';
 export { normalizeJustifyContent } from './justify-content';
 export { normalizeJustifyItems } from './justify-items';
 export { normalizeJustifySelf } from './justify-self';
+export { normalizeLeft } from './left';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';

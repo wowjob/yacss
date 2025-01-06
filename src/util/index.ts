@@ -133,6 +133,7 @@ export {
   normalizeJustifyContent,
   normalizeJustifyItems,
   normalizeJustifySelf,
+  normalizeLeft,
   normalizeMargin,
   normalizePadding,
 } from './style'

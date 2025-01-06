@@ -130,6 +130,7 @@ import {
   normalizeJustifyContent,
   normalizeJustifyItems,
   normalizeJustifySelf,
+  normalizeLeft,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -269,6 +270,7 @@ import type {
   TJustifyItems,
   TJustifySelf,
   TBottom,
+  TLeft,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -405,6 +407,7 @@ export type TCSSPropValue = Partial<{
   justifyContent: TJustifyContent
   justifyItems: TJustifyItems
   justifySelf: TJustifySelf
+  left: TLeft
 
   margin: TMargin
   padding: TPadding
@@ -966,5 +969,9 @@ export const propertyMap: Record<
   justifySelf: {
     className: { dev: 'justify-self', prod: 'js' },
     normalize: normalizeJustifySelf,
+  },
+  left: {
+    className: { dev: 'left', prod: 'lf' },
+    normalize: normalizeLeft,
   },
 } as const
