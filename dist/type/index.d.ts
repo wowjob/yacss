@@ -135,3 +135,4 @@ export type { TJustifySelf } from './justify-self';
 export type { TLeft } from './left';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';
+export type { TRight } from './right';

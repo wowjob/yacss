@@ -538,6 +538,10 @@
   --left: auto;
   left: var(--left);
 }
+.right {
+  --right: auto;
+  right: var(--right);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1080,6 +1084,10 @@
 .tablet.left {
   --t-left: var(--left);
   left: var(--t-left);
+}
+.tablet.right {
+  --t-right: var(--right);
+  right: var(--t-right);
 }
 
 }
@@ -1624,6 +1632,10 @@
 .desktop.left {
   --d-left: var(--t-left);
   left: var(--d-left);
+}
+.desktop.right {
+  --d-right: var(--t-right);
+  right: var(--d-right);
 }
 
 }
