@@ -434,6 +434,10 @@
   --font-variant-numeric: normal;
   font-variant-numeric: var(--font-variant-numeric);
 }
+.font-variant-position {
+  --font-variant-position: normal;
+  font-variant-position: var(--font-variant-position);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -872,6 +876,10 @@
 .tablet.font-variant-numeric {
   --t-font-variant-numeric: var(--font-variant-numeric);
   font-variant-numeric: var(--t-font-variant-numeric);
+}
+.tablet.font-variant-position {
+  --t-font-variant-position: var(--font-variant-position);
+  font-variant-position: var(--t-font-variant-position);
 }
 
 }
@@ -1312,6 +1320,10 @@
 .desktop.font-variant-numeric {
   --d-font-variant-numeric: var(--t-font-variant-numeric);
   font-variant-numeric: var(--d-font-variant-numeric);
+}
+.desktop.font-variant-position {
+  --d-font-variant-position: var(--t-font-variant-position);
+  font-variant-position: var(--d-font-variant-position);
 }
 
 }
