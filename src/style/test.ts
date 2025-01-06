@@ -32,6 +32,7 @@ console.log(
       fontSynthesisWeight: 'revert',
       fontVariantAlternates: 'historical-forms',
       fontVariantCaps: 'all-petite-caps',
+      fontVariantEastAsian: 'full-width',
     },
     className: 'yes-no',
   })

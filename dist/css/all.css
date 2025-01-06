@@ -422,6 +422,10 @@
   --font-variant-caps: normal;
   font-variant-caps: var(--font-variant-caps);
 }
+.font-variant-east-asian {
+  --font-variant-east-asian: normal;
+  font-variant-east-asian: var(--font-variant-east-asian);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -848,6 +852,10 @@
 .tablet.font-variant-caps {
   --t-font-variant-caps: var(--font-variant-caps);
   font-variant-caps: var(--t-font-variant-caps);
+}
+.tablet.font-variant-east-asian {
+  --t-font-variant-east-asian: var(--font-variant-east-asian);
+  font-variant-east-asian: var(--t-font-variant-east-asian);
 }
 
 }
@@ -1276,6 +1284,10 @@
 .desktop.font-variant-caps {
   --d-font-variant-caps: var(--t-font-variant-caps);
   font-variant-caps: var(--d-font-variant-caps);
+}
+.desktop.font-variant-east-asian {
+  --d-font-variant-east-asian: var(--t-font-variant-east-asian);
+  font-variant-east-asian: var(--d-font-variant-east-asian);
 }
 
 }
