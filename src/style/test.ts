@@ -87,6 +87,7 @@ console.log(
       cx: 20,
       cy: 40,
       d: 'revert',
+      direction: 'ltr',
     },
     className: 'once-upon a-time padding',
   })
