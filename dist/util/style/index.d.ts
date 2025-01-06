@@ -117,5 +117,6 @@ export { normalizeGridTemplate } from './grid-template';
 export { normalizeGridTemplateAreas } from './grid-template-areas';
 export { normalizeHeight } from './height';
 export { normalizeHyphenateCharacter } from './hyphenate-character';
+export { normalizeHyphens } from './hyphens';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';
