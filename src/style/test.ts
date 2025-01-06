@@ -29,6 +29,7 @@ console.log(
       fontSizeAdjust: 'ch-width from-font',
       fontSynthesisSmallCaps: 'auto',
       fontSynthesisStyle: 'auto',
+      fontSynthesisWeight: 'revert',
     },
     className: 'yes-no',
   })
