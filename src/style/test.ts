@@ -80,6 +80,7 @@ console.log(
       containIntrinsicWidth: 100,
       container: 'layout-parent',
       content: 'no-close-quote',
+      contentVisibility: 'hidden',
     },
     className: 'once-upon a-time padding',
   })

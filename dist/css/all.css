@@ -270,6 +270,10 @@
   --content: normal;
   content: var(--content);
 }
+.content-visibility {
+  --content-visibility: visible;
+  content-visibility: var(--content-visibility);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -572,6 +576,10 @@
 .tablet.content {
   --t-content: var(--content);
   content: var(--t-content);
+}
+.tablet.content-visibility {
+  --t-content-visibility: var(--content-visibility);
+  content-visibility: var(--t-content-visibility);
 }
 .tablet.display {
   --t-display: var(--display);
@@ -876,6 +884,10 @@
 .desktop.content {
   --d-content: var(--t-content);
   content: var(--d-content);
+}
+.desktop.content-visibility {
+  --d-content-visibility: var(--t-content-visibility);
+  content-visibility: var(--d-content-visibility);
 }
 .desktop.display {
   --d-display: var(--t-display);
