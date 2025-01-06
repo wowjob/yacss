@@ -362,6 +362,10 @@
   --filter: none;
   filter: var(--filter);
 }
+.float {
+  --float: none;
+  float: var(--float);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -728,6 +732,10 @@
 .tablet.filter {
   --t-filter: var(--filter);
   filter: var(--t-filter);
+}
+.tablet.float {
+  --t-float: var(--float);
+  float: var(--t-float);
 }
 
 }
@@ -1096,6 +1104,10 @@
 .desktop.filter {
   --d-filter: var(--t-filter);
   filter: var(--d-filter);
+}
+.desktop.float {
+  --d-float: var(--t-float);
+  float: var(--d-float);
 }
 
 }

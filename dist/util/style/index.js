@@ -86,5 +86,6 @@ export { normalizeFill } from './fill';
 export { normalizeFillOpacity } from './fill-opacity';
 export { normalizeFillRule } from './fill-rule';
 export { normalizeFilter } from './filter';
+export { normalizeFloat } from './float';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';
