@@ -88,6 +88,7 @@ export {
   normalizeFieldSizing,
   normalizeFill,
   normalizeFillOpacity,
+  normalizeFillRule,
   normalizeMargin,
   normalizePadding,
 } from './style'
