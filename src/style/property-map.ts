@@ -67,6 +67,7 @@ import {
   normalizeContentVisibility,
   normalizeCounterIncrement,
   normalizeCounterReset,
+  normalizeCounterSet,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -157,6 +158,7 @@ import type {
   TContentVisibility,
   TCounterIncrement,
   TCounterReset,
+  TCounterSet,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -231,6 +233,7 @@ export type TCSSPropValue = Partial<{
   contentVisibility: TContentVisibility
   counterIncrement: TCounterIncrement
   counterReset: TCounterReset
+  counterSet: TCounterSet
 
   flex: TFlex
   flexBasis: TFlexBasis
@@ -545,6 +548,10 @@ export const propertyMap: Record<
   counterReset: {
     className: { dev: 'counter-reset', prod: 'cre' },
     normalize: normalizeCounterReset,
+  },
+  counterSet: {
+    className: { dev: 'counter-set', prod: 'cse' },
+    normalize: normalizeCounterSet,
   },
 
   //
