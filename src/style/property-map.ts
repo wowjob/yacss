@@ -75,6 +75,8 @@ import {
   normalizeDirection,
   normalizeDisplay,
   normalizeDominantBaseline,
+  normalizeEmptyCells,
+  normalizeFieldSizing,
   normalizeFlex,
   normalizeFlexBasis,
   normalizeFlexDirection,
@@ -171,6 +173,8 @@ import type {
   TD,
   TDirection,
   TDominantBaseline,
+  TEmptyCells,
+  TFieldSizing,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -252,13 +256,15 @@ export type TCSSPropValue = Partial<{
   d: TD
   direction: TDirection
   dominantBaseline: TDominantBaseline
-
+  emptyCells: TEmptyCells
   flex: TFlex
   flexBasis: TFlexBasis
   flexDirection: TFlexDirection
   flexGrow: TFlexGrow
   flexShrink: TFlexShrink
   flexWrap: TFlexWrap
+  fieldSizing: TFieldSizing
+  // aaaaaaaa: Taaaaaaaa
   margin: TMargin
   padding: TPadding
 }>
@@ -595,8 +601,10 @@ export const propertyMap: Record<
     className: { dev: 'dominant-baseline', prod: 'db' },
     normalize: normalizeDominantBaseline,
   },
-
-  //
+  emptyCells: {
+    className: { dev: 'empty-cells', prod: 'ec' },
+    normalize: normalizeEmptyCells,
+  },
   display: {
     className: { dev: 'display', prod: 'ds' },
     normalize: normalizeDisplay,
@@ -624,5 +632,9 @@ export const propertyMap: Record<
   flexWrap: {
     className: { dev: 'flex-wrap', prod: 'fw' },
     normalize: normalizeFlexWrap,
+  },
+  fieldSizing: {
+    className: { dev: 'field-sizing', prod: 'fz' },
+    normalize: normalizeFieldSizing,
   },
 } as const
