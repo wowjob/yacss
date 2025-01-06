@@ -95,6 +95,7 @@ export {
   normalizeFloodOpacity,
   normalizeFont,
   normalizeFontFeatureSettings,
+  normalizeFontKerning,
   normalizeMargin,
   normalizePadding,
 } from './style'

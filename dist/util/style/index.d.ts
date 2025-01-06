@@ -91,5 +91,6 @@ export { normalizeFloodColor } from './flood-color';
 export { normalizeFloodOpacity } from './flood-opacity';
 export { normalizeFont } from './font';
 export { normalizeFontFeatureSettings } from './font-feature-settings';
+export { normalizeFontKerning } from './font-kerning';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';
