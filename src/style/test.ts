@@ -23,6 +23,7 @@ console.log(
       inlineSize: 'max-content',
       inset: [20, 20, 20, 20],
       insetBlock: { start: '22px', end: 10 },
+      insetInline: [10, 20],
     },
     className: 'yes-no',
   })

@@ -124,6 +124,7 @@ import {
   normalizeInlineSize,
   normalizeInset,
   normalizeInsetBlock,
+  normalizeInsetInline,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -257,6 +258,7 @@ import type {
   TInlineSize,
   TInset,
   TInsetBlock,
+  TInsetInline,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -387,6 +389,7 @@ export type TCSSPropValue = Partial<{
   inlineSize: TInlineSize
   inset: TInset
   insetBlock: TInsetBlock
+  insetInline: TInsetInline
 
   margin: TMargin
   padding: TPadding
@@ -923,5 +926,9 @@ export const propertyMap: Record<
   insetBlock: {
     className: { dev: 'inset-block', prod: 'ib' },
     normalize: normalizeInsetBlock,
+  },
+  insetInline: {
+    className: { dev: 'inset-inline', prod: 'ii' },
+    normalize: normalizeInsetInline,
   },
 } as const
