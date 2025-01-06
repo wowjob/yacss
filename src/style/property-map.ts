@@ -110,6 +110,7 @@ import {
   normalizeForcedColorAdjust,
   normalizeGap,
   normalizeGridAutoColumns,
+  normalizeGridAutoFlow,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -229,6 +230,7 @@ import type {
   TForcedColorAdjust,
   TGap,
   TGridAutoColumns,
+  TGridAutoFlow,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -345,6 +347,7 @@ export type TCSSPropValue = Partial<{
   forcedColorAdjust: TForcedColorAdjust
   gap: TGap
   gridAutoColumns: TGridAutoColumns
+  gridAutoFlow: TGridAutoFlow
 
   margin: TMargin
   padding: TPadding
@@ -825,5 +828,9 @@ export const propertyMap: Record<
   gridAutoColumns: {
     className: { dev: 'grid-auto-columns', prod: 'gac' },
     normalize: normalizeGridAutoColumns,
+  },
+  gridAutoFlow: {
+    className: { dev: 'grid-auto-flow', prod: 'gaf' },
+    normalize: normalizeGridAutoFlow,
   },
 } as const
