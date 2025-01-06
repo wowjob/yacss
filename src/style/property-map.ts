@@ -101,6 +101,7 @@ import {
   normalizeFontSynthesisStyle,
   normalizeFontSynthesisWeight,
   normalizeFontVariantAlternates,
+  normalizeFontVariantCaps,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -211,6 +212,7 @@ import type {
   TFontSynthesisStyle,
   TFontSynthesisWeight,
   TFontVariantAlternates,
+  TFontVariantCaps,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -318,6 +320,7 @@ export type TCSSPropValue = Partial<{
   fontSynthesisStyle: TFontSynthesisStyle
   fontSynthesisWeight: TFontSynthesisWeight
   fontVariantAlternates: TFontVariantAlternates
+  fontVariantCaps: TFontVariantCaps
 
   margin: TMargin
   padding: TPadding
@@ -762,5 +765,9 @@ export const propertyMap: Record<
   fontVariantAlternates: {
     className: { dev: 'font-variant-alternates', prod: 'fva' },
     normalize: normalizeFontVariantAlternates,
+  },
+  fontVariantCaps: {
+    className: { dev: 'font-variant-caps', prod: 'fvc' },
+    normalize: normalizeFontVariantCaps,
   },
 } as const

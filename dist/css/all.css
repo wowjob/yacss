@@ -418,6 +418,10 @@
   --font-variant-alternates: normal;
   font-variant-alternates: var(--font-variant-alternates);
 }
+.font-variant-caps {
+  --font-variant-caps: normal;
+  font-variant-caps: var(--font-variant-caps);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -840,6 +844,10 @@
 .tablet.font-variant-alternates {
   --t-font-variant-alternates: var(--font-variant-alternates);
   font-variant-alternates: var(--t-font-variant-alternates);
+}
+.tablet.font-variant-caps {
+  --t-font-variant-caps: var(--font-variant-caps);
+  font-variant-caps: var(--t-font-variant-caps);
 }
 
 }
@@ -1264,6 +1272,10 @@
 .desktop.font-variant-alternates {
   --d-font-variant-alternates: var(--t-font-variant-alternates);
   font-variant-alternates: var(--d-font-variant-alternates);
+}
+.desktop.font-variant-caps {
+  --d-font-variant-caps: var(--t-font-variant-caps);
+  font-variant-caps: var(--d-font-variant-caps);
 }
 
 }

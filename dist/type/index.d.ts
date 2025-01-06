@@ -103,5 +103,6 @@ export type { TFontSynthesisSmallCaps } from './font-synthesis-small-caps';
 export type { TFontSynthesisStyle } from './font-synthesis-style';
 export type { TFontSynthesisWeight } from './font-synthesis-weight';
 export type { TFontVariantAlternates } from './font-variant-alternates';
+export type { TFontVariantCaps } from './font-variant-caps';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';
