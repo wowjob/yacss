@@ -462,6 +462,10 @@
   --grid-auto-rows: auto;
   grid-auto-rows: var(--grid-auto-rows);
 }
+.grid-column {
+  --grid-column: undefined;
+  grid-column: var(--grid-column);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -928,6 +932,10 @@
 .tablet.grid-auto-rows {
   --t-grid-auto-rows: var(--grid-auto-rows);
   grid-auto-rows: var(--t-grid-auto-rows);
+}
+.tablet.grid-column {
+  --t-grid-column: var(--grid-column);
+  grid-column: var(--t-grid-column);
 }
 
 }
@@ -1396,6 +1404,10 @@
 .desktop.grid-auto-rows {
   --d-grid-auto-rows: var(--t-grid-auto-rows);
   grid-auto-rows: var(--d-grid-auto-rows);
+}
+.desktop.grid-column {
+  --d-grid-column: var(--t-grid-column);
+  grid-column: var(--d-grid-column);
 }
 
 }

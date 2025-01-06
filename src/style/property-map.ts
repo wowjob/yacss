@@ -111,6 +111,8 @@ import {
   normalizeGap,
   normalizeGridAutoColumns,
   normalizeGridAutoFlow,
+  normalizeGridAutoRows,
+  normalizeGridColumn,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -232,8 +234,8 @@ import type {
   TGridAutoColumns,
   TGridAutoFlow,
   TGridAutoRows,
+  TGridColumn,
 } from '../type'
-import { normalizeGridAutoRows } from '../util/style'
 
 export type TEnv = 'dev' | 'prod'
 export type TCSSPropValue = Partial<{
@@ -351,6 +353,7 @@ export type TCSSPropValue = Partial<{
   gridAutoColumns: TGridAutoColumns
   gridAutoFlow: TGridAutoFlow
   gridAutoRows: TGridAutoRows
+  gridColumn: TGridColumn
 
   margin: TMargin
   padding: TPadding
@@ -839,5 +842,9 @@ export const propertyMap: Record<
   gridAutoRows: {
     className: { dev: 'grid-auto-rows', prod: 'gar' },
     normalize: normalizeGridAutoRows,
+  },
+  gridColumn: {
+    className: { dev: 'grid-column', prod: 'gc' },
+    normalize: normalizeGridColumn,
   },
 } as const
