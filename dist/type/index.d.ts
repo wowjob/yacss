@@ -101,5 +101,6 @@ export type { TFontPalette } from './font-palette';
 export type { TFontSizeAdjust } from './font-size-adjust';
 export type { TFontSynthesisSmallCaps } from './font-synthesis-small-caps';
 export type { TFontSynthesisStyle } from './font-synthesis-style';
+export type { TFontSynthesisWeight } from './font-synthesis-weight';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';

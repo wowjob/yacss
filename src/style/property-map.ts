@@ -99,6 +99,7 @@ import {
   normalizeFontSizeAdjust,
   normalizeFontSynthesisSmallCaps,
   normalizeFontSynthesisStyle,
+  normalizeFontSynthesisWeight,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -207,6 +208,7 @@ import type {
   TFontSizeAdjust,
   TFontSynthesisSmallCaps,
   TFontSynthesisStyle,
+  TFontSynthesisWeight,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -312,6 +314,7 @@ export type TCSSPropValue = Partial<{
   fontSizeAdjust: TFontSizeAdjust
   fontSynthesisSmallCaps: TFontSynthesisSmallCaps
   fontSynthesisStyle: TFontSynthesisStyle
+  fontSynthesisWeight: TFontSynthesisWeight
 
   margin: TMargin
   padding: TPadding
@@ -748,5 +751,9 @@ export const propertyMap: Record<
   fontSynthesisStyle: {
     className: { dev: 'font-synthesis-style', prod: 'fss' },
     normalize: normalizeFontSynthesisStyle,
+  },
+  fontSynthesisWeight: {
+    className: { dev: 'font-synthesis-weight', prod: 'fsw' },
+    normalize: normalizeFontSynthesisWeight,
   },
 } as const
