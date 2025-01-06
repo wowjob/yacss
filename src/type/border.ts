@@ -29,4 +29,5 @@ export type TBorder =
       color?: string
     }
   | TBorderKeyword
+  | boolean
   | string
