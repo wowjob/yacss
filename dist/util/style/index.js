@@ -112,5 +112,6 @@ export { normalizeGridAutoColumns } from './grid-auto-columns';
 export { normalizeGridAutoFlow } from './grid-auto-flow';
 export { normalizeGridAutoRows } from './grid-auto-rows';
 export { normalizeGridColumn } from './grid-column';
+export { normalizeGridRow } from './grid-row';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';
