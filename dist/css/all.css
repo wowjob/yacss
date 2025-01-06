@@ -282,6 +282,10 @@
   --counter-reset: none;
   counter-reset: var(--counter-reset);
 }
+.counter-set {
+  --counter-set: none;
+  counter-set: var(--counter-set);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -596,6 +600,10 @@
 .tablet.counter-reset {
   --t-counter-reset: var(--counter-reset);
   counter-reset: var(--t-counter-reset);
+}
+.tablet.counter-set {
+  --t-counter-set: var(--counter-set);
+  counter-set: var(--t-counter-set);
 }
 .tablet.display {
   --t-display: var(--display);
@@ -912,6 +920,10 @@
 .desktop.counter-reset {
   --d-counter-reset: var(--t-counter-reset);
   counter-reset: var(--d-counter-reset);
+}
+.desktop.counter-set {
+  --d-counter-set: var(--t-counter-set);
+  counter-set: var(--d-counter-set);
 }
 .desktop.display {
   --d-display: var(--t-display);
