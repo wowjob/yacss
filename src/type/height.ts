@@ -1,4 +1,4 @@
-import type { TGlobalKeyword } from '../../dist/type'
+import type { TGlobalKeyword } from './global-keyword'
 
 export type THeight =
   | number
