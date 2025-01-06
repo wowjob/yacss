@@ -92,6 +92,7 @@ import {
   normalizeFloodOpacity,
   normalizeFont,
   normalizeFontFeatureSettings,
+  normalizeFontKerning,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -193,6 +194,7 @@ import type {
   TFloodOpacity,
   TFont,
   TFontFeatureSettings,
+  TFontKerning,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -291,6 +293,7 @@ export type TCSSPropValue = Partial<{
   floodOpacity: TFloodOpacity
   font: TFont
   fontFeatureSettings: TFontFeatureSettings
+  fontKerning: TFontKerning
 
   margin: TMargin
   padding: TPadding
@@ -699,5 +702,9 @@ export const propertyMap: Record<
   fontFeatureSettings: {
     className: { dev: 'font-feature-settings', prod: 'ffs' },
     normalize: normalizeFontFeatureSettings,
+  },
+  fontKerning: {
+    className: { dev: 'font-kerning', prod: 'fk' },
+    normalize: normalizeFontKerning,
   },
 } as const

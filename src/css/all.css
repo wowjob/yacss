@@ -382,6 +382,10 @@
   --font-feature-settings: normal;
   font-feature-settings: var(--font-feature-settings);
 }
+.font-kerning {
+  --font-kerning: auto;
+  font-kerning: var(--font-kerning);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -768,6 +772,10 @@
 .tablet.font-feature-settings {
   --t-font-feature-settings: var(--font-feature-settings);
   font-feature-settings: var(--t-font-feature-settings);
+}
+.tablet.font-kerning {
+  --t-font-kerning: var(--font-kerning);
+  font-kerning: var(--t-font-kerning);
 }
 
 }
@@ -1156,6 +1164,10 @@
 .desktop.font-feature-settings {
   --d-font-feature-settings: var(--t-font-feature-settings);
   font-feature-settings: var(--d-font-feature-settings);
+}
+.desktop.font-kerning {
+  --d-font-kerning: var(--t-font-kerning);
+  font-kerning: var(--d-font-kerning);
 }
 
 }
