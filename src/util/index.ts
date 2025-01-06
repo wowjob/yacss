@@ -93,6 +93,7 @@ export {
   normalizeFloat,
   normalizeFloodColor,
   normalizeFloodOpacity,
+  normalizeFont,
   normalizeMargin,
   normalizePadding,
 } from './style'

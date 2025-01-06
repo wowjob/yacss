@@ -16,6 +16,11 @@ console.log(
       float: 'left',
       floodColor: 'currentcolor',
       floodOpacity: 'revert',
+      font: {
+        family: 'wow',
+        size: 22,
+        stretch: 'condensed',
+      },
     },
     className: 'yes-no',
   })

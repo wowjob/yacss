@@ -89,5 +89,6 @@ export { normalizeFilter } from './filter';
 export { normalizeFloat } from './float';
 export { normalizeFloodColor } from './flood-color';
 export { normalizeFloodOpacity } from './flood-opacity';
+export { normalizeFont } from './font';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';

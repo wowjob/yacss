@@ -374,6 +374,10 @@
   --flood-opacity: 1;
   flood-opacity: var(--flood-opacity);
 }
+.font {
+  --font: 1rem sans-serif;
+  font: var(--font);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -752,6 +756,10 @@
 .tablet.flood-opacity {
   --t-flood-opacity: var(--flood-opacity);
   flood-opacity: var(--t-flood-opacity);
+}
+.tablet.font {
+  --t-font: var(--font);
+  font: var(--t-font);
 }
 
 }
@@ -1132,6 +1140,10 @@
 .desktop.flood-opacity {
   --d-flood-opacity: var(--t-flood-opacity);
   flood-opacity: var(--d-flood-opacity);
+}
+.desktop.font {
+  --d-font: var(--t-font);
+  font: var(--d-font);
 }
 
 }
