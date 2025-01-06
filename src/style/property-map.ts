@@ -123,6 +123,7 @@ import {
   normalizeImageRendering,
   normalizeInlineSize,
   normalizeInset,
+  normalizeInsetBlock,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -255,6 +256,7 @@ import type {
   TImageRendering,
   TInlineSize,
   TInset,
+  TInsetBlock,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -384,6 +386,7 @@ export type TCSSPropValue = Partial<{
   imageRendering: TImageRendering
   inlineSize: TInlineSize
   inset: TInset
+  insetBlock: TInsetBlock
 
   margin: TMargin
   padding: TPadding
@@ -916,5 +919,9 @@ export const propertyMap: Record<
   inset: {
     className: { dev: 'inset', prod: 'i' },
     normalize: normalizeInset,
+  },
+  insetBlock: {
+    className: { dev: 'inset-block', prod: 'ib' },
+    normalize: normalizeInsetBlock,
   },
 } as const
