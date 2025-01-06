@@ -22,6 +22,7 @@ console.log(
       imageRendering: 'crisp-edges',
       inlineSize: 'max-content',
       inset: [20, 20, 20, 20],
+      insetBlock: { start: '22px', end: 10 },
     },
     className: 'yes-no',
   })
