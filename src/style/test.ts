@@ -21,6 +21,7 @@ console.log(
       imageOrientation: 'from-image',
       imageRendering: 'crisp-edges',
       inlineSize: 'max-content',
+      inset: [20, 20, 20, 20],
     },
     className: 'yes-no',
   })

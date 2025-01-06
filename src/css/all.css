@@ -502,6 +502,10 @@
   --inline-size: auto;
   inline-size: var(--inline-size);
 }
+.inset {
+  --inset: auto;
+  inset: var(--inset);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1008,6 +1012,10 @@
 .tablet.inline-size {
   --t-inline-size: var(--inline-size);
   inline-size: var(--t-inline-size);
+}
+.tablet.inset {
+  --t-inset: var(--inset);
+  inset: var(--t-inset);
 }
 
 }
@@ -1516,6 +1524,10 @@
 .desktop.inline-size {
   --d-inline-size: var(--t-inline-size);
   inline-size: var(--d-inline-size);
+}
+.desktop.inset {
+  --d-inset: var(--t-inset);
+  inset: var(--d-inset);
 }
 
 }

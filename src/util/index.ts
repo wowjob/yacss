@@ -125,6 +125,7 @@ export {
   normalizeImageOrientation,
   normalizeImageRendering,
   normalizeInlineSize,
+  normalizeInset,
   normalizeMargin,
   normalizePadding,
 } from './style'

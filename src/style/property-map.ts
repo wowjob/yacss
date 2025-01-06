@@ -122,6 +122,7 @@ import {
   normalizeImageOrientation,
   normalizeImageRendering,
   normalizeInlineSize,
+  normalizeInset,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -253,6 +254,7 @@ import type {
   TImageOrientation,
   TImageRendering,
   TInlineSize,
+  TInset,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -381,6 +383,7 @@ export type TCSSPropValue = Partial<{
   imageOrientation: TImageOrientation
   imageRendering: TImageRendering
   inlineSize: TInlineSize
+  inset: TInset
 
   margin: TMargin
   padding: TPadding
@@ -909,5 +912,9 @@ export const propertyMap: Record<
   inlineSize: {
     className: { dev: 'inline-size', prod: 'is' },
     normalize: normalizeInlineSize,
+  },
+  inset: {
+    className: { dev: 'inset', prod: 'i' },
+    normalize: normalizeInset,
   },
 } as const
