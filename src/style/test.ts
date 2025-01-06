@@ -24,6 +24,7 @@ console.log(
       fontFeatureSettings: 'revert',
       fontKerning: 'auto',
       fontLanguageOverride: '"ENG"',
+      fontOpticalSizing: 'inherit',
     },
     className: 'yes-no',
   })

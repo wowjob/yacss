@@ -94,6 +94,7 @@ import {
   normalizeFontFeatureSettings,
   normalizeFontKerning,
   normalizeFontLanguageOverride,
+  normalizeFontOpticalSizing,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -197,6 +198,7 @@ import type {
   TFontFeatureSettings,
   TFontKerning,
   TFontLanguageOverride,
+  TFontOpticalSizing,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -297,6 +299,7 @@ export type TCSSPropValue = Partial<{
   fontFeatureSettings: TFontFeatureSettings
   fontKerning: TFontKerning
   fontLanguageOverride: TFontLanguageOverride
+  fontOpticalSizing: TFontOpticalSizing
 
   margin: TMargin
   padding: TPadding
@@ -713,5 +716,9 @@ export const propertyMap: Record<
   fontLanguageOverride: {
     className: { dev: 'font-language-override', prod: 'flov' },
     normalize: normalizeFontLanguageOverride,
+  },
+  fontOpticalSizing: {
+    className: { dev: 'font-optical-sizing', prod: 'fos' },
+    normalize: normalizeFontOpticalSizing,
   },
 } as const
