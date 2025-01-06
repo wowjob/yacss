@@ -534,6 +534,10 @@
   --justify-self: auto;
   justify-self: var(--justify-self);
 }
+.left {
+  --left: auto;
+  left: var(--left);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1072,6 +1076,10 @@
 .tablet.justify-self {
   --t-justify-self: var(--justify-self);
   justify-self: var(--t-justify-self);
+}
+.tablet.left {
+  --t-left: var(--left);
+  left: var(--t-left);
 }
 
 }
@@ -1612,6 +1620,10 @@
 .desktop.justify-self {
   --d-justify-self: var(--t-justify-self);
   justify-self: var(--d-justify-self);
+}
+.desktop.left {
+  --d-left: var(--t-left);
+  left: var(--d-left);
 }
 
 }

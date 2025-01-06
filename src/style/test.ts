@@ -29,6 +29,7 @@ console.log(
       justifyItems: 'anchor-center',
       justifySelf: 'anchor-center',
       bottom: 40,
+      left: 30,
     },
     className: 'yes-no',
   })
