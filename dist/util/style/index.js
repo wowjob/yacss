@@ -99,5 +99,6 @@ export { normalizeFontSizeAdjust } from './font-size-adjust';
 export { normalizeFontSynthesisSmallCaps } from './font-synthesis-small-caps';
 export { normalizeFontSynthesisStyle } from './font-synthesis-style';
 export { normalizeFontSynthesisWeight } from './font-synthesis-weight';
+export { normalizeFontVariantAlternates } from './font-variant-alternates';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';

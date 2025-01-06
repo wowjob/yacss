@@ -30,6 +30,7 @@ console.log(
       fontSynthesisSmallCaps: 'auto',
       fontSynthesisStyle: 'auto',
       fontSynthesisWeight: 'revert',
+      fontVariantAlternates: 'historical-forms',
     },
     className: 'yes-no',
   })

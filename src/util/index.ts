@@ -103,6 +103,7 @@ export {
   normalizeFontSynthesisSmallCaps,
   normalizeFontSynthesisStyle,
   normalizeFontSynthesisWeight,
+  normalizeFontVariantAlternates,
   normalizeMargin,
   normalizePadding,
 } from './style'
