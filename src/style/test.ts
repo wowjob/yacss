@@ -28,6 +28,7 @@ console.log(
       fontPalette: 'normal',
       fontSizeAdjust: 'ch-width from-font',
       fontSynthesisSmallCaps: 'auto',
+      fontSynthesisStyle: 'auto',
     },
     className: 'yes-no',
   })
