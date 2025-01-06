@@ -522,6 +522,10 @@
   --justify-content: normal;
   justify-content: var(--justify-content);
 }
+.justify-items {
+  --justify-items: legacy;
+  justify-items: var(--justify-items);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1048,6 +1052,10 @@
 .tablet.justify-content {
   --t-justify-content: var(--justify-content);
   justify-content: var(--t-justify-content);
+}
+.tablet.justify-items {
+  --t-justify-items: var(--justify-items);
+  justify-items: var(--t-justify-items);
 }
 
 }
@@ -1576,6 +1584,10 @@
 .desktop.justify-content {
   --d-justify-content: var(--t-justify-content);
   justify-content: var(--d-justify-content);
+}
+.desktop.justify-items {
+  --d-justify-items: var(--t-justify-items);
+  justify-items: var(--d-justify-items);
 }
 
 }
