@@ -6,4 +6,4 @@ export type TBorder = {
     width?: TBorderWidthUnit | number;
     style?: TBorderStyle;
     color?: string;
-} | TBorderKeyword | string;
+} | TBorderKeyword | boolean | string;
