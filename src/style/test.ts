@@ -88,6 +88,7 @@ console.log(
       cy: 40,
       d: 'revert',
       direction: 'ltr',
+      dominantBaseline: 'hanging',
     },
     className: 'once-upon a-time padding',
   })
