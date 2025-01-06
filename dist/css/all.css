@@ -390,6 +390,10 @@
   --font-language-override: undefined;
   font-language-override: var(--font-language-override);
 }
+.font-optical-sizing {
+  --font-optical-sizing: auto;
+  font-optical-sizing: var(--font-optical-sizing);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -784,6 +788,10 @@
 .tablet.font-language-override {
   --t-font-language-override: var(--font-language-override);
   font-language-override: var(--t-font-language-override);
+}
+.tablet.font-optical-sizing {
+  --t-font-optical-sizing: var(--font-optical-sizing);
+  font-optical-sizing: var(--t-font-optical-sizing);
 }
 
 }
@@ -1180,6 +1188,10 @@
 .desktop.font-language-override {
   --d-font-language-override: var(--t-font-language-override);
   font-language-override: var(--d-font-language-override);
+}
+.desktop.font-optical-sizing {
+  --d-font-optical-sizing: var(--t-font-optical-sizing);
+  font-optical-sizing: var(--d-font-optical-sizing);
 }
 
 }

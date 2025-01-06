@@ -93,5 +93,6 @@ export { normalizeFont } from './font';
 export { normalizeFontFeatureSettings } from './font-feature-settings';
 export { normalizeFontKerning } from './font-kerning';
 export { normalizeFontLanguageOverride } from './font-language-override';
+export { normalizeFontOpticalSizing } from './font-optical-sizing';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';

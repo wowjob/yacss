@@ -97,6 +97,7 @@ export {
   normalizeFontFeatureSettings,
   normalizeFontKerning,
   normalizeFontLanguageOverride,
+  normalizeFontOpticalSizing,
   normalizeMargin,
   normalizePadding,
 } from './style'
