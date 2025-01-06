@@ -33,6 +33,7 @@ console.log(
       fontVariantAlternates: 'historical-forms',
       fontVariantCaps: 'all-petite-caps',
       fontVariantEastAsian: 'full-width',
+      fontVariantLigatures: 'common-ligatures',
     },
     className: 'yes-no',
   })

@@ -426,6 +426,10 @@
   --font-variant-east-asian: normal;
   font-variant-east-asian: var(--font-variant-east-asian);
 }
+.font-variant-ligatures {
+  --font-variant-ligatures: normal;
+  font-variant-ligatures: var(--font-variant-ligatures);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -856,6 +860,10 @@
 .tablet.font-variant-east-asian {
   --t-font-variant-east-asian: var(--font-variant-east-asian);
   font-variant-east-asian: var(--t-font-variant-east-asian);
+}
+.tablet.font-variant-ligatures {
+  --t-font-variant-ligatures: var(--font-variant-ligatures);
+  font-variant-ligatures: var(--t-font-variant-ligatures);
 }
 
 }
@@ -1288,6 +1296,10 @@
 .desktop.font-variant-east-asian {
   --d-font-variant-east-asian: var(--t-font-variant-east-asian);
   font-variant-east-asian: var(--d-font-variant-east-asian);
+}
+.desktop.font-variant-ligatures {
+  --d-font-variant-ligatures: var(--t-font-variant-ligatures);
+  font-variant-ligatures: var(--d-font-variant-ligatures);
 }
 
 }
