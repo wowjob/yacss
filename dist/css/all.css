@@ -402,6 +402,10 @@
   --font-size-adjust: none;
   font-size-adjust: var(--font-size-adjust);
 }
+.font-synthesis-small-caps {
+  --font-synthesis-small-caps: auto;
+  font-synthesis-small-caps: var(--font-synthesis-small-caps);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -808,6 +812,10 @@
 .tablet.font-size-adjust {
   --t-font-size-adjust: var(--font-size-adjust);
   font-size-adjust: var(--t-font-size-adjust);
+}
+.tablet.font-synthesis-small-caps {
+  --t-font-synthesis-small-caps: var(--font-synthesis-small-caps);
+  font-synthesis-small-caps: var(--t-font-synthesis-small-caps);
 }
 
 }
@@ -1216,6 +1224,10 @@
 .desktop.font-size-adjust {
   --d-font-size-adjust: var(--t-font-size-adjust);
   font-size-adjust: var(--d-font-size-adjust);
+}
+.desktop.font-synthesis-small-caps {
+  --d-font-synthesis-small-caps: var(--t-font-synthesis-small-caps);
+  font-synthesis-small-caps: var(--d-font-synthesis-small-caps);
 }
 
 }

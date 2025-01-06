@@ -100,6 +100,7 @@ export {
   normalizeFontOpticalSizing,
   normalizeFontPalette,
   normalizeFontSizeAdjust,
+  normalizeFontSynthesisSmallCaps,
   normalizeMargin,
   normalizePadding,
 } from './style'

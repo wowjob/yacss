@@ -99,5 +99,6 @@ export type { TFontLanguageOverride } from './font-language-override';
 export type { TFontOpticalSizing } from './font-optical-sizing';
 export type { TFontPalette } from './font-palette';
 export type { TFontSizeAdjust } from './font-size-adjust';
+export type { TFontSynthesisSmallCaps } from './font-synthesis-small-caps';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';

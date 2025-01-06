@@ -97,6 +97,7 @@ import {
   normalizeFontOpticalSizing,
   normalizeFontPalette,
   normalizeFontSizeAdjust,
+  normalizeFontSynthesisSmallCaps,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -203,6 +204,7 @@ import type {
   TFontOpticalSizing,
   TFontPalette,
   TFontSizeAdjust,
+  TFontSynthesisSmallCaps,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -306,6 +308,7 @@ export type TCSSPropValue = Partial<{
   fontOpticalSizing: TFontOpticalSizing
   fontPalette: TFontPalette
   fontSizeAdjust: TFontSizeAdjust
+  fontSynthesisSmallCaps: TFontSynthesisSmallCaps
 
   margin: TMargin
   padding: TPadding
@@ -734,5 +737,9 @@ export const propertyMap: Record<
   fontSizeAdjust: {
     className: { dev: 'font-size-adjust', prod: 'fsa' },
     normalize: normalizeFontSizeAdjust,
+  },
+  fontSynthesisSmallCaps: {
+    className: { dev: 'font-synthesis-small-caps', prod: 'fssc' },
+    normalize: normalizeFontSynthesisSmallCaps,
   },
 } as const

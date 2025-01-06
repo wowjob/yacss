@@ -27,6 +27,7 @@ console.log(
       fontOpticalSizing: 'inherit',
       fontPalette: 'normal',
       fontSizeAdjust: 'ch-width from-font',
+      fontSynthesisSmallCaps: 'auto',
     },
     className: 'yes-no',
   })
