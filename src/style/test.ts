@@ -18,6 +18,7 @@ console.log(
       height: 'fit-content',
       hyphenateCharacter: 'auto',
       hyphens: '---',
+      imageOrientation: 'from-image',
     },
     className: 'yes-no',
   })
