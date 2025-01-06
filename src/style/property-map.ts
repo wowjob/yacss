@@ -74,6 +74,7 @@ import {
   normalizeD,
   normalizeDirection,
   normalizeDisplay,
+  normalizeDominantBaseline,
   normalizeFlex,
   normalizeFlexBasis,
   normalizeFlexDirection,
@@ -169,6 +170,7 @@ import type {
   TCy,
   TD,
   TDirection,
+  TDominantBaseline,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -249,6 +251,7 @@ export type TCSSPropValue = Partial<{
   cy: TCy
   d: TD
   direction: TDirection
+  dominantBaseline: TDominantBaseline
 
   flex: TFlex
   flexBasis: TFlexBasis
@@ -587,6 +590,10 @@ export const propertyMap: Record<
   direction: {
     className: { dev: 'direction', prod: 'dir' },
     normalize: normalizeDirection,
+  },
+  dominantBaseline: {
+    className: { dev: 'dominant-baseline', prod: 'db' },
+    normalize: normalizeDominantBaseline,
   },
 
   //
