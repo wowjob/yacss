@@ -127,5 +127,6 @@ export type { TInlineSize } from './inline-size';
 export type { TInset } from './inset';
 export type { TInsetBlock } from './inset-block';
 export type { TInsetInline } from './inset-inline';
+export type { TIsolation } from './isolation';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';

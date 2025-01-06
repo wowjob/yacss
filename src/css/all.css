@@ -514,6 +514,10 @@
   --inset-inline: undefined;
   inset-inline: var(--inset-inline);
 }
+.isolation {
+  --isolation: auto;
+  isolation: var(--isolation);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1032,6 +1036,10 @@
 .tablet.inset-inline {
   --t-inset-inline: var(--inset-inline);
   inset-inline: var(--t-inset-inline);
+}
+.tablet.isolation {
+  --t-isolation: var(--isolation);
+  isolation: var(--t-isolation);
 }
 
 }
@@ -1552,6 +1560,10 @@
 .desktop.inset-inline {
   --d-inset-inline: var(--t-inset-inline);
   inset-inline: var(--d-inset-inline);
+}
+.desktop.isolation {
+  --d-isolation: var(--t-isolation);
+  isolation: var(--d-isolation);
 }
 
 }
