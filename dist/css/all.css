@@ -414,6 +414,10 @@
   --font-synthesis-weight: auto;
   font-synthesis-weight: var(--font-synthesis-weight);
 }
+.font-variant-alternates {
+  --font-variant-alternates: normal;
+  font-variant-alternates: var(--font-variant-alternates);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -832,6 +836,10 @@
 .tablet.font-synthesis-weight {
   --t-font-synthesis-weight: var(--font-synthesis-weight);
   font-synthesis-weight: var(--t-font-synthesis-weight);
+}
+.tablet.font-variant-alternates {
+  --t-font-variant-alternates: var(--font-variant-alternates);
+  font-variant-alternates: var(--t-font-variant-alternates);
 }
 
 }
@@ -1252,6 +1260,10 @@
 .desktop.font-synthesis-weight {
   --d-font-synthesis-weight: var(--t-font-synthesis-weight);
   font-synthesis-weight: var(--d-font-synthesis-weight);
+}
+.desktop.font-variant-alternates {
+  --d-font-variant-alternates: var(--t-font-variant-alternates);
+  font-variant-alternates: var(--d-font-variant-alternates);
 }
 
 }
