@@ -13,6 +13,7 @@ console.log(
         end: -1,
       },
       gridRow: [1, 4],
+      gridTemplate: { columns: '1fr 2fr', rows: 'auto 1fr auto' },
     },
     className: 'yes-no',
   })

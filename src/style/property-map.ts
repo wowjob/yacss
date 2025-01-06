@@ -237,7 +237,9 @@ import type {
   TGridAutoRows,
   TGridColumn,
   TGridRow,
+  TGridTemplate,
 } from '../type'
+import { normalizeGridTemplate } from '../util/style'
 
 export type TEnv = 'dev' | 'prod'
 export type TCSSPropValue = Partial<{
@@ -357,6 +359,7 @@ export type TCSSPropValue = Partial<{
   gridAutoRows: TGridAutoRows
   gridColumn: TGridColumn
   gridRow: TGridRow
+  gridTemplate: TGridTemplate
 
   margin: TMargin
   padding: TPadding
@@ -853,5 +856,9 @@ export const propertyMap: Record<
   gridRow: {
     className: { dev: 'grid-row', prod: 'gr' },
     normalize: normalizeGridRow,
+  },
+  gridTemplate: {
+    className: { dev: 'grid-template', prod: 'gt' },
+    normalize: normalizeGridTemplate,
   },
 } as const
