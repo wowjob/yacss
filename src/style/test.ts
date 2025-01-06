@@ -4,7 +4,13 @@ console.log(
   getStyle({
     mobile: {
       fieldSizing: 'content',
+      fill: 'context-fill',
+      border: {
+        color: 'red',
+        style: 'dashed',
+        width: 20,
+      },
     },
-    className: 'once-upon a-time padding',
+    className: 'yes-no',
   })
 )

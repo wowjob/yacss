@@ -26,8 +26,7 @@ export type TBorder =
   | {
       width?: TBorderWidthUnit | number
       style?: TBorderStyle
-      color?: string & {}
+      color?: string
     }
   | TBorderKeyword
-  | boolean
-  | (string & {})
+  | string

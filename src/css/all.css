@@ -346,6 +346,10 @@
   --field-sizing: undefined;
   field-sizing: var(--field-sizing);
 }
+.fill {
+  --fill: black;
+  fill: var(--fill);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -696,6 +700,10 @@
 .tablet.field-sizing {
   --t-field-sizing: var(--field-sizing);
   field-sizing: var(--t-field-sizing);
+}
+.tablet.fill {
+  --t-fill: var(--fill);
+  fill: var(--t-fill);
 }
 
 }
@@ -1048,6 +1056,10 @@
 .desktop.field-sizing {
   --d-field-sizing: var(--t-field-sizing);
   field-sizing: var(--d-field-sizing);
+}
+.desktop.fill {
+  --d-fill: var(--t-fill);
+  fill: var(--d-fill);
 }
 
 }
