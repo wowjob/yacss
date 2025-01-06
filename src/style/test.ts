@@ -89,6 +89,7 @@ console.log(
       d: 'revert',
       direction: 'ltr',
       dominantBaseline: 'hanging',
+      emptyCells: 'revert',
     },
     className: 'once-upon a-time padding',
   })

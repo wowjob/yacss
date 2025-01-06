@@ -77,6 +77,7 @@ export {
   normalizeD,
   normalizeDirection,
   normalizeDominantBaseline,
+  normalizeEmptyCells,
   //
   normalizeDisplay,
   normalizeFlex,

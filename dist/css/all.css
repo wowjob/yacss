@@ -310,6 +310,10 @@
   --dominant-baseline: auto;
   dominant-baseline: var(--dominant-baseline);
 }
+.empty-cells {
+  --empty-cells: show;
+  empty-cells: var(--empty-cells);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -652,6 +656,10 @@
 .tablet.dominant-baseline {
   --t-dominant-baseline: var(--dominant-baseline);
   dominant-baseline: var(--t-dominant-baseline);
+}
+.tablet.empty-cells {
+  --t-empty-cells: var(--empty-cells);
+  empty-cells: var(--t-empty-cells);
 }
 .tablet.display {
   --t-display: var(--display);
@@ -996,6 +1004,10 @@
 .desktop.dominant-baseline {
   --d-dominant-baseline: var(--t-dominant-baseline);
   dominant-baseline: var(--d-dominant-baseline);
+}
+.desktop.empty-cells {
+  --d-empty-cells: var(--t-empty-cells);
+  empty-cells: var(--d-empty-cells);
 }
 .desktop.display {
   --d-display: var(--t-display);

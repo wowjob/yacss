@@ -77,6 +77,7 @@ export type { TD } from './d';
 export type { TDisplay } from './display';
 export type { TDirection } from './direction';
 export type { TDominantBaseline } from './dominant-baseline';
+export type { TEmptyCells } from './empty-cells';
 export type { TFlex } from './flex';
 export type { TFlexBasis } from './flex-basis';
 export type { TFlexDirection } from './flex-direction';

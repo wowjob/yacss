@@ -74,6 +74,7 @@ export { normalizeD } from './d';
 export { normalizeDisplay } from './display';
 export { normalizeDirection } from './direction';
 export { normalizeDominantBaseline } from './dominant-baseline';
+export { normalizeEmptyCells } from './empty-cells';
 export { normalizeFlex } from './flex';
 export { normalizeFlexBasis } from './flex-basis';
 export { normalizeFlexDirection } from './flex-direction';
