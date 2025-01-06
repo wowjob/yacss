@@ -486,6 +486,10 @@
   --hyphenate-character: auto;
   hyphenate-character: var(--hyphenate-character);
 }
+.hyphens {
+  --hyphens: manual;
+  hyphens: var(--hyphens);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -976,6 +980,10 @@
 .tablet.hyphenate-character {
   --t-hyphenate-character: var(--hyphenate-character);
   hyphenate-character: var(--t-hyphenate-character);
+}
+.tablet.hyphens {
+  --t-hyphens: var(--hyphens);
+  hyphens: var(--t-hyphens);
 }
 
 }
@@ -1468,6 +1476,10 @@
 .desktop.hyphenate-character {
   --d-hyphenate-character: var(--t-hyphenate-character);
   hyphenate-character: var(--d-hyphenate-character);
+}
+.desktop.hyphens {
+  --d-hyphens: var(--t-hyphens);
+  hyphens: var(--d-hyphens);
 }
 
 }
