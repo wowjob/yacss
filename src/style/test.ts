@@ -11,6 +11,7 @@ console.log(
         width: 20,
       },
       fillOpacity: 0.5,
+      fillRule: 'evenodd',
     },
     className: 'yes-no',
   })

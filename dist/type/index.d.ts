@@ -87,5 +87,6 @@ export type { TFlexWrap } from './flex-wrap';
 export type { TFieldSizing } from './field-sizing';
 export type { TFill } from './fill';
 export type { TFillOpacity } from './fill-opacity';
+export type { TFillRule } from './fill-rule';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';
