@@ -89,6 +89,7 @@ import {
   normalizeFlexWrap,
   normalizeFloat,
   normalizeFloodColor,
+  normalizeFloodOpacity,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -187,6 +188,7 @@ import type {
   TFilter,
   TFloat,
   TFloodColor,
+  TFloodOpacity,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -282,6 +284,7 @@ export type TCSSPropValue = Partial<{
   filter: TFilter
   float: TFloat
   floodColor: TFloodColor
+  floodOpacity: TFloodOpacity
 
   margin: TMargin
   padding: TPadding
@@ -660,7 +663,7 @@ export const propertyMap: Record<
     normalize: normalizeFill,
   },
   fillOpacity: {
-    className: { dev: 'fill-opacity', prod: 'fo' },
+    className: { dev: 'fill-opacity', prod: 'fop' },
     normalize: normalizeFillOpacity,
   },
   fillRule: {
@@ -678,5 +681,9 @@ export const propertyMap: Record<
   floodColor: {
     className: { dev: 'flood-color', prod: 'fc' },
     normalize: normalizeFloodColor,
+  },
+  floodOpacity: {
+    className: { dev: 'flood-opacity', prod: 'fo' },
+    normalize: normalizeFloodOpacity,
   },
 } as const

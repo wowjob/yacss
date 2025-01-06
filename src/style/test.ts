@@ -15,6 +15,7 @@ console.log(
       filter: 'opacity(25%)',
       float: 'left',
       floodColor: 'currentcolor',
+      floodOpacity: 'revert',
     },
     className: 'yes-no',
   })

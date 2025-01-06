@@ -92,6 +92,7 @@ export {
   normalizeFilter,
   normalizeFloat,
   normalizeFloodColor,
+  normalizeFloodOpacity,
   normalizeMargin,
   normalizePadding,
 } from './style'
