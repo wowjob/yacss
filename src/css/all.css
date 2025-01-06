@@ -478,6 +478,10 @@
   --grid-template-areas: none;
   grid-template-areas: var(--grid-template-areas);
 }
+.height {
+  --height: auto;
+  height: var(--height);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -960,6 +964,10 @@
 .tablet.grid-template-areas {
   --t-grid-template-areas: var(--grid-template-areas);
   grid-template-areas: var(--t-grid-template-areas);
+}
+.tablet.height {
+  --t-height: var(--height);
+  height: var(--t-height);
 }
 
 }
@@ -1444,6 +1452,10 @@
 .desktop.grid-template-areas {
   --d-grid-template-areas: var(--t-grid-template-areas);
   grid-template-areas: var(--d-grid-template-areas);
+}
+.desktop.height {
+  --d-height: var(--t-height);
+  height: var(--d-height);
 }
 
 }

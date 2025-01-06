@@ -114,6 +114,9 @@ import {
   normalizeGridAutoRows,
   normalizeGridColumn,
   normalizeGridRow,
+  normalizeGridTemplate,
+  normalizeGridTemplateAreas,
+  normalizeHeight,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -239,11 +242,8 @@ import type {
   TGridRow,
   TGridTemplate,
   TGridTemplateAreas,
+  THeight,
 } from '../type'
-import {
-  normalizeGridTemplate,
-  normalizeGridTemplateAreas,
-} from '../util/style'
 
 export type TEnv = 'dev' | 'prod'
 export type TCSSPropValue = Partial<{
@@ -365,6 +365,7 @@ export type TCSSPropValue = Partial<{
   gridRow: TGridRow
   gridTemplate: TGridTemplate
   gridTemplateAreas: TGridTemplateAreas
+  height: THeight
 
   margin: TMargin
   padding: TPadding
@@ -869,5 +870,9 @@ export const propertyMap: Record<
   gridTemplateAreas: {
     className: { dev: 'grid-template-areas', prod: 'gta' },
     normalize: normalizeGridTemplateAreas,
+  },
+  height: {
+    className: { dev: 'height', prod: 'h' },
+    normalize: normalizeHeight,
   },
 } as const
