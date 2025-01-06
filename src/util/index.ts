@@ -69,6 +69,7 @@ export {
   normalizeContent,
   normalizeContentVisibility,
   normalizeCounterIncrement,
+  normalizeCounterReset,
   //
   normalizeDisplay,
   normalizeFlex,

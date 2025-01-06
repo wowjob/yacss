@@ -278,6 +278,10 @@
   --counter-increment: none;
   counter-increment: var(--counter-increment);
 }
+.counter-reset {
+  --counter-reset: none;
+  counter-reset: var(--counter-reset);
+}
 .display {
   --display: inline;
   display: var(--display);
@@ -588,6 +592,10 @@
 .tablet.counter-increment {
   --t-counter-increment: var(--counter-increment);
   counter-increment: var(--t-counter-increment);
+}
+.tablet.counter-reset {
+  --t-counter-reset: var(--counter-reset);
+  counter-reset: var(--t-counter-reset);
 }
 .tablet.display {
   --t-display: var(--display);
@@ -900,6 +908,10 @@
 .desktop.counter-increment {
   --d-counter-increment: var(--t-counter-increment);
   counter-increment: var(--d-counter-increment);
+}
+.desktop.counter-reset {
+  --d-counter-reset: var(--t-counter-reset);
+  counter-reset: var(--d-counter-reset);
 }
 .desktop.display {
   --d-display: var(--t-display);

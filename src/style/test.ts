@@ -82,6 +82,7 @@ console.log(
       content: 'no-close-quote',
       contentVisibility: 'hidden',
       counterIncrement: 'test',
+      counterReset: 'test',
     },
     className: 'once-upon a-time padding',
   })
