@@ -83,6 +83,7 @@ console.log(
       contentVisibility: 'hidden',
       counterIncrement: 'test',
       counterReset: 'test',
+      cursor: 'crosshair',
     },
     className: 'once-upon a-time padding',
   })
