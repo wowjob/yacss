@@ -342,6 +342,10 @@
   --flex-wrap: nowrap;
   flex-wrap: var(--flex-wrap);
 }
+.field-sizing {
+  --field-sizing: undefined;
+  field-sizing: var(--field-sizing);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -688,6 +692,10 @@
 .tablet.flex-wrap {
   --t-flex-wrap: var(--flex-wrap);
   flex-wrap: var(--t-flex-wrap);
+}
+.tablet.field-sizing {
+  --t-field-sizing: var(--field-sizing);
+  field-sizing: var(--t-field-sizing);
 }
 
 }
@@ -1036,6 +1044,10 @@
 .desktop.flex-wrap {
   --d-flex-wrap: var(--t-flex-wrap);
   flex-wrap: var(--d-flex-wrap);
+}
+.desktop.field-sizing {
+  --d-field-sizing: var(--t-field-sizing);
+  field-sizing: var(--d-field-sizing);
 }
 
 }

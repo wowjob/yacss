@@ -78,7 +78,6 @@ export {
   normalizeDirection,
   normalizeDominantBaseline,
   normalizeEmptyCells,
-  //
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -86,6 +85,7 @@ export {
   normalizeFlexGrow,
   normalizeFlexShrink,
   normalizeFlexWrap,
+  normalizeFieldSizing,
   normalizeMargin,
   normalizePadding,
 } from './style'

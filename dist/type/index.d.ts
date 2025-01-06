@@ -84,5 +84,6 @@ export type { TFlexDirection } from './flex-direction';
 export type { TFlexGrow } from './flex-grow';
 export type { TFlexShrink } from './flex-shrink';
 export type { TFlexWrap } from './flex-wrap';
+export type { TFieldSizing } from './field-sizing';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';

@@ -1,4 +1,4 @@
-import { normalizeAccentColor, normalizeAlignContent, normalizeAlignItems, normalizeAlignSelf, normalizeAnimation, normalizeAppearance, normalizeAspectRatio, normalizeBackdropFilter, normalizeBackfaceVisibility, normalizeBackground, normalizeBackgroundBlendMode, normalizeBackgroundClip, normalizeBackgroundOrigin, normalizeBlockSize, normalizeBorder, normalizeBorderBlock, normalizeBorderBlockEnd, normalizeBorderBlockStart, normalizeBorderBottom, normalizeBorderBottomLeftRadius, normalizeBorderBottomRightRadius, normalizeBorderCollapse, normalizeBorderEndEndRadius, normalizeBorderEndStartRadius, normalizeBorderImage, normalizeBorderInlineEnd, normalizeBorderInlineStart, normalizeBorderLeft, normalizeBorderRadius, normalizeBorderRight, normalizeBorderStartEndRadius, normalizeBorderStartStartRadius, normalizeBorderStyle, normalizeBorderTop, normalizeBorderTopLeftRadius, normalizeBorderTopRightRadius, normalizeBorderWidth, normalizeBoxShadow, normalizeBoxSizing, normalizeBreakAfter, normalizeBreakBefore, normalizeBreakInside, normalizeCaptionSide, normalizeCaretColor, normalizeClear, normalizeClip, normalizeClipPath, normalizeColor, normalizeColorInterpolation, normalizeColorInterpolationFilters, normalizeColorScheme, normalizeColumnCount, normalizeColumnFill, normalizeColumnGap, normalizeColumnRule, normalizeColumnSpan, normalizeColumnWidth, normalizeContain, normalizeContainer, normalizeContainIntrinsicBlockSize, normalizeContainIntrinsicHeight, normalizeContainIntrinsicInlineSize, normalizeContainIntrinsicSize, normalizeContainIntrinsicWidth, normalizeContent, normalizeContentVisibility, normalizeCounterIncrement, normalizeCounterReset, normalizeCounterSet, normalizeCursor, normalizeCx, normalizeCy, normalizeD, normalizeDirection, normalizeDisplay, normalizeDominantBaseline, normalizeEmptyCells, normalizeFlex, normalizeFlexBasis, normalizeFlexDirection, normalizeFlexGrow, normalizeFlexShrink, normalizeFlexWrap, normalizeMargin, normalizePadding, } from '../util';
+import { normalizeAccentColor, normalizeAlignContent, normalizeAlignItems, normalizeAlignSelf, normalizeAnimation, normalizeAppearance, normalizeAspectRatio, normalizeBackdropFilter, normalizeBackfaceVisibility, normalizeBackground, normalizeBackgroundBlendMode, normalizeBackgroundClip, normalizeBackgroundOrigin, normalizeBlockSize, normalizeBorder, normalizeBorderBlock, normalizeBorderBlockEnd, normalizeBorderBlockStart, normalizeBorderBottom, normalizeBorderBottomLeftRadius, normalizeBorderBottomRightRadius, normalizeBorderCollapse, normalizeBorderEndEndRadius, normalizeBorderEndStartRadius, normalizeBorderImage, normalizeBorderInlineEnd, normalizeBorderInlineStart, normalizeBorderLeft, normalizeBorderRadius, normalizeBorderRight, normalizeBorderStartEndRadius, normalizeBorderStartStartRadius, normalizeBorderStyle, normalizeBorderTop, normalizeBorderTopLeftRadius, normalizeBorderTopRightRadius, normalizeBorderWidth, normalizeBoxShadow, normalizeBoxSizing, normalizeBreakAfter, normalizeBreakBefore, normalizeBreakInside, normalizeCaptionSide, normalizeCaretColor, normalizeClear, normalizeClip, normalizeClipPath, normalizeColor, normalizeColorInterpolation, normalizeColorInterpolationFilters, normalizeColorScheme, normalizeColumnCount, normalizeColumnFill, normalizeColumnGap, normalizeColumnRule, normalizeColumnSpan, normalizeColumnWidth, normalizeContain, normalizeContainer, normalizeContainIntrinsicBlockSize, normalizeContainIntrinsicHeight, normalizeContainIntrinsicInlineSize, normalizeContainIntrinsicSize, normalizeContainIntrinsicWidth, normalizeContent, normalizeContentVisibility, normalizeCounterIncrement, normalizeCounterReset, normalizeCounterSet, normalizeCursor, normalizeCx, normalizeCy, normalizeD, normalizeDirection, normalizeDisplay, normalizeDominantBaseline, normalizeEmptyCells, normalizeFieldSizing, normalizeFlex, normalizeFlexBasis, normalizeFlexDirection, normalizeFlexGrow, normalizeFlexShrink, normalizeFlexWrap, normalizeMargin, normalizePadding, } from '../util';
 // Define a mapping of keys to their respective normalizer functions
 export const propertyMap = {
     accentColor: {
@@ -317,7 +317,6 @@ export const propertyMap = {
         className: { dev: 'empty-cells', prod: 'ec' },
         normalize: normalizeEmptyCells,
     },
-    //
     display: {
         className: { dev: 'display', prod: 'ds' },
         normalize: normalizeDisplay,
@@ -345,5 +344,9 @@ export const propertyMap = {
     flexWrap: {
         className: { dev: 'flex-wrap', prod: 'fw' },
         normalize: normalizeFlexWrap,
+    },
+    fieldSizing: {
+        className: { dev: 'field-sizing', prod: 'fz' },
+        normalize: normalizeFieldSizing,
     },
 };

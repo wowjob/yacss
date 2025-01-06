@@ -5,5 +5,5 @@ export type TBorderStyle = 'solid' | 'dashed' | 'dotted' | 'double' | 'groove' |
 export type TBorder = {
     width?: TBorderWidthUnit | number;
     style?: TBorderStyle;
-    color?: string;
+    color?: string & {};
 } | TBorderKeyword | boolean | (string & {});
