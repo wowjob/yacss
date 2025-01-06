@@ -114,6 +114,8 @@ export {
   normalizeGap,
   normalizeGridAutoColumns,
   normalizeGridAutoFlow,
+  normalizeGridAutoRows,
+  normalizeGridColumn,
   normalizeMargin,
   normalizePadding,
 } from './style'
