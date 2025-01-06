@@ -231,7 +231,9 @@ import type {
   TGap,
   TGridAutoColumns,
   TGridAutoFlow,
+  TGridAutoRows,
 } from '../type'
+import { normalizeGridAutoRows } from '../util/style'
 
 export type TEnv = 'dev' | 'prod'
 export type TCSSPropValue = Partial<{
@@ -348,6 +350,7 @@ export type TCSSPropValue = Partial<{
   gap: TGap
   gridAutoColumns: TGridAutoColumns
   gridAutoFlow: TGridAutoFlow
+  gridAutoRows: TGridAutoRows
 
   margin: TMargin
   padding: TPadding
@@ -832,5 +835,9 @@ export const propertyMap: Record<
   gridAutoFlow: {
     className: { dev: 'grid-auto-flow', prod: 'gaf' },
     normalize: normalizeGridAutoFlow,
+  },
+  gridAutoRows: {
+    className: { dev: 'grid-auto-rows', prod: 'gar' },
+    normalize: normalizeGridAutoRows,
   },
 } as const
