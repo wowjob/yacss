@@ -88,6 +88,7 @@ import {
   normalizeFlexShrink,
   normalizeFlexWrap,
   normalizeFloat,
+  normalizeFloodColor,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -185,6 +186,7 @@ import type {
   TFillRule,
   TFilter,
   TFloat,
+  TFloodColor,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -279,6 +281,7 @@ export type TCSSPropValue = Partial<{
   fillRule: TFillRule
   filter: TFilter
   float: TFloat
+  floodColor: TFloodColor
 
   margin: TMargin
   padding: TPadding
@@ -671,5 +674,9 @@ export const propertyMap: Record<
   float: {
     className: { dev: 'float', prod: 'flo' },
     normalize: normalizeFloat,
+  },
+  floodColor: {
+    className: { dev: 'flood-color', prod: 'fc' },
+    normalize: normalizeFloodColor,
   },
 } as const
