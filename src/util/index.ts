@@ -109,6 +109,7 @@ export {
   normalizeFontVariantLigatures,
   normalizeFontVariantNumeric,
   normalizeFontVariantPosition,
+  normalizeFontVariationSettings,
   normalizeMargin,
   normalizePadding,
 } from './style'
