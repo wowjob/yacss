@@ -120,6 +120,8 @@ import {
   normalizeHyphenateCharacter,
   normalizeHyphens,
   normalizeImageOrientation,
+  normalizeImageRendering,
+  normalizeInlineSize,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -250,8 +252,8 @@ import type {
   THyphens,
   TImageOrientation,
   TImageRendering,
+  TInlineSize,
 } from '../type'
-import { normalizeImageRendering } from '../util/style'
 
 export type TEnv = 'dev' | 'prod'
 export type TCSSPropValue = Partial<{
@@ -378,6 +380,7 @@ export type TCSSPropValue = Partial<{
   hyphens: THyphens
   imageOrientation: TImageOrientation
   imageRendering: TImageRendering
+  inlineSize: TInlineSize
 
   margin: TMargin
   padding: TPadding
@@ -902,5 +905,9 @@ export const propertyMap: Record<
   imageRendering: {
     className: { dev: 'image-rendering', prod: 'ir' },
     normalize: normalizeImageRendering,
+  },
+  inlineSize: {
+    className: { dev: 'inline-size', prod: 'is' },
+    normalize: normalizeInlineSize,
   },
 } as const

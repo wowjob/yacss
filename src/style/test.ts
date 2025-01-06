@@ -20,6 +20,7 @@ console.log(
       hyphens: '---',
       imageOrientation: 'from-image',
       imageRendering: 'crisp-edges',
+      inlineSize: 'max-content',
     },
     className: 'yes-no',
   })
