@@ -89,6 +89,7 @@ export {
   normalizeFill,
   normalizeFillOpacity,
   normalizeFillRule,
+  normalizeFilter,
   normalizeMargin,
   normalizePadding,
 } from './style'

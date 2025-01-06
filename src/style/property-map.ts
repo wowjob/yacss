@@ -80,6 +80,7 @@ import {
   normalizeFill,
   normalizeFillOpacity,
   normalizeFillRule,
+  normalizeFilter,
   normalizeFlex,
   normalizeFlexBasis,
   normalizeFlexDirection,
@@ -181,6 +182,7 @@ import type {
   TFill,
   TFillOpacity,
   TFillRule,
+  TFilter,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -273,6 +275,7 @@ export type TCSSPropValue = Partial<{
   fill: TFill
   fillOpacity: TFillOpacity
   fillRule: TFillRule
+  filter: TFilter
 
   margin: TMargin
   padding: TPadding
@@ -657,5 +660,9 @@ export const propertyMap: Record<
   fillRule: {
     className: { dev: 'fill-rule', prod: 'fr' },
     normalize: normalizeFillRule,
+  },
+  filter: {
+    className: { dev: 'filter', prod: 'flt' },
+    normalize: normalizeFilter,
   },
 } as const

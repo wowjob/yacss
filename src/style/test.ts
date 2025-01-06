@@ -12,6 +12,7 @@ console.log(
       },
       fillOpacity: 0.5,
       fillRule: 'evenodd',
+      filter: 'opacity(25%)',
     },
     className: 'yes-no',
   })

@@ -358,6 +358,10 @@
   --fill-rule: nonzero;
   fill-rule: var(--fill-rule);
 }
+.filter {
+  --filter: none;
+  filter: var(--filter);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -720,6 +724,10 @@
 .tablet.fill-rule {
   --t-fill-rule: var(--fill-rule);
   fill-rule: var(--t-fill-rule);
+}
+.tablet.filter {
+  --t-filter: var(--filter);
+  filter: var(--t-filter);
 }
 
 }
@@ -1084,6 +1092,10 @@
 .desktop.fill-rule {
   --d-fill-rule: var(--t-fill-rule);
   fill-rule: var(--d-fill-rule);
+}
+.desktop.filter {
+  --d-filter: var(--t-filter);
+  filter: var(--d-filter);
 }
 
 }
