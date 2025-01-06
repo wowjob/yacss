@@ -100,5 +100,6 @@ export { normalizeFontSynthesisSmallCaps } from './font-synthesis-small-caps';
 export { normalizeFontSynthesisStyle } from './font-synthesis-style';
 export { normalizeFontSynthesisWeight } from './font-synthesis-weight';
 export { normalizeFontVariantAlternates } from './font-variant-alternates';
+export { normalizeFontVariantCaps } from './font-variant-caps';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';
