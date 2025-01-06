@@ -25,6 +25,7 @@ console.log(
       insetBlock: { start: '22px', end: 10 },
       insetInline: [10, 20],
       isolation: 'isolate',
+      justifyContent: 'space-around',
     },
     className: 'yes-no',
   })

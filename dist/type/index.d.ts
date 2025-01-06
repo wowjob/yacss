@@ -128,5 +128,6 @@ export type { TInset } from './inset';
 export type { TInsetBlock } from './inset-block';
 export type { TInsetInline } from './inset-inline';
 export type { TIsolation } from './isolation';
+export type { TJustifyContent } from './justify-content';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';
