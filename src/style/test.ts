@@ -27,6 +27,7 @@ console.log(
       isolation: 'isolate',
       justifyContent: 'space-around',
       justifyItems: 'anchor-center',
+      justifySelf: 'anchor-center',
     },
     className: 'yes-no',
   })
