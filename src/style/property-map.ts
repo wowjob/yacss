@@ -63,6 +63,7 @@ import {
   normalizeContainIntrinsicInlineSize,
   normalizeContainIntrinsicSize,
   normalizeContainIntrinsicWidth,
+  normalizeContent,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -149,6 +150,7 @@ import type {
   TContainIntrinsicSize,
   TContainIntrinsicWidth,
   TContainer,
+  TContent,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -219,6 +221,7 @@ export type TCSSPropValue = Partial<{
   containIntrinsicSize: TContainIntrinsicSize
   containIntrinsicWidth: TContainIntrinsicWidth
   container: TContainer
+  content: TContent
 
   flex: TFlex
   flexBasis: TFlexBasis
@@ -517,6 +520,10 @@ export const propertyMap: Record<
   container: {
     className: { dev: 'container', prod: 'cn' },
     normalize: normalizeContainer,
+  },
+  content: {
+    className: { dev: 'content', prod: 'cnt' },
+    normalize: normalizeContent,
   },
 
   //
