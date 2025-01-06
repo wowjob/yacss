@@ -79,6 +79,7 @@ console.log(
       containIntrinsicSize: 600,
       containIntrinsicWidth: 100,
       container: 'layout-parent',
+      content: 'no-close-quote',
     },
     className: 'once-upon a-time padding',
   })

@@ -65,6 +65,7 @@ export type { TContainIntrinsicInlineSize } from './contain-intrinsic-inline-siz
 export type { TContainIntrinsicSize } from './contain-intrinsic-size';
 export type { TContainIntrinsicWidth } from './contain-intrinsic-width';
 export type { TContainer } from './container';
+export type { TContent } from './content';
 export type { TDisplay } from './display';
 export type { TFlex } from './flex';
 export type { TFlexBasis } from './flex-basis';
