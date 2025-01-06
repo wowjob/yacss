@@ -10,6 +10,7 @@ console.log(
         style: 'dashed',
         width: 20,
       },
+      fillOpacity: 0.5,
     },
     className: 'yes-no',
   })

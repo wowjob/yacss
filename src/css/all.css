@@ -350,6 +350,10 @@
   --fill: black;
   fill: var(--fill);
 }
+.fill-opacity {
+  --fill-opacity: 1;
+  fill-opacity: var(--fill-opacity);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -704,6 +708,10 @@
 .tablet.fill {
   --t-fill: var(--fill);
   fill: var(--t-fill);
+}
+.tablet.fill-opacity {
+  --t-fill-opacity: var(--fill-opacity);
+  fill-opacity: var(--t-fill-opacity);
 }
 
 }
@@ -1060,6 +1068,10 @@
 .desktop.fill {
   --d-fill: var(--t-fill);
   fill: var(--d-fill);
+}
+.desktop.fill-opacity {
+  --d-fill-opacity: var(--t-fill-opacity);
+  fill-opacity: var(--d-fill-opacity);
 }
 
 }
