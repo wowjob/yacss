@@ -370,6 +370,10 @@
   --flood-color: black;
   flood-color: var(--flood-color);
 }
+.flood-opacity {
+  --flood-opacity: 1;
+  flood-opacity: var(--flood-opacity);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -744,6 +748,10 @@
 .tablet.flood-color {
   --t-flood-color: var(--flood-color);
   flood-color: var(--t-flood-color);
+}
+.tablet.flood-opacity {
+  --t-flood-opacity: var(--flood-opacity);
+  flood-opacity: var(--t-flood-opacity);
 }
 
 }
@@ -1120,6 +1128,10 @@
 .desktop.flood-color {
   --d-flood-color: var(--t-flood-color);
   flood-color: var(--d-flood-color);
+}
+.desktop.flood-opacity {
+  --d-flood-opacity: var(--t-flood-opacity);
+  flood-opacity: var(--d-flood-opacity);
 }
 
 }

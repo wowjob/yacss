@@ -91,5 +91,6 @@ export type { TFillRule } from './fill-rule';
 export type { TFilter } from './filter';
 export type { TFloat } from './float';
 export type { TFloodColor } from './flood-color';
+export type { TFloodOpacity } from './flood-opacity';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';
