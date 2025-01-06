@@ -120,5 +120,6 @@ export { normalizeHyphenateCharacter } from './hyphenate-character';
 export { normalizeHyphens } from './hyphens';
 export { normalizeImageOrientation } from './image-orientation';
 export { normalizeImageRendering } from './image-rendering';
+export { normalizeInlineSize } from './inline-size';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';

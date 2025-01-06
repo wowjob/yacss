@@ -123,6 +123,8 @@ export {
   normalizeHyphenateCharacter,
   normalizeHyphens,
   normalizeImageOrientation,
+  normalizeImageRendering,
+  normalizeInlineSize,
   normalizeMargin,
   normalizePadding,
 } from './style'
