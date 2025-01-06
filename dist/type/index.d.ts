@@ -113,5 +113,6 @@ export type { TForcedColorAdjust } from './forced-color-adjust';
 export type { TGap } from './gap';
 export type { TGridAutoColumns } from './grid-auto-columns';
 export type { TGridAutoFlow } from './grid-auto-flow';
+export type { TGridAutoRows } from './grid-auto-rows';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';

@@ -458,6 +458,10 @@
   --grid-auto-flow: row;
   grid-auto-flow: var(--grid-auto-flow);
 }
+.grid-auto-rows {
+  --grid-auto-rows: auto;
+  grid-auto-rows: var(--grid-auto-rows);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -920,6 +924,10 @@
 .tablet.grid-auto-flow {
   --t-grid-auto-flow: var(--grid-auto-flow);
   grid-auto-flow: var(--t-grid-auto-flow);
+}
+.tablet.grid-auto-rows {
+  --t-grid-auto-rows: var(--grid-auto-rows);
+  grid-auto-rows: var(--t-grid-auto-rows);
 }
 
 }
@@ -1384,6 +1392,10 @@
 .desktop.grid-auto-flow {
   --d-grid-auto-flow: var(--t-grid-auto-flow);
   grid-auto-flow: var(--d-grid-auto-flow);
+}
+.desktop.grid-auto-rows {
+  --d-grid-auto-rows: var(--t-grid-auto-rows);
+  grid-auto-rows: var(--d-grid-auto-rows);
 }
 
 }

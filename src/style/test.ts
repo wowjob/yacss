@@ -7,6 +7,7 @@ console.log(
       gap: [22, 44],
       gridAutoColumns: 'min-max(5rem, 10rem)',
       gridAutoFlow: 'column',
+      gridAutoRows: 'revert-layer',
     },
     className: 'yes-no',
   })
