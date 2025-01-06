@@ -91,6 +91,7 @@ import {
   normalizeFloodColor,
   normalizeFloodOpacity,
   normalizeFont,
+  normalizeFontFeatureSettings,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -191,6 +192,7 @@ import type {
   TFloodColor,
   TFloodOpacity,
   TFont,
+  TFontFeatureSettings,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -288,6 +290,7 @@ export type TCSSPropValue = Partial<{
   floodColor: TFloodColor
   floodOpacity: TFloodOpacity
   font: TFont
+  fontFeatureSettings: TFontFeatureSettings
 
   margin: TMargin
   padding: TPadding
@@ -692,5 +695,9 @@ export const propertyMap: Record<
   font: {
     className: { dev: 'font', prod: 'fnt' },
     normalize: normalizeFont,
+  },
+  fontFeatureSettings: {
+    className: { dev: 'font-feature-settings', prod: 'ffs' },
+    normalize: normalizeFontFeatureSettings,
   },
 } as const
