@@ -482,6 +482,10 @@
   --height: auto;
   height: var(--height);
 }
+.hyphenate-character {
+  --hyphenate-character: auto;
+  hyphenate-character: var(--hyphenate-character);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -968,6 +972,10 @@
 .tablet.height {
   --t-height: var(--height);
   height: var(--t-height);
+}
+.tablet.hyphenate-character {
+  --t-hyphenate-character: var(--hyphenate-character);
+  hyphenate-character: var(--t-hyphenate-character);
 }
 
 }
@@ -1456,6 +1464,10 @@
 .desktop.height {
   --d-height: var(--t-height);
   height: var(--d-height);
+}
+.desktop.hyphenate-character {
+  --d-hyphenate-character: var(--t-hyphenate-character);
+  hyphenate-character: var(--d-hyphenate-character);
 }
 
 }
