@@ -14,6 +14,7 @@ console.log(
       },
       gridRow: [1, 4],
       gridTemplate: { columns: '1fr 2fr', rows: 'auto 1fr auto' },
+      gridTemplateAreas: ['a a .', 'b b b'],
     },
     className: 'yes-no',
   })

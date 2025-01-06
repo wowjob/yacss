@@ -1,5 +1,5 @@
 import { normalizeAccentColor, normalizeAlignContent, normalizeAlignItems, normalizeAlignSelf, normalizeAnimation, normalizeAppearance, normalizeAspectRatio, normalizeBackdropFilter, normalizeBackfaceVisibility, normalizeBackground, normalizeBackgroundBlendMode, normalizeBackgroundClip, normalizeBackgroundOrigin, normalizeBlockSize, normalizeBorder, normalizeBorderBlock, normalizeBorderBlockEnd, normalizeBorderBlockStart, normalizeBorderBottom, normalizeBorderBottomLeftRadius, normalizeBorderBottomRightRadius, normalizeBorderCollapse, normalizeBorderEndEndRadius, normalizeBorderEndStartRadius, normalizeBorderImage, normalizeBorderInlineEnd, normalizeBorderInlineStart, normalizeBorderLeft, normalizeBorderRadius, normalizeBorderRight, normalizeBorderStartEndRadius, normalizeBorderStartStartRadius, normalizeBorderStyle, normalizeBorderTop, normalizeBorderTopLeftRadius, normalizeBorderTopRightRadius, normalizeBorderWidth, normalizeBoxShadow, normalizeBoxSizing, normalizeBreakAfter, normalizeBreakBefore, normalizeBreakInside, normalizeCaptionSide, normalizeCaretColor, normalizeClear, normalizeClip, normalizeClipPath, normalizeColor, normalizeColorInterpolation, normalizeColorInterpolationFilters, normalizeColorScheme, normalizeColumnCount, normalizeColumnFill, normalizeColumnGap, normalizeColumnRule, normalizeColumnSpan, normalizeColumnWidth, normalizeContain, normalizeContainer, normalizeContainIntrinsicBlockSize, normalizeContainIntrinsicHeight, normalizeContainIntrinsicInlineSize, normalizeContainIntrinsicSize, normalizeContainIntrinsicWidth, normalizeContent, normalizeContentVisibility, normalizeCounterIncrement, normalizeCounterReset, normalizeCounterSet, normalizeCursor, normalizeCx, normalizeCy, normalizeD, normalizeDirection, normalizeDisplay, normalizeDominantBaseline, normalizeEmptyCells, normalizeFieldSizing, normalizeFill, normalizeFillOpacity, normalizeFillRule, normalizeFilter, normalizeFlex, normalizeFlexBasis, normalizeFlexDirection, normalizeFlexGrow, normalizeFlexShrink, normalizeFlexWrap, normalizeFloat, normalizeFloodColor, normalizeFloodOpacity, normalizeFont, normalizeFontFeatureSettings, normalizeFontKerning, normalizeFontLanguageOverride, normalizeFontOpticalSizing, normalizeFontPalette, normalizeFontSizeAdjust, normalizeFontSynthesisSmallCaps, normalizeFontSynthesisStyle, normalizeFontSynthesisWeight, normalizeFontVariantAlternates, normalizeFontVariantCaps, normalizeFontVariantEastAsian, normalizeFontVariantLigatures, normalizeFontVariantNumeric, normalizeFontVariantPosition, normalizeFontVariationSettings, normalizeForcedColorAdjust, normalizeGap, normalizeGridAutoColumns, normalizeGridAutoFlow, normalizeGridAutoRows, normalizeGridColumn, normalizeGridRow, normalizeMargin, normalizePadding, } from '../util';
-import { normalizeGridTemplate } from '../util/style';
+import { normalizeGridTemplate, normalizeGridTemplateAreas, } from '../util/style';
 // Define a mapping of keys to their respective normalizer functions
 export const propertyMap = {
     accentColor: {
@@ -477,5 +477,9 @@ export const propertyMap = {
     gridTemplate: {
         className: { dev: 'grid-template', prod: 'gt' },
         normalize: normalizeGridTemplate,
+    },
+    gridTemplateAreas: {
+        className: { dev: 'grid-template-areas', prod: 'gta' },
+        normalize: normalizeGridTemplateAreas,
     },
 };
