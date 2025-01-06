@@ -116,5 +116,6 @@ export type { TGridAutoFlow } from './grid-auto-flow';
 export type { TGridAutoRows } from './grid-auto-rows';
 export type { TGridColumn } from './grid-column';
 export type { TGridRow } from './grid-row';
+export type { TGridTemplate } from './grid-template';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';
