@@ -96,6 +96,7 @@ import {
   normalizeFontLanguageOverride,
   normalizeFontOpticalSizing,
   normalizeFontPalette,
+  normalizeFontSizeAdjust,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -201,6 +202,7 @@ import type {
   TFontLanguageOverride,
   TFontOpticalSizing,
   TFontPalette,
+  TFontSizeAdjust,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -303,6 +305,7 @@ export type TCSSPropValue = Partial<{
   fontLanguageOverride: TFontLanguageOverride
   fontOpticalSizing: TFontOpticalSizing
   fontPalette: TFontPalette
+  fontSizeAdjust: TFontSizeAdjust
 
   margin: TMargin
   padding: TPadding
@@ -727,5 +730,9 @@ export const propertyMap: Record<
   fontPalette: {
     className: { dev: 'font-palette', prod: 'fp' },
     normalize: normalizeFontPalette,
+  },
+  fontSizeAdjust: {
+    className: { dev: 'font-size-adjust', prod: 'fsa' },
+    normalize: normalizeFontSizeAdjust,
   },
 } as const

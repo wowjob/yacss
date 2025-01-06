@@ -398,6 +398,10 @@
   --font-palette: normal;
   font-palette: var(--font-palette);
 }
+.font-size-adjust {
+  --font-size-adjust: none;
+  font-size-adjust: var(--font-size-adjust);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -800,6 +804,10 @@
 .tablet.font-palette {
   --t-font-palette: var(--font-palette);
   font-palette: var(--t-font-palette);
+}
+.tablet.font-size-adjust {
+  --t-font-size-adjust: var(--font-size-adjust);
+  font-size-adjust: var(--t-font-size-adjust);
 }
 
 }
@@ -1204,6 +1212,10 @@
 .desktop.font-palette {
   --d-font-palette: var(--t-font-palette);
   font-palette: var(--d-font-palette);
+}
+.desktop.font-size-adjust {
+  --d-font-size-adjust: var(--t-font-size-adjust);
+  font-size-adjust: var(--d-font-size-adjust);
 }
 
 }
