@@ -366,6 +366,10 @@
   --float: none;
   float: var(--float);
 }
+.flood-color {
+  --flood-color: black;
+  flood-color: var(--flood-color);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -736,6 +740,10 @@
 .tablet.float {
   --t-float: var(--float);
   float: var(--t-float);
+}
+.tablet.flood-color {
+  --t-flood-color: var(--flood-color);
+  flood-color: var(--t-flood-color);
 }
 
 }
@@ -1108,6 +1116,10 @@
 .desktop.float {
   --d-float: var(--t-float);
   float: var(--d-float);
+}
+.desktop.flood-color {
+  --d-flood-color: var(--t-flood-color);
+  flood-color: var(--d-flood-color);
 }
 
 }

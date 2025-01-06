@@ -14,6 +14,7 @@ console.log(
       fillRule: 'evenodd',
       filter: 'opacity(25%)',
       float: 'left',
+      floodColor: 'currentcolor',
     },
     className: 'yes-no',
   })
