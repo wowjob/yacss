@@ -490,6 +490,10 @@
   --hyphens: manual;
   hyphens: var(--hyphens);
 }
+.image-orientation {
+  --image-orientation: from-image;
+  image-orientation: var(--image-orientation);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -984,6 +988,10 @@
 .tablet.hyphens {
   --t-hyphens: var(--hyphens);
   hyphens: var(--t-hyphens);
+}
+.tablet.image-orientation {
+  --t-image-orientation: var(--image-orientation);
+  image-orientation: var(--t-image-orientation);
 }
 
 }
@@ -1480,6 +1488,10 @@
 .desktop.hyphens {
   --d-hyphens: var(--t-hyphens);
   hyphens: var(--d-hyphens);
+}
+.desktop.image-orientation {
+  --d-image-orientation: var(--t-image-orientation);
+  image-orientation: var(--d-image-orientation);
 }
 
 }

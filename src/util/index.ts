@@ -122,6 +122,7 @@ export {
   normalizeHeight,
   normalizeHyphenateCharacter,
   normalizeHyphens,
+  normalizeImageOrientation,
   normalizeMargin,
   normalizePadding,
 } from './style'

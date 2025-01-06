@@ -121,5 +121,6 @@ export type { TGridTemplateAreas } from './grid-template-areas';
 export type { THeight } from './height';
 export type { THyphenateCharacter } from './hyphenate-character';
 export type { THyphens } from './hyphens';
+export type { TImageOrientation } from './image-orientation';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';
