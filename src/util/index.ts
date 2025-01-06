@@ -113,6 +113,7 @@ export {
   normalizeForcedColorAdjust,
   normalizeGap,
   normalizeGridAutoColumns,
+  normalizeGridAutoFlow,
   normalizeMargin,
   normalizePadding,
 } from './style'
