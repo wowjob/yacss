@@ -394,6 +394,10 @@
   --font-optical-sizing: auto;
   font-optical-sizing: var(--font-optical-sizing);
 }
+.font-palette {
+  --font-palette: normal;
+  font-palette: var(--font-palette);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -792,6 +796,10 @@
 .tablet.font-optical-sizing {
   --t-font-optical-sizing: var(--font-optical-sizing);
   font-optical-sizing: var(--t-font-optical-sizing);
+}
+.tablet.font-palette {
+  --t-font-palette: var(--font-palette);
+  font-palette: var(--t-font-palette);
 }
 
 }
@@ -1192,6 +1200,10 @@
 .desktop.font-optical-sizing {
   --d-font-optical-sizing: var(--t-font-optical-sizing);
   font-optical-sizing: var(--d-font-optical-sizing);
+}
+.desktop.font-palette {
+  --d-font-palette: var(--t-font-palette);
+  font-palette: var(--d-font-palette);
 }
 
 }

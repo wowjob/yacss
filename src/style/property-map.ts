@@ -95,6 +95,7 @@ import {
   normalizeFontKerning,
   normalizeFontLanguageOverride,
   normalizeFontOpticalSizing,
+  normalizeFontPalette,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -199,6 +200,7 @@ import type {
   TFontKerning,
   TFontLanguageOverride,
   TFontOpticalSizing,
+  TFontPalette,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -300,6 +302,7 @@ export type TCSSPropValue = Partial<{
   fontKerning: TFontKerning
   fontLanguageOverride: TFontLanguageOverride
   fontOpticalSizing: TFontOpticalSizing
+  fontPalette: TFontPalette
 
   margin: TMargin
   padding: TPadding
@@ -720,5 +723,9 @@ export const propertyMap: Record<
   fontOpticalSizing: {
     className: { dev: 'font-optical-sizing', prod: 'fos' },
     normalize: normalizeFontOpticalSizing,
+  },
+  fontPalette: {
+    className: { dev: 'font-palette', prod: 'fp' },
+    normalize: normalizeFontPalette,
   },
 } as const
