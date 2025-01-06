@@ -36,6 +36,7 @@ console.log(
       fontVariantLigatures: 'common-ligatures',
       fontVariantNumeric: 'diagonal-fractions',
       fontVariantPosition: 'sub',
+      fontVariationSettings: 'normal',
     },
     className: 'yes-no',
   })

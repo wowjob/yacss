@@ -106,6 +106,7 @@ import {
   normalizeFontVariantLigatures,
   normalizeFontVariantNumeric,
   normalizeFontVariantPosition,
+  normalizeFontVariationSettings,
   normalizeMargin,
   normalizePadding,
 } from '../util'
@@ -221,6 +222,7 @@ import type {
   TFontVariantLigatures,
   TFontVariantNumeric,
   TFontVariantPosition,
+  TFontVariationSettings,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -333,6 +335,7 @@ export type TCSSPropValue = Partial<{
   fontVariantLigatures: TFontVariantLigatures
   fontVariantNumeric: TFontVariantNumeric
   fontVariantPosition: TFontVariantPosition
+  fontVariationSettings: TFontVariationSettings
 
   margin: TMargin
   padding: TPadding
@@ -797,5 +800,9 @@ export const propertyMap: Record<
   fontVariantPosition: {
     className: { dev: 'font-variant-position', prod: 'fvp' },
     normalize: normalizeFontVariantPosition,
+  },
+  fontVariationSettings: {
+    className: { dev: 'font-variation-settings', prod: 'fvs' },
+    normalize: normalizeFontVariationSettings,
   },
 } as const

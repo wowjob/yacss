@@ -108,5 +108,6 @@ export type { TFontVariantEastAsian } from './font-variant-east-asian';
 export type { TFontVariantLigatures } from './font-variant-ligatures';
 export type { TFontVariantNumeric } from './font-variant-numeric';
 export type { TFontVariantPosition } from './font-variant-position';
+export type { TFontVariationSettings } from './font-variation-settings';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';

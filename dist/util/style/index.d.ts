@@ -105,5 +105,6 @@ export { normalizeFontVariantEastAsian } from './font-variant-east-asian';
 export { normalizeFontVariantLigatures } from './font-variant-ligatures';
 export { normalizeFontVariantNumeric } from './font-variant-numeric';
 export { normalizeFontVariantPosition } from './font-variant-position';
+export { normalizeFontVariationSettings } from './font-variation-settings';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';

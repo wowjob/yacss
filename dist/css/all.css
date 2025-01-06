@@ -438,6 +438,10 @@
   --font-variant-position: normal;
   font-variant-position: var(--font-variant-position);
 }
+.font-variation-settings {
+  --font-variation-settings: normal;
+  font-variation-settings: var(--font-variation-settings);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -880,6 +884,10 @@
 .tablet.font-variant-position {
   --t-font-variant-position: var(--font-variant-position);
   font-variant-position: var(--t-font-variant-position);
+}
+.tablet.font-variation-settings {
+  --t-font-variation-settings: var(--font-variation-settings);
+  font-variation-settings: var(--t-font-variation-settings);
 }
 
 }
@@ -1324,6 +1332,10 @@
 .desktop.font-variant-position {
   --d-font-variant-position: var(--t-font-variant-position);
   font-variant-position: var(--d-font-variant-position);
+}
+.desktop.font-variation-settings {
+  --d-font-variation-settings: var(--t-font-variation-settings);
+  font-variation-settings: var(--d-font-variation-settings);
 }
 
 }
