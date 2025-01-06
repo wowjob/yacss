@@ -101,5 +101,6 @@ export { normalizeFontSynthesisStyle } from './font-synthesis-style';
 export { normalizeFontSynthesisWeight } from './font-synthesis-weight';
 export { normalizeFontVariantAlternates } from './font-variant-alternates';
 export { normalizeFontVariantCaps } from './font-variant-caps';
+export { normalizeFontVariantEastAsian } from './font-variant-east-asian';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';
