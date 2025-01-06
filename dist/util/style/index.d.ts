@@ -103,5 +103,6 @@ export { normalizeFontVariantAlternates } from './font-variant-alternates';
 export { normalizeFontVariantCaps } from './font-variant-caps';
 export { normalizeFontVariantEastAsian } from './font-variant-east-asian';
 export { normalizeFontVariantLigatures } from './font-variant-ligatures';
+export { normalizeFontVariantNumeric } from './font-variant-numeric';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';

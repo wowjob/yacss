@@ -106,5 +106,6 @@ export type { TFontVariantAlternates } from './font-variant-alternates';
 export type { TFontVariantCaps } from './font-variant-caps';
 export type { TFontVariantEastAsian } from './font-variant-east-asian';
 export type { TFontVariantLigatures } from './font-variant-ligatures';
+export type { TFontVariantNumeric } from './font-variant-numeric';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';

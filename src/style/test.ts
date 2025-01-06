@@ -34,6 +34,7 @@ console.log(
       fontVariantCaps: 'all-petite-caps',
       fontVariantEastAsian: 'full-width',
       fontVariantLigatures: 'common-ligatures',
+      fontVariantNumeric: 'diagonal-fractions',
     },
     className: 'yes-no',
   })
