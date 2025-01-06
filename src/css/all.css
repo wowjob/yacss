@@ -542,6 +542,10 @@
   --right: auto;
   right: var(--right);
 }
+.top {
+  --top: auto;
+  top: var(--top);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1088,6 +1092,10 @@
 .tablet.right {
   --t-right: var(--right);
   right: var(--t-right);
+}
+.tablet.top {
+  --t-top: var(--top);
+  top: var(--t-top);
 }
 
 }
@@ -1636,6 +1644,10 @@
 .desktop.right {
   --d-right: var(--t-right);
   right: var(--d-right);
+}
+.desktop.top {
+  --d-top: var(--t-top);
+  top: var(--d-top);
 }
 
 }

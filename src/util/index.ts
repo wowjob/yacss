@@ -137,4 +137,5 @@ export {
   normalizeMargin,
   normalizePadding,
   normalizeRight,
+  normalizeTop,
 } from './style'
