@@ -510,6 +510,10 @@
   --inset-block: undefined;
   inset-block: var(--inset-block);
 }
+.inset-inline {
+  --inset-inline: undefined;
+  inset-inline: var(--inset-inline);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1024,6 +1028,10 @@
 .tablet.inset-block {
   --t-inset-block: var(--inset-block);
   inset-block: var(--t-inset-block);
+}
+.tablet.inset-inline {
+  --t-inset-inline: var(--inset-inline);
+  inset-inline: var(--t-inset-inline);
 }
 
 }
@@ -1540,6 +1548,10 @@
 .desktop.inset-block {
   --d-inset-block: var(--t-inset-block);
   inset-block: var(--d-inset-block);
+}
+.desktop.inset-inline {
+  --d-inset-inline: var(--t-inset-inline);
+  inset-inline: var(--d-inset-inline);
 }
 
 }
