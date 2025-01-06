@@ -65,6 +65,7 @@ import {
   normalizeContainIntrinsicWidth,
   normalizeContent,
   normalizeContentVisibility,
+  normalizeCounterIncrement,
   normalizeDisplay,
   normalizeFlex,
   normalizeFlexBasis,
@@ -153,6 +154,7 @@ import type {
   TContainer,
   TContent,
   TContentVisibility,
+  TCounterIncrement,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -225,6 +227,7 @@ export type TCSSPropValue = Partial<{
   container: TContainer
   content: TContent
   contentVisibility: TContentVisibility
+  counterIncrement: TCounterIncrement
 
   flex: TFlex
   flexBasis: TFlexBasis
@@ -531,6 +534,10 @@ export const propertyMap: Record<
   contentVisibility: {
     className: { dev: 'content-visibility', prod: 'cv' },
     normalize: normalizeContentVisibility,
+  },
+  counterIncrement: {
+    className: { dev: 'counter-increment', prod: 'cin' },
+    normalize: normalizeCounterIncrement,
   },
 
   //

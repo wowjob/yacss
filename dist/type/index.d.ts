@@ -67,6 +67,7 @@ export type { TContainIntrinsicWidth } from './contain-intrinsic-width';
 export type { TContainer } from './container';
 export type { TContent } from './content';
 export type { TContentVisibility } from './content-visibility';
+export type { TCounterIncrement } from './counter-increment';
 export type { TDisplay } from './display';
 export type { TFlex } from './flex';
 export type { TFlexBasis } from './flex-basis';
