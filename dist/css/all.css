@@ -518,6 +518,10 @@
   --isolation: auto;
   isolation: var(--isolation);
 }
+.justify-content {
+  --justify-content: normal;
+  justify-content: var(--justify-content);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1040,6 +1044,10 @@
 .tablet.isolation {
   --t-isolation: var(--isolation);
   isolation: var(--t-isolation);
+}
+.tablet.justify-content {
+  --t-justify-content: var(--justify-content);
+  justify-content: var(--t-justify-content);
 }
 
 }
@@ -1564,6 +1572,10 @@
 .desktop.isolation {
   --d-isolation: var(--t-isolation);
   isolation: var(--d-isolation);
+}
+.desktop.justify-content {
+  --d-justify-content: var(--t-justify-content);
+  justify-content: var(--d-justify-content);
 }
 
 }

@@ -129,6 +129,7 @@ export {
   normalizeInsetBlock,
   normalizeInsetInline,
   normalizeIsolation,
+  normalizeJustifyContent,
   normalizeMargin,
   normalizePadding,
 } from './style'
