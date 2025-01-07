@@ -191,6 +191,7 @@ import {
   normalizeScrollTimelineAxis,
   normalizeScrollTimelineName,
   normalizeShapeImageThreshold,
+  normalizeShapeMargin,
   normalizeTop,
 } from '../util'
 
@@ -389,6 +390,7 @@ import type {
   TScrollbarGutter,
   TScrollbarWidth,
   TShapeImageThreshold,
+  TShapeMargin,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -587,6 +589,7 @@ export type TCSSPropValue = Partial<{
   scrollbarGutter: TScrollbarGutter
   scrollbarWidth: TScrollbarWidth
   shapeImageThreshold: TShapeImageThreshold
+  shapeMargin: TShapeMargin
 }>
 
 type TResponsive = {
@@ -1388,5 +1391,9 @@ export const propertyMap: Record<
   shapeImageThreshold: {
     className: { dev: 'shape-image-threshold', prod: 'sit' },
     normalize: normalizeShapeImageThreshold,
+  },
+  shapeMargin: {
+    className: { dev: 'shape-margin', prod: 'smg' },
+    normalize: normalizeShapeMargin,
   },
 } as const
