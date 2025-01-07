@@ -698,6 +698,10 @@
   --position: static;
   position: var(--position);
 }
+.quotes {
+  --quotes: auto;
+  quotes: var(--quotes);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1400,6 +1404,10 @@
 .tablet.position {
   --t-position: var(--position);
   position: var(--t-position);
+}
+.tablet.quotes {
+  --t-quotes: var(--quotes);
+  quotes: var(--t-quotes);
 }
 
 }
@@ -2104,6 +2112,10 @@
 .desktop.position {
   --d-position: var(--t-position);
   position: var(--d-position);
+}
+.desktop.quotes {
+  --d-quotes: var(--t-quotes);
+  quotes: var(--d-quotes);
 }
 
 }
