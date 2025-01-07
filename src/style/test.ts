@@ -61,6 +61,7 @@ console.log(
       minWidth: 'fit-content',
       mixBlendMode: 'color-dodge',
       objectFit: 'cover',
+      objectPosition: 'bottom',
     },
     className: 'yes-no',
   })

@@ -626,6 +626,10 @@
   --object-fit: fill;
   object-fit: var(--object-fit);
 }
+.object-position {
+  --object-position: 50% 50%;
+  object-position: var(--object-position);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1256,6 +1260,10 @@
 .tablet.object-fit {
   --t-object-fit: var(--object-fit);
   object-fit: var(--t-object-fit);
+}
+.tablet.object-position {
+  --t-object-position: var(--object-position);
+  object-position: var(--t-object-position);
 }
 
 }
@@ -1888,6 +1896,10 @@
 .desktop.object-fit {
   --d-object-fit: var(--t-object-fit);
   object-fit: var(--d-object-fit);
+}
+.desktop.object-position {
+  --d-object-position: var(--t-object-position);
+  object-position: var(--d-object-position);
 }
 
 }
