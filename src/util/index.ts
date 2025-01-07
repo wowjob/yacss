@@ -170,6 +170,7 @@ export {
   normalizePerspective,
   normalizePerspectiveOrigin,
   normalizePlaceContent,
+  normalizePlaceItems,
   normalizeRight,
   normalizeTop,
 } from './style'

@@ -166,5 +166,6 @@ export { normalizePadding } from './padding';
 export { normalizePerspective } from './perspective';
 export { normalizePerspectiveOrigin } from './perspective-origin';
 export { normalizePlaceContent } from './place-content';
+export { normalizePlaceItems } from './place-items';
 export { normalizeRight } from './right';
 export { normalizeTop } from './top';
