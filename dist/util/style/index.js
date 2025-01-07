@@ -189,4 +189,5 @@ export { normalizeScrollTimelineName } from './scroll-timeline-name';
 export { normalizeScrollbarColor } from './scrollbar-color';
 export { normalizeScrollbarGutter } from './scrollbar-gutter';
 export { normalizeScrollbarWidth } from './scrollbar-width';
+export { normalizeShapeImageThreshold } from './shape-image-threshold';
 export { normalizeTop } from './top';

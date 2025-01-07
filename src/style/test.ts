@@ -111,6 +111,7 @@ console.log(
       scrollbarColor: 'red red',
       scrollbarGutter: 'revert-layer',
       scrollbarWidth: 'thin',
+      shapeImageThreshold: 'revert-layer',
     },
     className: 'yes-no',
   })
