@@ -104,6 +104,7 @@ console.log(
       scrollBehavior: 'revert',
       scrollSnapAlign: 'center center',
       scrollSnapStop: 'normal',
+      scrollSnapType: 'block mandatory',
     },
     className: 'yes-no',
   })
