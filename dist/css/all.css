@@ -554,6 +554,10 @@
   --lighting-color: white;
   lighting-color: var(--lighting-color);
 }
+.line-break {
+  --line-break: auto;
+  line-break: var(--line-break);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1112,6 +1116,10 @@
 .tablet.lighting-color {
   --t-lighting-color: var(--lighting-color);
   lighting-color: var(--t-lighting-color);
+}
+.tablet.line-break {
+  --t-line-break: var(--line-break);
+  line-break: var(--t-line-break);
 }
 
 }
@@ -1672,6 +1680,10 @@
 .desktop.lighting-color {
   --d-lighting-color: var(--t-lighting-color);
   lighting-color: var(--d-lighting-color);
+}
+.desktop.line-break {
+  --d-line-break: var(--t-line-break);
+  line-break: var(--d-line-break);
 }
 
 }

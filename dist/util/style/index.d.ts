@@ -132,6 +132,7 @@ export { normalizeJustifySelf } from './justify-self';
 export { normalizeLeft } from './left';
 export { normalizeLetterSpacing } from './letter-spacing';
 export { normalizeLightingColor } from './lighting-color';
+export { normalizeLineBreak } from './line-break';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';
 export { normalizeRight } from './right';
