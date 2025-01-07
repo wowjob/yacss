@@ -145,6 +145,7 @@ import {
   normalizeMaxBlockSize,
   normalizeMaxHeight,
   normalizeMaxInlineSize,
+  normalizeMaxWidth,
   normalizePadding,
   normalizeRight,
   normalizeTop,
@@ -301,6 +302,7 @@ import type {
   TMaxBlockSize,
   TMaxHeight,
   TMaxInlineSize,
+  TMaxWidth,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -454,6 +456,7 @@ export type TCSSPropValue = Partial<{
   maxBlockSize: TMaxBlockSize
   maxHeight: TMaxHeight
   maxInlineSize: TMaxInlineSize
+  maxWidth: TMaxWidth
   padding: TPadding
 }>
 
@@ -1077,5 +1080,9 @@ export const propertyMap: Record<
   maxInlineSize: {
     className: { dev: 'max-inline-size', prod: 'mis' },
     normalize: normalizeMaxInlineSize,
+  },
+  maxWidth: {
+    className: { dev: 'max-width', prod: 'mw' },
+    normalize: normalizeMaxWidth,
   },
 } as const
