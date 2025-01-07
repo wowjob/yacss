@@ -32,6 +32,7 @@ console.log(
       left: 30,
       right: 20,
       top: 10,
+      letterSpacing: 10,
     },
     className: 'yes-no',
   })

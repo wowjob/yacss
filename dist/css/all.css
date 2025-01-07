@@ -546,6 +546,10 @@
   --top: auto;
   top: var(--top);
 }
+.letter-spacing {
+  --letter-spacing: normal;
+  letter-spacing: var(--letter-spacing);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1096,6 +1100,10 @@
 .tablet.top {
   --t-top: var(--top);
   top: var(--t-top);
+}
+.tablet.letter-spacing {
+  --t-letter-spacing: var(--letter-spacing);
+  letter-spacing: var(--t-letter-spacing);
 }
 
 }
@@ -1648,6 +1656,10 @@
 .desktop.top {
   --d-top: var(--t-top);
   top: var(--d-top);
+}
+.desktop.letter-spacing {
+  --d-letter-spacing: var(--t-letter-spacing);
+  letter-spacing: var(--d-letter-spacing);
 }
 
 }
