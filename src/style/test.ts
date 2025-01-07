@@ -84,6 +84,7 @@ console.log(
       perspectiveOrigin: 'left bottom',
       placeContent: 'center baseline',
       placeItems: 'anchor-center self-end',
+      placeSelf: 'anchor-center',
     },
     className: 'yes-no',
   })

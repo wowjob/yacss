@@ -686,6 +686,10 @@
   --place-items: normal;
   place-items: var(--place-items);
 }
+.place-self {
+  --place-self: auto;
+  place-self: var(--place-self);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1376,6 +1380,10 @@
 .tablet.place-items {
   --t-place-items: var(--place-items);
   place-items: var(--t-place-items);
+}
+.tablet.place-self {
+  --t-place-self: var(--place-self);
+  place-self: var(--t-place-self);
 }
 
 }
@@ -2068,6 +2076,10 @@
 .desktop.place-items {
   --d-place-items: var(--t-place-items);
   place-items: var(--d-place-items);
+}
+.desktop.place-self {
+  --d-place-self: var(--t-place-self);
+  place-self: var(--d-place-self);
 }
 
 }
