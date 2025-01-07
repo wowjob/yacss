@@ -76,6 +76,7 @@ console.log(
         style: 'dashed',
         width: 20,
       },
+      overflow: 'clip',
     },
     className: 'yes-no',
   })

@@ -654,6 +654,10 @@
   --outline-offset: 0;
   outline-offset: var(--outline-offset);
 }
+.overflow {
+  --overflow: visible;
+  overflow: var(--overflow);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1312,6 +1316,10 @@
 .tablet.outline-offset {
   --t-outline-offset: var(--outline-offset);
   outline-offset: var(--t-outline-offset);
+}
+.tablet.overflow {
+  --t-overflow: var(--overflow);
+  overflow: var(--t-overflow);
 }
 
 }
@@ -1972,6 +1980,10 @@
 .desktop.outline-offset {
   --d-outline-offset: var(--t-outline-offset);
   outline-offset: var(--d-outline-offset);
+}
+.desktop.overflow {
+  --d-overflow: var(--t-overflow);
+  overflow: var(--d-overflow);
 }
 
 }
