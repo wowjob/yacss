@@ -142,6 +142,7 @@ export {
   normalizeMargin,
   normalizeMarginBlock,
   normalizeMarginInline,
+  normalizeMask,
   normalizeMaskClip,
   normalizePadding,
   normalizeRight,
