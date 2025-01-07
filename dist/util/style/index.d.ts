@@ -194,4 +194,5 @@ export { normalizeShapeMargin } from './shape-margin';
 export { normalizeShapeOutside } from './shape-outside';
 export { normalizeShapeRendering } from './shape-rendering';
 export { normalizeStopColor } from './stop-color';
+export { normalizeStopOpacity } from './stop-opacity';
 export { normalizeTop } from './top';

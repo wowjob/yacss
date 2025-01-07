@@ -790,6 +790,10 @@
   --stop-color: black;
   stop-color: var(--stop-color);
 }
+.stop-opacity {
+  --stop-opacity: 1;
+  stop-opacity: var(--stop-opacity);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1584,6 +1588,10 @@
 .tablet.stop-color {
   --t-stop-color: var(--stop-color);
   stop-color: var(--t-stop-color);
+}
+.tablet.stop-opacity {
+  --t-stop-opacity: var(--stop-opacity);
+  stop-opacity: var(--t-stop-opacity);
 }
 
 }
@@ -2380,6 +2388,10 @@
 .desktop.stop-color {
   --d-stop-color: var(--t-stop-color);
   stop-color: var(--d-stop-color);
+}
+.desktop.stop-opacity {
+  --d-stop-opacity: var(--t-stop-opacity);
+  stop-opacity: var(--d-stop-opacity);
 }
 
 }

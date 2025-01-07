@@ -198,5 +198,6 @@ export {
   normalizeShapeOutside,
   normalizeShapeRendering,
   normalizeStopColor,
+  normalizeStopOpacity,
   normalizeTop,
 } from './style'
