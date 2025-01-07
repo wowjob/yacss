@@ -150,6 +150,7 @@ export {
   normalizeMaxInlineSize,
   normalizeMaxWidth,
   normalizeMinBlockSize,
+  normalizeMinHeight,
   normalizePadding,
   normalizeRight,
   normalizeTop,
