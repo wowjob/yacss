@@ -138,6 +138,7 @@ export { normalizeListStyle } from './list-style';
 export { normalizeMargin } from './margin';
 export { normalizeMarginBlock } from './margin-block';
 export { normalizeMarginInline } from './margin-inline';
+export { normalizeMaskClip } from './mask-clip';
 export { normalizePadding } from './padding';
 export { normalizeRight } from './right';
 export { normalizeTop } from './top';

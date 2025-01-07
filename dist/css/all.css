@@ -574,6 +574,10 @@
   --margin-inline: undefined;
   margin-inline: var(--margin-inline);
 }
+.mask-clip {
+  --mask-clip: border-box;
+  mask-clip: var(--mask-clip);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1152,6 +1156,10 @@
 .tablet.margin-inline {
   --t-margin-inline: var(--margin-inline);
   margin-inline: var(--t-margin-inline);
+}
+.tablet.mask-clip {
+  --t-mask-clip: var(--mask-clip);
+  mask-clip: var(--t-mask-clip);
 }
 
 }
@@ -1732,6 +1740,10 @@
 .desktop.margin-inline {
   --d-margin-inline: var(--t-margin-inline);
   margin-inline: var(--d-margin-inline);
+}
+.desktop.mask-clip {
+  --d-mask-clip: var(--t-mask-clip);
+  mask-clip: var(--d-mask-clip);
 }
 
 }
