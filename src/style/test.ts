@@ -31,6 +31,7 @@ console.log(
       bottom: 40,
       left: 30,
       right: 20,
+      top: 10,
     },
     className: 'yes-no',
   })

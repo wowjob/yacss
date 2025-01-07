@@ -134,6 +134,7 @@ import {
   normalizeMargin,
   normalizePadding,
   normalizeRight,
+  normalizeTop,
 } from '../util'
 
 import type {
@@ -273,6 +274,7 @@ import type {
   TBottom,
   TLeft,
   TRight,
+  TTop,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -411,6 +413,7 @@ export type TCSSPropValue = Partial<{
   justifySelf: TJustifySelf
   left: TLeft
   right: TRight
+  top: TTop
 
   margin: TMargin
   padding: TPadding
@@ -980,5 +983,9 @@ export const propertyMap: Record<
   right: {
     className: { dev: 'right', prod: 'rt' },
     normalize: normalizeRight,
+  },
+  top: {
+    className: { dev: 'top', prod: 'tp' },
+    normalize: normalizeTop,
   },
 } as const

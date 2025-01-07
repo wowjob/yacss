@@ -136,3 +136,4 @@ export type { TLeft } from './left';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';
 export type { TRight } from './right';
+export type { TTop } from './top';
