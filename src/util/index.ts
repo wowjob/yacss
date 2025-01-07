@@ -146,6 +146,7 @@ export {
   normalizeMaskClip,
   normalizeMathStyle,
   normalizeMaxBlockSize,
+  normalizeMaxHeight,
   normalizePadding,
   normalizeRight,
   normalizeTop,
