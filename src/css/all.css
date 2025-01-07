@@ -622,6 +622,10 @@
   --mix-blend-mode: normal;
   mix-blend-mode: var(--mix-blend-mode);
 }
+.object-fit {
+  --object-fit: fill;
+  object-fit: var(--object-fit);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1248,6 +1252,10 @@
 .tablet.mix-blend-mode {
   --t-mix-blend-mode: var(--mix-blend-mode);
   mix-blend-mode: var(--t-mix-blend-mode);
+}
+.tablet.object-fit {
+  --t-object-fit: var(--object-fit);
+  object-fit: var(--t-object-fit);
 }
 
 }
@@ -1876,6 +1884,10 @@
 .desktop.mix-blend-mode {
   --d-mix-blend-mode: var(--t-mix-blend-mode);
   mix-blend-mode: var(--d-mix-blend-mode);
+}
+.desktop.object-fit {
+  --d-object-fit: var(--t-object-fit);
+  object-fit: var(--d-object-fit);
 }
 
 }

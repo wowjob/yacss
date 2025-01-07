@@ -151,6 +151,7 @@ import {
   normalizeMinInlineSize,
   normalizeMinWidth,
   normalizeMixBlendMode,
+  normalizeObjectFit,
   normalizePadding,
   normalizeRight,
   normalizeTop,
@@ -313,6 +314,7 @@ import type {
   TMinInlineSize,
   TMinWidth,
   TMixBlendMode,
+  TObjectFit,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -472,6 +474,7 @@ export type TCSSPropValue = Partial<{
   minInlineSize: TMinInlineSize
   minWidth: TMinWidth
   mixBlendMode: TMixBlendMode
+  objectFit: TObjectFit
   padding: TPadding
 }>
 
@@ -1119,5 +1122,9 @@ export const propertyMap: Record<
   mixBlendMode: {
     className: { dev: 'mix-blend-mode', prod: 'mbm' },
     normalize: normalizeMixBlendMode,
+  },
+  objectFit: {
+    className: { dev: 'object-fit', prod: 'of' },
+    normalize: normalizeObjectFit,
   },
 } as const

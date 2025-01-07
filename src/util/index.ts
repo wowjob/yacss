@@ -154,6 +154,7 @@ export {
   normalizeMinInlineSize,
   normalizeMinWidth,
   normalizeMixBlendMode,
+  normalizeObjectFit,
   normalizePadding,
   normalizeRight,
   normalizeTop,
