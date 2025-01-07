@@ -90,6 +90,7 @@ console.log(
       quotes: 'none',
       resize: 'block',
       rotate: 'revert',
+      rubyAlign: 'space-around',
     },
     className: 'yes-no',
   })
