@@ -670,6 +670,10 @@
   --overscroll-behavior-inline: auto;
   overscroll-behavior-inline: var(--overscroll-behavior-inline);
 }
+.perspective {
+  --perspective: none;
+  perspective: var(--perspective);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1344,6 +1348,10 @@
 .tablet.overscroll-behavior-inline {
   --t-overscroll-behavior-inline: var(--overscroll-behavior-inline);
   overscroll-behavior-inline: var(--t-overscroll-behavior-inline);
+}
+.tablet.perspective {
+  --t-perspective: var(--perspective);
+  perspective: var(--t-perspective);
 }
 
 }
@@ -2020,6 +2028,10 @@
 .desktop.overscroll-behavior-inline {
   --d-overscroll-behavior-inline: var(--t-overscroll-behavior-inline);
   overscroll-behavior-inline: var(--d-overscroll-behavior-inline);
+}
+.desktop.perspective {
+  --d-perspective: var(--t-perspective);
+  perspective: var(--d-perspective);
 }
 
 }

@@ -167,6 +167,7 @@ export {
   normalizeOverscrollBehaviorBlock,
   normalizeOverscrollBehaviorInline,
   normalizePadding,
+  normalizePerspective,
   normalizeRight,
   normalizeTop,
 } from './style'
