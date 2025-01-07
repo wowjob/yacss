@@ -160,6 +160,7 @@ export {
   normalizeOffsetAnchor,
   normalizeOpacity,
   normalizeOrder,
+  normalizeOutline,
   normalizeOutlineOffset,
   normalizePadding,
   normalizeRight,

@@ -71,6 +71,11 @@ console.log(
       opacity: 0.5,
       order: 2,
       outlineOffset: 'revert',
+      outline: {
+        color: 'red',
+        style: 'dashed',
+        width: 20,
+      },
     },
     className: 'yes-no',
   })
