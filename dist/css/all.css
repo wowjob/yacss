@@ -750,6 +750,10 @@
   --scroll-timeline: undefined;
   scroll-timeline: var(--scroll-timeline);
 }
+.scroll-timeline-axis {
+  --scroll-timeline-axis: undefined;
+  scroll-timeline-axis: var(--scroll-timeline-axis);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1504,6 +1508,10 @@
 .tablet.scroll-timeline {
   --t-scroll-timeline: var(--scroll-timeline);
   scroll-timeline: var(--t-scroll-timeline);
+}
+.tablet.scroll-timeline-axis {
+  --t-scroll-timeline-axis: var(--scroll-timeline-axis);
+  scroll-timeline-axis: var(--t-scroll-timeline-axis);
 }
 
 }
@@ -2260,6 +2268,10 @@
 .desktop.scroll-timeline {
   --d-scroll-timeline: var(--t-scroll-timeline);
   scroll-timeline: var(--d-scroll-timeline);
+}
+.desktop.scroll-timeline-axis {
+  --d-scroll-timeline-axis: var(--t-scroll-timeline-axis);
+  scroll-timeline-axis: var(--d-scroll-timeline-axis);
 }
 
 }

@@ -106,6 +106,7 @@ console.log(
       scrollSnapStop: 'normal',
       scrollSnapType: 'block mandatory',
       scrollTimeline: 'this is it',
+      scrollTimelineAxis: 'block',
     },
     className: 'yes-no',
   })
