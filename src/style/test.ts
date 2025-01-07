@@ -57,6 +57,7 @@ console.log(
       maxWidth: 'fit-content',
       minBlockSize: 'fit-content',
       minHeight: 'fit-content',
+      minInlineSize: 'fit-content',
     },
     className: 'yes-no',
   })
