@@ -169,6 +169,7 @@ export {
   normalizePadding,
   normalizePerspective,
   normalizePerspectiveOrigin,
+  normalizePlaceContent,
   normalizeRight,
   normalizeTop,
 } from './style'

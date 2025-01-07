@@ -165,5 +165,6 @@ export { normalizeOverscrollBehaviorInline } from './overscroll-behavior-inline'
 export { normalizePadding } from './padding';
 export { normalizePerspective } from './perspective';
 export { normalizePerspectiveOrigin } from './perspective-origin';
+export { normalizePlaceContent } from './place-content';
 export { normalizeRight } from './right';
 export { normalizeTop } from './top';

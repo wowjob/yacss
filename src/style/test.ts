@@ -82,6 +82,7 @@ console.log(
       overscrollBehaviorInline: 'revert',
       perspective: 'none',
       perspectiveOrigin: 'left bottom',
+      placeContent: 'center baseline',
     },
     className: 'yes-no',
   })
