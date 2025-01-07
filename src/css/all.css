@@ -694,6 +694,10 @@
   --pointer-events: auto;
   pointer-events: var(--pointer-events);
 }
+.position {
+  --position: static;
+  position: var(--position);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1392,6 +1396,10 @@
 .tablet.pointer-events {
   --t-pointer-events: var(--pointer-events);
   pointer-events: var(--t-pointer-events);
+}
+.tablet.position {
+  --t-position: var(--position);
+  position: var(--t-position);
 }
 
 }
@@ -2092,6 +2100,10 @@
 .desktop.pointer-events {
   --d-pointer-events: var(--t-pointer-events);
   pointer-events: var(--d-pointer-events);
+}
+.desktop.position {
+  --d-position: var(--t-position);
+  position: var(--d-position);
 }
 
 }

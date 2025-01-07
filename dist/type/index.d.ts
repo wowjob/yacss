@@ -172,5 +172,6 @@ export type { TPlaceContent } from './place-content';
 export type { TPlaceItems } from './place-items';
 export type { TPlaceSelf } from './place-self';
 export type { TPointerEvents } from './pointer-events';
+export type { TPosition } from './position';
 export type { TRight } from './right';
 export type { TTop } from './top';
