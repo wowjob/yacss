@@ -44,6 +44,12 @@ console.log(
       marginBlock: { start: 24, end: 48 },
       marginInline: { start: 24, end: 48 },
       maskClip: '-webkit-mask-clip',
+
+      mask: {
+        mode: 'alpha',
+        composite: 'add',
+        origin: 'content',
+      },
     },
     className: 'yes-no',
   })

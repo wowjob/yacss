@@ -141,6 +141,7 @@ export type { TListStyle } from './list-style';
 export type { TMargin } from './margin';
 export type { TMarginBlock } from './margin-block';
 export type { TMarginInline } from './margin-inline';
+export type { TMask } from './mask';
 export type { TMaskClip } from './mask-clip';
 export type { TPadding } from './padding';
 export type { TRight } from './right';

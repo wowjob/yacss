@@ -574,6 +574,10 @@
   --margin-inline: undefined;
   margin-inline: var(--margin-inline);
 }
+.mask {
+  --mask: none;
+  mask: var(--mask);
+}
 .mask-clip {
   --mask-clip: border-box;
   mask-clip: var(--mask-clip);
@@ -1156,6 +1160,10 @@
 .tablet.margin-inline {
   --t-margin-inline: var(--margin-inline);
   margin-inline: var(--t-margin-inline);
+}
+.tablet.mask {
+  --t-mask: var(--mask);
+  mask: var(--t-mask);
 }
 .tablet.mask-clip {
   --t-mask-clip: var(--mask-clip);
@@ -1740,6 +1748,10 @@
 .desktop.margin-inline {
   --d-margin-inline: var(--t-margin-inline);
   margin-inline: var(--d-margin-inline);
+}
+.desktop.mask {
+  --d-mask: var(--t-mask);
+  mask: var(--d-mask);
 }
 .desktop.mask-clip {
   --d-mask-clip: var(--t-mask-clip);
