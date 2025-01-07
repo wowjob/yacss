@@ -81,6 +81,7 @@ console.log(
       overscrollBehaviorBlock: 'auto',
       overscrollBehaviorInline: 'revert',
       perspective: 'none',
+      perspectiveOrigin: 'left bottom',
     },
     className: 'yes-no',
   })

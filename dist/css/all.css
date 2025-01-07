@@ -674,6 +674,10 @@
   --perspective: none;
   perspective: var(--perspective);
 }
+.perspective-origin {
+  --perspective-origin: 50% 50%;
+  perspective-origin: var(--perspective-origin);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1352,6 +1356,10 @@
 .tablet.perspective {
   --t-perspective: var(--perspective);
   perspective: var(--t-perspective);
+}
+.tablet.perspective-origin {
+  --t-perspective-origin: var(--perspective-origin);
+  perspective-origin: var(--t-perspective-origin);
 }
 
 }
@@ -2032,6 +2040,10 @@
 .desktop.perspective {
   --d-perspective: var(--t-perspective);
   perspective: var(--d-perspective);
+}
+.desktop.perspective-origin {
+  --d-perspective-origin: var(--t-perspective-origin);
+  perspective-origin: var(--d-perspective-origin);
 }
 
 }

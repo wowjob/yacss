@@ -165,6 +165,7 @@ import {
   normalizeOverscrollBehaviorInline,
   normalizePadding,
   normalizePerspective,
+  normalizePerspectiveOrigin,
   normalizeRight,
   normalizeTop,
 } from '../util'
@@ -339,6 +340,7 @@ import type {
   TOverscrollBehaviorBlock,
   TOverscrollBehaviorInline,
   TPerspective,
+  TPerspectiveOrigin,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -512,6 +514,7 @@ export type TCSSPropValue = Partial<{
   overscrollBehaviorInline: TOverscrollBehaviorInline
   padding: TPadding
   perspective: TPerspective
+  perspectiveOrigin: TPerspectiveOrigin
 }>
 
 type TResponsive = {
@@ -1210,5 +1213,9 @@ export const propertyMap: Record<
   perspective: {
     className: { dev: 'perspective', prod: 'p' },
     normalize: normalizePerspective,
+  },
+  perspectiveOrigin: {
+    className: { dev: 'perspective-origin', prod: 'po' },
+    normalize: normalizePerspectiveOrigin,
   },
 } as const
