@@ -178,6 +178,7 @@ import {
   normalizeRubyAlign,
   normalizeRubyPosition,
   normalizeScale,
+  normalizeScrollBehavior,
   normalizeScrollMargin,
   normalizeScrollPadding,
   normalizeTop,
@@ -367,6 +368,7 @@ import type {
   TScale,
   TScrollMargin,
   TScrollPadding,
+  TScrollBehavior,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -552,6 +554,7 @@ export type TCSSPropValue = Partial<{
   rubyAlign: TRubyAlign
   rubyPosition: TRubyPosition
   scale: TScale
+  scrollBehavior: TScrollBehavior
   scrollMargin: TScrollMargin
   scrollPadding: TScrollPadding
 }>
@@ -1303,6 +1306,10 @@ export const propertyMap: Record<
   scale: {
     className: { dev: 'scale', prod: 'sc' },
     normalize: normalizeScale,
+  },
+  scrollBehavior: {
+    className: { dev: 'scroll-behavior', prod: 'sb' },
+    normalize: normalizeScrollBehavior,
   },
   scrollMargin: {
     className: { dev: 'scroll-margin', prod: 'sm' },

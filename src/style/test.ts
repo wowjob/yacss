@@ -101,6 +101,7 @@ console.log(
         top: 20,
         left: 20,
       },
+      scrollBehavior: 'revert',
     },
     className: 'yes-no',
   })
