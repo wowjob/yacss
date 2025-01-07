@@ -762,6 +762,10 @@
   --scrollbar-color: undefined;
   scrollbar-color: var(--scrollbar-color);
 }
+.scrollbar-gutter {
+  --scrollbar-gutter: auto;
+  scrollbar-gutter: var(--scrollbar-gutter);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1528,6 +1532,10 @@
 .tablet.scrollbar-color {
   --t-scrollbar-color: var(--scrollbar-color);
   scrollbar-color: var(--t-scrollbar-color);
+}
+.tablet.scrollbar-gutter {
+  --t-scrollbar-gutter: var(--scrollbar-gutter);
+  scrollbar-gutter: var(--t-scrollbar-gutter);
 }
 
 }
@@ -2296,6 +2304,10 @@
 .desktop.scrollbar-color {
   --d-scrollbar-color: var(--t-scrollbar-color);
   scrollbar-color: var(--d-scrollbar-color);
+}
+.desktop.scrollbar-gutter {
+  --d-scrollbar-gutter: var(--t-scrollbar-gutter);
+  scrollbar-gutter: var(--d-scrollbar-gutter);
 }
 
 }
