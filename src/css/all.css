@@ -558,6 +558,10 @@
   --line-break: auto;
   line-break: var(--line-break);
 }
+.line-height {
+  --line-height: normal;
+  line-height: var(--line-height);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1120,6 +1124,10 @@
 .tablet.line-break {
   --t-line-break: var(--line-break);
   line-break: var(--t-line-break);
+}
+.tablet.line-height {
+  --t-line-height: var(--line-height);
+  line-height: var(--t-line-height);
 }
 
 }
@@ -1684,6 +1692,10 @@
 .desktop.line-break {
   --d-line-break: var(--t-line-break);
   line-break: var(--d-line-break);
+}
+.desktop.line-height {
+  --d-line-height: var(--t-line-height);
+  line-height: var(--d-line-height);
 }
 
 }

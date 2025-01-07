@@ -136,6 +136,7 @@ export type { TLeft } from './left';
 export type { TLetterSpacing } from './letter-spacing';
 export type { TLightingColor } from './lighting-color';
 export type { TLineBreak } from './line-break';
+export type { TLineHeight } from './line-height';
 export type { TMargin } from './margin';
 export type { TPadding } from './padding';
 export type { TRight } from './right';
