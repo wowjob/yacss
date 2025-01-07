@@ -92,6 +92,7 @@ console.log(
       rotate: 'revert',
       rubyAlign: 'space-around',
       rubyPosition: 'alternate',
+      scale: 'none',
     },
     className: 'yes-no',
   })

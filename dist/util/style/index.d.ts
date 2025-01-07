@@ -176,4 +176,5 @@ export { normalizeRight } from './right';
 export { normalizeRotate } from './rotate';
 export { normalizeRubyAlign } from './ruby-align';
 export { normalizeRubyPosition } from './ruby-position';
+export { normalizeScale } from './scale';
 export { normalizeTop } from './top';
