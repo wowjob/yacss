@@ -195,4 +195,5 @@ export type { TScrollbarWidth } from './scrollbar-width';
 export type { TShapeImageThreshold } from './shape-image-threshold';
 export type { TShapeMargin } from './shape-margin';
 export type { TShapeOutside } from './shape-outside';
+export type { TShapeRendering } from './shape-rendering';
 export type { TTop } from './top';

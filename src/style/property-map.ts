@@ -193,6 +193,7 @@ import {
   normalizeShapeImageThreshold,
   normalizeShapeMargin,
   normalizeShapeOutside,
+  normalizeShapeRendering,
   normalizeTop,
 } from '../util'
 
@@ -393,6 +394,7 @@ import type {
   TShapeImageThreshold,
   TShapeMargin,
   TShapeOutside,
+  TShapeRendering,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -593,6 +595,7 @@ export type TCSSPropValue = Partial<{
   shapeImageThreshold: TShapeImageThreshold
   shapeMargin: TShapeMargin
   shapeOutside: TShapeOutside
+  shapeRendering: TShapeRendering
 }>
 
 type TResponsive = {
@@ -1402,5 +1405,9 @@ export const propertyMap: Record<
   shapeOutside: {
     className: { dev: 'shape-outside', prod: 'so' },
     normalize: normalizeShapeOutside,
+  },
+  shapeRendering: {
+    className: { dev: 'shape-rendering', prod: 'sr' },
+    normalize: normalizeShapeRendering,
   },
 } as const

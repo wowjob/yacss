@@ -782,6 +782,10 @@
   --shape-outside: none;
   shape-outside: var(--shape-outside);
 }
+.shape-rendering {
+  --shape-rendering: auto;
+  shape-rendering: var(--shape-rendering);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1568,6 +1572,10 @@
 .tablet.shape-outside {
   --t-shape-outside: var(--shape-outside);
   shape-outside: var(--t-shape-outside);
+}
+.tablet.shape-rendering {
+  --t-shape-rendering: var(--shape-rendering);
+  shape-rendering: var(--t-shape-rendering);
 }
 
 }
@@ -2356,6 +2364,10 @@
 .desktop.shape-outside {
   --d-shape-outside: var(--t-shape-outside);
   shape-outside: var(--d-shape-outside);
+}
+.desktop.shape-rendering {
+  --d-shape-rendering: var(--t-shape-rendering);
+  shape-rendering: var(--d-shape-rendering);
 }
 
 }
