@@ -145,6 +145,7 @@ export { normalizeMaxBlockSize } from './max-block-size';
 export { normalizeMaxHeight } from './max-height';
 export { normalizeMaxInlineSize } from './max-inline-size';
 export { normalizeMaxWidth } from './max-width';
+export { normalizeMinBlockSize } from './min-block-size';
 export { normalizePadding } from './padding';
 export { normalizeRight } from './right';
 export { normalizeTop } from './top';

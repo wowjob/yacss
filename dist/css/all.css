@@ -602,6 +602,10 @@
   --max-width: none;
   max-width: var(--max-width);
 }
+.min-block-size {
+  --min-block-size: auto;
+  min-block-size: var(--min-block-size);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1208,6 +1212,10 @@
 .tablet.max-width {
   --t-max-width: var(--max-width);
   max-width: var(--t-max-width);
+}
+.tablet.min-block-size {
+  --t-min-block-size: var(--min-block-size);
+  min-block-size: var(--t-min-block-size);
 }
 
 }
@@ -1816,6 +1824,10 @@
 .desktop.max-width {
   --d-max-width: var(--t-max-width);
   max-width: var(--d-max-width);
+}
+.desktop.min-block-size {
+  --d-min-block-size: var(--t-min-block-size);
+  min-block-size: var(--d-min-block-size);
 }
 
 }
