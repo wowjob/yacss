@@ -181,4 +181,5 @@ export { normalizeScrollBehavior } from './scroll-behavior';
 export { normalizeScrollMargin } from './scroll-margin';
 export { normalizeScrollPadding } from './scroll-padding';
 export { normalizeScrollSnapAlign } from './scroll-snap-align';
+export { normalizeScrollSnapStop } from './scroll-snap-stop';
 export { normalizeTop } from './top';
