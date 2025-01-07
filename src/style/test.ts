@@ -80,6 +80,7 @@ console.log(
       overscrollBehavior: 'contain',
       overscrollBehaviorBlock: 'auto',
       overscrollBehaviorInline: 'revert',
+      perspective: 'none',
     },
     className: 'yes-no',
   })
