@@ -153,6 +153,7 @@ import {
   normalizeMixBlendMode,
   normalizeObjectFit,
   normalizeObjectPosition,
+  normalizeOffsetAnchor,
   normalizePadding,
   normalizeRight,
   normalizeTop,
@@ -317,6 +318,7 @@ import type {
   TMixBlendMode,
   TObjectFit,
   TObjectPosition,
+  TOffsetAnchor,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -478,6 +480,7 @@ export type TCSSPropValue = Partial<{
   mixBlendMode: TMixBlendMode
   objectFit: TObjectFit
   objectPosition: TObjectPosition
+  offsetAnchor: TOffsetAnchor
   padding: TPadding
 }>
 
@@ -1133,5 +1136,9 @@ export const propertyMap: Record<
   objectPosition: {
     className: { dev: 'object-position', prod: 'op' },
     normalize: normalizeObjectPosition,
+  },
+  offsetAnchor: {
+    className: { dev: 'offset-anchor', prod: 'oa' },
+    normalize: normalizeOffsetAnchor,
   },
 } as const

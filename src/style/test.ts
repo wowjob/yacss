@@ -62,6 +62,7 @@ console.log(
       mixBlendMode: 'color-dodge',
       objectFit: 'cover',
       objectPosition: 'bottom',
+      offsetAnchor: 'center',
     },
     className: 'yes-no',
   })

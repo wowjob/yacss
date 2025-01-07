@@ -630,6 +630,10 @@
   --object-position: 50% 50%;
   object-position: var(--object-position);
 }
+.offset-anchor {
+  --offset-anchor: auto;
+  offset-anchor: var(--offset-anchor);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1264,6 +1268,10 @@
 .tablet.object-position {
   --t-object-position: var(--object-position);
   object-position: var(--t-object-position);
+}
+.tablet.offset-anchor {
+  --t-offset-anchor: var(--offset-anchor);
+  offset-anchor: var(--t-offset-anchor);
 }
 
 }
@@ -1900,6 +1908,10 @@
 .desktop.object-position {
   --d-object-position: var(--t-object-position);
   object-position: var(--d-object-position);
+}
+.desktop.offset-anchor {
+  --d-offset-anchor: var(--t-offset-anchor);
+  offset-anchor: var(--d-offset-anchor);
 }
 
 }
