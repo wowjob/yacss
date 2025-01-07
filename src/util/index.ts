@@ -141,6 +141,7 @@ export {
   normalizeListStyle,
   normalizeMargin,
   normalizeMarginBlock,
+  normalizeMarginInline,
   normalizePadding,
   normalizeRight,
   normalizeTop,
