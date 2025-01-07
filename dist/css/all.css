@@ -746,6 +746,10 @@
   --scroll-snap-type: none;
   scroll-snap-type: var(--scroll-snap-type);
 }
+.scroll-timeline {
+  --scroll-timeline: undefined;
+  scroll-timeline: var(--scroll-timeline);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1496,6 +1500,10 @@
 .tablet.scroll-snap-type {
   --t-scroll-snap-type: var(--scroll-snap-type);
   scroll-snap-type: var(--t-scroll-snap-type);
+}
+.tablet.scroll-timeline {
+  --t-scroll-timeline: var(--scroll-timeline);
+  scroll-timeline: var(--t-scroll-timeline);
 }
 
 }
@@ -2248,6 +2256,10 @@
 .desktop.scroll-snap-type {
   --d-scroll-snap-type: var(--t-scroll-snap-type);
   scroll-snap-type: var(--d-scroll-snap-type);
+}
+.desktop.scroll-timeline {
+  --d-scroll-timeline: var(--t-scroll-timeline);
+  scroll-timeline: var(--d-scroll-timeline);
 }
 
 }

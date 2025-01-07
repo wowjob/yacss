@@ -105,6 +105,7 @@ console.log(
       scrollSnapAlign: 'center center',
       scrollSnapStop: 'normal',
       scrollSnapType: 'block mandatory',
+      scrollTimeline: 'this is it',
     },
     className: 'yes-no',
   })
