@@ -634,6 +634,10 @@
   --offset-anchor: auto;
   offset-anchor: var(--offset-anchor);
 }
+.offset {
+  --offset: undefined;
+  offset: var(--offset);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1272,6 +1276,10 @@
 .tablet.offset-anchor {
   --t-offset-anchor: var(--offset-anchor);
   offset-anchor: var(--t-offset-anchor);
+}
+.tablet.offset {
+  --t-offset: var(--offset);
+  offset: var(--t-offset);
 }
 
 }
@@ -1912,6 +1920,10 @@
 .desktop.offset-anchor {
   --d-offset-anchor: var(--t-offset-anchor);
   offset-anchor: var(--d-offset-anchor);
+}
+.desktop.offset {
+  --d-offset: var(--t-offset);
+  offset: var(--d-offset);
 }
 
 }
