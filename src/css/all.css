@@ -742,6 +742,10 @@
   --scroll-snap-stop: normal;
   scroll-snap-stop: var(--scroll-snap-stop);
 }
+.scroll-snap-type {
+  --scroll-snap-type: none;
+  scroll-snap-type: var(--scroll-snap-type);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1488,6 +1492,10 @@
 .tablet.scroll-snap-stop {
   --t-scroll-snap-stop: var(--scroll-snap-stop);
   scroll-snap-stop: var(--t-scroll-snap-stop);
+}
+.tablet.scroll-snap-type {
+  --t-scroll-snap-type: var(--scroll-snap-type);
+  scroll-snap-type: var(--t-scroll-snap-type);
 }
 
 }
@@ -2236,6 +2244,10 @@
 .desktop.scroll-snap-stop {
   --d-scroll-snap-stop: var(--t-scroll-snap-stop);
   scroll-snap-stop: var(--d-scroll-snap-stop);
+}
+.desktop.scroll-snap-type {
+  --d-scroll-snap-type: var(--t-scroll-snap-type);
+  scroll-snap-type: var(--d-scroll-snap-type);
 }
 
 }

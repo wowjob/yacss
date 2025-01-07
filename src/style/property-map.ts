@@ -183,6 +183,7 @@ import {
   normalizeScrollPadding,
   normalizeScrollSnapAlign,
   normalizeScrollSnapStop,
+  normalizeScrollSnapType,
   normalizeTop,
 } from '../util'
 
@@ -373,6 +374,7 @@ import type {
   TScrollBehavior,
   TScrollSnapAlign,
   TScrollSnapStop,
+  TScrollSnapType,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -563,6 +565,7 @@ export type TCSSPropValue = Partial<{
   scrollPadding: TScrollPadding
   scrollSnapAlign: TScrollSnapAlign
   scrollSnapStop: TScrollSnapStop
+  scrollSnapType: TScrollSnapType
 }>
 
 type TResponsive = {
@@ -1332,5 +1335,9 @@ export const propertyMap: Record<
   scrollSnapStop: {
     className: { dev: 'scroll-snap-stop', prod: 'sss' },
     normalize: normalizeScrollSnapStop,
+  },
+  scrollSnapType: {
+    className: { dev: 'scroll-snap-type', prod: 'sst' },
+    normalize: normalizeScrollSnapType,
   },
 } as const
