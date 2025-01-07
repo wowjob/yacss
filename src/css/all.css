@@ -662,6 +662,14 @@
   --overscroll-behavior: undefined;
   overscroll-behavior: var(--overscroll-behavior);
 }
+.overscroll-behavior-block {
+  --overscroll-behavior-block: auto;
+  overscroll-behavior-block: var(--overscroll-behavior-block);
+}
+.overscroll-behavior-inline {
+  --overscroll-behavior-inline: auto;
+  overscroll-behavior-inline: var(--overscroll-behavior-inline);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1328,6 +1336,14 @@
 .tablet.overscroll-behavior {
   --t-overscroll-behavior: var(--overscroll-behavior);
   overscroll-behavior: var(--t-overscroll-behavior);
+}
+.tablet.overscroll-behavior-block {
+  --t-overscroll-behavior-block: var(--overscroll-behavior-block);
+  overscroll-behavior-block: var(--t-overscroll-behavior-block);
+}
+.tablet.overscroll-behavior-inline {
+  --t-overscroll-behavior-inline: var(--overscroll-behavior-inline);
+  overscroll-behavior-inline: var(--t-overscroll-behavior-inline);
 }
 
 }
@@ -1996,6 +2012,14 @@
 .desktop.overscroll-behavior {
   --d-overscroll-behavior: var(--t-overscroll-behavior);
   overscroll-behavior: var(--d-overscroll-behavior);
+}
+.desktop.overscroll-behavior-block {
+  --d-overscroll-behavior-block: var(--t-overscroll-behavior-block);
+  overscroll-behavior-block: var(--d-overscroll-behavior-block);
+}
+.desktop.overscroll-behavior-inline {
+  --d-overscroll-behavior-inline: var(--t-overscroll-behavior-inline);
+  overscroll-behavior-inline: var(--d-overscroll-behavior-inline);
 }
 
 }

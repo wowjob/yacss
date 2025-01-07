@@ -78,6 +78,8 @@ console.log(
       },
       overflow: 'clip',
       overscrollBehavior: 'contain',
+      overscrollBehaviorBlock: 'auto',
+      overscrollBehaviorInline: 'revert',
     },
     className: 'yes-no',
   })

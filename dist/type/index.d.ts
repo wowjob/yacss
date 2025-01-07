@@ -163,6 +163,8 @@ export type { TOutline } from './outline';
 export type { TOutlineOffset } from './outline-offset';
 export type { TOverflow } from './overflow';
 export type { TOverscrollBehavior } from './overscroll-behavior';
+export type { TOverscrollBehaviorBlock } from './overscroll-behavior-block';
+export type { TOverscrollBehaviorInline } from './overscroll-behavior-inline';
 export type { TPadding } from './padding';
 export type { TRight } from './right';
 export type { TTop } from './top';

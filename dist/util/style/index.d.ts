@@ -160,6 +160,8 @@ export { normalizeOutline } from './outline';
 export { normalizeOutlineOffset } from './outline-offset';
 export { normalizeOverflow } from './overflow';
 export { normalizeOverscrollBehavior } from './overscroll-behavior';
+export { normalizeOverscrollBehaviorBlock } from './overscroll-behavior-block';
+export { normalizeOverscrollBehaviorInline } from './overscroll-behavior-inline';
 export { normalizePadding } from './padding';
 export { normalizeRight } from './right';
 export { normalizeTop } from './top';

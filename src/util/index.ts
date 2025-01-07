@@ -164,6 +164,8 @@ export {
   normalizeOutlineOffset,
   normalizeOverflow,
   normalizeOverscrollBehavior,
+  normalizeOverscrollBehaviorBlock,
+  normalizeOverscrollBehaviorInline,
   normalizePadding,
   normalizeRight,
   normalizeTop,
