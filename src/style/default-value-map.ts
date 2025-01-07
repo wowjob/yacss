@@ -221,7 +221,6 @@ export const cssDefaultPropertyValueMap = {
   offsetRotate: 'auto',
   opacity: 1,
   order: 0,
-  orientation: 'auto',
   outline: 'invert',
   outlineColor: 'invert',
   outlineOffset: 0,
