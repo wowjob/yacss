@@ -766,6 +766,10 @@
   --scrollbar-gutter: auto;
   scrollbar-gutter: var(--scrollbar-gutter);
 }
+.scrollbar-width {
+  --scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-width);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1536,6 +1540,10 @@
 .tablet.scrollbar-gutter {
   --t-scrollbar-gutter: var(--scrollbar-gutter);
   scrollbar-gutter: var(--t-scrollbar-gutter);
+}
+.tablet.scrollbar-width {
+  --t-scrollbar-width: var(--scrollbar-width);
+  scrollbar-width: var(--t-scrollbar-width);
 }
 
 }
@@ -2308,6 +2316,10 @@
 .desktop.scrollbar-gutter {
   --d-scrollbar-gutter: var(--t-scrollbar-gutter);
   scrollbar-gutter: var(--d-scrollbar-gutter);
+}
+.desktop.scrollbar-width {
+  --d-scrollbar-width: var(--t-scrollbar-width);
+  scrollbar-width: var(--d-scrollbar-width);
 }
 
 }

@@ -180,6 +180,7 @@ import {
   normalizeScale,
   normalizeScrollbarColor,
   normalizeScrollbarGutter,
+  normalizeScrollbarWidth,
   normalizeScrollBehavior,
   normalizeScrollMargin,
   normalizeScrollPadding,
@@ -385,6 +386,7 @@ import type {
   TScrollTimelineName,
   TScrollbarColor,
   TScrollbarGutter,
+  TScrollbarWidth,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -581,6 +583,7 @@ export type TCSSPropValue = Partial<{
   scrollTimelineName: TScrollTimelineName
   scrollbarColor: TScrollbarColor
   scrollbarGutter: TScrollbarGutter
+  scrollbarWidth: TScrollbarWidth
 }>
 
 type TResponsive = {
@@ -1374,5 +1377,9 @@ export const propertyMap: Record<
   scrollbarGutter: {
     className: { dev: 'scrollbar-gutter', prod: 'sg' },
     normalize: normalizeScrollbarGutter,
+  },
+  scrollbarWidth: {
+    className: { dev: 'scrollbar-width', prod: 'sw' },
+    normalize: normalizeScrollbarWidth,
   },
 } as const
