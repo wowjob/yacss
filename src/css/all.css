@@ -770,6 +770,10 @@
   --scrollbar-width: auto;
   scrollbar-width: var(--scrollbar-width);
 }
+.shape-image-threshold {
+  --shape-image-threshold: 0;
+  shape-image-threshold: var(--shape-image-threshold);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1544,6 +1548,10 @@
 .tablet.scrollbar-width {
   --t-scrollbar-width: var(--scrollbar-width);
   scrollbar-width: var(--t-scrollbar-width);
+}
+.tablet.shape-image-threshold {
+  --t-shape-image-threshold: var(--shape-image-threshold);
+  shape-image-threshold: var(--t-shape-image-threshold);
 }
 
 }
@@ -2320,6 +2328,10 @@
 .desktop.scrollbar-width {
   --d-scrollbar-width: var(--t-scrollbar-width);
   scrollbar-width: var(--d-scrollbar-width);
+}
+.desktop.shape-image-threshold {
+  --d-shape-image-threshold: var(--t-shape-image-threshold);
+  shape-image-threshold: var(--d-shape-image-threshold);
 }
 
 }

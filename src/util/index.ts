@@ -193,5 +193,6 @@ export {
   normalizeScrollbarColor,
   normalizeScrollbarGutter,
   normalizeScrollbarWidth,
+  normalizeShapeImageThreshold,
   normalizeTop,
 } from './style'

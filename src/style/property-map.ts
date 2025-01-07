@@ -190,6 +190,7 @@ import {
   normalizeScrollTimeline,
   normalizeScrollTimelineAxis,
   normalizeScrollTimelineName,
+  normalizeShapeImageThreshold,
   normalizeTop,
 } from '../util'
 
@@ -387,6 +388,7 @@ import type {
   TScrollbarColor,
   TScrollbarGutter,
   TScrollbarWidth,
+  TShapeImageThreshold,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -584,6 +586,7 @@ export type TCSSPropValue = Partial<{
   scrollbarColor: TScrollbarColor
   scrollbarGutter: TScrollbarGutter
   scrollbarWidth: TScrollbarWidth
+  shapeImageThreshold: TShapeImageThreshold
 }>
 
 type TResponsive = {
@@ -1381,5 +1384,9 @@ export const propertyMap: Record<
   scrollbarWidth: {
     className: { dev: 'scrollbar-width', prod: 'sw' },
     normalize: normalizeScrollbarWidth,
+  },
+  shapeImageThreshold: {
+    className: { dev: 'shape-image-threshold', prod: 'sit' },
+    normalize: normalizeShapeImageThreshold,
   },
 } as const
