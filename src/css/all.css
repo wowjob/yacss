@@ -566,6 +566,10 @@
   --list-style: undefined;
   list-style: var(--list-style);
 }
+.margin-block {
+  --margin-block: undefined;
+  margin-block: var(--margin-block);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1136,6 +1140,10 @@
 .tablet.list-style {
   --t-list-style: var(--list-style);
   list-style: var(--t-list-style);
+}
+.tablet.margin-block {
+  --t-margin-block: var(--margin-block);
+  margin-block: var(--t-margin-block);
 }
 
 }
@@ -1708,6 +1716,10 @@
 .desktop.list-style {
   --d-list-style: var(--t-list-style);
   list-style: var(--d-list-style);
+}
+.desktop.margin-block {
+  --d-margin-block: var(--t-margin-block);
+  margin-block: var(--d-margin-block);
 }
 
 }
