@@ -109,6 +109,7 @@ console.log(
       scrollTimelineAxis: 'block',
       scrollTimelineName: 'asd123',
       scrollbarColor: 'red red',
+      scrollbarGutter: 'revert-layer',
     },
     className: 'yes-no',
   })
