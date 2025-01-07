@@ -168,5 +168,6 @@ export { normalizePerspectiveOrigin } from './perspective-origin';
 export { normalizePlaceContent } from './place-content';
 export { normalizePlaceItems } from './place-items';
 export { normalizePlaceSelf } from './place-self';
+export { normalizePointerEvents } from './pointer-events';
 export { normalizeRight } from './right';
 export { normalizeTop } from './top';

@@ -171,5 +171,6 @@ export type { TPerspectiveOrigin } from './perspective-origin';
 export type { TPlaceContent } from './place-content';
 export type { TPlaceItems } from './place-items';
 export type { TPlaceSelf } from './place-self';
+export type { TPointerEvents } from './pointer-events';
 export type { TRight } from './right';
 export type { TTop } from './top';
