@@ -162,6 +162,7 @@ export {
   normalizeOrder,
   normalizeOutline,
   normalizeOutlineOffset,
+  normalizeOverflow,
   normalizePadding,
   normalizeRight,
   normalizeTop,

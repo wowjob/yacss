@@ -159,6 +159,7 @@ import {
   normalizeOrder,
   normalizeOutline,
   normalizeOutlineOffset,
+  normalizeOverflow,
   normalizePadding,
   normalizeRight,
   normalizeTop,
@@ -329,6 +330,7 @@ import type {
   TOrder,
   TOutlineOffset,
   TOutline,
+  TOverflow,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -496,6 +498,7 @@ export type TCSSPropValue = Partial<{
   order: TOrder
   outline: TOutline
   outlineOffset: TOutlineOffset
+  overflow: TOverflow
   padding: TPadding
 }>
 
@@ -1175,5 +1178,9 @@ export const propertyMap: Record<
   outlineOffset: {
     className: { dev: 'outline-offset', prod: 'oo' },
     normalize: normalizeOutlineOffset,
+  },
+  overflow: {
+    className: { dev: 'overflow', prod: 'ov' },
+    normalize: normalizeOverflow,
   },
 } as const
