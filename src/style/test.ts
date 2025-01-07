@@ -97,6 +97,10 @@ console.log(
         top: 20,
         left: 20,
       },
+      scrollPadding: {
+        top: 20,
+        left: 20,
+      },
     },
     className: 'yes-no',
   })
