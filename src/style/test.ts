@@ -42,6 +42,7 @@ console.log(
         type: 'circle',
       },
       marginBlock: { start: 24, end: 48 },
+      marginInline: { start: 24, end: 48 },
     },
     className: 'yes-no',
   })

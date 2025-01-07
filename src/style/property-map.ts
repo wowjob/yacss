@@ -138,6 +138,7 @@ import {
   normalizeListStyle,
   normalizeMargin,
   normalizeMarginBlock,
+  normalizeMarginInline,
   normalizePadding,
   normalizeRight,
   normalizeTop,
@@ -287,6 +288,7 @@ import type {
   TLineHeight,
   TListStyle,
   TMarginBlock,
+  TMarginInline,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -433,6 +435,7 @@ export type TCSSPropValue = Partial<{
   listStyle: TListStyle
   margin: TMargin
   marginBlock: TMarginBlock
+  marginInline: TMarginInline
   padding: TPadding
 }>
 
@@ -1028,5 +1031,9 @@ export const propertyMap: Record<
   marginBlock: {
     className: { dev: 'margin-block', prod: 'mb' },
     normalize: normalizeMarginBlock,
+  },
+  marginInline: {
+    className: { dev: 'margin-inline', prod: 'mi' },
+    normalize: normalizeMarginInline,
   },
 } as const

@@ -570,6 +570,10 @@
   --margin-block: undefined;
   margin-block: var(--margin-block);
 }
+.margin-inline {
+  --margin-inline: undefined;
+  margin-inline: var(--margin-inline);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1144,6 +1148,10 @@
 .tablet.margin-block {
   --t-margin-block: var(--margin-block);
   margin-block: var(--t-margin-block);
+}
+.tablet.margin-inline {
+  --t-margin-inline: var(--margin-inline);
+  margin-inline: var(--t-margin-inline);
 }
 
 }
@@ -1720,6 +1728,10 @@
 .desktop.margin-block {
   --d-margin-block: var(--t-margin-block);
   margin-block: var(--d-margin-block);
+}
+.desktop.margin-inline {
+  --d-margin-inline: var(--t-margin-inline);
+  margin-inline: var(--d-margin-inline);
 }
 
 }
