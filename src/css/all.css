@@ -690,6 +690,10 @@
   --place-self: auto;
   place-self: var(--place-self);
 }
+.pointer-events {
+  --pointer-events: auto;
+  pointer-events: var(--pointer-events);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1384,6 +1388,10 @@
 .tablet.place-self {
   --t-place-self: var(--place-self);
   place-self: var(--t-place-self);
+}
+.tablet.pointer-events {
+  --t-pointer-events: var(--pointer-events);
+  pointer-events: var(--t-pointer-events);
 }
 
 }
@@ -2080,6 +2088,10 @@
 .desktop.place-self {
   --d-place-self: var(--t-place-self);
   place-self: var(--d-place-self);
+}
+.desktop.pointer-events {
+  --d-pointer-events: var(--t-pointer-events);
+  pointer-events: var(--d-pointer-events);
 }
 
 }

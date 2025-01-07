@@ -172,6 +172,7 @@ export {
   normalizePlaceContent,
   normalizePlaceItems,
   normalizePlaceSelf,
+  normalizePointerEvents,
   normalizeRight,
   normalizeTop,
 } from './style'

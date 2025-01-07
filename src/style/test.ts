@@ -85,6 +85,7 @@ console.log(
       placeContent: 'center baseline',
       placeItems: 'anchor-center self-end',
       placeSelf: 'anchor-center',
+      pointerEvents: 'bounding-box',
     },
     className: 'yes-no',
   })
