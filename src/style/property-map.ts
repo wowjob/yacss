@@ -196,6 +196,7 @@ import {
   normalizeShapeRendering,
   normalizeStopColor,
   normalizeStopOpacity,
+  normalizeStroke,
   normalizeTop,
 } from '../util'
 
@@ -399,6 +400,7 @@ import type {
   TShapeRendering,
   TStopColor,
   TStopOpacity,
+  TStroke,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -602,6 +604,7 @@ export type TCSSPropValue = Partial<{
   shapeRendering: TShapeRendering
   stopColor: TStopColor
   stopOpacity: TStopOpacity
+  stroke: TStroke
 }>
 
 type TResponsive = {
@@ -1423,5 +1426,9 @@ export const propertyMap: Record<
   stopOpacity: {
     className: { dev: 'stop-opacity', prod: 'sto' },
     normalize: normalizeStopOpacity,
+  },
+  stroke: {
+    className: { dev: 'stroke', prod: 'str' },
+    normalize: normalizeStroke,
   },
 } as const

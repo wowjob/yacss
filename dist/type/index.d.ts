@@ -198,4 +198,5 @@ export type { TShapeOutside } from './shape-outside';
 export type { TShapeRendering } from './shape-rendering';
 export type { TStopColor } from './stop-color';
 export type { TStopOpacity } from './stop-opacity';
+export type { TStroke } from './stroke';
 export type { TTop } from './top';

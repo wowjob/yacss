@@ -199,5 +199,6 @@ export {
   normalizeShapeRendering,
   normalizeStopColor,
   normalizeStopOpacity,
+  normalizeStroke,
   normalizeTop,
 } from './style'

@@ -794,6 +794,10 @@
   --stop-opacity: 1;
   stop-opacity: var(--stop-opacity);
 }
+.stroke {
+  --stroke: none;
+  stroke: var(--stroke);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1592,6 +1596,10 @@
 .tablet.stop-opacity {
   --t-stop-opacity: var(--stop-opacity);
   stop-opacity: var(--t-stop-opacity);
+}
+.tablet.stroke {
+  --t-stroke: var(--stroke);
+  stroke: var(--t-stroke);
 }
 
 }
@@ -2392,6 +2400,10 @@
 .desktop.stop-opacity {
   --d-stop-opacity: var(--t-stop-opacity);
   stop-opacity: var(--d-stop-opacity);
+}
+.desktop.stroke {
+  --d-stroke: var(--t-stroke);
+  stroke: var(--d-stroke);
 }
 
 }
