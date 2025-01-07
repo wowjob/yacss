@@ -726,6 +726,10 @@
   --scroll-margin: 0;
   scroll-margin: var(--scroll-margin);
 }
+.scroll-padding {
+  --scroll-padding: 0;
+  scroll-padding: var(--scroll-padding);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1456,6 +1460,10 @@
 .tablet.scroll-margin {
   --t-scroll-margin: var(--scroll-margin);
   scroll-margin: var(--t-scroll-margin);
+}
+.tablet.scroll-padding {
+  --t-scroll-padding: var(--scroll-padding);
+  scroll-padding: var(--t-scroll-padding);
 }
 
 }
@@ -2188,6 +2196,10 @@
 .desktop.scroll-margin {
   --d-scroll-margin: var(--t-scroll-margin);
   scroll-margin: var(--d-scroll-margin);
+}
+.desktop.scroll-padding {
+  --d-scroll-padding: var(--t-scroll-padding);
+  scroll-padding: var(--d-scroll-padding);
 }
 
 }

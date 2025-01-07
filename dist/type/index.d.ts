@@ -181,4 +181,5 @@ export type { TRubyAlign } from './ruby-align';
 export type { TRubyPosition } from './ruby-position';
 export type { TScale } from './scale';
 export type { TScrollMargin } from './scroll-margin';
+export type { TScrollPadding } from './scroll-padding';
 export type { TTop } from './top';
