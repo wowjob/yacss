@@ -134,6 +134,7 @@ export { normalizeLetterSpacing } from './letter-spacing';
 export { normalizeLightingColor } from './lighting-color';
 export { normalizeLineBreak } from './line-break';
 export { normalizeLineHeight } from './line-height';
+export { normalizeListStyle } from './list-style';
 export { normalizeMargin } from './margin';
 export { normalizePadding } from './padding';
 export { normalizeRight } from './right';

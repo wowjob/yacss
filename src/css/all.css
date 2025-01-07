@@ -562,6 +562,10 @@
   --line-height: normal;
   line-height: var(--line-height);
 }
+.list-style {
+  --list-style: undefined;
+  list-style: var(--list-style);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1128,6 +1132,10 @@
 .tablet.line-height {
   --t-line-height: var(--line-height);
   line-height: var(--t-line-height);
+}
+.tablet.list-style {
+  --t-list-style: var(--list-style);
+  list-style: var(--t-list-style);
 }
 
 }
@@ -1696,6 +1704,10 @@
 .desktop.line-height {
   --d-line-height: var(--t-line-height);
   line-height: var(--d-line-height);
+}
+.desktop.list-style {
+  --d-list-style: var(--t-list-style);
+  list-style: var(--d-list-style);
 }
 
 }

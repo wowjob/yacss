@@ -135,6 +135,7 @@ import {
   normalizeLightingColor,
   normalizeLineBreak,
   normalizeLineHeight,
+  normalizeListStyle,
   normalizeMargin,
   normalizePadding,
   normalizeRight,
@@ -283,6 +284,7 @@ import type {
   TLightingColor,
   TLineBreak,
   TLineHeight,
+  TListStyle,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -426,6 +428,7 @@ export type TCSSPropValue = Partial<{
   lightingColor: TLightingColor
   lineBreak: TLineBreak
   lineHeight: TLineHeight
+  listStyle: TListStyle
 
   margin: TMargin
   padding: TPadding
@@ -1015,5 +1018,9 @@ export const propertyMap: Record<
   lineHeight: {
     className: { dev: 'line-height', prod: 'lh' },
     normalize: normalizeLineHeight,
+  },
+  listStyle: {
+    className: { dev: 'list-style', prod: 'ls' },
+    normalize: normalizeListStyle,
   },
 } as const
