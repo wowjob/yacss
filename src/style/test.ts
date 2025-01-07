@@ -117,6 +117,7 @@ console.log(
       shapeRendering: 'crispEdges',
       stopColor: 'red',
       stopOpacity: 0.5,
+      stroke: 'red',
     },
     className: 'yes-no',
   })
