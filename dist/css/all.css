@@ -682,6 +682,10 @@
   --place-content: normal;
   place-content: var(--place-content);
 }
+.place-items {
+  --place-items: normal;
+  place-items: var(--place-items);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1368,6 +1372,10 @@
 .tablet.place-content {
   --t-place-content: var(--place-content);
   place-content: var(--t-place-content);
+}
+.tablet.place-items {
+  --t-place-items: var(--place-items);
+  place-items: var(--t-place-items);
 }
 
 }
@@ -2056,6 +2064,10 @@
 .desktop.place-content {
   --d-place-content: var(--t-place-content);
   place-content: var(--d-place-content);
+}
+.desktop.place-items {
+  --d-place-items: var(--t-place-items);
+  place-items: var(--d-place-items);
 }
 
 }

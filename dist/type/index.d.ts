@@ -169,5 +169,6 @@ export type { TPadding } from './padding';
 export type { TPerspective } from './perspective';
 export type { TPerspectiveOrigin } from './perspective-origin';
 export type { TPlaceContent } from './place-content';
+export type { TPlaceItems } from './place-items';
 export type { TRight } from './right';
 export type { TTop } from './top';

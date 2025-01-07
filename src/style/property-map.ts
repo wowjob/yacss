@@ -167,6 +167,7 @@ import {
   normalizePerspective,
   normalizePerspectiveOrigin,
   normalizePlaceContent,
+  normalizePlaceItems,
   normalizeRight,
   normalizeTop,
 } from '../util'
@@ -343,6 +344,7 @@ import type {
   TPerspective,
   TPerspectiveOrigin,
   TPlaceContent,
+  TPlaceItems,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -518,6 +520,7 @@ export type TCSSPropValue = Partial<{
   perspective: TPerspective
   perspectiveOrigin: TPerspectiveOrigin
   placeContent: TPlaceContent
+  placeItems: TPlaceItems
 }>
 
 type TResponsive = {
@@ -1224,5 +1227,9 @@ export const propertyMap: Record<
   placeContent: {
     className: { dev: 'place-content', prod: 'pc' },
     normalize: normalizePlaceContent,
+  },
+  placeItems: {
+    className: { dev: 'place-items', prod: 'pi' },
+    normalize: normalizePlaceItems,
   },
 } as const
