@@ -181,5 +181,6 @@ export {
   normalizeRubyAlign,
   normalizeRubyPosition,
   normalizeScale,
+  normalizeScrollMargin,
   normalizeTop,
 } from './style'

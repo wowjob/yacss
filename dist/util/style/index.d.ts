@@ -177,4 +177,5 @@ export { normalizeRotate } from './rotate';
 export { normalizeRubyAlign } from './ruby-align';
 export { normalizeRubyPosition } from './ruby-position';
 export { normalizeScale } from './scale';
+export { normalizeScrollMargin } from './scroll-margin';
 export { normalizeTop } from './top';

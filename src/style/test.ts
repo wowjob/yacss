@@ -93,6 +93,10 @@ console.log(
       rubyAlign: 'space-around',
       rubyPosition: 'alternate',
       scale: 'none',
+      scrollMargin: {
+        top: 20,
+        left: 20,
+      },
     },
     className: 'yes-no',
   })
