@@ -63,6 +63,11 @@ console.log(
       objectFit: 'cover',
       objectPosition: 'bottom',
       offsetAnchor: 'center',
+      offset: {
+        distance: 'inherit',
+        path: 'border-box',
+        rotate: 'auto',
+      },
     },
     className: 'yes-no',
   })
