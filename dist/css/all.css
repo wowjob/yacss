@@ -606,6 +606,10 @@
   --min-block-size: auto;
   min-block-size: var(--min-block-size);
 }
+.min-height {
+  --min-height: auto;
+  min-height: var(--min-height);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1216,6 +1220,10 @@
 .tablet.min-block-size {
   --t-min-block-size: var(--min-block-size);
   min-block-size: var(--t-min-block-size);
+}
+.tablet.min-height {
+  --t-min-height: var(--min-height);
+  min-height: var(--t-min-height);
 }
 
 }
@@ -1828,6 +1836,10 @@
 .desktop.min-block-size {
   --d-min-block-size: var(--t-min-block-size);
   min-block-size: var(--d-min-block-size);
+}
+.desktop.min-height {
+  --d-min-height: var(--t-min-height);
+  min-height: var(--d-min-height);
 }
 
 }

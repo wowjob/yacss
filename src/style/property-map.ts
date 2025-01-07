@@ -147,6 +147,7 @@ import {
   normalizeMaxInlineSize,
   normalizeMaxWidth,
   normalizeMinBlockSize,
+  normalizeMinHeight,
   normalizePadding,
   normalizeRight,
   normalizeTop,
@@ -305,6 +306,7 @@ import type {
   TMaxInlineSize,
   TMaxWidth,
   TMinBlockSize,
+  TMinHeight,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -460,6 +462,7 @@ export type TCSSPropValue = Partial<{
   maxInlineSize: TMaxInlineSize
   maxWidth: TMaxWidth
   minBlockSize: TMinBlockSize
+  minHeight: TMinHeight
   padding: TPadding
 }>
 
@@ -1091,5 +1094,9 @@ export const propertyMap: Record<
   minBlockSize: {
     className: { dev: 'min-block-size', prod: 'mbs' },
     normalize: normalizeMinBlockSize,
+  },
+  minHeight: {
+    className: { dev: 'min-height', prod: 'mh' },
+    normalize: normalizeMinHeight,
   },
 } as const
