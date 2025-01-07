@@ -722,6 +722,10 @@
   --scale: 1;
   scale: var(--scale);
 }
+.scroll-margin {
+  --scroll-margin: 0;
+  scroll-margin: var(--scroll-margin);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1448,6 +1452,10 @@
 .tablet.scale {
   --t-scale: var(--scale);
   scale: var(--t-scale);
+}
+.tablet.scroll-margin {
+  --t-scroll-margin: var(--scroll-margin);
+  scroll-margin: var(--t-scroll-margin);
 }
 
 }
@@ -2176,6 +2184,10 @@
 .desktop.scale {
   --d-scale: var(--t-scale);
   scale: var(--d-scale);
+}
+.desktop.scroll-margin {
+  --d-scroll-margin: var(--t-scroll-margin);
+  scroll-margin: var(--d-scroll-margin);
 }
 
 }
