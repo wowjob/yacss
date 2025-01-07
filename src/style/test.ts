@@ -36,6 +36,11 @@ console.log(
       lightingColor: 'currentcolor',
       lineBreak: 'anywhere',
       lineHeight: '1px',
+      listStyle: {
+        image: 'url(land)',
+        position: 'outside',
+        type: 'circle',
+      },
     },
     className: 'yes-no',
   })

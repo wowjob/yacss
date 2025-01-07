@@ -138,6 +138,7 @@ export {
   normalizeLightingColor,
   normalizeLineBreak,
   normalizeLineHeight,
+  normalizeListStyle,
   normalizeMargin,
   normalizePadding,
   normalizeRight,
