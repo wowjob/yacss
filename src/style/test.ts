@@ -102,6 +102,7 @@ console.log(
         left: 20,
       },
       scrollBehavior: 'revert',
+      scrollSnapAlign: 'center center',
     },
     className: 'yes-no',
   })
