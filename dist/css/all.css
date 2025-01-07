@@ -594,6 +594,10 @@
   --max-height: none;
   max-height: var(--max-height);
 }
+.max-inline-size {
+  --max-inline-size: none;
+  max-inline-size: var(--max-inline-size);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1192,6 +1196,10 @@
 .tablet.max-height {
   --t-max-height: var(--max-height);
   max-height: var(--t-max-height);
+}
+.tablet.max-inline-size {
+  --t-max-inline-size: var(--max-inline-size);
+  max-inline-size: var(--t-max-inline-size);
 }
 
 }
@@ -1792,6 +1800,10 @@
 .desktop.max-height {
   --d-max-height: var(--t-max-height);
   max-height: var(--d-max-height);
+}
+.desktop.max-inline-size {
+  --d-max-inline-size: var(--t-max-inline-size);
+  max-inline-size: var(--d-max-inline-size);
 }
 
 }

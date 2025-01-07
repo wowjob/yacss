@@ -53,6 +53,7 @@ console.log(
       mathStyle: 'compact',
       maxBlockSize: 'fit-content',
       maxHeight: 'fit-content',
+      maxInlineSize: 'fit-content',
     },
     className: 'yes-no',
   })
