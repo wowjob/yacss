@@ -152,6 +152,7 @@ export {
   normalizeMinBlockSize,
   normalizeMinHeight,
   normalizeMinInlineSize,
+  normalizeMinWidth,
   normalizePadding,
   normalizeRight,
   normalizeTop,
