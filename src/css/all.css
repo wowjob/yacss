@@ -598,6 +598,10 @@
   --max-inline-size: none;
   max-inline-size: var(--max-inline-size);
 }
+.max-width {
+  --max-width: none;
+  max-width: var(--max-width);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1200,6 +1204,10 @@
 .tablet.max-inline-size {
   --t-max-inline-size: var(--max-inline-size);
   max-inline-size: var(--t-max-inline-size);
+}
+.tablet.max-width {
+  --t-max-width: var(--max-width);
+  max-width: var(--t-max-width);
 }
 
 }
@@ -1804,6 +1812,10 @@
 .desktop.max-inline-size {
   --d-max-inline-size: var(--t-max-inline-size);
   max-inline-size: var(--d-max-inline-size);
+}
+.desktop.max-width {
+  --d-max-width: var(--t-max-width);
+  max-width: var(--d-max-width);
 }
 
 }
