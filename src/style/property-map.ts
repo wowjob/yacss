@@ -176,6 +176,7 @@ import {
   normalizeRight,
   normalizeRotate,
   normalizeRubyAlign,
+  normalizeRubyPosition,
   normalizeTop,
 } from '../util'
 
@@ -359,6 +360,7 @@ import type {
   TResize,
   TRotate,
   TRubyAlign,
+  TRubyPosition,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -542,6 +544,7 @@ export type TCSSPropValue = Partial<{
   resize: TResize
   rotate: TRotate
   rubyAlign: TRubyAlign
+  rubyPosition: TRubyPosition
 }>
 
 type TResponsive = {
@@ -1283,5 +1286,9 @@ export const propertyMap: Record<
       prod: 'ra',
     },
     normalize: normalizeRubyAlign,
+  },
+  rubyPosition: {
+    className: { dev: 'ruby-position', prod: 'rp' },
+    normalize: normalizeRubyPosition,
   },
 } as const

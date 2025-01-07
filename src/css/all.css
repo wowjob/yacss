@@ -714,6 +714,10 @@
   --ruby-align: space-around;
   ruby-align: var(--ruby-align);
 }
+.ruby-position {
+  --ruby-position: over;
+  ruby-position: var(--ruby-position);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1432,6 +1436,10 @@
 .tablet.ruby-align {
   --t-ruby-align: var(--ruby-align);
   ruby-align: var(--t-ruby-align);
+}
+.tablet.ruby-position {
+  --t-ruby-position: var(--ruby-position);
+  ruby-position: var(--t-ruby-position);
 }
 
 }
@@ -2152,6 +2160,10 @@
 .desktop.ruby-align {
   --d-ruby-align: var(--t-ruby-align);
   ruby-align: var(--d-ruby-align);
+}
+.desktop.ruby-position {
+  --d-ruby-position: var(--t-ruby-position);
+  ruby-position: var(--d-ruby-position);
 }
 
 }
