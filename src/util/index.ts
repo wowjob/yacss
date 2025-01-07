@@ -147,6 +147,7 @@ export {
   normalizeMathStyle,
   normalizeMaxBlockSize,
   normalizeMaxHeight,
+  normalizeMaxInlineSize,
   normalizePadding,
   normalizeRight,
   normalizeTop,

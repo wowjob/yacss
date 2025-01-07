@@ -143,6 +143,7 @@ export { normalizeMaskClip } from './mask-clip';
 export { normalizeMathStyle } from './math-style';
 export { normalizeMaxBlockSize } from './max-block-size';
 export { normalizeMaxHeight } from './max-height';
+export { normalizeMaxInlineSize } from './max-inline-size';
 export { normalizePadding } from './padding';
 export { normalizeRight } from './right';
 export { normalizeTop } from './top';
