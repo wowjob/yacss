@@ -174,6 +174,7 @@ import {
   normalizeQuotes,
   normalizeResize,
   normalizeRight,
+  normalizeRotate,
   normalizeTop,
 } from '../util'
 
@@ -355,6 +356,7 @@ import type {
   TPosition,
   TQuotes,
   TResize,
+  TRotate,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -536,6 +538,7 @@ export type TCSSPropValue = Partial<{
   position: TPosition
   quotes: TQuotes
   resize: TResize
+  rotate: TRotate
 }>
 
 type TResponsive = {
@@ -707,7 +710,7 @@ export const propertyMap: Record<
     normalize: normalizeBorderStartStartRadius,
   },
   borderTop: {
-    className: { dev: 'border-top', prod: 'bt' },
+    className: { dev: 'border-top', prod: 'bdt' },
     normalize: normalizeBorderTop,
   },
   borderTopLeftRadius: {
@@ -1100,7 +1103,7 @@ export const propertyMap: Record<
     normalize: normalizeLeft,
   },
   right: {
-    className: { dev: 'right', prod: 'rt' },
+    className: { dev: 'right', prod: 'r' },
     normalize: normalizeRight,
   },
   top: {
@@ -1124,7 +1127,7 @@ export const propertyMap: Record<
     normalize: normalizeLineHeight,
   },
   listStyle: {
-    className: { dev: 'list-style', prod: 'ls' },
+    className: { dev: 'list-style', prod: 'lst' },
     normalize: normalizeListStyle,
   },
   marginBlock: {
@@ -1148,35 +1151,35 @@ export const propertyMap: Record<
     normalize: normalizeMathStyle,
   },
   maxBlockSize: {
-    className: { dev: 'max-block-size', prod: 'mbs' },
+    className: { dev: 'max-block-size', prod: 'mxbs' },
     normalize: normalizeMaxBlockSize,
   },
   maxHeight: {
-    className: { dev: 'max-height', prod: 'mh' },
+    className: { dev: 'max-height', prod: 'mxh' },
     normalize: normalizeMaxHeight,
   },
   maxInlineSize: {
-    className: { dev: 'max-inline-size', prod: 'mis' },
+    className: { dev: 'max-inline-size', prod: 'mxis' },
     normalize: normalizeMaxInlineSize,
   },
   maxWidth: {
-    className: { dev: 'max-width', prod: 'mw' },
+    className: { dev: 'max-width', prod: 'mxw' },
     normalize: normalizeMaxWidth,
   },
   minBlockSize: {
-    className: { dev: 'min-block-size', prod: 'mbs' },
+    className: { dev: 'min-block-size', prod: 'mibs' },
     normalize: normalizeMinBlockSize,
   },
   minHeight: {
-    className: { dev: 'min-height', prod: 'mh' },
+    className: { dev: 'min-height', prod: 'mih' },
     normalize: normalizeMinHeight,
   },
   minInlineSize: {
-    className: { dev: 'min-inline-size', prod: 'mis' },
+    className: { dev: 'min-inline-size', prod: 'miis' },
     normalize: normalizeMinInlineSize,
   },
   minWidth: {
-    className: { dev: 'min-width', prod: 'mw' },
+    className: { dev: 'min-width', prod: 'miw' },
     normalize: normalizeMinWidth,
   },
   mixBlendMode: {
@@ -1200,7 +1203,7 @@ export const propertyMap: Record<
     normalize: normalizeOffset,
   },
   opacity: {
-    className: { dev: 'opacity', prod: 'op' },
+    className: { dev: 'opacity', prod: 'o' },
     normalize: normalizeOpacity,
   },
   order: {
@@ -1232,7 +1235,7 @@ export const propertyMap: Record<
     normalize: normalizeOverscrollBehaviorInline,
   },
   perspective: {
-    className: { dev: 'perspective', prod: 'p' },
+    className: { dev: 'perspective', prod: 'pp' },
     normalize: normalizePerspective,
   },
   perspectiveOrigin: {
@@ -1266,5 +1269,9 @@ export const propertyMap: Record<
   resize: {
     className: { dev: 'resize', prod: 'rs' },
     normalize: normalizeResize,
+  },
+  rotate: {
+    className: { dev: 'rotate', prod: 'rt' },
+    normalize: normalizeRotate,
   },
 } as const

@@ -89,6 +89,7 @@ console.log(
       position: 'fixed',
       quotes: 'none',
       resize: 'block',
+      rotate: 'revert',
     },
     className: 'yes-no',
   })
