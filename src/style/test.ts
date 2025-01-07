@@ -113,6 +113,7 @@ console.log(
       scrollbarWidth: 'thin',
       shapeImageThreshold: 'revert-layer',
       shapeMargin: 20,
+      shapeOutside: 'border-box',
     },
     className: 'yes-no',
   })

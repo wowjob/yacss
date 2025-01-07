@@ -195,5 +195,6 @@ export {
   normalizeScrollbarWidth,
   normalizeShapeImageThreshold,
   normalizeShapeMargin,
+  normalizeShapeOutside,
   normalizeTop,
 } from './style'
