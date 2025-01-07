@@ -115,6 +115,7 @@ console.log(
       shapeMargin: 20,
       shapeOutside: 'border-box',
       shapeRendering: 'crispEdges',
+      stopColor: 'red',
     },
     className: 'yes-no',
   })
