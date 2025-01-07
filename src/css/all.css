@@ -718,6 +718,10 @@
   --ruby-position: over;
   ruby-position: var(--ruby-position);
 }
+.scale {
+  --scale: 1;
+  scale: var(--scale);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1440,6 +1444,10 @@
 .tablet.ruby-position {
   --t-ruby-position: var(--ruby-position);
   ruby-position: var(--t-ruby-position);
+}
+.tablet.scale {
+  --t-scale: var(--scale);
+  scale: var(--t-scale);
 }
 
 }
@@ -2164,6 +2172,10 @@
 .desktop.ruby-position {
   --d-ruby-position: var(--t-ruby-position);
   ruby-position: var(--d-ruby-position);
+}
+.desktop.scale {
+  --d-scale: var(--t-scale);
+  scale: var(--d-scale);
 }
 
 }
