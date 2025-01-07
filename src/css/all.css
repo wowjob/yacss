@@ -774,6 +774,10 @@
   --shape-image-threshold: 0;
   shape-image-threshold: var(--shape-image-threshold);
 }
+.shape-margin {
+  --shape-margin: 0;
+  shape-margin: var(--shape-margin);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1552,6 +1556,10 @@
 .tablet.shape-image-threshold {
   --t-shape-image-threshold: var(--shape-image-threshold);
   shape-image-threshold: var(--t-shape-image-threshold);
+}
+.tablet.shape-margin {
+  --t-shape-margin: var(--shape-margin);
+  shape-margin: var(--t-shape-margin);
 }
 
 }
@@ -2332,6 +2340,10 @@
 .desktop.shape-image-threshold {
   --d-shape-image-threshold: var(--t-shape-image-threshold);
   shape-image-threshold: var(--d-shape-image-threshold);
+}
+.desktop.shape-margin {
+  --d-shape-margin: var(--t-shape-margin);
+  shape-margin: var(--d-shape-margin);
 }
 
 }

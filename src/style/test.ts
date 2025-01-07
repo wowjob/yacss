@@ -112,6 +112,7 @@ console.log(
       scrollbarGutter: 'revert-layer',
       scrollbarWidth: 'thin',
       shapeImageThreshold: 'revert-layer',
+      shapeMargin: 20,
     },
     className: 'yes-no',
   })
