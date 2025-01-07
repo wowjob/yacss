@@ -646,6 +646,10 @@
   --order: 0;
   order: var(--order);
 }
+.outline-offset {
+  --outline-offset: 0;
+  outline-offset: var(--outline-offset);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1296,6 +1300,10 @@
 .tablet.order {
   --t-order: var(--order);
   order: var(--t-order);
+}
+.tablet.outline-offset {
+  --t-outline-offset: var(--outline-offset);
+  outline-offset: var(--t-outline-offset);
 }
 
 }
@@ -1948,6 +1956,10 @@
 .desktop.order {
   --d-order: var(--t-order);
   order: var(--d-order);
+}
+.desktop.outline-offset {
+  --d-outline-offset: var(--t-outline-offset);
+  outline-offset: var(--d-outline-offset);
 }
 
 }

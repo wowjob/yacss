@@ -70,6 +70,7 @@ console.log(
       },
       opacity: 0.5,
       order: 2,
+      outlineOffset: 'revert',
     },
     className: 'yes-no',
   })
