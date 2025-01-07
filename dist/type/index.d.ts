@@ -152,6 +152,7 @@ export type { TMinBlockSize } from './min-block-size';
 export type { TMinHeight } from './min-height';
 export type { TMinInlineSize } from './min-inline-size';
 export type { TMinWidth } from './min-width';
+export type { TMixBlendMode } from './mix-blend-mode';
 export type { TPadding } from './padding';
 export type { TRight } from './right';
 export type { TTop } from './top';

@@ -153,6 +153,7 @@ export {
   normalizeMinHeight,
   normalizeMinInlineSize,
   normalizeMinWidth,
+  normalizeMixBlendMode,
   normalizePadding,
   normalizeRight,
   normalizeTop,

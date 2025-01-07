@@ -618,6 +618,10 @@
   --min-width: auto;
   min-width: var(--min-width);
 }
+.mix-blend-mode {
+  --mix-blend-mode: normal;
+  mix-blend-mode: var(--mix-blend-mode);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1240,6 +1244,10 @@
 .tablet.min-width {
   --t-min-width: var(--min-width);
   min-width: var(--t-min-width);
+}
+.tablet.mix-blend-mode {
+  --t-mix-blend-mode: var(--mix-blend-mode);
+  mix-blend-mode: var(--t-mix-blend-mode);
 }
 
 }
@@ -1864,6 +1872,10 @@
 .desktop.min-width {
   --d-min-width: var(--t-min-width);
   min-width: var(--d-min-width);
+}
+.desktop.mix-blend-mode {
+  --d-mix-blend-mode: var(--t-mix-blend-mode);
+  mix-blend-mode: var(--d-mix-blend-mode);
 }
 
 }

@@ -59,6 +59,7 @@ console.log(
       minHeight: 'fit-content',
       minInlineSize: 'fit-content',
       minWidth: 'fit-content',
+      mixBlendMode: 'color-dodge',
     },
     className: 'yes-no',
   })
