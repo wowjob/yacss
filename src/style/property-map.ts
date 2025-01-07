@@ -170,6 +170,7 @@ import {
   normalizePlaceItems,
   normalizePlaceSelf,
   normalizePointerEvents,
+  normalizePosition,
   normalizeRight,
   normalizeTop,
 } from '../util'
@@ -349,6 +350,7 @@ import type {
   TPlaceItems,
   TPlaceSelf,
   TPointerEvents,
+  TPosition,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -527,6 +529,7 @@ export type TCSSPropValue = Partial<{
   placeItems: TPlaceItems
   placeSelf: TPlaceSelf
   pointerEvents: TPointerEvents
+  position: TPosition
 }>
 
 type TResponsive = {
@@ -1245,5 +1248,9 @@ export const propertyMap: Record<
   pointerEvents: {
     className: { dev: 'pointer-events', prod: 'pe' },
     normalize: normalizePointerEvents,
+  },
+  position: {
+    className: { dev: 'position', prod: 'pos' },
+    normalize: normalizePosition,
   },
 } as const
