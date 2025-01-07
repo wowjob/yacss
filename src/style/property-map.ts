@@ -134,6 +134,7 @@ import {
   normalizeLetterSpacing,
   normalizeLightingColor,
   normalizeLineBreak,
+  normalizeLineHeight,
   normalizeMargin,
   normalizePadding,
   normalizeRight,
@@ -281,6 +282,7 @@ import type {
   TLetterSpacing,
   TLightingColor,
   TLineBreak,
+  TLineHeight,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -423,6 +425,7 @@ export type TCSSPropValue = Partial<{
   letterSpacing: TLetterSpacing
   lightingColor: TLightingColor
   lineBreak: TLineBreak
+  lineHeight: TLineHeight
 
   margin: TMargin
   padding: TPadding
@@ -1008,5 +1011,9 @@ export const propertyMap: Record<
   lineBreak: {
     className: { dev: 'line-break', prod: 'lb' },
     normalize: normalizeLineBreak,
+  },
+  lineHeight: {
+    className: { dev: 'line-height', prod: 'lh' },
+    normalize: normalizeLineHeight,
   },
 } as const
