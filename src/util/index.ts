@@ -177,5 +177,6 @@ export {
   normalizeQuotes,
   normalizeResize,
   normalizeRight,
+  normalizeRotate,
   normalizeTop,
 } from './style'

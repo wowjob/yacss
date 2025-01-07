@@ -1,4 +1,4 @@
-import { normalizeAccentColor, normalizeAlignContent, normalizeAlignItems, normalizeAlignSelf, normalizeAnimation, normalizeAppearance, normalizeAspectRatio, normalizeBackdropFilter, normalizeBackfaceVisibility, normalizeBackground, normalizeBackgroundBlendMode, normalizeBackgroundClip, normalizeBackgroundOrigin, normalizeBlockSize, normalizeBorder, normalizeBorderBlock, normalizeBorderBlockEnd, normalizeBorderBlockStart, normalizeBorderBottom, normalizeBorderBottomLeftRadius, normalizeBorderBottomRightRadius, normalizeBorderCollapse, normalizeBorderEndEndRadius, normalizeBorderEndStartRadius, normalizeBorderImage, normalizeBorderInlineEnd, normalizeBorderInlineStart, normalizeBorderLeft, normalizeBorderRadius, normalizeBorderRight, normalizeBorderStartEndRadius, normalizeBorderStartStartRadius, normalizeBorderStyle, normalizeBorderTop, normalizeBorderTopLeftRadius, normalizeBorderTopRightRadius, normalizeBorderWidth, normalizeBottom, normalizeBoxShadow, normalizeBoxSizing, normalizeBreakAfter, normalizeBreakBefore, normalizeBreakInside, normalizeCaptionSide, normalizeCaretColor, normalizeClear, normalizeClip, normalizeClipPath, normalizeColor, normalizeColorInterpolation, normalizeColorInterpolationFilters, normalizeColorScheme, normalizeColumnCount, normalizeColumnFill, normalizeColumnGap, normalizeColumnRule, normalizeColumnSpan, normalizeColumnWidth, normalizeContain, normalizeContainer, normalizeContainIntrinsicBlockSize, normalizeContainIntrinsicHeight, normalizeContainIntrinsicInlineSize, normalizeContainIntrinsicSize, normalizeContainIntrinsicWidth, normalizeContent, normalizeContentVisibility, normalizeCounterIncrement, normalizeCounterReset, normalizeCounterSet, normalizeCursor, normalizeCx, normalizeCy, normalizeD, normalizeDirection, normalizeDisplay, normalizeDominantBaseline, normalizeEmptyCells, normalizeFieldSizing, normalizeFill, normalizeFillOpacity, normalizeFillRule, normalizeFilter, normalizeFlex, normalizeFlexBasis, normalizeFlexDirection, normalizeFlexGrow, normalizeFlexShrink, normalizeFlexWrap, normalizeFloat, normalizeFloodColor, normalizeFloodOpacity, normalizeFont, normalizeFontFeatureSettings, normalizeFontKerning, normalizeFontLanguageOverride, normalizeFontOpticalSizing, normalizeFontPalette, normalizeFontSizeAdjust, normalizeFontSynthesisSmallCaps, normalizeFontSynthesisStyle, normalizeFontSynthesisWeight, normalizeFontVariantAlternates, normalizeFontVariantCaps, normalizeFontVariantEastAsian, normalizeFontVariantLigatures, normalizeFontVariantNumeric, normalizeFontVariantPosition, normalizeFontVariationSettings, normalizeForcedColorAdjust, normalizeGap, normalizeGridAutoColumns, normalizeGridAutoFlow, normalizeGridAutoRows, normalizeGridColumn, normalizeGridRow, normalizeGridTemplate, normalizeGridTemplateAreas, normalizeHeight, normalizeHyphenateCharacter, normalizeHyphens, normalizeImageOrientation, normalizeImageRendering, normalizeInlineSize, normalizeInset, normalizeInsetBlock, normalizeInsetInline, normalizeIsolation, normalizeJustifyContent, normalizeJustifyItems, normalizeJustifySelf, normalizeLeft, normalizeLetterSpacing, normalizeLightingColor, normalizeLineBreak, normalizeLineHeight, normalizeListStyle, normalizeMargin, normalizeMarginBlock, normalizeMarginInline, normalizeMask, normalizeMaskClip, normalizeMathStyle, normalizeMaxBlockSize, normalizeMaxHeight, normalizeMaxInlineSize, normalizeMaxWidth, normalizeMinBlockSize, normalizeMinHeight, normalizeMinInlineSize, normalizeMinWidth, normalizeMixBlendMode, normalizeObjectFit, normalizeObjectPosition, normalizeOffset, normalizeOffsetAnchor, normalizeOpacity, normalizeOrder, normalizeOutline, normalizeOutlineOffset, normalizeOverflow, normalizeOverscrollBehavior, normalizeOverscrollBehaviorBlock, normalizeOverscrollBehaviorInline, normalizePadding, normalizePerspective, normalizePerspectiveOrigin, normalizePlaceContent, normalizePlaceItems, normalizePlaceSelf, normalizePointerEvents, normalizePosition, normalizeQuotes, normalizeResize, normalizeRight, normalizeTop, } from '../util';
+import { normalizeAccentColor, normalizeAlignContent, normalizeAlignItems, normalizeAlignSelf, normalizeAnimation, normalizeAppearance, normalizeAspectRatio, normalizeBackdropFilter, normalizeBackfaceVisibility, normalizeBackground, normalizeBackgroundBlendMode, normalizeBackgroundClip, normalizeBackgroundOrigin, normalizeBlockSize, normalizeBorder, normalizeBorderBlock, normalizeBorderBlockEnd, normalizeBorderBlockStart, normalizeBorderBottom, normalizeBorderBottomLeftRadius, normalizeBorderBottomRightRadius, normalizeBorderCollapse, normalizeBorderEndEndRadius, normalizeBorderEndStartRadius, normalizeBorderImage, normalizeBorderInlineEnd, normalizeBorderInlineStart, normalizeBorderLeft, normalizeBorderRadius, normalizeBorderRight, normalizeBorderStartEndRadius, normalizeBorderStartStartRadius, normalizeBorderStyle, normalizeBorderTop, normalizeBorderTopLeftRadius, normalizeBorderTopRightRadius, normalizeBorderWidth, normalizeBottom, normalizeBoxShadow, normalizeBoxSizing, normalizeBreakAfter, normalizeBreakBefore, normalizeBreakInside, normalizeCaptionSide, normalizeCaretColor, normalizeClear, normalizeClip, normalizeClipPath, normalizeColor, normalizeColorInterpolation, normalizeColorInterpolationFilters, normalizeColorScheme, normalizeColumnCount, normalizeColumnFill, normalizeColumnGap, normalizeColumnRule, normalizeColumnSpan, normalizeColumnWidth, normalizeContain, normalizeContainer, normalizeContainIntrinsicBlockSize, normalizeContainIntrinsicHeight, normalizeContainIntrinsicInlineSize, normalizeContainIntrinsicSize, normalizeContainIntrinsicWidth, normalizeContent, normalizeContentVisibility, normalizeCounterIncrement, normalizeCounterReset, normalizeCounterSet, normalizeCursor, normalizeCx, normalizeCy, normalizeD, normalizeDirection, normalizeDisplay, normalizeDominantBaseline, normalizeEmptyCells, normalizeFieldSizing, normalizeFill, normalizeFillOpacity, normalizeFillRule, normalizeFilter, normalizeFlex, normalizeFlexBasis, normalizeFlexDirection, normalizeFlexGrow, normalizeFlexShrink, normalizeFlexWrap, normalizeFloat, normalizeFloodColor, normalizeFloodOpacity, normalizeFont, normalizeFontFeatureSettings, normalizeFontKerning, normalizeFontLanguageOverride, normalizeFontOpticalSizing, normalizeFontPalette, normalizeFontSizeAdjust, normalizeFontSynthesisSmallCaps, normalizeFontSynthesisStyle, normalizeFontSynthesisWeight, normalizeFontVariantAlternates, normalizeFontVariantCaps, normalizeFontVariantEastAsian, normalizeFontVariantLigatures, normalizeFontVariantNumeric, normalizeFontVariantPosition, normalizeFontVariationSettings, normalizeForcedColorAdjust, normalizeGap, normalizeGridAutoColumns, normalizeGridAutoFlow, normalizeGridAutoRows, normalizeGridColumn, normalizeGridRow, normalizeGridTemplate, normalizeGridTemplateAreas, normalizeHeight, normalizeHyphenateCharacter, normalizeHyphens, normalizeImageOrientation, normalizeImageRendering, normalizeInlineSize, normalizeInset, normalizeInsetBlock, normalizeInsetInline, normalizeIsolation, normalizeJustifyContent, normalizeJustifyItems, normalizeJustifySelf, normalizeLeft, normalizeLetterSpacing, normalizeLightingColor, normalizeLineBreak, normalizeLineHeight, normalizeListStyle, normalizeMargin, normalizeMarginBlock, normalizeMarginInline, normalizeMask, normalizeMaskClip, normalizeMathStyle, normalizeMaxBlockSize, normalizeMaxHeight, normalizeMaxInlineSize, normalizeMaxWidth, normalizeMinBlockSize, normalizeMinHeight, normalizeMinInlineSize, normalizeMinWidth, normalizeMixBlendMode, normalizeObjectFit, normalizeObjectPosition, normalizeOffset, normalizeOffsetAnchor, normalizeOpacity, normalizeOrder, normalizeOutline, normalizeOutlineOffset, normalizeOverflow, normalizeOverscrollBehavior, normalizeOverscrollBehaviorBlock, normalizeOverscrollBehaviorInline, normalizePadding, normalizePerspective, normalizePerspectiveOrigin, normalizePlaceContent, normalizePlaceItems, normalizePlaceSelf, normalizePointerEvents, normalizePosition, normalizeQuotes, normalizeResize, normalizeRight, normalizeRotate, normalizeTop, } from '../util';
 // Define a mapping of keys to their respective normalizer functions
 export const propertyMap = {
     accentColor: {
@@ -150,7 +150,7 @@ export const propertyMap = {
         normalize: normalizeBorderStartStartRadius,
     },
     borderTop: {
-        className: { dev: 'border-top', prod: 'bt' },
+        className: { dev: 'border-top', prod: 'bdt' },
         normalize: normalizeBorderTop,
     },
     borderTopLeftRadius: {
@@ -542,7 +542,7 @@ export const propertyMap = {
         normalize: normalizeLeft,
     },
     right: {
-        className: { dev: 'right', prod: 'rt' },
+        className: { dev: 'right', prod: 'r' },
         normalize: normalizeRight,
     },
     top: {
@@ -566,7 +566,7 @@ export const propertyMap = {
         normalize: normalizeLineHeight,
     },
     listStyle: {
-        className: { dev: 'list-style', prod: 'ls' },
+        className: { dev: 'list-style', prod: 'lst' },
         normalize: normalizeListStyle,
     },
     marginBlock: {
@@ -590,35 +590,35 @@ export const propertyMap = {
         normalize: normalizeMathStyle,
     },
     maxBlockSize: {
-        className: { dev: 'max-block-size', prod: 'mbs' },
+        className: { dev: 'max-block-size', prod: 'mxbs' },
         normalize: normalizeMaxBlockSize,
     },
     maxHeight: {
-        className: { dev: 'max-height', prod: 'mh' },
+        className: { dev: 'max-height', prod: 'mxh' },
         normalize: normalizeMaxHeight,
     },
     maxInlineSize: {
-        className: { dev: 'max-inline-size', prod: 'mis' },
+        className: { dev: 'max-inline-size', prod: 'mxis' },
         normalize: normalizeMaxInlineSize,
     },
     maxWidth: {
-        className: { dev: 'max-width', prod: 'mw' },
+        className: { dev: 'max-width', prod: 'mxw' },
         normalize: normalizeMaxWidth,
     },
     minBlockSize: {
-        className: { dev: 'min-block-size', prod: 'mbs' },
+        className: { dev: 'min-block-size', prod: 'mibs' },
         normalize: normalizeMinBlockSize,
     },
     minHeight: {
-        className: { dev: 'min-height', prod: 'mh' },
+        className: { dev: 'min-height', prod: 'mih' },
         normalize: normalizeMinHeight,
     },
     minInlineSize: {
-        className: { dev: 'min-inline-size', prod: 'mis' },
+        className: { dev: 'min-inline-size', prod: 'miis' },
         normalize: normalizeMinInlineSize,
     },
     minWidth: {
-        className: { dev: 'min-width', prod: 'mw' },
+        className: { dev: 'min-width', prod: 'miw' },
         normalize: normalizeMinWidth,
     },
     mixBlendMode: {
@@ -642,7 +642,7 @@ export const propertyMap = {
         normalize: normalizeOffset,
     },
     opacity: {
-        className: { dev: 'opacity', prod: 'op' },
+        className: { dev: 'opacity', prod: 'o' },
         normalize: normalizeOpacity,
     },
     order: {
@@ -674,7 +674,7 @@ export const propertyMap = {
         normalize: normalizeOverscrollBehaviorInline,
     },
     perspective: {
-        className: { dev: 'perspective', prod: 'p' },
+        className: { dev: 'perspective', prod: 'pp' },
         normalize: normalizePerspective,
     },
     perspectiveOrigin: {
@@ -708,5 +708,9 @@ export const propertyMap = {
     resize: {
         className: { dev: 'resize', prod: 'rs' },
         normalize: normalizeResize,
+    },
+    rotate: {
+        className: { dev: 'rotate', prod: 'rt' },
+        normalize: normalizeRotate,
     },
 };

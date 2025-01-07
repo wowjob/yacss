@@ -176,4 +176,5 @@ export type { TPosition } from './position';
 export type { TQuotes } from './quotes';
 export type { TResize } from './resize';
 export type { TRight } from './right';
+export type { TRotate } from './rotate';
 export type { TTop } from './top';

@@ -706,6 +706,10 @@
   --resize: none;
   resize: var(--resize);
 }
+.rotate {
+  --rotate: none;
+  rotate: var(--rotate);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1416,6 +1420,10 @@
 .tablet.resize {
   --t-resize: var(--resize);
   resize: var(--t-resize);
+}
+.tablet.rotate {
+  --t-rotate: var(--rotate);
+  rotate: var(--t-rotate);
 }
 
 }
@@ -2128,6 +2136,10 @@
 .desktop.resize {
   --d-resize: var(--t-resize);
   resize: var(--d-resize);
+}
+.desktop.rotate {
+  --d-rotate: var(--t-rotate);
+  rotate: var(--d-rotate);
 }
 
 }

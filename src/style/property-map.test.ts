@@ -9,6 +9,15 @@ describe('propertyMap', () => {
 
     const uniqueProdValues = new Set(prodValues)
 
+    if (prodValues.length !== uniqueProdValues.size) {
+      // Find duplicates
+      const duplicates = prodValues.filter(
+        (value, index, self) => self.indexOf(value) !== index
+      )
+
+      console.error('Duplicate prod values found:', [...new Set(duplicates)])
+    }
+
     expect(prodValues.length).toBe(uniqueProdValues.size)
   })
 })
