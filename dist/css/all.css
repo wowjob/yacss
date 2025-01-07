@@ -546,6 +546,14 @@
   --top: auto;
   top: var(--top);
 }
+.letter-spacing {
+  --letter-spacing: normal;
+  letter-spacing: var(--letter-spacing);
+}
+.lighting-color {
+  --lighting-color: white;
+  lighting-color: var(--lighting-color);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1096,6 +1104,14 @@
 .tablet.top {
   --t-top: var(--top);
   top: var(--t-top);
+}
+.tablet.letter-spacing {
+  --t-letter-spacing: var(--letter-spacing);
+  letter-spacing: var(--t-letter-spacing);
+}
+.tablet.lighting-color {
+  --t-lighting-color: var(--lighting-color);
+  lighting-color: var(--t-lighting-color);
 }
 
 }
@@ -1648,6 +1664,14 @@
 .desktop.top {
   --d-top: var(--t-top);
   top: var(--d-top);
+}
+.desktop.letter-spacing {
+  --d-letter-spacing: var(--t-letter-spacing);
+  letter-spacing: var(--d-letter-spacing);
+}
+.desktop.lighting-color {
+  --d-lighting-color: var(--t-lighting-color);
+  lighting-color: var(--d-lighting-color);
 }
 
 }

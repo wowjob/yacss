@@ -134,6 +134,8 @@ export {
   normalizeJustifyItems,
   normalizeJustifySelf,
   normalizeLeft,
+  normalizeLetterSpacing,
+  normalizeLightingColor,
   normalizeMargin,
   normalizePadding,
   normalizeRight,

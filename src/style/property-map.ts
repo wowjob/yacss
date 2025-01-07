@@ -131,6 +131,8 @@ import {
   normalizeJustifyItems,
   normalizeJustifySelf,
   normalizeLeft,
+  normalizeLetterSpacing,
+  normalizeLightingColor,
   normalizeMargin,
   normalizePadding,
   normalizeRight,
@@ -275,6 +277,8 @@ import type {
   TLeft,
   TRight,
   TTop,
+  TLetterSpacing,
+  TLightingColor,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -414,6 +418,8 @@ export type TCSSPropValue = Partial<{
   left: TLeft
   right: TRight
   top: TTop
+  letterSpacing: TLetterSpacing
+  lightingColor: TLightingColor
 
   margin: TMargin
   padding: TPadding
@@ -987,5 +993,13 @@ export const propertyMap: Record<
   top: {
     className: { dev: 'top', prod: 'tp' },
     normalize: normalizeTop,
+  },
+  letterSpacing: {
+    className: { dev: 'letter-spacing', prod: 'ls' },
+    normalize: normalizeLetterSpacing,
+  },
+  lightingColor: {
+    className: { dev: 'lighting-color', prod: 'lc' },
+    normalize: normalizeLightingColor,
   },
 } as const
