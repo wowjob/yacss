@@ -108,6 +108,7 @@ console.log(
       scrollTimeline: 'this is it',
       scrollTimelineAxis: 'block',
       scrollTimelineName: 'asd123',
+      scrollbarColor: 'red red',
     },
     className: 'yes-no',
   })

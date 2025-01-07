@@ -758,6 +758,10 @@
   --scroll-timeline-name: undefined;
   scroll-timeline-name: var(--scroll-timeline-name);
 }
+.scrollbar-color {
+  --scrollbar-color: undefined;
+  scrollbar-color: var(--scrollbar-color);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1520,6 +1524,10 @@
 .tablet.scroll-timeline-name {
   --t-scroll-timeline-name: var(--scroll-timeline-name);
   scroll-timeline-name: var(--t-scroll-timeline-name);
+}
+.tablet.scrollbar-color {
+  --t-scrollbar-color: var(--scrollbar-color);
+  scrollbar-color: var(--t-scrollbar-color);
 }
 
 }
@@ -2284,6 +2292,10 @@
 .desktop.scroll-timeline-name {
   --d-scroll-timeline-name: var(--t-scroll-timeline-name);
   scroll-timeline-name: var(--d-scroll-timeline-name);
+}
+.desktop.scrollbar-color {
+  --d-scrollbar-color: var(--t-scrollbar-color);
+  scrollbar-color: var(--d-scrollbar-color);
 }
 
 }
