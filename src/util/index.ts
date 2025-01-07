@@ -181,6 +181,7 @@ export {
   normalizeRubyAlign,
   normalizeRubyPosition,
   normalizeScale,
+  normalizeScrollBehavior,
   normalizeScrollMargin,
   normalizeScrollPadding,
   normalizeTop,
