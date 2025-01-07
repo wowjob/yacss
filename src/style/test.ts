@@ -52,6 +52,7 @@ console.log(
       },
       mathStyle: 'compact',
       maxBlockSize: 'fit-content',
+      maxHeight: 'fit-content',
     },
     className: 'yes-no',
   })
