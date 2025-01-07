@@ -136,6 +136,7 @@ export {
   normalizeLeft,
   normalizeLetterSpacing,
   normalizeLightingColor,
+  normalizeLineBreak,
   normalizeMargin,
   normalizePadding,
   normalizeRight,

@@ -34,6 +34,7 @@ console.log(
       top: 10,
       letterSpacing: 10,
       lightingColor: 'currentcolor',
+      lineBreak: 'anywhere',
     },
     className: 'yes-no',
   })
