@@ -60,6 +60,7 @@ console.log(
       minInlineSize: 'fit-content',
       minWidth: 'fit-content',
       mixBlendMode: 'color-dodge',
+      objectFit: 'cover',
     },
     className: 'yes-no',
   })
