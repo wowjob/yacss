@@ -183,4 +183,5 @@ export type { TScale } from './scale';
 export type { TScrollBehavior } from './scroll-behavior';
 export type { TScrollMargin } from './scroll-margin';
 export type { TScrollPadding } from './scroll-padding';
+export type { TScrollSnapAlign } from './scroll-snap-align';
 export type { TTop } from './top';

@@ -184,5 +184,6 @@ export {
   normalizeScrollBehavior,
   normalizeScrollMargin,
   normalizeScrollPadding,
+  normalizeScrollSnapAlign,
   normalizeTop,
 } from './style'

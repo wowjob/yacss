@@ -734,6 +734,10 @@
   --scroll-padding: 0;
   scroll-padding: var(--scroll-padding);
 }
+.scroll-snap-align {
+  --scroll-snap-align: none;
+  scroll-snap-align: var(--scroll-snap-align);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1472,6 +1476,10 @@
 .tablet.scroll-padding {
   --t-scroll-padding: var(--scroll-padding);
   scroll-padding: var(--t-scroll-padding);
+}
+.tablet.scroll-snap-align {
+  --t-scroll-snap-align: var(--scroll-snap-align);
+  scroll-snap-align: var(--t-scroll-snap-align);
 }
 
 }
@@ -2212,6 +2220,10 @@
 .desktop.scroll-padding {
   --d-scroll-padding: var(--t-scroll-padding);
   scroll-padding: var(--d-scroll-padding);
+}
+.desktop.scroll-snap-align {
+  --d-scroll-snap-align: var(--t-scroll-snap-align);
+  scroll-snap-align: var(--d-scroll-snap-align);
 }
 
 }
