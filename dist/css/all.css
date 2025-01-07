@@ -786,6 +786,10 @@
   --shape-rendering: auto;
   shape-rendering: var(--shape-rendering);
 }
+.stop-color {
+  --stop-color: black;
+  stop-color: var(--stop-color);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1576,6 +1580,10 @@
 .tablet.shape-rendering {
   --t-shape-rendering: var(--shape-rendering);
   shape-rendering: var(--t-shape-rendering);
+}
+.tablet.stop-color {
+  --t-stop-color: var(--stop-color);
+  stop-color: var(--t-stop-color);
 }
 
 }
@@ -2368,6 +2376,10 @@
 .desktop.shape-rendering {
   --d-shape-rendering: var(--t-shape-rendering);
   shape-rendering: var(--d-shape-rendering);
+}
+.desktop.stop-color {
+  --d-stop-color: var(--t-stop-color);
+  stop-color: var(--d-stop-color);
 }
 
 }

@@ -194,6 +194,7 @@ import {
   normalizeShapeMargin,
   normalizeShapeOutside,
   normalizeShapeRendering,
+  normalizeStopColor,
   normalizeTop,
 } from '../util'
 
@@ -395,6 +396,7 @@ import type {
   TShapeMargin,
   TShapeOutside,
   TShapeRendering,
+  TStopColor,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -596,6 +598,7 @@ export type TCSSPropValue = Partial<{
   shapeMargin: TShapeMargin
   shapeOutside: TShapeOutside
   shapeRendering: TShapeRendering
+  stopColor: TStopColor
 }>
 
 type TResponsive = {
@@ -1409,5 +1412,9 @@ export const propertyMap: Record<
   shapeRendering: {
     className: { dev: 'shape-rendering', prod: 'sr' },
     normalize: normalizeShapeRendering,
+  },
+  stopColor: {
+    className: { dev: 'stop-color', prod: 'stc' },
+    normalize: normalizeStopColor,
   },
 } as const

@@ -196,4 +196,5 @@ export type { TShapeImageThreshold } from './shape-image-threshold';
 export type { TShapeMargin } from './shape-margin';
 export type { TShapeOutside } from './shape-outside';
 export type { TShapeRendering } from './shape-rendering';
+export type { TStopColor } from './stop-color';
 export type { TTop } from './top';

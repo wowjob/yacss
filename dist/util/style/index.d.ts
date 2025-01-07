@@ -193,4 +193,5 @@ export { normalizeShapeImageThreshold } from './shape-image-threshold';
 export { normalizeShapeMargin } from './shape-margin';
 export { normalizeShapeOutside } from './shape-outside';
 export { normalizeShapeRendering } from './shape-rendering';
+export { normalizeStopColor } from './stop-color';
 export { normalizeTop } from './top';
