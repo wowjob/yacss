@@ -116,6 +116,7 @@ console.log(
       shapeOutside: 'border-box',
       shapeRendering: 'crispEdges',
       stopColor: 'red',
+      stopOpacity: 0.5,
     },
     className: 'yes-no',
   })
