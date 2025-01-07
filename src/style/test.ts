@@ -50,6 +50,7 @@ console.log(
         composite: 'add',
         origin: 'content',
       },
+      mathStyle: 'compact',
     },
     className: 'yes-no',
   })

@@ -582,6 +582,10 @@
   --mask-clip: border-box;
   mask-clip: var(--mask-clip);
 }
+.math-style {
+  --math-style: normal;
+  math-style: var(--math-style);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1168,6 +1172,10 @@
 .tablet.mask-clip {
   --t-mask-clip: var(--mask-clip);
   mask-clip: var(--t-mask-clip);
+}
+.tablet.math-style {
+  --t-math-style: var(--math-style);
+  math-style: var(--t-math-style);
 }
 
 }
@@ -1756,6 +1764,10 @@
 .desktop.mask-clip {
   --d-mask-clip: var(--t-mask-clip);
   mask-clip: var(--d-mask-clip);
+}
+.desktop.math-style {
+  --d-math-style: var(--t-math-style);
+  math-style: var(--d-math-style);
 }
 
 }

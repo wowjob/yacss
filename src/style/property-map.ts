@@ -141,6 +141,7 @@ import {
   normalizeMarginInline,
   normalizeMask,
   normalizeMaskClip,
+  normalizeMathStyle,
   normalizePadding,
   normalizeRight,
   normalizeTop,
@@ -293,6 +294,7 @@ import type {
   TMarginInline,
   TMaskClip,
   TMask,
+  TMathStyle,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -442,6 +444,7 @@ export type TCSSPropValue = Partial<{
   marginInline: TMarginInline
   mask: TMask
   maskClip: TMaskClip
+  mathStyle: TMathStyle
   padding: TPadding
 }>
 
@@ -1049,5 +1052,9 @@ export const propertyMap: Record<
   maskClip: {
     className: { dev: 'mask-clip', prod: 'mc' },
     normalize: normalizeMaskClip,
+  },
+  mathStyle: {
+    className: { dev: 'math-style', prod: 'ms' },
+    normalize: normalizeMathStyle,
   },
 } as const
