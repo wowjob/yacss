@@ -87,6 +87,7 @@ console.log(
       placeSelf: 'anchor-center',
       pointerEvents: 'bounding-box',
       position: 'fixed',
+      quotes: 'none',
     },
     className: 'yes-no',
   })
