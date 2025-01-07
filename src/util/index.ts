@@ -158,6 +158,7 @@ export {
   normalizeObjectPosition,
   normalizeOffset,
   normalizeOffsetAnchor,
+  normalizeOpacity,
   normalizePadding,
   normalizeRight,
   normalizeTop,

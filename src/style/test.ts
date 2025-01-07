@@ -68,6 +68,7 @@ console.log(
         path: 'border-box',
         rotate: 'auto',
       },
+      opacity: 0.5,
     },
     className: 'yes-no',
   })

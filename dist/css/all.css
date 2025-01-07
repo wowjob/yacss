@@ -638,6 +638,10 @@
   --offset: undefined;
   offset: var(--offset);
 }
+.opacity {
+  --opacity: 1;
+  opacity: var(--opacity);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1280,6 +1284,10 @@
 .tablet.offset {
   --t-offset: var(--offset);
   offset: var(--t-offset);
+}
+.tablet.opacity {
+  --t-opacity: var(--opacity);
+  opacity: var(--t-opacity);
 }
 
 }
@@ -1924,6 +1932,10 @@
 .desktop.offset {
   --d-offset: var(--t-offset);
   offset: var(--d-offset);
+}
+.desktop.opacity {
+  --d-opacity: var(--t-opacity);
+  opacity: var(--d-opacity);
 }
 
 }
