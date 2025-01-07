@@ -178,5 +178,6 @@ export {
   normalizeResize,
   normalizeRight,
   normalizeRotate,
+  normalizeRubyAlign,
   normalizeTop,
 } from './style'

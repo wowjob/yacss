@@ -177,4 +177,5 @@ export type { TQuotes } from './quotes';
 export type { TResize } from './resize';
 export type { TRight } from './right';
 export type { TRotate } from './rotate';
+export type { TRubyAlign } from './ruby-align';
 export type { TTop } from './top';

@@ -710,6 +710,10 @@
   --rotate: none;
   rotate: var(--rotate);
 }
+.ruby-align {
+  --ruby-align: space-around;
+  ruby-align: var(--ruby-align);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1424,6 +1428,10 @@
 .tablet.rotate {
   --t-rotate: var(--rotate);
   rotate: var(--t-rotate);
+}
+.tablet.ruby-align {
+  --t-ruby-align: var(--ruby-align);
+  ruby-align: var(--t-ruby-align);
 }
 
 }
@@ -2140,6 +2148,10 @@
 .desktop.rotate {
   --d-rotate: var(--t-rotate);
   rotate: var(--d-rotate);
+}
+.desktop.ruby-align {
+  --d-ruby-align: var(--t-ruby-align);
+  ruby-align: var(--d-ruby-align);
 }
 
 }
