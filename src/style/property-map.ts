@@ -178,6 +178,7 @@ import {
   normalizeRubyAlign,
   normalizeRubyPosition,
   normalizeScale,
+  normalizeScrollbarColor,
   normalizeScrollBehavior,
   normalizeScrollMargin,
   normalizeScrollPadding,
@@ -381,6 +382,7 @@ import type {
   TScrollTimeline,
   TScrollTimelineAxis,
   TScrollTimelineName,
+  TScrollbarColor,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -575,6 +577,7 @@ export type TCSSPropValue = Partial<{
   scrollTimeline: TScrollTimeline
   scrollTimelineAxis: TScrollTimelineAxis
   scrollTimelineName: TScrollTimelineName
+  scrollbarColor: TScrollbarColor
 }>
 
 type TResponsive = {
@@ -1322,7 +1325,7 @@ export const propertyMap: Record<
     normalize: normalizeRubyPosition,
   },
   scale: {
-    className: { dev: 'scale', prod: 'sc' },
+    className: { dev: 'scale', prod: 's' },
     normalize: normalizeScale,
   },
   scrollBehavior: {
@@ -1360,5 +1363,9 @@ export const propertyMap: Record<
   scrollTimelineName: {
     className: { dev: 'scroll-timeline-name', prod: 'stn' },
     normalize: normalizeScrollTimelineName,
+  },
+  scrollbarColor: {
+    className: { dev: 'scrollbar-color', prod: 'sc' },
+    normalize: normalizeScrollbarColor,
   },
 } as const

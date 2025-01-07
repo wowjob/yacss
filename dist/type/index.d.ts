@@ -189,4 +189,5 @@ export type { TScrollSnapType } from './scroll-snap-type';
 export type { TScrollTimeline } from './scroll-timeline';
 export type { TScrollTimelineAxis } from './scroll-timeline-axis';
 export type { TScrollTimelineName } from './scroll-timeline-name';
+export type { TScrollbarColor } from './scrollbar-color';
 export type { TTop } from './top';
