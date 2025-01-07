@@ -33,6 +33,7 @@ console.log(
       right: 20,
       top: 10,
       letterSpacing: 10,
+      lightingColor: 'currentcolor',
     },
     className: 'yes-no',
   })
