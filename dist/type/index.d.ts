@@ -191,4 +191,5 @@ export type { TScrollTimelineAxis } from './scroll-timeline-axis';
 export type { TScrollTimelineName } from './scroll-timeline-name';
 export type { TScrollbarColor } from './scrollbar-color';
 export type { TScrollbarGutter } from './scrollbar-gutter';
+export type { TScrollbarWidth } from './scrollbar-width';
 export type { TTop } from './top';

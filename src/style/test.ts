@@ -110,6 +110,7 @@ console.log(
       scrollTimelineName: 'asd123',
       scrollbarColor: 'red red',
       scrollbarGutter: 'revert-layer',
+      scrollbarWidth: 'thin',
     },
     className: 'yes-no',
   })

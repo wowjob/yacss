@@ -192,5 +192,6 @@ export {
   normalizeScrollTimelineName,
   normalizeScrollbarColor,
   normalizeScrollbarGutter,
+  normalizeScrollbarWidth,
   normalizeTop,
 } from './style'
