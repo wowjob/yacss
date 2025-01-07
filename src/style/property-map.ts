@@ -142,6 +142,7 @@ import {
   normalizeMask,
   normalizeMaskClip,
   normalizeMathStyle,
+  normalizeMaxBlockSize,
   normalizePadding,
   normalizeRight,
   normalizeTop,
@@ -295,6 +296,7 @@ import type {
   TMaskClip,
   TMask,
   TMathStyle,
+  TMaxBlockSize,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -445,6 +447,7 @@ export type TCSSPropValue = Partial<{
   mask: TMask
   maskClip: TMaskClip
   mathStyle: TMathStyle
+  maxBlockSize: TMaxBlockSize
   padding: TPadding
 }>
 
@@ -1056,5 +1059,9 @@ export const propertyMap: Record<
   mathStyle: {
     className: { dev: 'math-style', prod: 'ms' },
     normalize: normalizeMathStyle,
+  },
+  maxBlockSize: {
+    className: { dev: 'max-block-size', prod: 'mbs' },
+    normalize: normalizeMaxBlockSize,
   },
 } as const

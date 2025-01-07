@@ -51,6 +51,7 @@ console.log(
         origin: 'content',
       },
       mathStyle: 'compact',
+      maxBlockSize: 'fit-content',
     },
     className: 'yes-no',
   })

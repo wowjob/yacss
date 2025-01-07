@@ -586,6 +586,10 @@
   --math-style: normal;
   math-style: var(--math-style);
 }
+.max-block-size {
+  --max-block-size: none;
+  max-block-size: var(--max-block-size);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1176,6 +1180,10 @@
 .tablet.math-style {
   --t-math-style: var(--math-style);
   math-style: var(--t-math-style);
+}
+.tablet.max-block-size {
+  --t-max-block-size: var(--max-block-size);
+  max-block-size: var(--t-max-block-size);
 }
 
 }
@@ -1768,6 +1776,10 @@
 .desktop.math-style {
   --d-math-style: var(--t-math-style);
   math-style: var(--d-math-style);
+}
+.desktop.max-block-size {
+  --d-max-block-size: var(--t-max-block-size);
+  max-block-size: var(--d-max-block-size);
 }
 
 }

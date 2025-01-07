@@ -141,6 +141,7 @@ export { normalizeMarginInline } from './margin-inline';
 export { normalizeMask } from './mask';
 export { normalizeMaskClip } from './mask-clip';
 export { normalizeMathStyle } from './math-style';
+export { normalizeMaxBlockSize } from './max-block-size';
 export { normalizePadding } from './padding';
 export { normalizeRight } from './right';
 export { normalizeTop } from './top';
