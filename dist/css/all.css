@@ -778,6 +778,10 @@
   --shape-margin: 0;
   shape-margin: var(--shape-margin);
 }
+.shape-outside {
+  --shape-outside: none;
+  shape-outside: var(--shape-outside);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1560,6 +1564,10 @@
 .tablet.shape-margin {
   --t-shape-margin: var(--shape-margin);
   shape-margin: var(--t-shape-margin);
+}
+.tablet.shape-outside {
+  --t-shape-outside: var(--shape-outside);
+  shape-outside: var(--t-shape-outside);
 }
 
 }
@@ -2344,6 +2352,10 @@
 .desktop.shape-margin {
   --d-shape-margin: var(--t-shape-margin);
   shape-margin: var(--d-shape-margin);
+}
+.desktop.shape-outside {
+  --d-shape-outside: var(--t-shape-outside);
+  shape-outside: var(--d-shape-outside);
 }
 
 }
