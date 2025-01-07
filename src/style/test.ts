@@ -114,6 +114,7 @@ console.log(
       shapeImageThreshold: 'revert-layer',
       shapeMargin: 20,
       shapeOutside: 'border-box',
+      shapeRendering: 'crispEdges',
     },
     className: 'yes-no',
   })
