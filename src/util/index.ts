@@ -188,5 +188,6 @@ export {
   normalizeScrollSnapStop,
   normalizeScrollSnapType,
   normalizeScrollTimeline,
+  normalizeScrollTimelineAxis,
   normalizeTop,
 } from './style'
