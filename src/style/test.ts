@@ -41,6 +41,7 @@ console.log(
         position: 'outside',
         type: 'circle',
       },
+      marginBlock: { start: 24, end: 48 },
     },
     className: 'yes-no',
   })
