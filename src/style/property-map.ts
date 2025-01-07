@@ -160,6 +160,7 @@ import {
   normalizeOutline,
   normalizeOutlineOffset,
   normalizeOverflow,
+  normalizeOverscrollBehavior,
   normalizePadding,
   normalizeRight,
   normalizeTop,
@@ -331,6 +332,7 @@ import type {
   TOutlineOffset,
   TOutline,
   TOverflow,
+  TOverscrollBehavior,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -499,6 +501,7 @@ export type TCSSPropValue = Partial<{
   outline: TOutline
   outlineOffset: TOutlineOffset
   overflow: TOverflow
+  overscrollBehavior: TOverscrollBehavior
   padding: TPadding
 }>
 
@@ -1182,5 +1185,9 @@ export const propertyMap: Record<
   overflow: {
     className: { dev: 'overflow', prod: 'ov' },
     normalize: normalizeOverflow,
+  },
+  overscrollBehavior: {
+    className: { dev: 'overscroll-behavior', prod: 'osb' },
+    normalize: normalizeOverscrollBehavior,
   },
 } as const

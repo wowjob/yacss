@@ -1,6 +1,6 @@
 import type { TOverflow } from '../../type'
 
-export const normalizeOverflow = (value: TOverflow) => {
+export const normalizeOverflow = (value: TOverflow): string => {
   if (!value) {
     return 'visible' // Default value
   }
@@ -14,5 +14,5 @@ export const normalizeOverflow = (value: TOverflow) => {
     return x === y ? x : `${x} ${y}`
   }
 
-  return value
+  return String(value)
 }

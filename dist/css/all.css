@@ -658,6 +658,10 @@
   --overflow: visible;
   overflow: var(--overflow);
 }
+.overscroll-behavior {
+  --overscroll-behavior: undefined;
+  overscroll-behavior: var(--overscroll-behavior);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1320,6 +1324,10 @@
 .tablet.overflow {
   --t-overflow: var(--overflow);
   overflow: var(--t-overflow);
+}
+.tablet.overscroll-behavior {
+  --t-overscroll-behavior: var(--overscroll-behavior);
+  overscroll-behavior: var(--t-overscroll-behavior);
 }
 
 }
@@ -1984,6 +1992,10 @@
 .desktop.overflow {
   --d-overflow: var(--t-overflow);
   overflow: var(--d-overflow);
+}
+.desktop.overscroll-behavior {
+  --d-overscroll-behavior: var(--t-overscroll-behavior);
+  overscroll-behavior: var(--d-overscroll-behavior);
 }
 
 }

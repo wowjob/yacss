@@ -162,6 +162,7 @@ export type { TOrder } from './order';
 export type { TOutline } from './outline';
 export type { TOutlineOffset } from './outline-offset';
 export type { TOverflow } from './overflow';
+export type { TOverscrollBehavior } from './overscroll-behavior';
 export type { TPadding } from './padding';
 export type { TRight } from './right';
 export type { TTop } from './top';

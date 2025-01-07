@@ -163,6 +163,7 @@ export {
   normalizeOutline,
   normalizeOutlineOffset,
   normalizeOverflow,
+  normalizeOverscrollBehavior,
   normalizePadding,
   normalizeRight,
   normalizeTop,

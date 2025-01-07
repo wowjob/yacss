@@ -77,6 +77,7 @@ console.log(
         width: 20,
       },
       overflow: 'clip',
+      overscrollBehavior: 'contain',
     },
     className: 'yes-no',
   })

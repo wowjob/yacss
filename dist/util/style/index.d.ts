@@ -159,6 +159,7 @@ export { normalizeOrder } from './order';
 export { normalizeOutline } from './outline';
 export { normalizeOutlineOffset } from './outline-offset';
 export { normalizeOverflow } from './overflow';
+export { normalizeOverscrollBehavior } from './overscroll-behavior';
 export { normalizePadding } from './padding';
 export { normalizeRight } from './right';
 export { normalizeTop } from './top';
