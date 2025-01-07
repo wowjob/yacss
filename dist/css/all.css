@@ -642,6 +642,10 @@
   --opacity: 1;
   opacity: var(--opacity);
 }
+.order {
+  --order: 0;
+  order: var(--order);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1288,6 +1292,10 @@
 .tablet.opacity {
   --t-opacity: var(--opacity);
   opacity: var(--t-opacity);
+}
+.tablet.order {
+  --t-order: var(--order);
+  order: var(--t-order);
 }
 
 }
@@ -1936,6 +1944,10 @@
 .desktop.opacity {
   --d-opacity: var(--t-opacity);
   opacity: var(--d-opacity);
+}
+.desktop.order {
+  --d-order: var(--t-order);
+  order: var(--d-order);
 }
 
 }

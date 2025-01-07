@@ -69,6 +69,7 @@ console.log(
         rotate: 'auto',
       },
       opacity: 0.5,
+      order: 2,
     },
     className: 'yes-no',
   })

@@ -156,6 +156,7 @@ import {
   normalizeOffset,
   normalizeOffsetAnchor,
   normalizeOpacity,
+  normalizeOrder,
   normalizePadding,
   normalizeRight,
   normalizeTop,
@@ -323,6 +324,7 @@ import type {
   TOffsetAnchor,
   TOffset,
   TOpacity,
+  TOrder,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -487,6 +489,7 @@ export type TCSSPropValue = Partial<{
   offset: TOffset
   offsetAnchor: TOffsetAnchor
   opacity: TOpacity
+  order: TOrder
   padding: TPadding
 }>
 
@@ -1154,5 +1157,9 @@ export const propertyMap: Record<
   opacity: {
     className: { dev: 'opacity', prod: 'op' },
     normalize: normalizeOpacity,
+  },
+  order: {
+    className: { dev: 'order', prod: 'or' },
+    normalize: normalizeOrder,
   },
 } as const

@@ -155,6 +155,7 @@ export { normalizeObjectPosition } from './object-position';
 export { normalizeOffset } from './offset';
 export { normalizeOffsetAnchor } from './offset-anchor';
 export { normalizeOpacity } from './opacity';
+export { normalizeOrder } from './order';
 export { normalizePadding } from './padding';
 export { normalizeRight } from './right';
 export { normalizeTop } from './top';
