@@ -646,6 +646,10 @@
   --order: 0;
   order: var(--order);
 }
+.outline {
+  --outline: invert;
+  outline: var(--outline);
+}
 .outline-offset {
   --outline-offset: 0;
   outline-offset: var(--outline-offset);
@@ -1300,6 +1304,10 @@
 .tablet.order {
   --t-order: var(--order);
   order: var(--t-order);
+}
+.tablet.outline {
+  --t-outline: var(--outline);
+  outline: var(--t-outline);
 }
 .tablet.outline-offset {
   --t-outline-offset: var(--outline-offset);
@@ -1956,6 +1964,10 @@
 .desktop.order {
   --d-order: var(--t-order);
   order: var(--d-order);
+}
+.desktop.outline {
+  --d-outline: var(--t-outline);
+  outline: var(--d-outline);
 }
 .desktop.outline-offset {
   --d-outline-offset: var(--t-outline-offset);
