@@ -158,6 +158,7 @@ export type { TObjectPosition } from './object-position';
 export type { TOffsetAnchor } from './offset-anchor';
 export type { TOffset } from './offset';
 export type { TOpacity } from './opacity';
+export type { TOrder } from './order';
 export type { TPadding } from './padding';
 export type { TRight } from './right';
 export type { TTop } from './top';
