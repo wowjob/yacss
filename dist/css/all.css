@@ -702,6 +702,10 @@
   --quotes: auto;
   quotes: var(--quotes);
 }
+.resize {
+  --resize: none;
+  resize: var(--resize);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1408,6 +1412,10 @@
 .tablet.quotes {
   --t-quotes: var(--quotes);
   quotes: var(--t-quotes);
+}
+.tablet.resize {
+  --t-resize: var(--resize);
+  resize: var(--t-resize);
 }
 
 }
@@ -2116,6 +2124,10 @@
 .desktop.quotes {
   --d-quotes: var(--t-quotes);
   quotes: var(--d-quotes);
+}
+.desktop.resize {
+  --d-resize: var(--t-resize);
+  resize: var(--d-resize);
 }
 
 }

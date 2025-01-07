@@ -88,6 +88,7 @@ console.log(
       pointerEvents: 'bounding-box',
       position: 'fixed',
       quotes: 'none',
+      resize: 'block',
     },
     className: 'yes-no',
   })

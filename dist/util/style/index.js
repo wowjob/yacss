@@ -171,5 +171,6 @@ export { normalizePlaceSelf } from './place-self';
 export { normalizePointerEvents } from './pointer-events';
 export { normalizePosition } from './position';
 export { normalizeQuotes } from './quotes';
+export { normalizeResize } from './resize';
 export { normalizeRight } from './right';
 export { normalizeTop } from './top';

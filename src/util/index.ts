@@ -175,6 +175,7 @@ export {
   normalizePointerEvents,
   normalizePosition,
   normalizeQuotes,
+  normalizeResize,
   normalizeRight,
   normalizeTop,
 } from './style'

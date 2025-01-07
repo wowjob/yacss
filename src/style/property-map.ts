@@ -172,6 +172,7 @@ import {
   normalizePointerEvents,
   normalizePosition,
   normalizeQuotes,
+  normalizeResize,
   normalizeRight,
   normalizeTop,
 } from '../util'
@@ -353,6 +354,7 @@ import type {
   TPointerEvents,
   TPosition,
   TQuotes,
+  TResize,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -533,6 +535,7 @@ export type TCSSPropValue = Partial<{
   pointerEvents: TPointerEvents
   position: TPosition
   quotes: TQuotes
+  resize: TResize
 }>
 
 type TResponsive = {
@@ -1259,5 +1262,9 @@ export const propertyMap: Record<
   quotes: {
     className: { dev: 'quotes', prod: 'q' },
     normalize: normalizeQuotes,
+  },
+  resize: {
+    className: { dev: 'resize', prod: 'rs' },
+    normalize: normalizeResize,
   },
 } as const
