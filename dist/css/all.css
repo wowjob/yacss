@@ -878,6 +878,10 @@
   --text-rendering: auto;
   text-rendering: var(--text-rendering);
 }
+.text-shadow {
+  --text-shadow: none;
+  text-shadow: var(--text-shadow);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1760,6 +1764,10 @@
 .tablet.text-rendering {
   --t-text-rendering: var(--text-rendering);
   text-rendering: var(--t-text-rendering);
+}
+.tablet.text-shadow {
+  --t-text-shadow: var(--text-shadow);
+  text-shadow: var(--t-text-shadow);
 }
 
 }
@@ -2644,6 +2652,10 @@
 .desktop.text-rendering {
   --d-text-rendering: var(--t-text-rendering);
   text-rendering: var(--d-text-rendering);
+}
+.desktop.text-shadow {
+  --d-text-shadow: var(--t-text-shadow);
+  text-shadow: var(--d-text-shadow);
 }
 
 }

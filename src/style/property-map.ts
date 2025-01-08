@@ -217,6 +217,7 @@ import {
   normalizeTextOrientation,
   normalizeTextOverflow,
   normalizeTextRendering,
+  normalizeTextShadow,
   normalizeTop,
 } from '../util'
 
@@ -441,6 +442,7 @@ import type {
   TTextOrientation,
   TTextOverflow,
   TTextRendering,
+  TTextShadow,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -665,6 +667,7 @@ export type TCSSPropValue = Partial<{
   textOrientation: TTextOrientation
   textOverflow: TTextOverflow
   textRendering: TTextRendering
+  textShadow: TTextShadow
 }>
 
 type TResponsive = {
@@ -1520,7 +1523,7 @@ export const propertyMap: Record<
     normalize: normalizeStrokeWidth,
   },
   tabSize: {
-    className: { dev: 'tab-size', prod: 'ts' },
+    className: { dev: 'tab-size', prod: 'txs' },
     normalize: normalizeTabSize,
   },
   tableLayout: {
@@ -1570,5 +1573,9 @@ export const propertyMap: Record<
   textRendering: {
     className: { dev: 'text-rendering', prod: 'tr' },
     normalize: normalizeTextRendering,
+  },
+  textShadow: {
+    className: { dev: 'text-shadow', prod: 'tsh' },
+    normalize: normalizeTextShadow,
   },
 } as const
