@@ -123,6 +123,7 @@ console.log(
       strokeLinecap: 'butt',
       strokeLinejoin: 'bevel',
       strokeMiterlimit: 2.312,
+      strokeOpacity: 22,
     },
     className: 'yes-no',
   })
