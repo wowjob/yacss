@@ -242,3 +242,4 @@ export type { TWhiteSpace } from './white-space';
 export type { TWidth } from './width';
 export type { TWillChange } from './will-change';
 export type { TWordBreak } from './word-break';
+export type { TWordSpacing } from './word-spacing';

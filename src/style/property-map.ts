@@ -240,6 +240,7 @@ import {
   normalizeWidth,
   normalizeWillChange,
   normalizeWordBreak,
+  normalizeWordSpacing,
 } from '../util'
 
 import type {
@@ -485,6 +486,7 @@ import type {
   TWidth,
   TWillChange,
   TWordBreak,
+  TWordSpacing,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -731,6 +733,7 @@ export type TCSSPropValue = Partial<{
   width: TWidth
   willChange: TWillChange
   wordBreak: TWordBreak
+  wordSpacing: TWordSpacing
 }>
 
 type TResponsive = {
@@ -1724,5 +1727,9 @@ export const propertyMap: Record<
   wordBreak: {
     className: { dev: 'word-break', prod: 'wb' },
     normalize: normalizeWordBreak,
+  },
+  wordSpacing: {
+    className: { dev: 'word-spacing', prod: 'wsp' },
+    normalize: normalizeWordSpacing,
   },
 } as const

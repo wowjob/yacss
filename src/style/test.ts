@@ -24,6 +24,7 @@ console.log(
       width: '24px',
       willChange: 'scroll-position',
       wordBreak: 'break-word',
+      wordSpacing: 1,
     },
     className: 'yes-no',
   })
