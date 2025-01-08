@@ -240,4 +240,5 @@ export {
   normalizeVerticalAlign,
   normalizeVisibility,
   normalizeWhiteSpace,
+  normalizeWidth,
 } from './style'

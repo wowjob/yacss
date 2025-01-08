@@ -954,6 +954,10 @@
   --white-space: undefined;
   white-space: var(--white-space);
 }
+.width {
+  --width: auto;
+  width: var(--width);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1912,6 +1916,10 @@
 .tablet.white-space {
   --t-white-space: var(--white-space);
   white-space: var(--t-white-space);
+}
+.tablet.width {
+  --t-width: var(--width);
+  width: var(--t-width);
 }
 
 }
@@ -2872,6 +2880,10 @@
 .desktop.white-space {
   --d-white-space: var(--t-white-space);
   white-space: var(--d-white-space);
+}
+.desktop.width {
+  --d-width: var(--t-width);
+  width: var(--d-width);
 }
 
 }

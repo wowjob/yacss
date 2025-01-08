@@ -21,6 +21,7 @@ console.log(
       verticalAlign: 'middle',
       visibility: 'hidden',
       whiteSpace: 'preserve wrap',
+      width: '24px',
     },
     className: 'yes-no',
   })
