@@ -9,60 +9,102 @@ Website: https://wowjob.ai
 */
 /* CSS theme */
 .theme-brand {
-  --hue: 259;
-  --saturation: 77%;
+  --tch: 259;
+  --tcs: 77%;
+  background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
+  border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
+  color: white;
 }
 .theme-primary {
-  --hue: 225;
-  --saturation: 77%;
+  --tch: 225;
+  --tcs: 77%;
+  background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
+  border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
+  color: white;
 }
 .theme-secondary {
-  --hue: 318;
-  --saturation: 77%;
+  --tch: 318;
+  --tcs: 77%;
+  background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
+  border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
+  color: white;
 }
 .theme-tertiary {
-  --hue: 245;
-  --saturation: 86%;
+  --tch: 245;
+  --tcs: 86%;
+  background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
+  border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
+  color: white;
 }
 .theme-default {
-  --hue: 221;
-  --saturation: 13%;
+  --tch: 221;
+  --tcs: 13%;
+  background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
+  border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
+  color: white;
 }
 .theme-error {
-  --hue: 4;
-  --saturation: 86%;
+  --tch: 4;
+  --tcs: 86%;
+  background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
+  border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
+  color: white;
 }
 .theme-warning {
-  --hue: 34;
-  --saturation: 94%;
+  --tch: 34;
+  --tcs: 94%;
+  background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
+  border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
+  color: white;
 }
 .theme-success {
-  --hue: 152;
-  --saturation: 77%;
+  --tch: 152;
+  --tcs: 77%;
+  background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
+  border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
+  color: white;
 }
 .theme-info {
-  --hue: 200;
-  --saturation: 77%;
+  --tch: 200;
+  --tcs: 77%;
+  background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
+  border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
+  color: white;
 }
 .theme-light {
-  --hue: 0;
-  --saturation: 0%;
+  --tch: 0;
+  --tcs: 0%;
+  background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
+  border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
+  color: white;
 }
 .theme-dark {
-  --hue: 240;
-  --saturation: 15%;
+  --tch: 240;
+  --tcs: 15%;
+  background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
+  border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
+  color: white;
 }
 .theme-accent {
-  --hue: 50;
-  --saturation: 94%;
+  --tch: 50;
+  --tcs: 94%;
+  background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
+  border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
+  color: white;
 }
 .theme-muted {
-  --hue: 210;
-  --saturation: 10%;
+  --tch: 210;
+  --tcs: 10%;
+  background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
+  border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
+  color: white;
 }
 .theme-highlight {
-  --hue: 280;
-  --saturation: 80%;
+  --tch: 280;
+  --tcs: 80%;
+  background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
+  border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
+  color: white;
 }
 .theme-brand,
 .theme-primary,
@@ -78,8 +120,9 @@ Website: https://wowjob.ai
 .theme-accent,
 .theme-muted,
 .theme-highlight {
-  --lightness: 50%;
-  --alpha: 1;
+  --tcl: 50%;
+  --tbcl: 25%;
+  --tca: 1;
 }
 /* CSS Properties */
 .accent-color {

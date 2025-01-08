@@ -105,14 +105,18 @@ const keyValueMap = Object.entries(ThemeColorMap)
 export const themeHueSaturation = keyValueMap
   .map(
     ([key, { hue, saturation }]) => `.theme-${key} {
-  --hue: ${hue};
-  --saturation: ${saturation}%;
+  --tch: ${hue};
+  --tcs: ${saturation}%;
+  background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
+  border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
+  color: white;
 }`
   )
   .join('\n')
 export const themeLightnessAlpha = `${keyValueMap
   .map(([key]) => `.theme-${key}`)
   .join(',\n')} {
-  --lightness: 50%;
-  --alpha: 1;
+  --tcl: 50%;
+  --tbcl: 25%;
+  --tca: 1;
 }`
