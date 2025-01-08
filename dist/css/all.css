@@ -950,6 +950,10 @@
   --visibility: visible;
   visibility: var(--visibility);
 }
+.white-space {
+  --white-space: undefined;
+  white-space: var(--white-space);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1904,6 +1908,10 @@
 .tablet.visibility {
   --t-visibility: var(--visibility);
   visibility: var(--t-visibility);
+}
+.tablet.white-space {
+  --t-white-space: var(--white-space);
+  white-space: var(--t-white-space);
 }
 
 }
@@ -2860,6 +2868,10 @@
 .desktop.visibility {
   --d-visibility: var(--t-visibility);
   visibility: var(--d-visibility);
+}
+.desktop.white-space {
+  --d-white-space: var(--t-white-space);
+  white-space: var(--d-white-space);
 }
 
 }

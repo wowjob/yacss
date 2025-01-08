@@ -239,4 +239,5 @@ export {
   normalizeVectorEffect,
   normalizeVerticalAlign,
   normalizeVisibility,
+  normalizeWhiteSpace,
 } from './style'

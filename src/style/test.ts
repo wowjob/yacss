@@ -20,6 +20,7 @@ console.log(
       vectorEffect: 'fixed-position',
       verticalAlign: 'middle',
       visibility: 'hidden',
+      whiteSpace: 'preserve wrap',
     },
     className: 'yes-no',
   })
