@@ -894,6 +894,10 @@
   --text-underline-position: auto;
   text-underline-position: var(--text-underline-position);
 }
+.text-wrap {
+  --text-wrap: undefined;
+  text-wrap: var(--text-wrap);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1792,6 +1796,10 @@
 .tablet.text-underline-position {
   --t-text-underline-position: var(--text-underline-position);
   text-underline-position: var(--t-text-underline-position);
+}
+.tablet.text-wrap {
+  --t-text-wrap: var(--text-wrap);
+  text-wrap: var(--t-text-wrap);
 }
 
 }
@@ -2692,6 +2700,10 @@
 .desktop.text-underline-position {
   --d-text-underline-position: var(--t-text-underline-position);
   text-underline-position: var(--d-text-underline-position);
+}
+.desktop.text-wrap {
+  --d-text-wrap: var(--t-text-wrap);
+  text-wrap: var(--d-text-wrap);
 }
 
 }
