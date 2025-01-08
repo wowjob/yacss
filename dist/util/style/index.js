@@ -236,3 +236,4 @@ export { normalizeVectorEffect } from './vector-effect';
 export { normalizeVerticalAlign } from './vertical-align';
 export { normalizeVisibility } from './visibility';
 export { normalizeWhiteSpace } from './white-space';
+export { normalizeWidth } from './width';
