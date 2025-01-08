@@ -236,6 +236,7 @@ import {
   normalizeVectorEffect,
   normalizeVerticalAlign,
   normalizeVisibility,
+  normalizeWhiteSpace,
 } from '../util'
 
 import type {
@@ -477,6 +478,7 @@ import type {
   TVectorEffect,
   TVerticalAlign,
   TVisibility,
+  TWhiteSpace,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -719,6 +721,7 @@ export type TCSSPropValue = Partial<{
   vectorEffect: TVectorEffect
   verticalAlign: TVerticalAlign
   visibility: TVisibility
+  whiteSpace: TWhiteSpace
 }>
 
 type TResponsive = {
@@ -1696,5 +1699,9 @@ export const propertyMap: Record<
   visibility: {
     className: { dev: 'visibility', prod: 'vs' },
     normalize: normalizeVisibility,
+  },
+  whiteSpace: {
+    className: { dev: 'white-space', prod: 'ws' },
+    normalize: normalizeWhiteSpace,
   },
 } as const

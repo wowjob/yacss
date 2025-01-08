@@ -238,3 +238,4 @@ export type { TUserSelect } from './user-select';
 export type { TVectorEffect } from './vector-effect';
 export type { TVerticalAlign } from './vertical-align';
 export type { TVisibility } from './visibility';
+export type { TWhiteSpace } from './white-space';
