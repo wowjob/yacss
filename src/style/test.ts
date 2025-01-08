@@ -149,6 +149,7 @@ console.log(
       textRendering: 'geometricPrecision',
       textShadow: '5px 5px red',
       textTransform: 'capitalize',
+      textUnderlineOffset: 20,
     },
     className: 'yes-no',
   })

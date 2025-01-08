@@ -222,5 +222,6 @@ export {
   normalizeTextRendering,
   normalizeTextShadow,
   normalizeTextTransform,
+  normalizeTextUnderlineOffset,
   normalizeTop,
 } from './style'
