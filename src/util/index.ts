@@ -236,4 +236,5 @@ export {
   normalizeTransitionBehavior,
   normalizeTranslate,
   normalizeUserSelect,
+  normalizeVectorEffect,
 } from './style'

@@ -233,6 +233,7 @@ import {
   normalizeTransitionBehavior,
   normalizeTranslate,
   normalizeUserSelect,
+  normalizeVectorEffect,
 } from '../util'
 
 import type {
@@ -471,6 +472,7 @@ import type {
   TTransitionBehavior,
   TTranslate,
   TUserSelect,
+  TVectorEffect,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -710,6 +712,7 @@ export type TCSSPropValue = Partial<{
   transitionBehavior: TTransitionBehavior
   translate: TTranslate
   userSelect: TUserSelect
+  vectorEffect: TVectorEffect
 }>
 
 type TResponsive = {
@@ -1675,5 +1678,9 @@ export const propertyMap: Record<
   userSelect: {
     className: { dev: 'user-select', prod: 'us' },
     normalize: normalizeUserSelect,
+  },
+  vectorEffect: {
+    className: { dev: 'vector-effect', prod: 've' },
+    normalize: normalizeVectorEffect,
   },
 } as const

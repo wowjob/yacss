@@ -17,6 +17,7 @@ console.log(
       transitionBehavior: 'allow-discrete',
       translate: '50% 50%',
       userSelect: 'none',
+      vectorEffect: 'fixed-position',
     },
     className: 'yes-no',
   })
