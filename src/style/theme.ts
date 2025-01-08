@@ -114,5 +114,5 @@ export const themeLightnessAlpha = `${keyValueMap
   .map(([key]) => `.theme-${key}`)
   .join(',\n')} {
   --lightness: 50%;
-  --saturation: 1;
+  --alpha: 1;
 }`

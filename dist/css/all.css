@@ -79,7 +79,7 @@ Website: https://wowjob.ai
 .theme-muted,
 .theme-highlight {
   --lightness: 50%;
-  --saturation: 1;
+  --alpha: 1;
 }
 /* CSS Properties */
 .accent-color {
