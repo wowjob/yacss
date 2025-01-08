@@ -121,6 +121,7 @@ console.log(
       strokeDasharray: [20, 30],
       strokeDashoffset: '20px',
       strokeLinecap: 'butt',
+      strokeLinejoin: 'bevel',
     },
     className: 'yes-no',
   })
