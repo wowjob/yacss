@@ -494,6 +494,7 @@ import type {
   TZIndex,
   TZoom,
 } from '../type'
+import type { TThemeColor } from './theme'
 
 export type TEnv = 'dev' | 'prod'
 export type TCSSPropValue = Partial<{
@@ -755,6 +756,8 @@ type TResponsive = {
 export type TStyle = {
   className?: string
   env?: TEnv
+  theme?: TThemeColor
+  styleAsString?: boolean
 } & TResponsive
 
 // Define a mapping of keys to their respective normalizer functions
