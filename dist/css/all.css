@@ -914,6 +914,10 @@
   --transform-box: border-box;
   transform-box: var(--transform-box);
 }
+.transform-origin {
+  --transform-origin: 50% 50% 0;
+  transform-origin: var(--transform-origin);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1832,6 +1836,10 @@
 .tablet.transform-box {
   --t-transform-box: var(--transform-box);
   transform-box: var(--t-transform-box);
+}
+.tablet.transform-origin {
+  --t-transform-origin: var(--transform-origin);
+  transform-origin: var(--t-transform-origin);
 }
 
 }
@@ -2752,6 +2760,10 @@
 .desktop.transform-box {
   --d-transform-box: var(--t-transform-box);
   transform-box: var(--d-transform-box);
+}
+.desktop.transform-origin {
+  --d-transform-origin: var(--t-transform-origin);
+  transform-origin: var(--d-transform-origin);
 }
 
 }

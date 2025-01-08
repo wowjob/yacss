@@ -230,4 +230,5 @@ export {
   normalizeTouchAction,
   normalizeTransform,
   normalizeTransformBox,
+  normalizeTransformOrigin,
 } from './style'
