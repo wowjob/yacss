@@ -906,6 +906,10 @@
   --touch-action: auto;
   touch-action: var(--touch-action);
 }
+.transform {
+  --transform: none;
+  transform: var(--transform);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1816,6 +1820,10 @@
 .tablet.touch-action {
   --t-touch-action: var(--touch-action);
   touch-action: var(--t-touch-action);
+}
+.tablet.transform {
+  --t-transform: var(--transform);
+  transform: var(--t-transform);
 }
 
 }
@@ -2728,6 +2736,10 @@
 .desktop.touch-action {
   --d-touch-action: var(--t-touch-action);
   touch-action: var(--d-touch-action);
+}
+.desktop.transform {
+  --d-transform: var(--t-transform);
+  transform: var(--d-transform);
 }
 
 }
