@@ -206,5 +206,6 @@ export {
   normalizeStrokeLinejoin,
   normalizeStrokeMiterlimit,
   normalizeStrokeOpacity,
+  normalizeStrokeWidth,
   normalizeTop,
 } from './style'
