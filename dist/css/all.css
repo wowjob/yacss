@@ -830,6 +830,10 @@
   --tab-size: 8;
   tab-size: var(--tab-size);
 }
+.table-layout {
+  --table-layout: auto;
+  table-layout: var(--table-layout);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1664,6 +1668,10 @@
 .tablet.tab-size {
   --t-tab-size: var(--tab-size);
   tab-size: var(--t-tab-size);
+}
+.tablet.table-layout {
+  --t-table-layout: var(--table-layout);
+  table-layout: var(--t-table-layout);
 }
 
 }
@@ -2500,6 +2508,10 @@
 .desktop.tab-size {
   --d-tab-size: var(--t-tab-size);
   tab-size: var(--d-tab-size);
+}
+.desktop.table-layout {
+  --d-table-layout: var(--t-table-layout);
+  table-layout: var(--d-table-layout);
 }
 
 }

@@ -208,5 +208,6 @@ export {
   normalizeStrokeOpacity,
   normalizeStrokeWidth,
   normalizeTabSize,
+  normalizeTableLayout,
   normalizeTop,
 } from './style'

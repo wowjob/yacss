@@ -204,6 +204,7 @@ import {
   normalizeStrokeMiterlimit,
   normalizeStrokeOpacity,
   normalizeStrokeWidth,
+  normalizeTableLayout,
   normalizeTabSize,
   normalizeTop,
 } from '../util'
@@ -417,6 +418,7 @@ import type {
   TStrokeOpacity,
   TStrokeWidth,
   TTabSize,
+  TTableLayout,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -629,6 +631,7 @@ export type TCSSPropValue = Partial<{
   strokeOpacity: TStrokeOpacity
   strokeWidth: TStrokeWidth
   tabSize: TTabSize
+  tableLayout: TTableLayout
 }>
 
 type TResponsive = {
@@ -1486,5 +1489,9 @@ export const propertyMap: Record<
   tabSize: {
     className: { dev: 'tab-size', prod: 'ts' },
     normalize: normalizeTabSize,
+  },
+  tableLayout: {
+    className: { dev: 'table-layout', prod: 'tl' },
+    normalize: normalizeTableLayout,
   },
 } as const

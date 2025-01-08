@@ -126,6 +126,7 @@ console.log(
       strokeOpacity: 22,
       strokeWidth: 2,
       tabSize: 2,
+      tableLayout: 'fixed',
     },
     className: 'yes-no',
   })

@@ -204,4 +204,5 @@ export { normalizeStrokeMiterlimit } from './stroke-miterlimit';
 export { normalizeStrokeOpacity } from './stroke-opacity';
 export { normalizeStrokeWidth } from './stroke-width';
 export { normalizeTabSize } from './tab-size';
+export { normalizeTableLayout } from './table-layout';
 export { normalizeTop } from './top';
