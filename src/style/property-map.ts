@@ -215,6 +215,7 @@ import {
   normalizeTextIndent,
   normalizeTextJustify,
   normalizeTextOrientation,
+  normalizeTextOverflow,
   normalizeTop,
 } from '../util'
 
@@ -437,6 +438,7 @@ import type {
   TTextIndent,
   TTextJustify,
   TTextOrientation,
+  TTextOverflow,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -659,6 +661,7 @@ export type TCSSPropValue = Partial<{
   textIndent: TTextIndent
   textJustify: TTextJustify
   textOrientation: TTextOrientation
+  textOverflow: TTextOverflow
 }>
 
 type TResponsive = {
@@ -1556,5 +1559,9 @@ export const propertyMap: Record<
   textOrientation: {
     className: { dev: 'text-orientation', prod: 'to' },
     normalize: normalizeTextOrientation,
+  },
+  textOverflow: {
+    className: { dev: 'text-overflow', prod: 'tof' },
+    normalize: normalizeTextOverflow,
   },
 } as const
