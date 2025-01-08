@@ -207,6 +207,7 @@ import {
   normalizeTableLayout,
   normalizeTabSize,
   normalizeTextDecoration,
+  normalizeTextEmphasis,
   normalizeTop,
 } from '../util'
 
@@ -421,6 +422,7 @@ import type {
   TTabSize,
   TTableLayout,
   TTextDecoration,
+  TTextEmphasis,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -635,6 +637,7 @@ export type TCSSPropValue = Partial<{
   tabSize: TTabSize
   tableLayout: TTableLayout
   textDecoration: TTextDecoration
+  textEmphasis: TTextEmphasis
 }>
 
 type TResponsive = {
@@ -1500,5 +1503,9 @@ export const propertyMap: Record<
   textDecoration: {
     className: { dev: 'text-decoration', prod: 'td' },
     normalize: normalizeTextDecoration,
+  },
+  textEmphasis: {
+    className: { dev: 'text-emphasis', prod: 'te' },
+    normalize: normalizeTextEmphasis,
   },
 } as const

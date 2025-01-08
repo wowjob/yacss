@@ -838,6 +838,10 @@
   --text-decoration: undefined;
   text-decoration: var(--text-decoration);
 }
+.text-emphasis {
+  --text-emphasis: undefined;
+  text-emphasis: var(--text-emphasis);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1680,6 +1684,10 @@
 .tablet.text-decoration {
   --t-text-decoration: var(--text-decoration);
   text-decoration: var(--t-text-decoration);
+}
+.tablet.text-emphasis {
+  --t-text-emphasis: var(--text-emphasis);
+  text-emphasis: var(--t-text-emphasis);
 }
 
 }
@@ -2524,6 +2532,10 @@
 .desktop.text-decoration {
   --d-text-decoration: var(--t-text-decoration);
   text-decoration: var(--d-text-decoration);
+}
+.desktop.text-emphasis {
+  --d-text-emphasis: var(--t-text-emphasis);
+  text-emphasis: var(--d-text-emphasis);
 }
 
 }

@@ -210,5 +210,6 @@ export {
   normalizeTabSize,
   normalizeTableLayout,
   normalizeTextDecoration,
+  normalizeTextEmphasis,
   normalizeTop,
 } from './style'

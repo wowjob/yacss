@@ -133,6 +133,11 @@ console.log(
         style: 'dashed',
         thickness: 2,
       },
+      textEmphasis: {
+        color: 'blue',
+        position: 'left over',
+        style: 'double-circle',
+      },
     },
     className: 'yes-no',
   })
