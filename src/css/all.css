@@ -882,6 +882,10 @@
   --text-shadow: none;
   text-shadow: var(--text-shadow);
 }
+.text-transform {
+  --text-transform: none;
+  text-transform: var(--text-transform);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1768,6 +1772,10 @@
 .tablet.text-shadow {
   --t-text-shadow: var(--text-shadow);
   text-shadow: var(--t-text-shadow);
+}
+.tablet.text-transform {
+  --t-text-transform: var(--text-transform);
+  text-transform: var(--t-text-transform);
 }
 
 }
@@ -2656,6 +2664,10 @@
 .desktop.text-shadow {
   --d-text-shadow: var(--t-text-shadow);
   text-shadow: var(--d-text-shadow);
+}
+.desktop.text-transform {
+  --d-text-transform: var(--t-text-transform);
+  text-transform: var(--d-text-transform);
 }
 
 }
