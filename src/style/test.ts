@@ -144,6 +144,7 @@ console.log(
       textCombineUpright: 'all',
       textIndent: 22,
       textJustify: 'inter-character',
+      textOrientation: 'mixed',
     },
     className: 'yes-no',
   })

@@ -217,5 +217,6 @@ export {
   normalizeTextEmphasis,
   normalizeTextIndent,
   normalizeTextJustify,
+  normalizeTextOrientation,
   normalizeTop,
 } from './style'

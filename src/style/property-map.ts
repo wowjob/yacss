@@ -214,6 +214,7 @@ import {
   normalizeTextEmphasis,
   normalizeTextIndent,
   normalizeTextJustify,
+  normalizeTextOrientation,
   normalizeTop,
 } from '../util'
 
@@ -435,6 +436,7 @@ import type {
   TTextCombineUpright,
   TTextIndent,
   TTextJustify,
+  TTextOrientation,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -656,6 +658,7 @@ export type TCSSPropValue = Partial<{
   textEmphasis: TTextEmphasis
   textIndent: TTextIndent
   textJustify: TTextJustify
+  textOrientation: TTextOrientation
 }>
 
 type TResponsive = {
@@ -1549,5 +1552,9 @@ export const propertyMap: Record<
   textJustify: {
     className: { dev: 'text-justify', prod: 'tj' },
     normalize: normalizeTextJustify,
+  },
+  textOrientation: {
+    className: { dev: 'text-orientation', prod: 'to' },
+    normalize: normalizeTextOrientation,
   },
 } as const
