@@ -127,6 +127,12 @@ console.log(
       strokeWidth: 2,
       tabSize: 2,
       tableLayout: 'fixed',
+      textDecoration: {
+        color: 'red',
+        line: 'blink',
+        style: 'dashed',
+        thickness: 2,
+      },
     },
     className: 'yes-no',
   })

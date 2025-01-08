@@ -834,6 +834,10 @@
   --table-layout: auto;
   table-layout: var(--table-layout);
 }
+.text-decoration {
+  --text-decoration: undefined;
+  text-decoration: var(--text-decoration);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1672,6 +1676,10 @@
 .tablet.table-layout {
   --t-table-layout: var(--table-layout);
   table-layout: var(--t-table-layout);
+}
+.tablet.text-decoration {
+  --t-text-decoration: var(--text-decoration);
+  text-decoration: var(--t-text-decoration);
 }
 
 }
@@ -2512,6 +2520,10 @@
 .desktop.table-layout {
   --d-table-layout: var(--t-table-layout);
   table-layout: var(--d-table-layout);
+}
+.desktop.text-decoration {
+  --d-text-decoration: var(--t-text-decoration);
+  text-decoration: var(--d-text-decoration);
 }
 
 }
