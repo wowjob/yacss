@@ -57,3 +57,5 @@ export declare const ThemeColorMap: {
     };
 };
 export type TThemeColor = keyof typeof ThemeColorMap;
+export declare const themeHueSaturation: string;
+export declare const themeLightnessAlpha: string;

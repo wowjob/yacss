@@ -85,3 +85,16 @@ export const ThemeColorMap = {
     // - Special promotional banners or text
     highlight: { hue: 280, saturation: 80 }, // Electric purple
 };
+const keyValueMap = Object.entries(ThemeColorMap);
+export const themeHueSaturation = keyValueMap
+    .map(([key, { hue, saturation }]) => `.theme-${key} {
+  --hue: ${hue};
+  --saturation: ${saturation}%;
+}`)
+    .join('\n');
+export const themeLightnessAlpha = `${keyValueMap
+    .map(([key]) => `.theme-${key}`)
+    .join(',\n')} {
+  --lightness: 50%;
+  --alpha: 1;
+}`;
