@@ -142,6 +142,7 @@ console.log(
       textAlignLast: 'end',
       textAnchor: 'middle',
       textCombineUpright: 'all',
+      textIndent: 22,
     },
     className: 'yes-no',
   })
