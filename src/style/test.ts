@@ -15,6 +15,7 @@ console.log(
         timingFunction: 'easeIn',
       },
       transitionBehavior: 'allow-discrete',
+      translate: '50% 50%',
     },
     className: 'yes-no',
   })

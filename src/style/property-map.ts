@@ -231,6 +231,7 @@ import {
   normalizeTransformStyle,
   normalizeTransition,
   normalizeTransitionBehavior,
+  normalizeTranslate,
 } from '../util'
 
 import type {
@@ -467,6 +468,7 @@ import type {
   TTransformStyle,
   TTransition,
   TTransitionBehavior,
+  TTranslate,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -704,6 +706,7 @@ export type TCSSPropValue = Partial<{
   transformStyle: TTransformStyle
   transition: TTransition
   transitionBehavior: TTransitionBehavior
+  translate: TTranslate
 }>
 
 type TResponsive = {
@@ -1661,5 +1664,9 @@ export const propertyMap: Record<
   transitionBehavior: {
     className: { dev: 'transition-behavior', prod: 'tbe' },
     normalize: normalizeTransitionBehavior,
+  },
+  translate: {
+    className: { dev: 'translate', prod: 't' },
+    normalize: normalizeTranslate,
   },
 } as const
