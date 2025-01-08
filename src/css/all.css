@@ -902,6 +902,10 @@
   --text-wrap-style: normal;
   text-wrap-style: var(--text-wrap-style);
 }
+.touch-action {
+  --touch-action: auto;
+  touch-action: var(--touch-action);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1808,6 +1812,10 @@
 .tablet.text-wrap-style {
   --t-text-wrap-style: var(--text-wrap-style);
   text-wrap-style: var(--t-text-wrap-style);
+}
+.tablet.touch-action {
+  --t-touch-action: var(--touch-action);
+  touch-action: var(--t-touch-action);
 }
 
 }
@@ -2716,6 +2724,10 @@
 .desktop.text-wrap-style {
   --d-text-wrap-style: var(--t-text-wrap-style);
   text-wrap-style: var(--d-text-wrap-style);
+}
+.desktop.touch-action {
+  --d-touch-action: var(--t-touch-action);
+  touch-action: var(--d-touch-action);
 }
 
 }

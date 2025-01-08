@@ -224,6 +224,7 @@ import {
   normalizeTextWrap,
   normalizeTextWrapStyle,
   normalizeTop,
+  normalizeTouchAction,
 } from '../util'
 
 import type {
@@ -453,6 +454,7 @@ import type {
   TTextUnderlinePosition,
   TTextWrap,
   TTextWrapStyle,
+  TTouchAction,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -683,6 +685,7 @@ export type TCSSPropValue = Partial<{
   textUnderlinePosition: TTextUnderlinePosition
   textWrap: TTextWrap
   textWrapStyle: TTextWrapStyle
+  touchAction: TTouchAction
 }>
 
 type TResponsive = {
@@ -1612,5 +1615,9 @@ export const propertyMap: Record<
   textWrapStyle: {
     className: { dev: 'text-wrap-style', prod: 'tws' },
     normalize: normalizeTextWrapStyle,
+  },
+  touchAction: {
+    className: { dev: 'touch-action', prod: 'toa' },
+    normalize: normalizeTouchAction,
   },
 } as const
