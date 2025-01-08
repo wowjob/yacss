@@ -140,6 +140,7 @@ console.log(
       },
       textAlign: 'justify',
       textAlignLast: 'end',
+      textAnchor: 'middle',
     },
     className: 'yes-no',
   })

@@ -211,6 +211,7 @@ export {
   normalizeTableLayout,
   normalizeTextAlign,
   normalizeTextAlignLast,
+  normalizeTextAnchor,
   normalizeTextDecoration,
   normalizeTextEmphasis,
   normalizeTop,
