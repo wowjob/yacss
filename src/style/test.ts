@@ -23,6 +23,7 @@ console.log(
       whiteSpace: 'preserve wrap',
       width: '24px',
       willChange: 'scroll-position',
+      wordBreak: 'break-word',
     },
     className: 'yes-no',
   })
