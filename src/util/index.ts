@@ -203,5 +203,6 @@ export {
   normalizeStrokeDasharray,
   normalizeStrokeDashoffset,
   normalizeStrokeLinecap,
+  normalizeStrokeLinejoin,
   normalizeTop,
 } from './style'

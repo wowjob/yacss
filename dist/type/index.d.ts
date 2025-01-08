@@ -202,4 +202,5 @@ export type { TStroke } from './stroke';
 export type { TStrokeDasharray } from './stroke-dasharray';
 export type { TStrokeDashoffset } from './stroke-dashoffset';
 export type { TStrokeLinecap } from './stroke-linecap';
+export type { TStrokeLinejoin } from './stroke-linejoin';
 export type { TTop } from './top';

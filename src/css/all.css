@@ -810,6 +810,10 @@
   --stroke-linecap: butt;
   stroke-linecap: var(--stroke-linecap);
 }
+.stroke-linejoin {
+  --stroke-linejoin: miter;
+  stroke-linejoin: var(--stroke-linejoin);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1624,6 +1628,10 @@
 .tablet.stroke-linecap {
   --t-stroke-linecap: var(--stroke-linecap);
   stroke-linecap: var(--t-stroke-linecap);
+}
+.tablet.stroke-linejoin {
+  --t-stroke-linejoin: var(--stroke-linejoin);
+  stroke-linejoin: var(--t-stroke-linejoin);
 }
 
 }
@@ -2440,6 +2448,10 @@
 .desktop.stroke-linecap {
   --d-stroke-linecap: var(--t-stroke-linecap);
   stroke-linecap: var(--d-stroke-linecap);
+}
+.desktop.stroke-linejoin {
+  --d-stroke-linejoin: var(--t-stroke-linejoin);
+  stroke-linejoin: var(--d-stroke-linejoin);
 }
 
 }
