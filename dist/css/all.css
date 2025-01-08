@@ -818,6 +818,10 @@
   --stroke-miterlimit: 4;
   stroke-miterlimit: var(--stroke-miterlimit);
 }
+.stroke-opacity {
+  --stroke-opacity: 1;
+  stroke-opacity: var(--stroke-opacity);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1640,6 +1644,10 @@
 .tablet.stroke-miterlimit {
   --t-stroke-miterlimit: var(--stroke-miterlimit);
   stroke-miterlimit: var(--t-stroke-miterlimit);
+}
+.tablet.stroke-opacity {
+  --t-stroke-opacity: var(--stroke-opacity);
+  stroke-opacity: var(--t-stroke-opacity);
 }
 
 }
@@ -2464,6 +2472,10 @@
 .desktop.stroke-miterlimit {
   --d-stroke-miterlimit: var(--t-stroke-miterlimit);
   stroke-miterlimit: var(--d-stroke-miterlimit);
+}
+.desktop.stroke-opacity {
+  --d-stroke-opacity: var(--t-stroke-opacity);
+  stroke-opacity: var(--d-stroke-opacity);
 }
 
 }

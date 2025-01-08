@@ -204,4 +204,5 @@ export type { TStrokeDashoffset } from './stroke-dashoffset';
 export type { TStrokeLinecap } from './stroke-linecap';
 export type { TStrokeLinejoin } from './stroke-linejoin';
 export type { TStrokeMiterlimit } from './stroke-miterlimit';
+export type { TStrokeOpacity } from './stroke-opacity';
 export type { TTop } from './top';

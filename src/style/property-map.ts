@@ -202,6 +202,7 @@ import {
   normalizeStrokeLinecap,
   normalizeStrokeLinejoin,
   normalizeStrokeMiterlimit,
+  normalizeStrokeOpacity,
   normalizeTop,
 } from '../util'
 
@@ -411,6 +412,7 @@ import type {
   TStrokeLinecap,
   TStrokeLinejoin,
   TStrokeMiterlimit,
+  TStrokeOpacity,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -620,6 +622,7 @@ export type TCSSPropValue = Partial<{
   strokeLinecap: TStrokeLinecap
   strokeLinejoin: TStrokeLinejoin
   strokeMiterlimit: TStrokeMiterlimit
+  strokeOpacity: TStrokeOpacity
 }>
 
 type TResponsive = {
@@ -1465,5 +1468,9 @@ export const propertyMap: Record<
   strokeMiterlimit: {
     className: { dev: 'stroke-miterlimit', prod: 'sml' },
     normalize: normalizeStrokeMiterlimit,
+  },
+  strokeOpacity: {
+    className: { dev: 'stroke-opacity', prod: 'sop' },
+    normalize: normalizeStrokeOpacity,
   },
 } as const
