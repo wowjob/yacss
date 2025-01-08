@@ -918,6 +918,10 @@
   --transform-origin: 50% 50% 0;
   transform-origin: var(--transform-origin);
 }
+.transform-style {
+  --transform-style: flat;
+  transform-style: var(--transform-style);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1840,6 +1844,10 @@
 .tablet.transform-origin {
   --t-transform-origin: var(--transform-origin);
   transform-origin: var(--t-transform-origin);
+}
+.tablet.transform-style {
+  --t-transform-style: var(--transform-style);
+  transform-style: var(--t-transform-style);
 }
 
 }
@@ -2764,6 +2772,10 @@
 .desktop.transform-origin {
   --d-transform-origin: var(--t-transform-origin);
   transform-origin: var(--d-transform-origin);
+}
+.desktop.transform-style {
+  --d-transform-style: var(--t-transform-style);
+  transform-style: var(--d-transform-style);
 }
 
 }

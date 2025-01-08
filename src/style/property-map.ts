@@ -228,6 +228,7 @@ import {
   normalizeTransform,
   normalizeTransformBox,
   normalizeTransformOrigin,
+  normalizeTransformStyle,
 } from '../util'
 
 import type {
@@ -461,6 +462,7 @@ import type {
   TTransform,
   TTransformBox,
   TTransformOrigin,
+  TTransformStyle,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -695,6 +697,7 @@ export type TCSSPropValue = Partial<{
   transform: TTransform
   transformBox: TTransformBox
   transformOrigin: TTransformOrigin
+  transformStyle: TTransformStyle
 }>
 
 type TResponsive = {
@@ -1640,5 +1643,9 @@ export const propertyMap: Record<
   transformOrigin: {
     className: { dev: 'transform-origin', prod: 'tro' },
     normalize: normalizeTransformOrigin,
+  },
+  transformStyle: {
+    className: { dev: 'transform-style', prod: 'ts' },
+    normalize: normalizeTransformStyle,
   },
 } as const

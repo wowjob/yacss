@@ -227,3 +227,4 @@ export { normalizeTop } from './top';
 export { normalizeTransform } from './transform';
 export { normalizeTransformBox } from './transform-box';
 export { normalizeTransformOrigin } from './transform-origin';
+export { normalizeTransformStyle } from './transform-style';

@@ -230,3 +230,4 @@ export type { TTop } from './top';
 export type { TTransform } from './transform';
 export type { TTransformBox } from './transform-box';
 export type { TTransformOrigin } from './transform-origin';
+export type { TTransformStyle } from './transform-style';
