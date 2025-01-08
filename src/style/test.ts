@@ -118,6 +118,7 @@ console.log(
       stopColor: 'red',
       stopOpacity: 0.5,
       stroke: 'red',
+      strokeDasharray: [20, 30],
     },
     className: 'yes-no',
   })

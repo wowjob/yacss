@@ -798,6 +798,10 @@
   --stroke: none;
   stroke: var(--stroke);
 }
+.stroke-dasharray {
+  --stroke-dasharray: none;
+  stroke-dasharray: var(--stroke-dasharray);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1600,6 +1604,10 @@
 .tablet.stroke {
   --t-stroke: var(--stroke);
   stroke: var(--t-stroke);
+}
+.tablet.stroke-dasharray {
+  --t-stroke-dasharray: var(--stroke-dasharray);
+  stroke-dasharray: var(--t-stroke-dasharray);
 }
 
 }
@@ -2404,6 +2412,10 @@
 .desktop.stroke {
   --d-stroke: var(--t-stroke);
   stroke: var(--d-stroke);
+}
+.desktop.stroke-dasharray {
+  --d-stroke-dasharray: var(--t-stroke-dasharray);
+  stroke-dasharray: var(--d-stroke-dasharray);
 }
 
 }

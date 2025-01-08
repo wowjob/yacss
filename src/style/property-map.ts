@@ -197,6 +197,7 @@ import {
   normalizeStopColor,
   normalizeStopOpacity,
   normalizeStroke,
+  normalizeStrokeDasharray,
   normalizeTop,
 } from '../util'
 
@@ -401,6 +402,7 @@ import type {
   TStopColor,
   TStopOpacity,
   TStroke,
+  TStrokeDasharray,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -605,6 +607,7 @@ export type TCSSPropValue = Partial<{
   stopColor: TStopColor
   stopOpacity: TStopOpacity
   stroke: TStroke
+  strokeDasharray: TStrokeDasharray
 }>
 
 type TResponsive = {
@@ -1430,5 +1433,9 @@ export const propertyMap: Record<
   stroke: {
     className: { dev: 'stroke', prod: 'str' },
     normalize: normalizeStroke,
+  },
+  strokeDasharray: {
+    className: { dev: 'stroke-dasharray', prod: 'sda' },
+    normalize: normalizeStrokeDasharray,
   },
 } as const
