@@ -930,6 +930,10 @@
   --transition-behavior: auto;
   transition-behavior: var(--transition-behavior);
 }
+.translate {
+  --translate: none;
+  translate: var(--translate);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1864,6 +1868,10 @@
 .tablet.transition-behavior {
   --t-transition-behavior: var(--transition-behavior);
   transition-behavior: var(--t-transition-behavior);
+}
+.tablet.translate {
+  --t-translate: var(--translate);
+  translate: var(--t-translate);
 }
 
 }
@@ -2800,6 +2808,10 @@
 .desktop.transition-behavior {
   --d-transition-behavior: var(--t-transition-behavior);
   transition-behavior: var(--d-transition-behavior);
+}
+.desktop.translate {
+  --d-translate: var(--t-translate);
+  translate: var(--d-translate);
 }
 
 }
