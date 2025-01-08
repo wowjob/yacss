@@ -213,6 +213,7 @@ import {
   normalizeTextDecoration,
   normalizeTextEmphasis,
   normalizeTextIndent,
+  normalizeTextJustify,
   normalizeTop,
 } from '../util'
 
@@ -433,6 +434,7 @@ import type {
   TTextAnchor,
   TTextCombineUpright,
   TTextIndent,
+  TTextJustify,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -653,6 +655,7 @@ export type TCSSPropValue = Partial<{
   textDecoration: TTextDecoration
   textEmphasis: TTextEmphasis
   textIndent: TTextIndent
+  textJustify: TTextJustify
 }>
 
 type TResponsive = {
@@ -1542,5 +1545,9 @@ export const propertyMap: Record<
   textIndent: {
     className: { dev: 'text-indent', prod: 'ti' },
     normalize: normalizeTextIndent,
+  },
+  textJustify: {
+    className: { dev: 'text-justify', prod: 'tj' },
+    normalize: normalizeTextJustify,
   },
 } as const

@@ -862,6 +862,10 @@
   --text-indent: 0;
   text-indent: var(--text-indent);
 }
+.text-justify {
+  --text-justify: undefined;
+  text-justify: var(--text-justify);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1728,6 +1732,10 @@
 .tablet.text-indent {
   --t-text-indent: var(--text-indent);
   text-indent: var(--t-text-indent);
+}
+.tablet.text-justify {
+  --t-text-justify: var(--text-justify);
+  text-justify: var(--t-text-justify);
 }
 
 }
@@ -2596,6 +2604,10 @@
 .desktop.text-indent {
   --d-text-indent: var(--t-text-indent);
   text-indent: var(--d-text-indent);
+}
+.desktop.text-justify {
+  --d-text-justify: var(--t-text-justify);
+  text-justify: var(--d-text-justify);
 }
 
 }

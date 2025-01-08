@@ -143,6 +143,7 @@ console.log(
       textAnchor: 'middle',
       textCombineUpright: 'all',
       textIndent: 22,
+      textJustify: 'inter-character',
     },
     className: 'yes-no',
   })
