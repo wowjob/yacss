@@ -241,3 +241,4 @@ export { normalizeWillChange } from './will-change';
 export { normalizeWordBreak } from './word-break';
 export { normalizeWordSpacing } from './word-spacing';
 export { normalizeWritingMode } from './writing-mode';
+export { normalizeZIndex } from './z-index';

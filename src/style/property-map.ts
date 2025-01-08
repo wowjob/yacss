@@ -242,6 +242,7 @@ import {
   normalizeWordBreak,
   normalizeWordSpacing,
   normalizeWritingMode,
+  normalizeZIndex,
 } from '../util'
 
 import type {
@@ -489,6 +490,7 @@ import type {
   TWordBreak,
   TWordSpacing,
   TWritingMode,
+  TZIndex,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -737,6 +739,7 @@ export type TCSSPropValue = Partial<{
   wordBreak: TWordBreak
   wordSpacing: TWordSpacing
   writingMode: TWritingMode
+  zIndex: TZIndex
 }>
 
 type TResponsive = {
@@ -1738,5 +1741,9 @@ export const propertyMap: Record<
   writingMode: {
     className: { dev: 'writing-mode', prod: 'wm' },
     normalize: normalizeWritingMode,
+  },
+  zIndex: {
+    className: { dev: 'z-index', prod: 'zi' },
+    normalize: normalizeZIndex,
   },
 } as const

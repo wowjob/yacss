@@ -26,6 +26,7 @@ console.log(
       wordBreak: 'break-word',
       wordSpacing: 1,
       writingMode: 'horizontal-tb',
+      zIndex: 22,
     },
     className: 'yes-no',
   })
