@@ -119,6 +119,7 @@ console.log(
       stopOpacity: 0.5,
       stroke: 'red',
       strokeDasharray: [20, 30],
+      strokeDashoffset: '20px',
     },
     className: 'yes-no',
   })
