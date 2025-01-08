@@ -141,6 +141,7 @@ console.log(
       textAlign: 'justify',
       textAlignLast: 'end',
       textAnchor: 'middle',
+      textCombineUpright: 'all',
     },
     className: 'yes-no',
   })

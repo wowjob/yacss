@@ -209,6 +209,7 @@ import {
   normalizeTextAlign,
   normalizeTextAlignLast,
   normalizeTextAnchor,
+  normalizeTextCombineUpright,
   normalizeTextDecoration,
   normalizeTextEmphasis,
   normalizeTop,
@@ -429,6 +430,7 @@ import type {
   TTextAlign,
   TTextAlignLast,
   TTextAnchor,
+  TTextCombineUpright,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -645,6 +647,7 @@ export type TCSSPropValue = Partial<{
   textAlign: TTextAlign
   textAlignLast: TTextAlignLast
   textAnchor: TTextAnchor
+  textCombineUpright: TTextCombineUpright
   textDecoration: TTextDecoration
   textEmphasis: TTextEmphasis
 }>
@@ -1520,6 +1523,10 @@ export const propertyMap: Record<
   textAnchor: {
     className: { dev: 'text-anchor', prod: 'tan' },
     normalize: normalizeTextAnchor,
+  },
+  textCombineUpright: {
+    className: { dev: 'text-combine-upright', prod: 'tcu' },
+    normalize: normalizeTextCombineUpright,
   },
   textDecoration: {
     className: { dev: 'text-decoration', prod: 'td' },
