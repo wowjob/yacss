@@ -209,6 +209,7 @@ export type { TStrokeWidth } from './stroke-width';
 export type { TTabSize } from './tab-size';
 export type { TTableLayout } from './table-layout';
 export type { TTextAlign } from './text-align';
+export type { TTextAlignLast } from './text-align-last';
 export type { TTextDecoration } from './text-decoration';
 export type { TTextEmphasis } from './text-emphasis';
 export type { TTop } from './top';

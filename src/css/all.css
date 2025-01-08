@@ -838,6 +838,10 @@
   --text-align: start;
   text-align: var(--text-align);
 }
+.text-align-last {
+  --text-align-last: auto;
+  text-align-last: var(--text-align-last);
+}
 .text-decoration {
   --text-decoration: undefined;
   text-decoration: var(--text-decoration);
@@ -1688,6 +1692,10 @@
 .tablet.text-align {
   --t-text-align: var(--text-align);
   text-align: var(--t-text-align);
+}
+.tablet.text-align-last {
+  --t-text-align-last: var(--text-align-last);
+  text-align-last: var(--t-text-align-last);
 }
 .tablet.text-decoration {
   --t-text-decoration: var(--text-decoration);
@@ -2540,6 +2548,10 @@
 .desktop.text-align {
   --d-text-align: var(--t-text-align);
   text-align: var(--d-text-align);
+}
+.desktop.text-align-last {
+  --d-text-align-last: var(--t-text-align-last);
+  text-align-last: var(--d-text-align-last);
 }
 .desktop.text-decoration {
   --d-text-decoration: var(--t-text-decoration);
