@@ -212,6 +212,7 @@ export {
   normalizeTextAlign,
   normalizeTextAlignLast,
   normalizeTextAnchor,
+  normalizeTextCombineUpright,
   normalizeTextDecoration,
   normalizeTextEmphasis,
   normalizeTop,
