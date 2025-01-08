@@ -30,5 +30,7 @@ console.log(
       zoom: '200%',
     },
     className: 'yes-no',
+    styleAsString: true,
+    theme: 'accent',
   })
 )
