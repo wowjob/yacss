@@ -238,6 +238,7 @@ import {
   normalizeVisibility,
   normalizeWhiteSpace,
   normalizeWidth,
+  normalizeWillChange,
 } from '../util'
 
 import type {
@@ -481,6 +482,7 @@ import type {
   TVisibility,
   TWhiteSpace,
   TWidth,
+  TWillChange,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -725,6 +727,7 @@ export type TCSSPropValue = Partial<{
   visibility: TVisibility
   whiteSpace: TWhiteSpace
   width: TWidth
+  willChange: TWillChange
 }>
 
 type TResponsive = {
@@ -1710,5 +1713,9 @@ export const propertyMap: Record<
   width: {
     className: { dev: 'width', prod: 'w' },
     normalize: normalizeWidth,
+  },
+  willChange: {
+    className: { dev: 'will-change', prod: 'wc' },
+    normalize: normalizeWillChange,
   },
 } as const
