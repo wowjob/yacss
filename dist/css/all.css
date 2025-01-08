@@ -966,6 +966,10 @@
   --word-break: normal;
   word-break: var(--word-break);
 }
+.word-spacing {
+  --word-spacing: 0;
+  word-spacing: var(--word-spacing);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1936,6 +1940,10 @@
 .tablet.word-break {
   --t-word-break: var(--word-break);
   word-break: var(--t-word-break);
+}
+.tablet.word-spacing {
+  --t-word-spacing: var(--word-spacing);
+  word-spacing: var(--t-word-spacing);
 }
 
 }
@@ -2908,6 +2916,10 @@
 .desktop.word-break {
   --d-word-break: var(--t-word-break);
   word-break: var(--d-word-break);
+}
+.desktop.word-spacing {
+  --d-word-spacing: var(--t-word-spacing);
+  word-spacing: var(--d-word-spacing);
 }
 
 }
