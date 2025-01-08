@@ -922,6 +922,10 @@
   --transform-style: flat;
   transform-style: var(--transform-style);
 }
+.transition {
+  --transition: all 0s ease 0s;
+  transition: var(--transition);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1848,6 +1852,10 @@
 .tablet.transform-style {
   --t-transform-style: var(--transform-style);
   transform-style: var(--t-transform-style);
+}
+.tablet.transition {
+  --t-transition: var(--transition);
+  transition: var(--t-transition);
 }
 
 }
@@ -2776,6 +2784,10 @@
 .desktop.transform-style {
   --d-transform-style: var(--t-transform-style);
   transform-style: var(--d-transform-style);
+}
+.desktop.transition {
+  --d-transition: var(--t-transition);
+  transition: var(--d-transition);
 }
 
 }
