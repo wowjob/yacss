@@ -245,4 +245,5 @@ export {
   normalizeWordBreak,
   normalizeWordSpacing,
   normalizeWritingMode,
+  normalizeZIndex,
 } from './style'

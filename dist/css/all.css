@@ -974,6 +974,10 @@
   --writing-mode: horizontal-tb;
   writing-mode: var(--writing-mode);
 }
+.z-index {
+  --z-index: auto;
+  z-index: var(--z-index);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1952,6 +1956,10 @@
 .tablet.writing-mode {
   --t-writing-mode: var(--writing-mode);
   writing-mode: var(--t-writing-mode);
+}
+.tablet.z-index {
+  --t-z-index: var(--z-index);
+  z-index: var(--t-z-index);
 }
 
 }
@@ -2932,6 +2940,10 @@
 .desktop.writing-mode {
   --d-writing-mode: var(--t-writing-mode);
   writing-mode: var(--d-writing-mode);
+}
+.desktop.z-index {
+  --d-z-index: var(--t-z-index);
+  z-index: var(--d-z-index);
 }
 
 }

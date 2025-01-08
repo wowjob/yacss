@@ -244,3 +244,4 @@ export type { TWillChange } from './will-change';
 export type { TWordBreak } from './word-break';
 export type { TWordSpacing } from './word-spacing';
 export type { TWritingMode } from './writing-mode';
+export type { TZIndex } from './z-index';
