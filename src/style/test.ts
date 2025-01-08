@@ -8,6 +8,12 @@ console.log(
       transformBox: 'fill-box',
       transformOrigin: '2px 30% 10px',
       transformStyle: 'preserve-3d',
+      transition: {
+        duration: '250ms',
+        delay: 150,
+        property: 'opacity',
+        timingFunction: 'easeIn',
+      },
     },
     className: 'yes-no',
   })
