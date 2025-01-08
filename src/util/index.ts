@@ -238,4 +238,5 @@ export {
   normalizeUserSelect,
   normalizeVectorEffect,
   normalizeVerticalAlign,
+  normalizeVisibility,
 } from './style'
