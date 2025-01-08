@@ -219,4 +219,5 @@ export { normalizeTextRendering } from './text-rendering';
 export { normalizeTextShadow } from './text-shadow';
 export { normalizeTextTransform } from './text-transform';
 export { normalizeTextUnderlineOffset } from './text-underline-offset';
+export { normalizeTextUnderlinePosition } from './text-underline-position';
 export { normalizeTop } from './top';

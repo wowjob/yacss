@@ -223,5 +223,6 @@ export {
   normalizeTextShadow,
   normalizeTextTransform,
   normalizeTextUnderlineOffset,
+  normalizeTextUnderlinePosition,
   normalizeTop,
 } from './style'
