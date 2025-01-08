@@ -147,6 +147,7 @@ console.log(
       textOrientation: 'mixed',
       textOverflow: 'ellipsis',
       textRendering: 'geometricPrecision',
+      textShadow: '5px 5px red',
     },
     className: 'yes-no',
   })
