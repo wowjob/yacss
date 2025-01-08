@@ -858,6 +858,10 @@
   --text-emphasis: undefined;
   text-emphasis: var(--text-emphasis);
 }
+.text-indent {
+  --text-indent: 0;
+  text-indent: var(--text-indent);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1720,6 +1724,10 @@
 .tablet.text-emphasis {
   --t-text-emphasis: var(--text-emphasis);
   text-emphasis: var(--t-text-emphasis);
+}
+.tablet.text-indent {
+  --t-text-indent: var(--text-indent);
+  text-indent: var(--t-text-indent);
 }
 
 }
@@ -2584,6 +2592,10 @@
 .desktop.text-emphasis {
   --d-text-emphasis: var(--t-text-emphasis);
   text-emphasis: var(--d-text-emphasis);
+}
+.desktop.text-indent {
+  --d-text-indent: var(--t-text-indent);
+  text-indent: var(--d-text-indent);
 }
 
 }

@@ -215,5 +215,6 @@ export {
   normalizeTextCombineUpright,
   normalizeTextDecoration,
   normalizeTextEmphasis,
+  normalizeTextIndent,
   normalizeTop,
 } from './style'
