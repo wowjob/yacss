@@ -151,6 +151,7 @@ console.log(
       textTransform: 'capitalize',
       textUnderlineOffset: 20,
       textUnderlinePosition: 'right left',
+      textWrap: 'nowrap',
     },
     className: 'yes-no',
   })
