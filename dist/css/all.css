@@ -866,6 +866,10 @@
   --text-justify: undefined;
   text-justify: var(--text-justify);
 }
+.text-orientation {
+  --text-orientation: mixed;
+  text-orientation: var(--text-orientation);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1736,6 +1740,10 @@
 .tablet.text-justify {
   --t-text-justify: var(--text-justify);
   text-justify: var(--t-text-justify);
+}
+.tablet.text-orientation {
+  --t-text-orientation: var(--text-orientation);
+  text-orientation: var(--t-text-orientation);
 }
 
 }
@@ -2608,6 +2616,10 @@
 .desktop.text-justify {
   --d-text-justify: var(--t-text-justify);
   text-justify: var(--d-text-justify);
+}
+.desktop.text-orientation {
+  --d-text-orientation: var(--t-text-orientation);
+  text-orientation: var(--d-text-orientation);
 }
 
 }

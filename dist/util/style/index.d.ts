@@ -213,4 +213,5 @@ export { normalizeTextDecoration } from './text-decoration';
 export { normalizeTextEmphasis } from './text-emphasis';
 export { normalizeTextIndent } from './text-indent';
 export { normalizeTextJustify } from './text-justify';
+export { normalizeTextOrientation } from './text-orientation';
 export { normalizeTop } from './top';
