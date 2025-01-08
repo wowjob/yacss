@@ -946,6 +946,10 @@
   --vertical-align: baseline;
   vertical-align: var(--vertical-align);
 }
+.visibility {
+  --visibility: visible;
+  visibility: var(--visibility);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1896,6 +1900,10 @@
 .tablet.vertical-align {
   --t-vertical-align: var(--vertical-align);
   vertical-align: var(--t-vertical-align);
+}
+.tablet.visibility {
+  --t-visibility: var(--visibility);
+  visibility: var(--t-visibility);
 }
 
 }
@@ -2848,6 +2856,10 @@
 .desktop.vertical-align {
   --d-vertical-align: var(--t-vertical-align);
   vertical-align: var(--d-vertical-align);
+}
+.desktop.visibility {
+  --d-visibility: var(--t-visibility);
+  visibility: var(--d-visibility);
 }
 
 }

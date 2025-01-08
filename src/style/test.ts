@@ -19,6 +19,7 @@ console.log(
       userSelect: 'none',
       vectorEffect: 'fixed-position',
       verticalAlign: 'middle',
+      visibility: 'hidden',
     },
     className: 'yes-no',
   })

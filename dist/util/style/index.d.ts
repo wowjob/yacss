@@ -234,3 +234,4 @@ export { normalizeTranslate } from './translate';
 export { normalizeUserSelect } from './user-select';
 export { normalizeVectorEffect } from './vector-effect';
 export { normalizeVerticalAlign } from './vertical-align';
+export { normalizeVisibility } from './visibility';

@@ -235,6 +235,7 @@ import {
   normalizeUserSelect,
   normalizeVectorEffect,
   normalizeVerticalAlign,
+  normalizeVisibility,
 } from '../util'
 
 import type {
@@ -475,6 +476,7 @@ import type {
   TUserSelect,
   TVectorEffect,
   TVerticalAlign,
+  TVisibility,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -716,6 +718,7 @@ export type TCSSPropValue = Partial<{
   userSelect: TUserSelect
   vectorEffect: TVectorEffect
   verticalAlign: TVerticalAlign
+  visibility: TVisibility
 }>
 
 type TResponsive = {
@@ -1689,5 +1692,9 @@ export const propertyMap: Record<
   verticalAlign: {
     className: { dev: 'vertical-align', prod: 'va' },
     normalize: normalizeVerticalAlign,
+  },
+  visibility: {
+    className: { dev: 'visibility', prod: 'vs' },
+    normalize: normalizeVisibility,
   },
 } as const
