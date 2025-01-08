@@ -232,3 +232,4 @@ export type { TTransformBox } from './transform-box';
 export type { TTransformOrigin } from './transform-origin';
 export type { TTransformStyle } from './transform-style';
 export type { TTransition } from './transition';
+export type { TTransitionBehavior } from './transition-behavior';
