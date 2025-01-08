@@ -814,6 +814,10 @@
   --stroke-linejoin: miter;
   stroke-linejoin: var(--stroke-linejoin);
 }
+.stroke-miterlimit {
+  --stroke-miterlimit: 4;
+  stroke-miterlimit: var(--stroke-miterlimit);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1632,6 +1636,10 @@
 .tablet.stroke-linejoin {
   --t-stroke-linejoin: var(--stroke-linejoin);
   stroke-linejoin: var(--t-stroke-linejoin);
+}
+.tablet.stroke-miterlimit {
+  --t-stroke-miterlimit: var(--stroke-miterlimit);
+  stroke-miterlimit: var(--t-stroke-miterlimit);
 }
 
 }
@@ -2452,6 +2460,10 @@
 .desktop.stroke-linejoin {
   --d-stroke-linejoin: var(--t-stroke-linejoin);
   stroke-linejoin: var(--d-stroke-linejoin);
+}
+.desktop.stroke-miterlimit {
+  --d-stroke-miterlimit: var(--t-stroke-miterlimit);
+  stroke-miterlimit: var(--d-stroke-miterlimit);
 }
 
 }

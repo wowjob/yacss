@@ -122,6 +122,7 @@ console.log(
       strokeDashoffset: '20px',
       strokeLinecap: 'butt',
       strokeLinejoin: 'bevel',
+      strokeMiterlimit: 2.312,
     },
     className: 'yes-no',
   })
