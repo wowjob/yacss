@@ -1,8 +1,12 @@
 import { propertyMap } from './property-map';
-export const getStyle = ({ desktop, mobile, tablet, className = '', env = 'dev', }) => {
+export const getStyle = ({ desktop, mobile, tablet, className = '', env = 'dev', theme, styleAsString = false, }) => {
     const classSet = new Set(className.split(' '));
     const rowMap = new Map();
     const styleMap = new Map(Object.entries({ mobile, tablet, desktop }));
+    // theme
+    if (theme) {
+        classSet.add(`theme-${theme}`);
+    }
     for (const [key, styleData] of styleMap) {
         const responsivePrefix = key === 'mobile' ? '' : `${key[0]}-`;
         if (!styleData) {
@@ -23,6 +27,10 @@ export const getStyle = ({ desktop, mobile, tablet, className = '', env = 'dev',
     }
     return {
         className: Array.from(classSet).join(' ').trim(),
-        style: Object.fromEntries(rowMap),
+        style: styleAsString
+            ? Array.from(rowMap)
+                .map(([prop, value]) => `${prop}:${value}`)
+                .join(';')
+            : Object.fromEntries(rowMap),
     };
 };
