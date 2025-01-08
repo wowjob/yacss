@@ -152,6 +152,7 @@ console.log(
       textUnderlineOffset: 20,
       textUnderlinePosition: 'right left',
       textWrap: 'nowrap',
+      textWrapStyle: 'balance',
     },
     className: 'yes-no',
   })

@@ -225,5 +225,6 @@ export {
   normalizeTextUnderlineOffset,
   normalizeTextUnderlinePosition,
   normalizeTextWrap,
+  normalizeTextWrapStyle,
   normalizeTop,
 } from './style'
