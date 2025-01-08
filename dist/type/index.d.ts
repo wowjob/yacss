@@ -221,4 +221,5 @@ export type { TTextOverflow } from './text-overflow';
 export type { TTextRendering } from './text-rendering';
 export type { TTextShadow } from './text-shadow';
 export type { TTextTransform } from './text-transform';
+export type { TTextUnderlineOffset } from './text-underline-offset';
 export type { TTop } from './top';
