@@ -220,6 +220,7 @@ import {
   normalizeTextShadow,
   normalizeTextTransform,
   normalizeTextUnderlineOffset,
+  normalizeTextUnderlinePosition,
   normalizeTop,
 } from '../util'
 
@@ -447,6 +448,7 @@ import type {
   TTextShadow,
   TTextTransform,
   TTextUnderlineOffset,
+  TTextUnderlinePosition,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -674,6 +676,7 @@ export type TCSSPropValue = Partial<{
   textShadow: TTextShadow
   textTransform: TTextTransform
   textUnderlineOffset: TTextUnderlineOffset
+  textUnderlinePosition: TTextUnderlinePosition
 }>
 
 type TResponsive = {
@@ -1591,5 +1594,9 @@ export const propertyMap: Record<
   textUnderlineOffset: {
     className: { dev: 'text-underline-offset', prod: 'tuo' },
     normalize: normalizeTextUnderlineOffset,
+  },
+  textUnderlinePosition: {
+    className: { dev: 'text-underline-position', prod: 'tup' },
+    normalize: normalizeTextUnderlinePosition,
   },
 } as const

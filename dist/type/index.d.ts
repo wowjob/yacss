@@ -222,4 +222,5 @@ export type { TTextRendering } from './text-rendering';
 export type { TTextShadow } from './text-shadow';
 export type { TTextTransform } from './text-transform';
 export type { TTextUnderlineOffset } from './text-underline-offset';
+export type { TTextUnderlinePosition } from './text-underline-position';
 export type { TTop } from './top';

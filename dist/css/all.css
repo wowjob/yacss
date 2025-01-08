@@ -890,6 +890,10 @@
   --text-underline-offset: auto;
   text-underline-offset: var(--text-underline-offset);
 }
+.text-underline-position {
+  --text-underline-position: auto;
+  text-underline-position: var(--text-underline-position);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1784,6 +1788,10 @@
 .tablet.text-underline-offset {
   --t-text-underline-offset: var(--text-underline-offset);
   text-underline-offset: var(--t-text-underline-offset);
+}
+.tablet.text-underline-position {
+  --t-text-underline-position: var(--text-underline-position);
+  text-underline-position: var(--t-text-underline-position);
 }
 
 }
@@ -2680,6 +2688,10 @@
 .desktop.text-underline-offset {
   --d-text-underline-offset: var(--t-text-underline-offset);
   text-underline-offset: var(--d-text-underline-offset);
+}
+.desktop.text-underline-position {
+  --d-text-underline-position: var(--t-text-underline-position);
+  text-underline-position: var(--d-text-underline-position);
 }
 
 }

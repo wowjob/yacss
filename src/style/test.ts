@@ -150,6 +150,7 @@ console.log(
       textShadow: '5px 5px red',
       textTransform: 'capitalize',
       textUnderlineOffset: 20,
+      textUnderlinePosition: 'right left',
     },
     className: 'yes-no',
   })
