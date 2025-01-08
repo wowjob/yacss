@@ -231,3 +231,4 @@ export { normalizeTransformStyle } from './transform-style';
 export { normalizeTransition } from './transition';
 export { normalizeTransitionBehavior } from './transition-behavior';
 export { normalizeTranslate } from './translate';
+export { normalizeUserSelect } from './user-select';

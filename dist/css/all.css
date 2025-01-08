@@ -934,6 +934,10 @@
   --translate: none;
   translate: var(--translate);
 }
+.user-select {
+  --user-select: auto;
+  user-select: var(--user-select);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1872,6 +1876,10 @@
 .tablet.translate {
   --t-translate: var(--translate);
   translate: var(--t-translate);
+}
+.tablet.user-select {
+  --t-user-select: var(--user-select);
+  user-select: var(--t-user-select);
 }
 
 }
@@ -2812,6 +2820,10 @@
 .desktop.translate {
   --d-translate: var(--t-translate);
   translate: var(--d-translate);
+}
+.desktop.user-select {
+  --d-user-select: var(--t-user-select);
+  user-select: var(--d-user-select);
 }
 
 }
