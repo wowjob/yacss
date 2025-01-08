@@ -202,4 +202,5 @@ export { normalizeStrokeLinecap } from './stroke-linecap';
 export { normalizeStrokeLinejoin } from './stroke-linejoin';
 export { normalizeStrokeMiterlimit } from './stroke-miterlimit';
 export { normalizeStrokeOpacity } from './stroke-opacity';
+export { normalizeStrokeWidth } from './stroke-width';
 export { normalizeTop } from './top';

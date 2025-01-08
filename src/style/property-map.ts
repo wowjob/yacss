@@ -203,6 +203,7 @@ import {
   normalizeStrokeLinejoin,
   normalizeStrokeMiterlimit,
   normalizeStrokeOpacity,
+  normalizeStrokeWidth,
   normalizeTop,
 } from '../util'
 
@@ -413,6 +414,7 @@ import type {
   TStrokeLinejoin,
   TStrokeMiterlimit,
   TStrokeOpacity,
+  TStrokeWidth,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -623,6 +625,7 @@ export type TCSSPropValue = Partial<{
   strokeLinejoin: TStrokeLinejoin
   strokeMiterlimit: TStrokeMiterlimit
   strokeOpacity: TStrokeOpacity
+  strokeWidth: TStrokeWidth
 }>
 
 type TResponsive = {
@@ -1472,5 +1475,9 @@ export const propertyMap: Record<
   strokeOpacity: {
     className: { dev: 'stroke-opacity', prod: 'sop' },
     normalize: normalizeStrokeOpacity,
+  },
+  strokeWidth: {
+    className: { dev: 'stroke-width', prod: 'swi' },
+    normalize: normalizeStrokeWidth,
   },
 } as const
