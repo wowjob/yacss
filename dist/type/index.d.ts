@@ -218,4 +218,5 @@ export type { TTextIndent } from './text-indent';
 export type { TTextJustify } from './text-justify';
 export type { TTextOrientation } from './text-orientation';
 export type { TTextOverflow } from './text-overflow';
+export type { TTextRendering } from './text-rendering';
 export type { TTop } from './top';

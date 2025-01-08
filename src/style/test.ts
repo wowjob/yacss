@@ -146,6 +146,7 @@ console.log(
       textJustify: 'inter-character',
       textOrientation: 'mixed',
       textOverflow: 'ellipsis',
+      textRendering: 'geometricPrecision',
     },
     className: 'yes-no',
   })
