@@ -228,3 +228,4 @@ export type { TTextWrapStyle } from './text-wrap-style';
 export type { TTouchAction } from './touch-action';
 export type { TTop } from './top';
 export type { TTransform } from './transform';
+export type { TTransformBox } from './transform-box';
