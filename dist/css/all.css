@@ -910,6 +910,10 @@
   --transform: none;
   transform: var(--transform);
 }
+.transform-box {
+  --transform-box: border-box;
+  transform-box: var(--transform-box);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1824,6 +1828,10 @@
 .tablet.transform {
   --t-transform: var(--transform);
   transform: var(--t-transform);
+}
+.tablet.transform-box {
+  --t-transform-box: var(--transform-box);
+  transform-box: var(--t-transform-box);
 }
 
 }
@@ -2740,6 +2748,10 @@
 .desktop.transform {
   --d-transform: var(--t-transform);
   transform: var(--d-transform);
+}
+.desktop.transform-box {
+  --d-transform-box: var(--t-transform-box);
+  transform-box: var(--d-transform-box);
 }
 
 }

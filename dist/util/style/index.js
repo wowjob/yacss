@@ -225,3 +225,4 @@ export { normalizeTextWrapStyle } from './text-wrap-style';
 export { normalizeTouchAction } from './touch-action';
 export { normalizeTop } from './top';
 export { normalizeTransform } from './transform';
+export { normalizeTransformBox } from './transform-box';
