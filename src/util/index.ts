@@ -209,5 +209,6 @@ export {
   normalizeStrokeWidth,
   normalizeTabSize,
   normalizeTableLayout,
+  normalizeTextDecoration,
   normalizeTop,
 } from './style'
