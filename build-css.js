@@ -3,7 +3,21 @@ import path from 'node:path'
 import { propertyMap } from './src/style/property-map'
 import { cssDefaultPropertyValueMap } from './src/style/default-value-map'
 import { camelToKebabCase } from './src/util'
+import { themeHueSaturation, themeLightnessAlpha } from './src/style/theme'
 
+const themeCSS = `/* YACSS
+Yet Another CSS UI library, which provides zero build time, best debugging DX, very flexible, reposniveness for RWD at core, and works with React, NextJS, Astro and more
+Author: Marian Zburlea
+Organization: Wow Job
+GitHub: https://github.com/wowjob
+Website: https://wowjob.blog
+Website: https://wowjob.dev
+Website: https://wowjob.ai
+*/
+/* CSS theme */
+${themeHueSaturation}
+${themeLightnessAlpha}
+/* CSS Properties */`
 const styleFileList = [
   'src/css/reset.css',
   'src/css/all.css',
@@ -82,7 +96,8 @@ const buildCss = () => {
 
     const fileContent =
       env === 'dev'
-        ? `${finalCSS[env].mobile}
+        ? `${themeCSS}
+${finalCSS[env].mobile}
 
 @media screen and (min-width: 48rem) {
 ${finalCSS[env].tablet}
@@ -91,7 +106,8 @@ ${finalCSS[env].tablet}
 @media screen and (min-width: 80rem) {
 ${finalCSS[env].desktop}
 }`
-        : `${finalCSS[env].mobile}@media screen and (min-width: 48rem) {${finalCSS[env].tablet}}@media screen and (min-width: 80rem) {${finalCSS[env].desktop}}`
+        : `${themeCSS}
+${finalCSS[env].mobile}@media screen and (min-width: 48rem) {${finalCSS[env].tablet}}@media screen and (min-width: 80rem) {${finalCSS[env].desktop}}`
 
     fs.writeFileSync(filePath, fileContent, 'utf8')
   }

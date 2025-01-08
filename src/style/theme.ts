@@ -100,3 +100,19 @@ export const ThemeColorMap = {
 } as const
 
 export type TThemeColor = keyof typeof ThemeColorMap
+
+const keyValueMap = Object.entries(ThemeColorMap)
+export const themeHueSaturation = keyValueMap
+  .map(
+    ([key, { hue, saturation }]) => `.theme-${key} {
+  --hue: ${hue};
+  --saturation: ${saturation}%;
+}`
+  )
+  .join('\n')
+export const themeLightnessAlpha = `${keyValueMap
+  .map(([key]) => `.theme-${key}`)
+  .join(',\n')} {
+  --lightness: 50%;
+  --saturation: 1;
+}`
