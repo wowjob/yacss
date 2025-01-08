@@ -244,4 +244,5 @@ export {
   normalizeWillChange,
   normalizeWordBreak,
   normalizeWordSpacing,
+  normalizeWritingMode,
 } from './style'

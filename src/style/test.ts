@@ -25,6 +25,7 @@ console.log(
       willChange: 'scroll-position',
       wordBreak: 'break-word',
       wordSpacing: 1,
+      writingMode: 'horizontal-tb',
     },
     className: 'yes-no',
   })

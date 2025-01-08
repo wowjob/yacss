@@ -970,6 +970,10 @@
   --word-spacing: 0;
   word-spacing: var(--word-spacing);
 }
+.writing-mode {
+  --writing-mode: horizontal-tb;
+  writing-mode: var(--writing-mode);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1944,6 +1948,10 @@
 .tablet.word-spacing {
   --t-word-spacing: var(--word-spacing);
   word-spacing: var(--t-word-spacing);
+}
+.tablet.writing-mode {
+  --t-writing-mode: var(--writing-mode);
+  writing-mode: var(--t-writing-mode);
 }
 
 }
@@ -2920,6 +2928,10 @@
 .desktop.word-spacing {
   --d-word-spacing: var(--t-word-spacing);
   word-spacing: var(--d-word-spacing);
+}
+.desktop.writing-mode {
+  --d-writing-mode: var(--t-writing-mode);
+  writing-mode: var(--d-writing-mode);
 }
 
 }

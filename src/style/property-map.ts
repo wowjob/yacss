@@ -241,6 +241,7 @@ import {
   normalizeWillChange,
   normalizeWordBreak,
   normalizeWordSpacing,
+  normalizeWritingMode,
 } from '../util'
 
 import type {
@@ -487,6 +488,7 @@ import type {
   TWillChange,
   TWordBreak,
   TWordSpacing,
+  TWritingMode,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -734,6 +736,7 @@ export type TCSSPropValue = Partial<{
   willChange: TWillChange
   wordBreak: TWordBreak
   wordSpacing: TWordSpacing
+  writingMode: TWritingMode
 }>
 
 type TResponsive = {
@@ -1731,5 +1734,9 @@ export const propertyMap: Record<
   wordSpacing: {
     className: { dev: 'word-spacing', prod: 'wsp' },
     normalize: normalizeWordSpacing,
+  },
+  writingMode: {
+    className: { dev: 'writing-mode', prod: 'wm' },
+    normalize: normalizeWritingMode,
   },
 } as const
