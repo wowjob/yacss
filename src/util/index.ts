@@ -201,5 +201,6 @@ export {
   normalizeStopOpacity,
   normalizeStroke,
   normalizeStrokeDasharray,
+  normalizeStrokeDashoffset,
   normalizeTop,
 } from './style'

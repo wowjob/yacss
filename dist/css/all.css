@@ -802,6 +802,10 @@
   --stroke-dasharray: none;
   stroke-dasharray: var(--stroke-dasharray);
 }
+.stroke-dashoffset {
+  --stroke-dashoffset: 0;
+  stroke-dashoffset: var(--stroke-dashoffset);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1608,6 +1612,10 @@
 .tablet.stroke-dasharray {
   --t-stroke-dasharray: var(--stroke-dasharray);
   stroke-dasharray: var(--t-stroke-dasharray);
+}
+.tablet.stroke-dashoffset {
+  --t-stroke-dashoffset: var(--stroke-dashoffset);
+  stroke-dashoffset: var(--t-stroke-dashoffset);
 }
 
 }
@@ -2416,6 +2424,10 @@
 .desktop.stroke-dasharray {
   --d-stroke-dasharray: var(--t-stroke-dasharray);
   stroke-dasharray: var(--d-stroke-dasharray);
+}
+.desktop.stroke-dashoffset {
+  --d-stroke-dashoffset: var(--t-stroke-dashoffset);
+  stroke-dashoffset: var(--d-stroke-dashoffset);
 }
 
 }
