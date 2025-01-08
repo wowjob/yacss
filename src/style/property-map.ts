@@ -201,6 +201,7 @@ import {
   normalizeStrokeDashoffset,
   normalizeStrokeLinecap,
   normalizeStrokeLinejoin,
+  normalizeStrokeMiterlimit,
   normalizeTop,
 } from '../util'
 
@@ -409,6 +410,7 @@ import type {
   TStrokeDashoffset,
   TStrokeLinecap,
   TStrokeLinejoin,
+  TStrokeMiterlimit,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -617,6 +619,7 @@ export type TCSSPropValue = Partial<{
   strokeDashoffset: TStrokeDashoffset
   strokeLinecap: TStrokeLinecap
   strokeLinejoin: TStrokeLinejoin
+  strokeMiterlimit: TStrokeMiterlimit
 }>
 
 type TResponsive = {
@@ -1458,5 +1461,9 @@ export const propertyMap: Record<
   strokeLinejoin: {
     className: { dev: 'stroke-linejoin', prod: 'slj' },
     normalize: normalizeStrokeLinejoin,
+  },
+  strokeMiterlimit: {
+    className: { dev: 'stroke-miterlimit', prod: 'sml' },
+    normalize: normalizeStrokeMiterlimit,
   },
 } as const
