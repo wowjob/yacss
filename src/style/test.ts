@@ -18,6 +18,7 @@ console.log(
       translate: '50% 50%',
       userSelect: 'none',
       vectorEffect: 'fixed-position',
+      verticalAlign: 'middle',
     },
     className: 'yes-no',
   })

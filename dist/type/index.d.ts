@@ -236,3 +236,4 @@ export type { TTransitionBehavior } from './transition-behavior';
 export type { TTranslate } from './translate';
 export type { TUserSelect } from './user-select';
 export type { TVectorEffect } from './vector-effect';
+export type { TVerticalAlign } from './vertical-align';
