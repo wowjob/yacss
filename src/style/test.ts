@@ -138,6 +138,7 @@ console.log(
         position: 'left over',
         style: 'double-circle',
       },
+      textAlign: 'justify',
     },
     className: 'yes-no',
   })

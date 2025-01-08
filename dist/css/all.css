@@ -834,6 +834,10 @@
   --table-layout: auto;
   table-layout: var(--table-layout);
 }
+.text-align {
+  --text-align: start;
+  text-align: var(--text-align);
+}
 .text-decoration {
   --text-decoration: undefined;
   text-decoration: var(--text-decoration);
@@ -1680,6 +1684,10 @@
 .tablet.table-layout {
   --t-table-layout: var(--table-layout);
   table-layout: var(--t-table-layout);
+}
+.tablet.text-align {
+  --t-text-align: var(--text-align);
+  text-align: var(--t-text-align);
 }
 .tablet.text-decoration {
   --t-text-decoration: var(--text-decoration);
@@ -2528,6 +2536,10 @@
 .desktop.table-layout {
   --d-table-layout: var(--t-table-layout);
   table-layout: var(--d-table-layout);
+}
+.desktop.text-align {
+  --d-text-align: var(--t-text-align);
+  text-align: var(--d-text-align);
 }
 .desktop.text-decoration {
   --d-text-decoration: var(--t-text-decoration);

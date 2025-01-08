@@ -209,6 +209,7 @@ export {
   normalizeStrokeWidth,
   normalizeTabSize,
   normalizeTableLayout,
+  normalizeTextAlign,
   normalizeTextDecoration,
   normalizeTextEmphasis,
   normalizeTop,
