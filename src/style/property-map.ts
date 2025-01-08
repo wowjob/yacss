@@ -225,6 +225,7 @@ import {
   normalizeTextWrapStyle,
   normalizeTop,
   normalizeTouchAction,
+  normalizeTransform,
 } from '../util'
 
 import type {
@@ -455,6 +456,7 @@ import type {
   TTextWrap,
   TTextWrapStyle,
   TTouchAction,
+  TTransform,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -686,6 +688,7 @@ export type TCSSPropValue = Partial<{
   textWrap: TTextWrap
   textWrapStyle: TTextWrapStyle
   touchAction: TTouchAction
+  transform: TTransform
 }>
 
 type TResponsive = {
@@ -1619,5 +1622,9 @@ export const propertyMap: Record<
   touchAction: {
     className: { dev: 'touch-action', prod: 'toa' },
     normalize: normalizeTouchAction,
+  },
+  transform: {
+    className: { dev: 'transform', prod: 'tf' },
+    normalize: normalizeTransform,
   },
 } as const

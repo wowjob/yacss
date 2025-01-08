@@ -4,6 +4,7 @@ console.log(
   getStyle({
     mobile: {
       touchAction: 'pan-right',
+      transform: 'rotate(20deg)',
     },
     className: 'yes-no',
   })

@@ -228,4 +228,5 @@ export {
   normalizeTextWrapStyle,
   normalizeTop,
   normalizeTouchAction,
+  normalizeTransform,
 } from './style'
