@@ -208,6 +208,7 @@ import {
   normalizeTabSize,
   normalizeTextAlign,
   normalizeTextAlignLast,
+  normalizeTextAnchor,
   normalizeTextDecoration,
   normalizeTextEmphasis,
   normalizeTop,
@@ -427,6 +428,7 @@ import type {
   TTextEmphasis,
   TTextAlign,
   TTextAlignLast,
+  TTextAnchor,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -642,6 +644,7 @@ export type TCSSPropValue = Partial<{
   tableLayout: TTableLayout
   textAlign: TTextAlign
   textAlignLast: TTextAlignLast
+  textAnchor: TTextAnchor
   textDecoration: TTextDecoration
   textEmphasis: TTextEmphasis
 }>
@@ -1514,7 +1517,10 @@ export const propertyMap: Record<
     className: { dev: 'text-align-last', prod: 'tal' },
     normalize: normalizeTextAlignLast,
   },
-
+  textAnchor: {
+    className: { dev: 'text-anchor', prod: 'tan' },
+    normalize: normalizeTextAnchor,
+  },
   textDecoration: {
     className: { dev: 'text-decoration', prod: 'td' },
     normalize: normalizeTextDecoration,

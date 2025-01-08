@@ -842,6 +842,10 @@
   --text-align-last: auto;
   text-align-last: var(--text-align-last);
 }
+.text-anchor {
+  --text-anchor: start;
+  text-anchor: var(--text-anchor);
+}
 .text-decoration {
   --text-decoration: undefined;
   text-decoration: var(--text-decoration);
@@ -1696,6 +1700,10 @@
 .tablet.text-align-last {
   --t-text-align-last: var(--text-align-last);
   text-align-last: var(--t-text-align-last);
+}
+.tablet.text-anchor {
+  --t-text-anchor: var(--text-anchor);
+  text-anchor: var(--t-text-anchor);
 }
 .tablet.text-decoration {
   --t-text-decoration: var(--text-decoration);
@@ -2552,6 +2560,10 @@
 .desktop.text-align-last {
   --d-text-align-last: var(--t-text-align-last);
   text-align-last: var(--d-text-align-last);
+}
+.desktop.text-anchor {
+  --d-text-anchor: var(--t-text-anchor);
+  text-anchor: var(--d-text-anchor);
 }
 .desktop.text-decoration {
   --d-text-decoration: var(--t-text-decoration);

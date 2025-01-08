@@ -210,6 +210,7 @@ export type { TTabSize } from './tab-size';
 export type { TTableLayout } from './table-layout';
 export type { TTextAlign } from './text-align';
 export type { TTextAlignLast } from './text-align-last';
+export type { TTextAnchor } from './text-anchor';
 export type { TTextDecoration } from './text-decoration';
 export type { TTextEmphasis } from './text-emphasis';
 export type { TTop } from './top';
