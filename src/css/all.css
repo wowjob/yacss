@@ -898,6 +898,10 @@
   --text-wrap: undefined;
   text-wrap: var(--text-wrap);
 }
+.text-wrap-style {
+  --text-wrap-style: normal;
+  text-wrap-style: var(--text-wrap-style);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1800,6 +1804,10 @@
 .tablet.text-wrap {
   --t-text-wrap: var(--text-wrap);
   text-wrap: var(--t-text-wrap);
+}
+.tablet.text-wrap-style {
+  --t-text-wrap-style: var(--text-wrap-style);
+  text-wrap-style: var(--t-text-wrap-style);
 }
 
 }
@@ -2704,6 +2712,10 @@
 .desktop.text-wrap {
   --d-text-wrap: var(--t-text-wrap);
   text-wrap: var(--d-text-wrap);
+}
+.desktop.text-wrap-style {
+  --d-text-wrap-style: var(--t-text-wrap-style);
+  text-wrap-style: var(--d-text-wrap-style);
 }
 
 }
