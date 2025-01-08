@@ -204,6 +204,7 @@ import {
   normalizeStrokeMiterlimit,
   normalizeStrokeOpacity,
   normalizeStrokeWidth,
+  normalizeTabSize,
   normalizeTop,
 } from '../util'
 
@@ -415,6 +416,7 @@ import type {
   TStrokeMiterlimit,
   TStrokeOpacity,
   TStrokeWidth,
+  TTabSize,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -626,6 +628,7 @@ export type TCSSPropValue = Partial<{
   strokeMiterlimit: TStrokeMiterlimit
   strokeOpacity: TStrokeOpacity
   strokeWidth: TStrokeWidth
+  tabSize: TTabSize
 }>
 
 type TResponsive = {
@@ -1479,5 +1482,9 @@ export const propertyMap: Record<
   strokeWidth: {
     className: { dev: 'stroke-width', prod: 'swi' },
     normalize: normalizeStrokeWidth,
+  },
+  tabSize: {
+    className: { dev: 'tab-size', prod: 'ts' },
+    normalize: normalizeTabSize,
   },
 } as const

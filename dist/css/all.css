@@ -826,6 +826,10 @@
   --stroke-width: 1;
   stroke-width: var(--stroke-width);
 }
+.tab-size {
+  --tab-size: 8;
+  tab-size: var(--tab-size);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1656,6 +1660,10 @@
 .tablet.stroke-width {
   --t-stroke-width: var(--stroke-width);
   stroke-width: var(--t-stroke-width);
+}
+.tablet.tab-size {
+  --t-tab-size: var(--tab-size);
+  tab-size: var(--t-tab-size);
 }
 
 }
@@ -2488,6 +2496,10 @@
 .desktop.stroke-width {
   --d-stroke-width: var(--t-stroke-width);
   stroke-width: var(--d-stroke-width);
+}
+.desktop.tab-size {
+  --d-tab-size: var(--t-tab-size);
+  tab-size: var(--d-tab-size);
 }
 
 }
