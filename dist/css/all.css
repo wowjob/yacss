@@ -942,6 +942,10 @@
   --vector-effect: none;
   vector-effect: var(--vector-effect);
 }
+.vertical-align {
+  --vertical-align: baseline;
+  vertical-align: var(--vertical-align);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1888,6 +1892,10 @@
 .tablet.vector-effect {
   --t-vector-effect: var(--vector-effect);
   vector-effect: var(--t-vector-effect);
+}
+.tablet.vertical-align {
+  --t-vertical-align: var(--vertical-align);
+  vertical-align: var(--t-vertical-align);
 }
 
 }
@@ -2836,6 +2844,10 @@
 .desktop.vector-effect {
   --d-vector-effect: var(--t-vector-effect);
   vector-effect: var(--d-vector-effect);
+}
+.desktop.vertical-align {
+  --d-vertical-align: var(--t-vertical-align);
+  vertical-align: var(--d-vertical-align);
 }
 
 }

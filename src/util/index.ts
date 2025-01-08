@@ -237,4 +237,5 @@ export {
   normalizeTranslate,
   normalizeUserSelect,
   normalizeVectorEffect,
+  normalizeVerticalAlign,
 } from './style'
