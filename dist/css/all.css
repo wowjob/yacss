@@ -1,3 +1,87 @@
+/* YACSS
+Yet Another CSS UI library, which provides zero build time, best debugging DX, very flexible, reposniveness for RWD at core, and works with React, NextJS, Astro and more
+Author: Marian Zburlea
+Organization: Wow Job
+GitHub: https://github.com/wowjob
+Website: https://wowjob.blog
+Website: https://wowjob.dev
+Website: https://wowjob.ai
+*/
+/* CSS theme */
+.theme-brand {
+  --hue: 259;
+  --saturation: 77%;
+}
+.theme-primary {
+  --hue: 225;
+  --saturation: 77%;
+}
+.theme-secondary {
+  --hue: 318;
+  --saturation: 77%;
+}
+.theme-tertiary {
+  --hue: 245;
+  --saturation: 86%;
+}
+.theme-default {
+  --hue: 221;
+  --saturation: 13%;
+}
+.theme-error {
+  --hue: 4;
+  --saturation: 86%;
+}
+.theme-warning {
+  --hue: 34;
+  --saturation: 94%;
+}
+.theme-success {
+  --hue: 152;
+  --saturation: 77%;
+}
+.theme-info {
+  --hue: 200;
+  --saturation: 77%;
+}
+.theme-light {
+  --hue: 0;
+  --saturation: 0%;
+}
+.theme-dark {
+  --hue: 240;
+  --saturation: 15%;
+}
+.theme-accent {
+  --hue: 50;
+  --saturation: 94%;
+}
+.theme-muted {
+  --hue: 210;
+  --saturation: 10%;
+}
+.theme-highlight {
+  --hue: 280;
+  --saturation: 80%;
+}
+.theme-brand,
+.theme-primary,
+.theme-secondary,
+.theme-tertiary,
+.theme-default,
+.theme-error,
+.theme-warning,
+.theme-success,
+.theme-info,
+.theme-light,
+.theme-dark,
+.theme-accent,
+.theme-muted,
+.theme-highlight {
+  --lightness: 50%;
+  --saturation: 1;
+}
+/* CSS Properties */
 .accent-color {
   --accent-color: auto;
   accent-color: var(--accent-color);
