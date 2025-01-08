@@ -125,6 +125,7 @@ console.log(
       strokeMiterlimit: 2.312,
       strokeOpacity: 22,
       strokeWidth: 2,
+      tabSize: 2,
     },
     className: 'yes-no',
   })

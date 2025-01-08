@@ -207,5 +207,6 @@ export {
   normalizeStrokeMiterlimit,
   normalizeStrokeOpacity,
   normalizeStrokeWidth,
+  normalizeTabSize,
   normalizeTop,
 } from './style'
