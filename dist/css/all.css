@@ -938,6 +938,10 @@
   --user-select: auto;
   user-select: var(--user-select);
 }
+.vector-effect {
+  --vector-effect: none;
+  vector-effect: var(--vector-effect);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1880,6 +1884,10 @@
 .tablet.user-select {
   --t-user-select: var(--user-select);
   user-select: var(--t-user-select);
+}
+.tablet.vector-effect {
+  --t-vector-effect: var(--vector-effect);
+  vector-effect: var(--t-vector-effect);
 }
 
 }
@@ -2824,6 +2832,10 @@
 .desktop.user-select {
   --d-user-select: var(--t-user-select);
   user-select: var(--d-user-select);
+}
+.desktop.vector-effect {
+  --d-vector-effect: var(--t-vector-effect);
+  vector-effect: var(--d-vector-effect);
 }
 
 }
