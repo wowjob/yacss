@@ -120,6 +120,7 @@ console.log(
       stroke: 'red',
       strokeDasharray: [20, 30],
       strokeDashoffset: '20px',
+      strokeLinecap: 'butt',
     },
     className: 'yes-no',
   })

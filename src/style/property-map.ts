@@ -199,6 +199,7 @@ import {
   normalizeStroke,
   normalizeStrokeDasharray,
   normalizeStrokeDashoffset,
+  normalizeStrokeLinecap,
   normalizeTop,
 } from '../util'
 
@@ -405,6 +406,7 @@ import type {
   TStroke,
   TStrokeDasharray,
   TStrokeDashoffset,
+  TStrokeLinecap,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -611,6 +613,7 @@ export type TCSSPropValue = Partial<{
   stroke: TStroke
   strokeDasharray: TStrokeDasharray
   strokeDashoffset: TStrokeDashoffset
+  strokeLinecap: TStrokeLinecap
 }>
 
 type TResponsive = {
@@ -1444,5 +1447,9 @@ export const propertyMap: Record<
   strokeDashoffset: {
     className: { dev: 'stroke-dashoffset', prod: 'sdo' },
     normalize: normalizeStrokeDashoffset,
+  },
+  strokeLinecap: {
+    className: { dev: 'stroke-linecap', prod: 'slc' },
+    normalize: normalizeStrokeLinecap,
   },
 } as const

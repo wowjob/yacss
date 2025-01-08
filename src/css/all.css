@@ -806,6 +806,10 @@
   --stroke-dashoffset: 0;
   stroke-dashoffset: var(--stroke-dashoffset);
 }
+.stroke-linecap {
+  --stroke-linecap: butt;
+  stroke-linecap: var(--stroke-linecap);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1616,6 +1620,10 @@
 .tablet.stroke-dashoffset {
   --t-stroke-dashoffset: var(--stroke-dashoffset);
   stroke-dashoffset: var(--t-stroke-dashoffset);
+}
+.tablet.stroke-linecap {
+  --t-stroke-linecap: var(--stroke-linecap);
+  stroke-linecap: var(--t-stroke-linecap);
 }
 
 }
@@ -2428,6 +2436,10 @@
 .desktop.stroke-dashoffset {
   --d-stroke-dashoffset: var(--t-stroke-dashoffset);
   stroke-dashoffset: var(--d-stroke-dashoffset);
+}
+.desktop.stroke-linecap {
+  --d-stroke-linecap: var(--t-stroke-linecap);
+  stroke-linecap: var(--d-stroke-linecap);
 }
 
 }
