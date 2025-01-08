@@ -926,6 +926,10 @@
   --transition: all 0s ease 0s;
   transition: var(--transition);
 }
+.transition-behavior {
+  --transition-behavior: auto;
+  transition-behavior: var(--transition-behavior);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1856,6 +1860,10 @@
 .tablet.transition {
   --t-transition: var(--transition);
   transition: var(--t-transition);
+}
+.tablet.transition-behavior {
+  --t-transition-behavior: var(--transition-behavior);
+  transition-behavior: var(--t-transition-behavior);
 }
 
 }
@@ -2788,6 +2796,10 @@
 .desktop.transition {
   --d-transition: var(--t-transition);
   transition: var(--d-transition);
+}
+.desktop.transition-behavior {
+  --d-transition-behavior: var(--t-transition-behavior);
+  transition-behavior: var(--d-transition-behavior);
 }
 
 }

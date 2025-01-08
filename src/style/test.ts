@@ -14,6 +14,7 @@ console.log(
         property: 'opacity',
         timingFunction: 'easeIn',
       },
+      transitionBehavior: 'allow-discrete',
     },
     className: 'yes-no',
   })

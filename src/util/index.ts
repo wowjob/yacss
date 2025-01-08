@@ -233,4 +233,5 @@ export {
   normalizeTransformOrigin,
   normalizeTransformStyle,
   normalizeTransition,
+  normalizeTransitionBehavior,
 } from './style'
