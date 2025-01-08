@@ -148,6 +148,7 @@ console.log(
       textOverflow: 'ellipsis',
       textRendering: 'geometricPrecision',
       textShadow: '5px 5px red',
+      textTransform: 'capitalize',
     },
     className: 'yes-no',
   })

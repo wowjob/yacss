@@ -218,6 +218,7 @@ import {
   normalizeTextOverflow,
   normalizeTextRendering,
   normalizeTextShadow,
+  normalizeTextTransform,
   normalizeTop,
 } from '../util'
 
@@ -443,6 +444,7 @@ import type {
   TTextOverflow,
   TTextRendering,
   TTextShadow,
+  TTextTransform,
 } from '../type'
 
 export type TEnv = 'dev' | 'prod'
@@ -668,6 +670,7 @@ export type TCSSPropValue = Partial<{
   textOverflow: TTextOverflow
   textRendering: TTextRendering
   textShadow: TTextShadow
+  textTransform: TTextTransform
 }>
 
 type TResponsive = {
@@ -1577,5 +1580,9 @@ export const propertyMap: Record<
   textShadow: {
     className: { dev: 'text-shadow', prod: 'tsh' },
     normalize: normalizeTextShadow,
+  },
+  textTransform: {
+    className: { dev: 'text-transform', prod: 'tt' },
+    normalize: normalizeTextTransform,
   },
 } as const
