@@ -27,6 +27,7 @@ console.log(
       wordSpacing: 1,
       writingMode: 'horizontal-tb',
       zIndex: 22,
+      zoom: '200%',
     },
     className: 'yes-no',
   })

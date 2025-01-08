@@ -978,6 +978,10 @@
   --z-index: auto;
   z-index: var(--z-index);
 }
+.zoom {
+  --zoom: auto;
+  zoom: var(--zoom);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1960,6 +1964,10 @@
 .tablet.z-index {
   --t-z-index: var(--z-index);
   z-index: var(--t-z-index);
+}
+.tablet.zoom {
+  --t-zoom: var(--zoom);
+  zoom: var(--t-zoom);
 }
 
 }
@@ -2944,6 +2952,10 @@
 .desktop.z-index {
   --d-z-index: var(--t-z-index);
   z-index: var(--d-z-index);
+}
+.desktop.zoom {
+  --d-zoom: var(--t-zoom);
+  zoom: var(--d-zoom);
 }
 
 }
