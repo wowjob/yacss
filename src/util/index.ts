@@ -242,4 +242,5 @@ export {
   normalizeWhiteSpace,
   normalizeWidth,
   normalizeWillChange,
+  normalizeWordBreak,
 } from './style'

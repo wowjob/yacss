@@ -962,6 +962,10 @@
   --will-change: auto;
   will-change: var(--will-change);
 }
+.word-break {
+  --word-break: normal;
+  word-break: var(--word-break);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1928,6 +1932,10 @@
 .tablet.will-change {
   --t-will-change: var(--will-change);
   will-change: var(--t-will-change);
+}
+.tablet.word-break {
+  --t-word-break: var(--word-break);
+  word-break: var(--t-word-break);
 }
 
 }
@@ -2896,6 +2904,10 @@
 .desktop.will-change {
   --d-will-change: var(--t-will-change);
   will-change: var(--d-will-change);
+}
+.desktop.word-break {
+  --d-word-break: var(--t-word-break);
+  word-break: var(--d-word-break);
 }
 
 }
