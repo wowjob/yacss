@@ -870,6 +870,10 @@
   --text-orientation: mixed;
   text-orientation: var(--text-orientation);
 }
+.text-overflow {
+  --text-overflow: clip;
+  text-overflow: var(--text-overflow);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1744,6 +1748,10 @@
 .tablet.text-orientation {
   --t-text-orientation: var(--text-orientation);
   text-orientation: var(--t-text-orientation);
+}
+.tablet.text-overflow {
+  --t-text-overflow: var(--text-overflow);
+  text-overflow: var(--t-text-overflow);
 }
 
 }
@@ -2620,6 +2628,10 @@
 .desktop.text-orientation {
   --d-text-orientation: var(--t-text-orientation);
   text-orientation: var(--d-text-orientation);
+}
+.desktop.text-overflow {
+  --d-text-overflow: var(--t-text-overflow);
+  text-overflow: var(--d-text-overflow);
 }
 
 }

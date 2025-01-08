@@ -218,5 +218,6 @@ export {
   normalizeTextIndent,
   normalizeTextJustify,
   normalizeTextOrientation,
+  normalizeTextOverflow,
   normalizeTop,
 } from './style'

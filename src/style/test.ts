@@ -145,6 +145,7 @@ console.log(
       textIndent: 22,
       textJustify: 'inter-character',
       textOrientation: 'mixed',
+      textOverflow: 'ellipsis',
     },
     className: 'yes-no',
   })
