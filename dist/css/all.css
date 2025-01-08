@@ -958,6 +958,10 @@
   --width: auto;
   width: var(--width);
 }
+.will-change {
+  --will-change: auto;
+  will-change: var(--will-change);
+}
 
 
 @media screen and (min-width: 48rem) {
@@ -1920,6 +1924,10 @@
 .tablet.width {
   --t-width: var(--width);
   width: var(--t-width);
+}
+.tablet.will-change {
+  --t-will-change: var(--will-change);
+  will-change: var(--t-will-change);
 }
 
 }
@@ -2884,6 +2892,10 @@
 .desktop.width {
   --d-width: var(--t-width);
   width: var(--d-width);
+}
+.desktop.will-change {
+  --d-will-change: var(--t-will-change);
+  will-change: var(--d-will-change);
 }
 
 }

@@ -22,6 +22,7 @@ console.log(
       visibility: 'hidden',
       whiteSpace: 'preserve wrap',
       width: '24px',
+      willChange: 'scroll-position',
     },
     className: 'yes-no',
   })

@@ -241,4 +241,5 @@ export {
   normalizeVisibility,
   normalizeWhiteSpace,
   normalizeWidth,
+  normalizeWillChange,
 } from './style'
