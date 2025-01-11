@@ -77,14 +77,14 @@ const buildCss = () => {
 
         finalCSS[env][screenType] +=
           env === 'dev'
-            ? `${screenType === 'mobile' ? '' : `.${screenType}`}.${
-                property.className
-              } {
+            ? `${
+                screenType === 'mobile' ? '#wow-ui ' : `#wow-ui .${screenType}`
+              }.${property.className} {
   ${varName}: ${defaultValue};
   ${camelToKebabCase(property.cssPropertyName)}: var(${varName});
 }
 `
-            : `.${
+            : `#wow-ui .${
                 property.className
               }{${varName}:${defaultValue};${camelToKebabCase(
                 property.cssPropertyName
