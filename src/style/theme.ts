@@ -104,19 +104,19 @@ export type TThemeColor = keyof typeof ThemeColorMap
 const keyValueMap = Object.entries(ThemeColorMap)
 export const themeHueSaturation = keyValueMap
   .map(
-    ([key, { hue, saturation }]) => `.theme-${key} {
+    ([key, { hue, saturation }]) => `#wow-ui .theme-${key} {
   --tch: ${hue};
   --tcs: ${saturation}%;
   background-color: hsla(var(--tch), var(--tcs), var(--tcl), var(--tca));
   border-color: hsla(var(--tch), var(--tcs), var(--tbcl), var(--tca));
-  color: white;
 }`
   )
   .join('\n')
 export const themeLightnessAlpha = `${keyValueMap
-  .map(([key]) => `.theme-${key}`)
+  .map(([key]) => `#wow-ui .theme-${key}`)
   .join(',\n')} {
   --tcl: 50%;
   --tbcl: 25%;
   --tca: 1;
+  color: white;
 }`
